@@ -1,0 +1,785 @@
+star
+  - name
+  - isSystem
+  - systemName
+  - hasReferences
+  - references
+    - ref-number [list]
+    - link [list]
+  - comments
+  - p
+     - value
+     - hasReferences
+     - references
+        - ref-number [list]
+        - link [list]
+  - p.
+     - value
+     - hasReferences
+     - references
+        - ref-number [list]
+        - link [list]
+     - hasUncertainty [boolean]
+     - uncertainty
+       - symmetrical [boolean]
+       - up
+       - down
+  - pb
+    - value
+    - hasReferences
+    - references
+        - ref-number [list]
+        - link [list]
+  - e
+    - value
+    - hasReferences
+    - references
+        - ref-number [list]
+        - link [list]
+  - f
+    - value
+    - hasReferences
+    - references
+        - ref-number [list]
+        - link [list]
+  - mt
+    - value [can be null]
+    - hasReferences
+    - references
+        - ref-number [list]
+        - link [list]
+    - hasUncertainty [boolean]
+    - uncertainty
+        - symmetrical [boolean]
+        - up
+        - down
+  - mp
+    - isLimit [boolean]
+    - isAssumed [boolean]
+    - value
+    - hasReferences
+    - references
+        - ref-number [list]
+        - link [list]
+    - hasUncertainty [boolean]
+    - uncertainty
+        - symmetrical [boolean]
+        - up
+        - down
+  - mc
+    - isLimit [boolean]
+    - isAssumed [boolean]
+    - value
+    - hasReferences
+    - references
+        - ref-number [list]
+        - link [list]
+    - hasUncertainty [boolean]
+    - uncertainty
+        - symmetrical [boolean]
+        - up
+        - down
+  - chirp
+    - value
+    - hasReferences
+    - references
+        - ref-number [list]
+        - link [list]
+  - delta
+    - isLimit [boolean]
+    - value
+    - hasReferences
+    - references
+        - ref-number [list]
+        - link [list]
+    - hasUncertainty [boolean]
+    - uncertainty
+        - symmetrical [boolean]
+        - up
+        - down
+  - chi
+    - value
+    - hasReferences
+    - references
+        - ref-number [list]
+        - link [list]
+  - tau
+    - isInifinity
+    - value
+    - hasReferences
+    - references
+        - ref-number [list]
+        - link [list]
+        
+        
+[{
+  "name": "J0453+1559",
+  "isSystem": false,
+  "systemName": null,
+  "hasReferences": true,
+  "references": [
+    {
+      "ref-number": 1,
+      "link" : "https://ui.adsabs.harvard.edu/abs/2015ApJ...812..143M"
+    }
+  ],
+  "comments": null,
+  "p": {
+    "value": 0.04578,
+     "hasReferences": false,
+     "references": null
+  },
+  "p.": {
+     "value": 0.18616,
+     "hasReferences": false,
+     "references": null,
+     "hasUncertainty": false,
+     "uncertainty": null
+  },
+  "pb": {
+    "value": 4.07247,
+    "hasReferences": false,
+    "references": null
+  },
+  "e": {
+    "value":0.11252,
+    "hasReferences":false,
+    "references": null
+  },
+  "f": {
+    "value":0.19601,
+    "hasReferences":false,
+    "references": null
+  },
+  "mt": {
+    "value":2.734,
+    "hasReferences":false,
+    "references": null,
+    "hasUncertainty":true,
+    "uncertainty": {
+      "symmetrical":true,
+      "up":0.004,
+      "down":0.004
+    }
+  }, 
+  "mp": {
+    "isLimit":false,
+    "isAssumed":false,
+    "value":1.559,
+    "hasReferences":false,
+    "references": null,
+    "hasUncertainty":true,
+    "uncertainty": {
+      "symmetrical":true,
+      "up":0.005,
+      "down":0.005
+    }
+  },
+  "mc": {
+    "isLimit":false,
+    "isAssumed":false,
+    "value":1.174,
+    "hasReferences":false,
+    "references": null,
+    "hasUncertainty": true,
+    "uncertainty": {
+      "symmetrical":true,
+      "up": 0.004,
+      "down": 0.004
+    }
+  },
+  "chirp": {
+    "value":1.17539,
+    "hasReferences":false,
+    "references": null
+  },
+  "delta": {
+    "isLimit":false,
+    "value":null,
+    "hasReferences":false,
+    "references": null,
+    "hasUncertainty":false ,
+    "uncertainty": null
+  },
+  "chi": {
+    "value":0.0005,
+    "hasReferences":false,
+    "references": null,
+  },
+  "tau": {
+    "isInifinity": true,
+    "value":null,
+    "hasReferences":false,
+    "references": null
+  }
+},
+{
+  "name": ,
+  "isSystem": ,
+  "systemName": ,
+  "hasReferences":,
+  "references": [
+    {
+      "ref-number": ,
+      "link" : 
+    }
+  ],
+  "comments": ,
+  "p": {
+    "value": ,
+     "hasReferences": false ,
+     "references": null
+  },
+  "p.": {
+     "value": ,
+     "hasReferences": false ,
+     "references": null,
+     "hasUncertainty": ,
+     "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  },
+  "pb": {
+    "value": ,
+    "hasReferences": false,
+    "references": null
+  },
+  "e": {
+    "value":,
+    "hasReferences": false,
+    "references": null
+  },
+  "f": {
+    "value":,
+    "hasReferences": false,
+    "references": null
+  },
+  "mt": {
+    "value":,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty":,
+    "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  }, 
+  "mp": {
+    "isLimit":,
+    "isAssumed":,
+    "value":,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty":,
+    "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  },
+  "mc": {
+    "isLimit":,
+    "isAssumed":,
+    "value":,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty":,
+    "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  },
+  "chirp": {
+    "value":,
+    "hasReferences": false,
+    "references": null
+  },
+  "delta": {
+    "isLimit":,
+    "value":,
+    "hasReferences":,
+    "references": [
+      {
+        "ref-number":,
+        "link": 
+      }
+    ],
+    "hasUncertainty":,
+    "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  },
+  "chi": {
+    "value":,
+    "hasReferences": false,
+    "references": null
+  },
+  "tau": {
+    "isInifinity"
+    "value":,
+    "hasReferences": false,
+    "references": null
+  }
+},
+{
+  "name": ,
+  "isSystem": ,
+  "systemName": ,
+  "hasReferences":,
+  "references": [
+    {
+      "ref-number": ,
+      "link" : 
+    }
+  ],
+  "comments": ,
+  "p": {
+    "value": ,
+     "hasReferences": false ,
+     "references": null
+  },
+  "p.": {
+     "value": ,
+     "hasReferences": false ,
+     "references": null,
+     "hasUncertainty": ,
+     "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  },
+  "pb": {
+    "value": ,
+    "hasReferences": false,
+    "references": null
+  },
+  "e": {
+    "value":,
+    "hasReferences": false,
+    "references": null
+  },
+  "f": {
+    "value":,
+    "hasReferences": false,
+    "references": null
+  },
+  "mt": {
+    "value":,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty":,
+    "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  }, 
+  "mp": {
+    "isLimit":,
+    "isAssumed":,
+    "value":,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty":,
+    "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  },
+  "mc": {
+    "isLimit":,
+    "isAssumed":,
+    "value":,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty":,
+    "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  },
+  "chirp": {
+    "value":,
+    "hasReferences": false,
+    "references": null
+  },
+  "delta": {
+    "isLimit":,
+    "value":,
+    "hasReferences":,
+    "references": [
+      {
+        "ref-number":,
+        "link": 
+      }
+    ],
+    "hasUncertainty":,
+    "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  },
+  "chi": {
+    "value":,
+    "hasReferences": false,
+    "references": null
+  },
+  "tau": {
+    "isInifinity"
+    "value":,
+    "hasReferences": false,
+    "references": null
+  }
+},
+{
+  "name": ,
+  "isSystem": ,
+  "systemName": ,
+  "hasReferences":,
+  "references": [
+    {
+      "ref-number": ,
+      "link" : 
+    }
+  ],
+  "comments": ,
+  "p": {
+    "value": ,
+     "hasReferences": false ,
+     "references": null
+  },
+  "p.": {
+     "value": ,
+     "hasReferences": false ,
+     "references": null,
+     "hasUncertainty": ,
+     "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  },
+  "pb": {
+    "value": ,
+    "hasReferences": false,
+    "references": null
+  },
+  "e": {
+    "value":,
+    "hasReferences": false,
+    "references": null
+  },
+  "f": {
+    "value":,
+    "hasReferences": false,
+    "references": null
+  },
+  "mt": {
+    "value":,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty":,
+    "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  }, 
+  "mp": {
+    "isLimit":,
+    "isAssumed":,
+    "value":,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty":,
+    "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  },
+  "mc": {
+    "isLimit":,
+    "isAssumed":,
+    "value":,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty":,
+    "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  },
+  "chirp": {
+    "value":,
+    "hasReferences": false,
+    "references": null
+  },
+  "delta": {
+    "isLimit":,
+    "value":,
+    "hasReferences":,
+    "references": [
+      {
+        "ref-number":,
+        "link": 
+      }
+    ],
+    "hasUncertainty":,
+    "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  },
+  "chi": {
+    "value":,
+    "hasReferences": false,
+    "references": null
+  },
+  "tau": {
+    "isInifinity"
+    "value":,
+    "hasReferences": false,
+    "references": null
+  }
+},
+{
+  "name": ,
+  "isSystem": ,
+  "systemName": ,
+  "hasReferences":,
+  "references": [
+    {
+      "ref-number": ,
+      "link" : 
+    }
+  ],
+  "comments": ,
+  "p": {
+    "value": ,
+     "hasReferences": false ,
+     "references": null
+  },
+  "p.": {
+     "value": ,
+     "hasReferences": false ,
+     "references": null,
+     "hasUncertainty": ,
+     "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  },
+  "pb": {
+    "value": ,
+    "hasReferences": false,
+    "references": null
+  },
+  "e": {
+    "value":,
+    "hasReferences": false,
+    "references": null
+  },
+  "f": {
+    "value":,
+    "hasReferences": false,
+    "references": null
+  },
+  "mt": {
+    "value":,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty":,
+    "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  }, 
+  "mp": {
+    "isLimit":,
+    "isAssumed":,
+    "value":,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty":,
+    "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  },
+  "mc": {
+    "isLimit":,
+    "isAssumed":,
+    "value":,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty":,
+    "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  },
+  "chirp": {
+    "value":,
+    "hasReferences": false,
+    "references": null
+  },
+  "delta": {
+    "isLimit":,
+    "value":,
+    "hasReferences":,
+    "references": [
+      {
+        "ref-number":,
+        "link": 
+      }
+    ],
+    "hasUncertainty":,
+    "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  },
+  "chi": {
+    "value":,
+    "hasReferences": false,
+    "references": null
+  },
+  "tau": {
+    "isInifinity"
+    "value":,
+    "hasReferences": false,
+    "references": null
+  }
+},
+{
+  "name": ,
+  "isSystem": ,
+  "systemName": ,
+  "hasReferences":,
+  "references": [
+    {
+      "ref-number": ,
+      "link" : 
+    }
+  ],
+  "comments": ,
+  "p": {
+    "value": ,
+     "hasReferences": false ,
+     "references": null
+  },
+  "p.": {
+     "value": ,
+     "hasReferences": false ,
+     "references": null,
+     "hasUncertainty": ,
+     "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  },
+  "pb": {
+    "value": ,
+    "hasReferences": false,
+    "references": null
+  },
+  "e": {
+    "value":,
+    "hasReferences": false,
+    "references": null
+  },
+  "f": {
+    "value":,
+    "hasReferences": false,
+    "references": null
+  },
+  "mt": {
+    "value":,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty":,
+    "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  }, 
+  "mp": {
+    "isLimit":,
+    "isAssumed":,
+    "value":,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty":,
+    "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  },
+  "mc": {
+    "isLimit":,
+    "isAssumed":,
+    "value":,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty":,
+    "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  },
+  "chirp": {
+    "value":,
+    "hasReferences": false,
+    "references": null
+  },
+  "delta": {
+    "isLimit":,
+    "value":,
+    "hasReferences":,
+    "references": [
+      {
+        "ref-number":,
+        "link": 
+      }
+    ],
+    "hasUncertainty":,
+    "uncertainty": {
+      "symmetrical":,
+      "up":,
+      "down":
+    }
+  },
+  "chi": {
+    "value":,
+    "hasReferences": false,
+    "references": null
+  },
+  "tau": {
+    "isInifinity"
+    "value":,
+    "hasReferences": false,
+    "references": null
+  }
+}]
