@@ -1,236 +1,4 @@
-star
-  - name
-  - DoubleSystem
-  - systemName
-  - hasReferences
-  - references
-    - ref-number [list]
-    - link [list]
-  - comments
-  - p
-     - value
-     - hasReferences
-     - references
-        - ref-number [list]
-        - link [list]
-  - p.
-     - value
-     - hasReferences
-     - references
-        - ref-number [list]
-        - link [list]
-     - hasUncertainty [boolean]
-     - uncertainty
-       - symmetrical [boolean]
-       - up
-       - down
-  - pb
-    - value
-    - hasReferences
-    - references
-        - ref-number [list]
-        - link [list]
-  - e
-    - value
-    - hasReferences
-    - references
-        - ref-number [list]
-        - link [list]
-  - f
-    - value
-    - hasReferences
-    - references
-        - ref-number [list]
-        - link [list]
-  - mt
-    - value [can be null]
-    - hasReferences
-    - references
-        - ref-number [list]
-        - link [list]
-    - hasUncertainty [boolean]
-    - uncertainty
-        - symmetrical [boolean]
-        - up
-        - down
-  - mp
-    - isLimit [boolean]
-    - isAssumed [boolean]
-    - value
-    - hasReferences
-    - references
-        - ref-number [list]
-        - link [list]
-    - hasUncertainty [boolean]
-    - uncertainty
-        - symmetrical [boolean]
-        - up
-        - down
-  - mc
-    - isLimit [boolean]
-    - isAssumed [boolean]
-    - value
-    - hasReferences
-    - references
-        - ref-number [list]
-        - link [list]
-    - hasUncertainty [boolean]
-    - uncertainty
-        - symmetrical [boolean]
-        - up
-        - down
-  - chirp
-    - value
-    - hasReferences
-    - references
-        - ref-number [list]
-        - link [list]
-  - delta
-    - isLimit [boolean]
-    - value
-    - hasReferences
-    - references
-        - ref-number [list]
-        - link [list]
-    - hasUncertainty [boolean]
-    - uncertainty
-        - symmetrical [boolean]
-        - up
-        - down
-  - chi
-    - value
-    - hasReferences
-    - references
-        - ref-number [list]
-        - link [list]
-  - tau
-    - isInifinity
-    - value
-    - hasReferences
-    - references
-        - ref-number [list]
-        - link [list]
-
-
-
-
-        {
-          "name": ,
-          "DoubleSystem": ,
-          "systemName": ,
-          "hasReferences":,
-          "references": [
-            {
-              "ref-number": ,
-              "link" : 
-            }
-          ],
-          "comments": ,
-          "p": {
-            "value": ,
-             "hasReferences": false ,
-             "references": null
-          },
-          "p.": {
-             "value": ,
-             "hasReferences": false ,
-             "references": null,
-             "hasUncertainty": ,
-             "uncertainty": {
-              "symmetrical":,
-              "up":,
-              "down":
-            }
-          },
-          "pb": {
-            "value": ,
-            "hasReferences": false,
-            "references": null
-          },
-          "e": {
-            "value":,
-            "hasReferences": false,
-            "references": null
-          },
-          "f": {
-            "value":,
-            "hasReferences": false,
-            "references": null
-          },
-          "mt": {
-            "value":,
-            "hasReferences": false,
-            "references": null,
-            "hasUncertainty":,
-            "uncertainty": {
-              "symmetrical":,
-              "up":,
-              "down":
-            }
-          }, 
-          "mp": {
-            "isLimit":,
-            "isAssumed":,
-            "value":,
-            "hasReferences": false,
-            "references": null,
-            "hasUncertainty":,
-            "uncertainty": {
-              "symmetrical":,
-              "up":,
-              "down":
-            }
-          },
-          "mc": {
-            "isLimit":,
-            "isAssumed":,
-            "value":,
-            "hasReferences": false,
-            "references": null,
-            "hasUncertainty":,
-            "uncertainty": {
-              "symmetrical":,
-              "up":,
-              "down":
-            }
-          },
-          "chirp": {
-            "value":,
-            "hasReferences": false,
-            "references": null
-          },
-          "delta": {
-            "isLimit":,
-            "value":,
-            "hasReferences":,
-            "references": [
-              {
-                "ref-number":,
-                "link": 
-              }
-            ],
-            "hasUncertainty":,
-            "uncertainty": {
-              "symmetrical":,
-              "up":,
-              "down":
-            }
-          },
-          "chi": {
-            "value":,
-            "hasReferences": false,
-            "references": null
-          },
-          "tau": {
-            "isInfinity": ,
-            "value":,
-            "hasReferences": false,
-            "references": null
-          }
-        }
-        
-        
-[{
+const pulsarData = [{
   "name": "J0453+1559",
   "DoubleSystem": false,
   "systemName": null,
@@ -247,7 +15,7 @@ star
      "hasReferences": false,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": 0.18616,
      "hasReferences": false,
      "references": null,
@@ -322,7 +90,7 @@ star
   "chi": {
     "value":0.0005,
     "hasReferences":false,
-    "references": null,
+    "references": null
   },
   "tau": {
     "isInfinity": true,
@@ -348,7 +116,7 @@ star
      "hasReferences": false,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": 7.931,
      "hasReferences": false ,
      "references": null,
@@ -378,6 +146,7 @@ star
      "symmetrical": true,
      "up": 0.00003,
      "down": 0.00003
+    }
   },
   "mt": {
     "value": 2.805,
@@ -396,7 +165,7 @@ star
     "value": 1.34,
     "hasReferences": false,
     "references": null,
-    "hasUncertainty":,
+    "hasUncertainty": true,
     "uncertainty": {
       "symmetrical": true,
       "up": 0.08,
@@ -428,7 +197,6 @@ star
     "references": null,
     "hasUncertainty": false,
     "uncertainty": null
-    }
   },
   "chi": {
     "value": 0.0032,
@@ -459,7 +227,7 @@ star
      "hasReferences": false ,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": 0.0007,
      "hasReferences": false ,
      "references": null,
@@ -572,7 +340,7 @@ star
      "hasReferences": false ,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": 1.74,
      "hasReferences": false ,
      "references": null,
@@ -685,7 +453,7 @@ star
      "hasReferences": false ,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": 880,
      "hasReferences": false ,
      "references": null,
@@ -766,7 +534,7 @@ star
     }
   },
   "chi": {
-    "value": null,
+    "value": 0,
     "hasReferences": false,
     "references": null
   },
@@ -794,7 +562,7 @@ star
      "hasReferences": false ,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": 0.048,
      "hasReferences": false ,
      "references": null,
@@ -891,7 +659,7 @@ star
      "hasReferences": false ,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": 0.0956,
      "hasReferences": false ,
      "references": null,
@@ -996,7 +764,7 @@ star
      "hasReferences": false ,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": 0.0275,
      "hasReferences": false ,
      "references": null,
@@ -1101,7 +869,7 @@ star
      "hasReferences": false ,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": 2.42262,
      "hasReferences": false ,
      "references": null,
@@ -1207,7 +975,7 @@ star
      "hasReferences": false ,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": -0.32913,
      "hasReferences": false ,
      "references": null,
@@ -1304,7 +1072,7 @@ star
      "hasReferences": false ,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": 0.97,
      "hasReferences": false,
      "references": null,
@@ -1397,7 +1165,7 @@ star
      "hasReferences": false ,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": 2433.7,
      "hasReferences": false ,
      "references": null,
@@ -1490,7 +1258,7 @@ star
      "hasReferences": false ,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": 1.01750,
      "hasReferences": false ,
      "references": null,
@@ -1600,7 +1368,7 @@ star
      "hasReferences": false ,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": 2.62733,
      "hasReferences": false ,
      "references": null,
@@ -1706,7 +1474,7 @@ star
      "hasReferences": false ,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": 0.243,
      "hasReferences": false ,
      "references": null,
@@ -1803,7 +1571,7 @@ star
      "hasReferences": false ,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": 0.08232,
      "hasReferences": false ,
      "references": null,
@@ -1904,7 +1672,7 @@ star
      "hasReferences": false ,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": 0.901,
      "hasReferences": false ,
      "references": null,
@@ -2001,7 +1769,7 @@ star
      "hasReferences": false ,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": -0.018,
      "hasReferences": false ,
      "references": null,
@@ -2098,7 +1866,7 @@ star
      "hasReferences": false ,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": 0.04944,
      "hasReferences": false ,
      "references": null,
@@ -2203,7 +1971,7 @@ star
      "hasReferences": false ,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": -1244100,
      "hasReferences": false ,
      "references": null,
@@ -2291,7 +2059,7 @@ star
     },
     {
       "ref-number":34,
-      "link": "https://iopscience.iop.org/article/10.1086/499918/pdf"
+      "link": "https://iopscience.iopdotorg/article/10.1086/499918/pdf"
     }
   ],
   "comments": null,
@@ -2300,7 +2068,7 @@ star
      "hasReferences": false ,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": 20280,
      "hasReferences": false ,
      "references": null,
@@ -2410,7 +2178,7 @@ star
      "hasReferences": false,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": 0.15672,
      "hasReferences": false ,
      "references": null,
@@ -2519,7 +2287,7 @@ star
      "hasReferences": false ,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": 8.8,
      "hasReferences": false ,
      "references": null,
@@ -2633,7 +2401,7 @@ star
      "hasReferences": false ,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": 18.001,
      "hasReferences": false ,
      "references": null,
@@ -2730,7 +2498,7 @@ star
      "hasReferences": false,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": 0.9,
      "hasReferences": false ,
      "references": null,
@@ -2827,7 +2595,7 @@ star
      "hasReferences": false ,
      "references": null
   },
-  "p.": {
+  "pdot": {
      "value": 4.98789,
      "hasReferences": false,
      "references": null,
@@ -2921,411 +2689,3 @@ star
   }
 }
 ]
-
-J0453+1559
-https://ui.adsabs.harvard.edu/abs/2015ApJ...812..143M 1
-0.04578
-0.18616
-4.07247
-0.11252
-0.19601
-2.734 4 
-1.559 5 
-1.174 4 
-1.17539
--
-0.0005
-inf
----
-J0509+3801
-https://ui.adsabs.harvard.edu/abs/2018ApJ...859...93L 2 
-0.07654
-7.931 2 
-0.37958
-0.58640
-0.06425 3 
-2.805 3 
-1.34 8 
-1.46 8 
-1.21743
--
-0.0032
-576
----
-J0514-4002A
-https://ui.adsabs.harvard.edu/abs/2019MNRAS.490.3860R/ 3 
-0.00499
-0.0007 13 
-18.78518
-0.88798
-0.14542
-2.4730 6 
-1.25 +5/-6 
-1.22 +6/-5 
-1.07503
--
-0.0479
-inf
----
-J1325-6253
-https://ui.adsabs.harvard.edu/abs/2022MNRAS.512.5782S 10 
-0.02897
-0.048 14 
-1.81559
-0.06401
-0.14152
-2.57 6 
-< 1.59
-> 0.98
-1.11572
--
-0.0040
-inf
----
-J1411+2551
-https://ui.adsabs.harvard.edu/abs/2017ApJ...851L..29M 11 
-0.06245
-0.0956 51 
-2.61586
-0.16993
-0.12239
-2.538 22 
-< 1.62
-> 0.92
-1.10433
--
-0.0013
-inf
----
-J1518+4904
-https://ui.adsabs.harvard.edu/abs/2008A&A...490..753J 12 
-https://ui.adsabs.harvard.edu/abs/1996ApJ...466L..87N/abstract 13 
-https://ui.adsabs.harvard.edu/abs/1999ptgr.conf...79N/abstract 14 
-0.04093
-0.0275 6 
-8.63401
-0.24948
-0.11159
-2.7183 7 
-< 1.42
-> 1.29
-1.10984
--
-0.0006
-inf
----
-B1534+12
-https://ui.adsabs.harvard.edu/abs/2014ApJ...787...82F 15 
-https://ui.adsabs.harvard.edu/abs/1991Natur.350..688W/abstract 16 
-https://ui.adsabs.harvard.edu/abs/2002ApJ...581..501S/abstract 17 
-0.03790
-2.42262
-0.42074
-0.27368
-0.3146 2 
-2.67846
-1.3330 2 
-1.3455 2 
-1.16587
-27 +-3
-https://ui.adsabs.harvard.edu/abs/2014ApJ...787...82F 18 
-0.0041
-2734
----
-J1748-2021B
-https://ui.adsabs.harvard.edu/abs/2008ApJ...675..670F 19 
-0.01676
--0.32913 16 
-20.55001
-0.57016
-0.00023
-2.92 15 
-< 3.24
-> 0.11
-1.20988
--
-0.0001
-inf
----
-J1753-2240
-https://ui.adsabs.harvard.edu/abs/2009MNRAS.393..623K 20 
-0.09514
-0.97 12 
-13.63757
-0.30358
-0.0343
--
-1.4 
-> 0.49
-1.08819
--
-0
-inf
----
-J1755-2550
-https://ui.adsabs.harvard.edu/abs/2018MNRAS.476.4315N 21 
-0.31519
-2433.7 1.4 
-9.69633
-0.08935 2 
-0.02117
--
-1.3 
-> 0.39
-1.08714
--
-0
-inf
----
-J1756-2251
-https://ui.adsabs.harvard.edu/abs/2014MNRAS.443.2183F 22 
-0.02846
-1.01750
-0.31963
-0.18057
-0.22011
-2.56999 6 
-1.341 7 
-1.230 7 
-1.11784
-< 34
-https://ui.adsabs.harvard.edu/abs/2014MNRAS.443.2183F 23 
-0.0086
-1656
----
-J1757-1854
-https://arxiv.org/abs/2203.15995 24 
-https://ui.adsabs.harvard.edu/abs/2018MNRAS.475L..57C/abstract 25 
-0.02149
-2.62733
-0.18354
-0.60582
-0.35719
-2.732882 12 
-1.3406 5 
-1.3922 5 
-1.18927
--
-https://arxiv.org/abs/2203.15995 26 
-0.0198
-76
----
-J1759+5036
-https://ui.adsabs.harvard.edu/abs/2021ApJ...922...35A 27 
-0.17602
-0.243 3 
-2.04298
-0.30827 12 
-0.08177
-2.62 3 
-< 1.79
-> 0.84
-1.12597
--
-0.0007
-inf
----
-J1807-2500B
-https://ui.adsabs.harvard.edu/abs/2012ApJ...745..109L 28 
-0.00419
-0.08232
-9.95667
-0.74703
-0.26198
-2.57190 73 
-1.3655 21 
-1.2064 20 
-1.11691
--
-0.0035
-inf
----
-J1811-1736
-https://ui.adsabs.harvard.edu/abs/2007A&A...462..703C 29 
-0.10418
-0.901 5 
-18.77917
-0.82801
-0.12812
-2.57 10 
-< 1.74
-> 0.93
-1.09444
--
-0.0001
-inf
----
-J1823-3021G
-https://ui.adsabs.harvard.edu/abs/2021MNRAS.504.1407R 30 
-0.00609
--0.018 2 
-1.54014
-0.38047
-0.0123
-2.65 7 
-< 2.4
-> 0.44
-1.12341
--
-0.0211
-inf
----
-J1829+2456
-https://ui.adsabs.harvard.edu/abs/2021MNRAS.500.4620H 31
-0.04101
-0.04944 2 
-1.17603
-0.13914
-0.29423
-2.60551 38 
-1.306 7 
-1.299 7 
-1.13389
--
-0.0058
-inf
----
-J1835-3259A
-https://ui.adsabs.harvard.edu/abs/2015ApJ...807L..23D 32
-0.00389
--1244100 27000 
-9.2460
-0.968 5 
-0.023276
--
-1.4 
-> 0.76
-1.07876
--
-0
-1305
----
-J1906+0746
-https://ui.adsabs.harvard.edu/abs/2015ApJ...798..118V 33
-https://iopscience.iop.org/article/10.1086/499918/pdf 34 
-0.14407
-20280 2 
-0.16599
-0.08529
-0.11157
-2.6134 3 
-1.291 11 
-1.322 11 
-1.13728
--
-https://ui.adsabs.harvard.edu/abs/2019Sci...365.1013D/abstract 35
-0
-308
----
-J1913+1102
-https://ui.adsabs.harvard.edu/abs/2020Natur.583..211F 36
-0.02728
-0.15672 7 
-0.20625
-0.08953
-0.13634
-2.8887 6 
-1.62 3 
-1.27 3 
-1.24684
--
-0.0162
-470
----
-B1913+16
-https://ui.adsabs.harvard.edu/abs/1976ApJ...206L..53T/abstract 37
-https://ui.adsabs.harvard.edu/abs/2016ApJ...829...55W 38
-0.05903
-8.8 3 
-0.32299
-0.61713
-0.13213
-2.828378 7 
-1.438 1 
-1.390 1 
-1.23075
-18 +-6
-https://ui.adsabs.harvard.edu/abs/1998ApJ...509..856K 39
-0.0044
-301
----
-J1930-1852
-https://ui.adsabs.harvard.edu/abs/2015ApJ...805..156S 40
-0.18552
-18.001 6 
-45.06
-0.39886
-0.34691
-2.59 4 
-< 1.25
-> 1.30
-1.12372
--
-0
-inf
----
-J1946+2052
-https://ui.adsabs.harvard.edu/abs/2018ApJ...854L..22S 41
-0.01696
-0.9 2 
-0.07849
-0.06385
-0.26818
-2.50 4 
-< 1.31
-> 1.18
-1.08819
--
-0.0308
-46
----
-B2127+11C
-https://ui.adsabs.harvard.edu/abs/2006ApJ...644L.113J 42
-0.03053
-4.98789 2 
-0.33528
-0.68139
-0.15252
-2.71279 13 
-1.358 10 
-1.354 10 
-1.18047
--
-https://ui.adsabs.harvard.edu/abs/2014A%26A...565A..43K 43
-0.0097
-217
----
-end
-
-
-<td>J0737&minus;3039A
-<sup class='reference'>
-  <a target="papers" href="https://ui.adsabs.harvard.edu/abs/2006Sci...314...97K">[4]</a>
-  <a target="papers" href="https://ui.adsabs.harvard.edu/abs/2021PhRvX..11d1050K">[5]</a>
-  <a target="papers" href="https://ui.adsabs.harvard.edu/abs/2008Sci...321..104B">[6]</a>
-</sup>
-<br>
-J0737&minus;3039B
-<sup class='reference'>
-    <a target="papers" href="https://ui.adsabs.harvard.edu/abs/2004Sci...303.1153L/abstract">[7]</a>
-  <a target="papers" href="https://ui.adsabs.harvard.edu/abs/2013ApJ...767...85F">[8]</a>
-  <a target="papers" href="https://ui.adsabs.harvard.edu/abs/2010ApJ...721.1193P">[9]</a>
-</sup>
-</td>
-<td>0.02269 <br> 2.77346</td>
-<td>1.74(5) <br> 880(130)</td>
-<td><font color="ffffff">00</font>0.10225</td>
-<td>0.08778</td>
-<td>0.29097 <br> 0.356(3)</td>
-<td>2.587052(+9/&minus;7)</td>
-<td><font color="ff0000">1.338185(+12/&minus;14)</font><br> <font color="ffffff">1.248868(+13/&minus;11)</font> </td>
-<td><font color="ffffff">1.338185(+12/&minus;14)</font><br> <font color="ff0000">1.248868(+13/&minus;11)</sub></font> </td>
-<td>1.12527
-</td>
-<td>
-&lt;3.2
-<br>
-130&pm;1
-</td>
-<td>0.0199</td>
-<td>86</td>
