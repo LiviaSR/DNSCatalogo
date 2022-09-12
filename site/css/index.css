@@ -221,3 +221,27 @@ table.dataTable thead td {
 .table-striped > tbody > tr > th > span {
     display: inline-block;
 }
+
+#to-top-button {
+    display: none;
+    position: fixed;
+    background-color: #99fff391;
+    bottom: 20px;
+    right: 30px;
+    border-radius: 50%;
+    z-index: 3;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #002838;
+    outline: none;
+    color: rgb(232, 230, 227);
+    cursor: pointer;
+    padding: 15px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s linear;
+}
+
+#to-top-button:hover {
+    background-color: #99fff3;
+    color: #002838;
+}
