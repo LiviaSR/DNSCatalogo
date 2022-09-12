@@ -21,6 +21,7 @@ function mergeRows(systemName) {
 }
 
 function addReferences(references, td) {
+  const div = document.createElement('div');
   for ( let reference of references ) {
     let sup = document.createElement('sup');
     let a = document.createElement('a');
@@ -33,7 +34,8 @@ function addReferences(references, td) {
     a.setAttribute('href', reference.link);
 
     sup.appendChild(a);
-    td.appendChild(sup);
+    div.appendChild(sup);
+    td.appendChild(div);
   }
 }
 
@@ -68,11 +70,13 @@ function buildPulsarsTable() {
 
     // Name
     let tdName = document.createElement('td');
+    let divName = document.createElement('div');
     let span = document.createElement('span');
 
     span.innerHTML = data.name;
-    tdName.appendChild(span);
-
+    divName.appendChild(span);
+    tdName.appendChild(divName);
+    
     // Add comments
     if ( data.comments ) { addComment(data.comments, tdName, span); }
     // References
