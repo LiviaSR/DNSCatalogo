@@ -204,12 +204,26 @@ table.dataTable thead td {
 .table-striped > tbody > tr:nth-child(odd) > th {
     color: rgb(232, 230, 227);
     background-color: #151616;
+    transition: all 0.2s linear;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td:hover, 
+.table-striped > tbody > tr:nth-child(odd) > th:hover {
+    color: rgb(232, 230, 227);
+    background-color: #393d3d;
 }
 
 .table-striped > tbody > tr:nth-child(even) > td, 
 .table-striped > tbody > tr:nth-child(even) > th {
     color: rgb(232, 230, 227);
     background-color: rgb(0, 48, 66);
+    transition: all 0.2s linear;
+}
+
+.table-striped > tbody > tr:nth-child(even) > td:hover, 
+.table-striped > tbody > tr:nth-child(even) > th:hover {
+    color: rgb(232, 230, 227);
+    background-color: rgb(0, 90, 123);
 }
 
 .table-striped > tbody > tr > td > div, 
