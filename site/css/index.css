@@ -127,28 +127,23 @@ a:hover {
     width: fit-content;
     height: fit-content;
     padding: 15px;
-    margin-left: 3.5%;
+    margin-left: calc(3.5% + 5px);
     background-color:rgb(0, 48, 66);
-    border-radius: 10px;
-    -webkit-box-shadow: 15px 15px 13px -1px #99fff391; 
-    box-shadow: 4px 4px 2px 0px #99fff391;
+    box-shadow: -5px 0 0 0px #99fff391;
 }
 
 .page-section-lg {
     margin-top: 2%;
-    width: 200px;
+    width: 150px;
     height: fit-content;
     padding: 15px;
-    margin-left: 3.5%;
+    margin-left: calc(3.5% + 5px);
     background-color:rgb(0, 48, 66);
-    border-radius: 10px;
-    -webkit-box-shadow: 15px 15px 13px -1px #99fff391; 
-    box-shadow: 4px 4px 2px 0px #99fff391;
+    box-shadow: -5px 0 0 0px #99fff391;
 }
 
 .page-section h4 {
     color: rgb(232, 230, 227);
-    text-align: center;
     position: relative;
     top: 50%;
 }
