@@ -1,26 +1,27 @@
 const pulsarData = [{
   "name": "J0453+1559",
+  "Type": "rec",
   "DoubleSystem": false,
   "systemName": null,
   "hasReferences": true,
   "references": [
     {
       "ref-number": 1,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2015ApJ...812..143M"
+      "link": "https://ui.adsabs.harvard.edu/abs/2015ApJ...812..143M"
     }
   ],
-  "comments": null,
+  "comments": "Confirmed. Asymmetric DNS. Companion is the lightest NS known.",
   "p": {
     "value": 0.04578,
-     "hasReferences": false,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": 0.18616,
-     "hasReferences": false,
-     "references": null,
-     "hasUncertainty": false,
-     "uncertainty": null
+    "value": 0.18616,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": false,
+    "uncertainty": null
   },
   "pb": {
     "value": 4.07247,
@@ -28,100 +29,101 @@ const pulsarData = [{
     "references": null
   },
   "e": {
-    "value":0.11252,
-    "hasReferences":false,
+    "value": 0.11252,
+    "hasReferences": false,
     "references": null
   },
   "f": {
-    "value":0.19601,
-    "hasReferences":false,
+    "value": 0.19601,
+    "hasReferences": false,
     "references": null
   },
   "mt": {
-    "value":2.734,
-    "hasReferences":false,
-    "references": null,
-    "hasUncertainty":true,
-    "uncertainty": {
-      "symmetrical":true,
-      "up":0.004,
-      "down":0.004
-    }
-  }, 
-  "mp": {
-    "isLimit":false,
-    "isAssumed":false,
-    "value":1.559,
-    "hasReferences":false,
-    "references": null,
-    "hasUncertainty":true,
-    "uncertainty": {
-      "symmetrical":true,
-      "up":0.005,
-      "down":0.005
-    }
-  },
-  "mc": {
-    "isLimit":false,
-    "isAssumed":false,
-    "value":1.174,
-    "hasReferences":false,
+    "value": 2.734,
+    "hasReferences": false,
     "references": null,
     "hasUncertainty": true,
     "uncertainty": {
-      "symmetrical":true,
+      "symmetrical": true,
+      "up": 0.004,
+      "down": 0.004
+    }
+  },
+  "mp": {
+    "isLimit": false,
+    "isAssumed": false,
+    "value": 1.559,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": true,
+    "uncertainty": {
+      "symmetrical": true,
+      "up": 0.005,
+      "down": 0.005
+    }
+  },
+  "mc": {
+    "isLimit": false,
+    "isAssumed": false,
+    "value": 1.174,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": true,
+    "uncertainty": {
+      "symmetrical": true,
       "up": 0.004,
       "down": 0.004
     }
   },
   "chirp": {
-    "value":1.17539,
-    "hasReferences":false,
+    "value": 1.17539,
+    "hasReferences": false,
     "references": null
   },
   "delta": {
-    "isLimit":false,
-    "value":null,
-    "hasReferences":false,
+    "isLimit": false,
+    "value": null,
+    "hasReferences": false,
     "references": null,
-    "hasUncertainty":false ,
+    "hasUncertainty": false,
     "uncertainty": null
   },
   "chi": {
-    "value":0.0005,
-    "hasReferences":false,
+    "value": 0.0005,
+    "hasReferences": false,
     "references": null
   },
   "tau": {
     "isInfinity": true,
-    "value":null,
-    "hasReferences":false,
+    "value": null,
+    "hasReferences": false,
     "references": null
   }
 },
 {
   "name": "J0509+3801",
+  "Type": "rec",
   "DoubleSystem": false,
   "systemName": null,
   "hasReferences": true,
   "references": [
     {
       "ref-number": 2,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2018ApJ...859...93L"
+      "link": "https://ui.adsabs.harvard.edu/abs/2018ApJ...859...93L"
     }
   ],
-  "comments": null,
+  "comments": "Confirmed. Highly eccentric, similar to the Hulse-Taylor pulsar",
   "p": {
     "value": 0.07654,
-     "hasReferences": false,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": 7.931,
-     "hasReferences": false ,
-     "references": null,
-     "hasUncertainty": true,
-     "uncertainty": {
+    "value": 7.931,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": true,
+    "uncertainty": {
       "symmetrical": true,
       "up": 0.002,
       "down": 0.002
@@ -143,9 +145,9 @@ const pulsarData = [{
     "references": null,
     "hasUncertainty": true,
     "uncertainty": {
-     "symmetrical": true,
-     "up": 0.00003,
-     "down": 0.00003
+      "symmetrical": true,
+      "up": 0.00003,
+      "down": 0.00003
     }
   },
   "mt": {
@@ -158,7 +160,7 @@ const pulsarData = [{
       "up": 0.003,
       "down": 0.003
     }
-  }, 
+  },
   "mp": {
     "isLimit": false,
     "isAssumed": false,
@@ -212,27 +214,28 @@ const pulsarData = [{
 },
 {
   "name": "J0514-4002A",
+  "Type": "GC",
   "DoubleSystem": false,
   "systemName": null,
   "hasReferences": true,
   "references": [
     {
       "ref-number": 3,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2019MNRAS.490.3860R/" 
+      "link": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.490.3860R/"
     }
   ],
-  "comments": null,
+  "comments": "Candidate. MSP - massive compact companion. System formed through exchange encounter in NGC 1851. Companion is either a massive WD or NS, so this could be a MSP-NS system.",
   "p": {
     "value": 0.00499,
-     "hasReferences": false ,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": 0.0007,
-     "hasReferences": false ,
-     "references": null,
-     "hasUncertainty": true,
-     "uncertainty": {
+    "value": 0.0007,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": true,
+    "uncertainty": {
       "symmetrical": true,
       "up": 0.0013,
       "down": 0.0013
@@ -263,7 +266,7 @@ const pulsarData = [{
       "up": 0.0006,
       "down": 0.0006
     }
-  }, 
+  },
   "mp": {
     "isLimit": false,
     "isAssumed": false,
@@ -317,35 +320,36 @@ const pulsarData = [{
 },
 {
   "name": "J0737-3039A",
+  "Type": "rec",
   "DoubleSystem": true,
   "systemName": "J0737-3039",
   "hasReferences": true,
   "references": [
     {
       "ref-number": 4,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2006Sci...314...97K"
+      "link": "https://ui.adsabs.harvard.edu/abs/2006Sci...314...97K"
     },
     {
       "ref-number": 5,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2021PhRvX..11d1050K"
+      "link": "https://ui.adsabs.harvard.edu/abs/2021PhRvX..11d1050K"
     },
     {
       "ref-number": 6,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2008Sci...321..104B"
+      "link": "https://ui.adsabs.harvard.edu/abs/2008Sci...321..104B"
     }
   ],
-  "comments": null,
+  "comments": "Confirmed. The only double pulsar known. Companion is a young, non-recycled pulsar.",
   "p": {
     "value": 0.02269,
-     "hasReferences": false ,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": 1.74,
-     "hasReferences": false ,
-     "references": null,
-     "hasUncertainty": true,
-     "uncertainty": {
+    "value": 1.74,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": true,
+    "uncertainty": {
       "symmetrical": true,
       "up": 0.05,
       "down": 0.05
@@ -357,17 +361,17 @@ const pulsarData = [{
     "references": null
   },
   "e": {
-    "value":0.08778,
+    "value": 0.08778,
     "hasReferences": false,
     "references": null
   },
   "f": {
-    "value":0.29097,
+    "value": 0.29097,
     "hasReferences": false,
     "references": null
   },
   "mt": {
-    "value":2.587052,
+    "value": 2.587052,
     "hasReferences": false,
     "references": null,
     "hasUncertainty": true,
@@ -376,7 +380,7 @@ const pulsarData = [{
       "up": 0.000009,
       "down": 0.000007
     }
-  }, 
+  },
   "mp": {
     "isLimit": false,
     "isAssumed": false,
@@ -411,7 +415,7 @@ const pulsarData = [{
   "delta": {
     "isLimit": true,
     "value": 3.2,
-    "hasReferences":false,
+    "hasReferences": false,
     "references": null,
     "hasUncertainty": false,
     "uncertainty": null
@@ -430,35 +434,36 @@ const pulsarData = [{
 },
 {
   "name": "J0737-3039B",
+  "Type": "nrec",
   "DoubleSystem": true,
   "systemName": "J0737-3039",
   "hasReferences": true,
   "references": [
     {
       "ref-number": 7,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2004Sci...303.1153L/abstract"
+      "link": "https://ui.adsabs.harvard.edu/abs/2004Sci...303.1153L/abstract"
     },
     {
       "ref-number": 8,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2013ApJ...767...85F"
+      "link": "https://ui.adsabs.harvard.edu/abs/2013ApJ...767...85F"
     },
     {
       "ref-number": 9,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2010ApJ...721.1193P"
+      "link": "https://ui.adsabs.harvard.edu/abs/2010ApJ...721.1193P"
     }
   ],
-  "comments": null,
+  "comments": "Confirmed. The only double pulsar known. Companion is a young, non-recycled pulsar.",
   "p": {
     "value": 2.77346,
-     "hasReferences": false ,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": 880,
-     "hasReferences": false ,
-     "references": null,
-     "hasUncertainty": true,
-     "uncertainty": {
+    "value": 880,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": true,
+    "uncertainty": {
       "symmetrical": true,
       "up": 130,
       "down": 130
@@ -470,17 +475,17 @@ const pulsarData = [{
     "references": null
   },
   "e": {
-    "value":0.08778,
+    "value": 0.08778,
     "hasReferences": false,
     "references": null
   },
   "f": {
-    "value":0.356,
+    "value": 0.356,
     "hasReferences": false,
     "references": null
   },
   "mt": {
-    "value":2.587052,
+    "value": 2.587052,
     "hasReferences": false,
     "references": null,
     "hasUncertainty": true,
@@ -489,7 +494,7 @@ const pulsarData = [{
       "up": 0.000009,
       "down": 0.000007
     }
-  }, 
+  },
   "mp": {
     "isLimit": false,
     "isAssumed": false,
@@ -524,10 +529,10 @@ const pulsarData = [{
   "delta": {
     "isLimit": false,
     "value": 130,
-    "hasReferences":false,
+    "hasReferences": false,
     "references": null,
     "hasUncertainty": true,
-    "uncertainty":{
+    "uncertainty": {
       "symmetrical": true,
       "up": 1,
       "down": 1
@@ -546,28 +551,29 @@ const pulsarData = [{
   }
 },
 {
-  "name": "J1325-6253" ,
+  "name": "J1325-6253",
+  "Type": "rec",
   "DoubleSystem": false,
   "systemName": null,
   "hasReferences": true,
   "references": [
     {
       "ref-number": 10,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2022MNRAS.512.5782S"
+      "link": "https://ui.adsabs.harvard.edu/abs/2022MNRAS.512.5782S"
     }
   ],
-  "comments": null ,
+  "comments": "Confirmed.",
   "p": {
     "value": 0.02897,
-     "hasReferences": false ,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": 0.048,
-     "hasReferences": false ,
-     "references": null,
-     "hasUncertainty": true,
-     "uncertainty": {
+    "value": 0.048,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": true,
+    "uncertainty": {
       "symmetrical": true,
       "up": 0.014,
       "down": 0.014
@@ -598,7 +604,7 @@ const pulsarData = [{
       "up": 0.06,
       "down": 0.06
     }
-  }, 
+  },
   "mp": {
     "isLimit": true,
     "isAssumed": false,
@@ -643,28 +649,29 @@ const pulsarData = [{
   }
 },
 {
-  "name": "J1411+2551" ,
+  "name": "J1411+2551",
+  "Type": "rec",
   "DoubleSystem": false,
   "systemName": null,
   "hasReferences": true,
   "references": [
     {
       "ref-number": 11,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2017ApJ...851L..29M"
+      "link": "https://ui.adsabs.harvard.edu/abs/2017ApJ...851L..29M"
     }
   ],
-  "comments": null,
+  "comments": "Confirmed.",
   "p": {
     "value": 0.06245,
-     "hasReferences": false ,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": 0.0956,
-     "hasReferences": false ,
-     "references": null,
-     "hasUncertainty": true,
-     "uncertainty": {
+    "value": 0.0956,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": true,
+    "uncertainty": {
       "symmetrical": true,
       "up": 0.0051,
       "down": 0.0051
@@ -695,7 +702,7 @@ const pulsarData = [{
       "up": 0.022,
       "down": 0.022
     }
-  }, 
+  },
   "mp": {
     "isLimit": true,
     "isAssumed": false,
@@ -741,13 +748,14 @@ const pulsarData = [{
 },
 {
   "name": "J1518+4904",
+  "Type": "rec",
   "DoubleSystem": false,
   "systemName": null,
   "hasReferences": true,
   "references": [
     {
       "ref-number": 12,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2008A&A...490..753J"
+      "link": "https://ui.adsabs.harvard.edu/abs/2008A&A...490..753J"
     },
     {
       "ref-number": 13,
@@ -758,18 +766,18 @@ const pulsarData = [{
       "link": "https://ui.adsabs.harvard.edu/abs/1999ptgr.conf...79N/abstract"
     }
   ],
-  "comments": null,
+  "comments": "Confirmed.",
   "p": {
     "value": 0.04093,
-     "hasReferences": false ,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": 0.0275,
-     "hasReferences": false ,
-     "references": null,
-     "hasUncertainty": true,
-     "uncertainty": {
+    "value": 0.0275,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": true,
+    "uncertainty": {
       "symmetrical": true,
       "up": 0.0006,
       "down": 0.0006
@@ -800,7 +808,7 @@ const pulsarData = [{
       "up": 0.0007,
       "down": 0.0007
     }
-  }, 
+  },
   "mp": {
     "isLimit": true,
     "isAssumed": false,
@@ -846,35 +854,36 @@ const pulsarData = [{
 },
 {
   "name": "B1534+12",
+  "Type": "rec",
   "DoubleSystem": false,
   "systemName": null,
   "hasReferences": true,
   "references": [
     {
       "ref-number": 15,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2014ApJ...787...82F "
+      "link": "https://ui.adsabs.harvard.edu/abs/2014ApJ...787...82F "
     },
     {
       "ref-number": 16,
-      "link" : "https://ui.adsabs.harvard.edu/abs/1991Natur.350..688W/abstract"
+      "link": "https://ui.adsabs.harvard.edu/abs/1991Natur.350..688W/abstract"
     },
     {
       "ref-number": 17,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2002ApJ...581..501S/abstract "
+      "link": "https://ui.adsabs.harvard.edu/abs/2002ApJ...581..501S/abstract "
     }
   ],
-  "comments": null,
+  "comments": "Confirmed. Orbital decay (GW) has been measured precisely but does not provide a test of GR because of lack of precise knowledge of distance.",
   "p": {
     "value": 0.03790,
-     "hasReferences": false ,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": 2.42262,
-     "hasReferences": false ,
-     "references": null,
-     "hasUncertainty": false,
-     "uncertainty": null
+    "value": 2.42262,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": false,
+    "uncertainty": null
   },
   "pb": {
     "value": 0.42074,
@@ -897,7 +906,7 @@ const pulsarData = [{
     "references": null,
     "hasUncertainty": false,
     "uncertainty": null
-  }, 
+  },
   "mp": {
     "isLimit": false,
     "isAssumed": false,
@@ -960,27 +969,28 @@ const pulsarData = [{
 },
 {
   "name": "J1748-2021B",
+  "Type": "GC",
   "DoubleSystem": false,
   "systemName": null,
   "hasReferences": true,
   "references": [
     {
       "ref-number": 19,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2008ApJ...675..670F"
+      "link": "https://ui.adsabs.harvard.edu/abs/2008ApJ...675..670F"
     }
   ],
-  "comments": null,
+  "comments": "Candidate. Total mass consistent with PSR-NS system. If companion is a NS, then the system formed through exchange encounter. This would imply a very low orbital inclination. Located in NGC 6440.",
   "p": {
     "value": 0.01676,
-     "hasReferences": false ,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": -0.32913,
-     "hasReferences": false ,
-     "references": null,
-     "hasUncertainty": true,
-     "uncertainty": {
+    "value": -0.32913,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": true,
+    "uncertainty": {
       "symmetrical": true,
       "up": 0.00016,
       "down": 0.00016
@@ -1011,7 +1021,7 @@ const pulsarData = [{
       "up": 0.15,
       "down": 0.15
     }
-  }, 
+  },
   "mp": {
     "isLimit": true,
     "isAssumed": false,
@@ -1057,27 +1067,28 @@ const pulsarData = [{
 },
 {
   "name": "J1753-2240",
+  "Type": "rec",
   "DoubleSystem": false,
   "systemName": null,
   "hasReferences": true,
   "references": [
     {
       "ref-number": 20,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2009MNRAS.393..623K"
+      "link": "https://ui.adsabs.harvard.edu/abs/2009MNRAS.393..623K"
     }
   ],
-  "comments": null,
+  "comments": "Confirmed. Pulsar is recycled.",
   "p": {
     "value": 0.09514,
-     "hasReferences": false ,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": 0.97,
-     "hasReferences": false,
-     "references": null,
-     "hasUncertainty": true,
-     "uncertainty": {
+    "value": 0.97,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": true,
+    "uncertainty": {
       "symmetrical": true,
       "up": 0.12,
       "down": 0.12
@@ -1104,7 +1115,7 @@ const pulsarData = [{
     "references": null,
     "hasUncertainty": false,
     "uncertainty": null
-  }, 
+  },
   "mp": {
     "isLimit": false,
     "isAssumed": true,
@@ -1150,27 +1161,28 @@ const pulsarData = [{
 },
 {
   "name": "J1755-2550",
+  "Type": "nrec",
   "DoubleSystem": false,
   "systemName": null,
   "hasReferences": true,
   "references": [
     {
       "ref-number": 21,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2018MNRAS.476.4315N"
+      "link": "https://ui.adsabs.harvard.edu/abs/2018MNRAS.476.4315N"
     }
   ],
-  "comments": null,
+  "comments": "Candidate. yPSR - massive compact companion. The pulsar (only 2.1 Myr old) is the second-formed compact object in the system. Companion could be a recycled NS as in most other PSR - NS systems, but it could also be a massive WD, as in the cases of J1141−6545 and B2303+46.",
   "p": {
     "value": 0.31519,
-     "hasReferences": false ,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": 2433.7,
-     "hasReferences": false ,
-     "references": null,
-     "hasUncertainty": true,
-     "uncertainty": {
+    "value": 2433.7,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": true,
+    "uncertainty": {
       "symmetrical": true,
       "up": 1.4,
       "down": 1.4
@@ -1197,7 +1209,7 @@ const pulsarData = [{
     "references": null,
     "hasUncertainty": false,
     "uncertainty": null
-  }, 
+  },
   "mp": {
     "isLimit": false,
     "isAssumed": true,
@@ -1243,27 +1255,28 @@ const pulsarData = [{
 },
 {
   "name": "J1756-2251",
+  "Type": "rec",
   "DoubleSystem": false,
   "systemName": null,
   "hasReferences": true,
   "references": [
     {
       "ref-number": 22,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2014MNRAS.443.2183F" 
+      "link": "https://ui.adsabs.harvard.edu/abs/2014MNRAS.443.2183F"
     }
   ],
-  "comments": null,
+  "comments": "Confirmed. Low-mass NS companion. No geodetic precession for pulsar, indicating alignment of its spin axis with orbital angular momentum.",
   "p": {
     "value": 0.02846,
-     "hasReferences": false ,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": 1.01750,
-     "hasReferences": false ,
-     "references": null,
-     "hasUncertainty": false,
-     "uncertainty": null
+    "value": 1.01750,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": false,
+    "uncertainty": null
   },
   "pb": {
     "value": 0.31963,
@@ -1290,7 +1303,7 @@ const pulsarData = [{
       "up": 0.00006,
       "down": 0.00006
     }
-  }, 
+  },
   "mp": {
     "isLimit": false,
     "isAssumed": false,
@@ -1349,31 +1362,32 @@ const pulsarData = [{
 },
 {
   "name": "J1757-1854",
+  "Type": "rec",
   "DoubleSystem": false,
   "systemName": null,
   "hasReferences": true,
   "references": [
     {
       "ref-number": 24,
-      "link" : "https://arxiv.org/abs/2203.15995"
+      "link": "https://arxiv.org/abs/2203.15995"
     },
     {
       "ref-number": 25,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2018MNRAS.475L..57C/abstract"
+      "link": "https://ui.adsabs.harvard.edu/abs/2018MNRAS.475L..57C/abstract"
     }
   ],
-  "comments": null,
+  "comments": "Confirmed. Most accelerated binary, largest relative velocity, five measured PK parameters. Second-formed NS significantly more massive than first-formed NS.",
   "p": {
     "value": 0.02149,
-     "hasReferences": false ,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": 2.62733,
-     "hasReferences": false ,
-     "references": null,
-     "hasUncertainty": false,
-     "uncertainty": null
+    "value": 2.62733,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": false,
+    "uncertainty": null
   },
   "pb": {
     "value": 0.18354,
@@ -1400,7 +1414,7 @@ const pulsarData = [{
       "up": 0.000012,
       "down": 0.000012
     }
-  }, 
+  },
   "mp": {
     "isLimit": false,
     "isAssumed": false,
@@ -1459,27 +1473,28 @@ const pulsarData = [{
 },
 {
   "name": "J1759+5036",
+  "Type": "rec",
   "DoubleSystem": false,
   "systemName": null,
   "hasReferences": true,
   "references": [
     {
       "ref-number": 27,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2021ApJ...922...35A"
+      "link": "https://ui.adsabs.harvard.edu/abs/2021ApJ...922...35A"
     }
   ],
-  "comments": null,
+  "comments": "Confirmed.",
   "p": {
     "value": 0.17602,
-     "hasReferences": false ,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": 0.243,
-     "hasReferences": false ,
-     "references": null,
-     "hasUncertainty": true,
-     "uncertainty": {
+    "value": 0.243,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": true,
+    "uncertainty": {
       "symmetrical": true,
       "up": 0.003,
       "down": 0.003
@@ -1510,7 +1525,7 @@ const pulsarData = [{
       "up": 0.03,
       "down": 0.03
     }
-  }, 
+  },
   "mp": {
     "isLimit": true,
     "isAssumed": false,
@@ -1556,27 +1571,28 @@ const pulsarData = [{
 },
 {
   "name": "J1807-2500B",
+  "Type": "GC",
   "DoubleSystem": false,
   "systemName": false,
   "hasReferences": true,
   "references": [
     {
       "ref-number": 28,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2012ApJ...745..109L"
+      "link": "https://ui.adsabs.harvard.edu/abs/2012ApJ...745..109L"
     }
   ],
-  "comments": null,
+  "comments": "	Candidate. MSP - massive compact companion. System formed through exchange encounter in NGC 6544. Companion is either a massive WD or NS, so this could be a MSP - NS system.",
   "p": {
     "value": 0.00419,
-     "hasReferences": false ,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": 0.08232,
-     "hasReferences": false ,
-     "references": null,
-     "hasUncertainty": false,
-     "uncertainty": null
+    "value": 0.08232,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": false,
+    "uncertainty": null
   },
   "pb": {
     "value": 9.95667,
@@ -1603,7 +1619,7 @@ const pulsarData = [{
       "up": 0.00073,
       "down": 0.00073
     }
-  }, 
+  },
   "mp": {
     "isLimit": false,
     "isAssumed": false,
@@ -1657,27 +1673,28 @@ const pulsarData = [{
 },
 {
   "name": "J1811-1736",
+  "Type": "rec",
   "DoubleSystem": false,
   "systemName": null,
   "hasReferences": true,
   "references": [
     {
       "ref-number": 29,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2007A&A...462..703C"
+      "link": "https://ui.adsabs.harvard.edu/abs/2007A&A...462..703C"
     }
   ],
-  "comments": null,
+  "comments": "Confirmed.",
   "p": {
     "value": 0.10418,
-     "hasReferences": false ,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": 0.901,
-     "hasReferences": false ,
-     "references": null,
-     "hasUncertainty": true,
-     "uncertainty": {
+    "value": 0.901,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": true,
+    "uncertainty": {
       "symmetrical": true,
       "up": 0.005,
       "down": 0.005
@@ -1708,7 +1725,7 @@ const pulsarData = [{
       "up": 0.10,
       "down": 0.10
     }
-  }, 
+  },
   "mp": {
     "isLimit": true,
     "isAssumed": false,
@@ -1754,27 +1771,28 @@ const pulsarData = [{
 },
 {
   "name": "J1823-3021G",
+  "Type": "GC",
   "DoubleSystem": false,
   "systemName": null,
   "hasReferences": true,
   "references": [
     {
       "ref-number": 30,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2021MNRAS.504.1407R"
+      "link": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.504.1407R"
     }
   ],
-  "comments": null,
+  "comments": "Candidate. MSP - massive compact companion. System formed through exchange encounter in NGC 6624. Companion is either a massive WD or NS, so this could be a MSP - NS system.",
   "p": {
     "value": 0.00609,
-     "hasReferences": false ,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": -0.018,
-     "hasReferences": false ,
-     "references": null,
-     "hasUncertainty": true,
-     "uncertainty": {
+    "value": -0.018,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": true,
+    "uncertainty": {
       "symmetrical": true,
       "up": 0.002,
       "down": 0.002
@@ -1805,7 +1823,7 @@ const pulsarData = [{
       "up": 0.07,
       "down": 0.07
     }
-  }, 
+  },
   "mp": {
     "isLimit": true,
     "isAssumed": false,
@@ -1850,28 +1868,29 @@ const pulsarData = [{
   }
 },
 {
-  "name": "J1829+2456" ,
+  "name": "J1829+2456",
+  "Type": "rec",
   "DoubleSystem": false,
   "systemName": null,
   "hasReferences": true,
   "references": [
     {
       "ref-number": 31,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2021MNRAS.500.4620H "
+      "link": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.500.4620H "
     }
   ],
-  "comments": null,
+  "comments": "Confirmed.",
   "p": {
     "value": 0.04101,
-     "hasReferences": false ,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": 0.04944,
-     "hasReferences": false ,
-     "references": null,
-     "hasUncertainty": true,
-     "uncertainty": {
+    "value": 0.04944,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": true,
+    "uncertainty": {
       "symmetrical": true,
       "up": 0.00002,
       "down": 0.00002
@@ -1902,7 +1921,7 @@ const pulsarData = [{
       "up": 0.00038,
       "down": 0.00038
     }
-  }, 
+  },
   "mp": {
     "isLimit": false,
     "isAssumed": false,
@@ -1956,27 +1975,28 @@ const pulsarData = [{
 },
 {
   "name": "J1835-3259A",
+  "Type": "GC",
   "DoubleSystem": false,
   "systemName": false,
   "hasReferences": true,
   "references": [
     {
       "ref-number": 32,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2015ApJ...807L..23D"
+      "link": "https://ui.adsabs.harvard.edu/abs/2015ApJ...807L..23D"
     }
   ],
-  "comments": null,
+  "comments": "	Candidate. MSP - massive compact companion. System formed through exchange encounter in NGC 6652. Companion is either a massive WD or NS, so this could be a MSP - NS system.",
   "p": {
     "value": 0.00389,
-     "hasReferences": false ,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": -1244100,
-     "hasReferences": false ,
-     "references": null,
-     "hasUncertainty": true,
-     "uncertainty": {
+    "value": -1244100,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": true,
+    "uncertainty": {
       "symmetrical": true,
       "up": 27000,
       "down": 27000
@@ -2003,7 +2023,7 @@ const pulsarData = [{
     "references": null,
     "hasUncertainty": false,
     "uncertainty": null
-  }, 
+  },
   "mp": {
     "isLimit": false,
     "isAssumed": true,
@@ -2049,31 +2069,32 @@ const pulsarData = [{
 },
 {
   "name": "J1906+0746",
+  "Type": "nrec",
   "DoubleSystem": false,
   "systemName": null,
   "hasReferences": true,
   "references": [
     {
       "ref-number": 33,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2015ApJ...798..118V"
+      "link": "https://ui.adsabs.harvard.edu/abs/2015ApJ...798..118V"
     },
     {
-      "ref-number":34,
+      "ref-number": 34,
       "link": "https://iopscience.iopdotorg/article/10.1086/499918/pdf"
     }
   ],
-  "comments": null,
+  "comments": "	Candidate. yPSR - massive compact companion. The pulsar (only 110 kyr old) is the second-formed compact object in the system. Companion could be a recycled NS as in most other PSR - NS systems, but it could also be a massive WD, as in the cases of J1141−6545 and B2303+46.",
   "p": {
     "value": 0.14407,
-     "hasReferences": false ,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": 20280,
-     "hasReferences": false ,
-     "references": null,
-     "hasUncertainty": true,
-     "uncertainty": {
+    "value": 20280,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": true,
+    "uncertainty": {
       "symmetrical": true,
       "up": 2,
       "down": 2
@@ -2104,7 +2125,7 @@ const pulsarData = [{
       "up": 0.0003,
       "down": 0.0003
     }
-  }, 
+  },
   "mp": {
     "isLimit": false,
     "isAssumed": false,
@@ -2163,27 +2184,28 @@ const pulsarData = [{
 },
 {
   "name": "J1913+1102",
+  "Type": "rec",
   "DoubleSystem": false,
   "systemName": null,
   "hasReferences": true,
   "references": [
     {
       "ref-number": 36,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2020Natur.583..211F"
+      "link": "https://ui.adsabs.harvard.edu/abs/2020Natur.583..211F"
     }
   ],
-  "comments": null,
+  "comments": "Confirmed. Most massive among these systems, pulsar is most massive NS in a PSR - NS system. First known member of new population of merging, asymmetric DNSs.",
   "p": {
     "value": 0.02728,
-     "hasReferences": false,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": 0.15672,
-     "hasReferences": false ,
-     "references": null,
-     "hasUncertainty": true,
-     "uncertainty": {
+    "value": 0.15672,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": true,
+    "uncertainty": {
       "symmetrical": true,
       "up": 0.00007,
       "down": 0.00007
@@ -2214,7 +2236,7 @@ const pulsarData = [{
       "up": 0.0006,
       "down": 0.0006
     }
-  }, 
+  },
   "mp": {
     "isLimit": false,
     "isAssumed": false,
@@ -2268,31 +2290,32 @@ const pulsarData = [{
 },
 {
   "name": "B1913+16",
+  "Type": "rec",
   "DoubleSystem": false,
   "systemName": null,
   "hasReferences": true,
   "references": [
     {
       "ref-number": 37,
-      "link" : "https://ui.adsabs.harvard.edu/abs/1976ApJ...206L..53T/abstract"
+      "link": "https://ui.adsabs.harvard.edu/abs/1976ApJ...206L..53T/abstract"
     },
     {
       "ref-number": 38,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2016ApJ...829...55W"
+      "link": "https://ui.adsabs.harvard.edu/abs/2016ApJ...829...55W"
     }
   ],
-  "comments": null,
+  "comments": "Confirmed. The Hulse-Taylor binary. First binary pulsar discovered. First NS mass measurements. Orbital decay was the first GR test in a binary pulsar, and first radiative test anywhere. This showed that gravitational waves exist.",
   "p": {
     "value": 0.05903,
-     "hasReferences": false ,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": 8.8,
-     "hasReferences": false ,
-     "references": null,
-     "hasUncertainty": true,
-     "uncertainty": {
+    "value": 8.8,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": true,
+    "uncertainty": {
       "symmetrical": true,
       "up": 0.3,
       "down": 0.3
@@ -2323,7 +2346,7 @@ const pulsarData = [{
       "up": 0.000007,
       "down": 0.000007
     }
-  }, 
+  },
   "mp": {
     "isLimit": false,
     "isAssumed": false,
@@ -2386,27 +2409,28 @@ const pulsarData = [{
 },
 {
   "name": "J1930-1852",
+  "Type": "rec",
   "DoubleSystem": false,
   "systemName": null,
   "hasReferences": true,
   "references": [
     {
       "ref-number": 40,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2015ApJ...805..156S"
+      "link": "https://ui.adsabs.harvard.edu/abs/2015ApJ...805..156S"
     }
   ],
-  "comments": null,
+  "comments": "Confirmed. Largest orbital period for this type of system.",
   "p": {
     "value": 0.18552,
-     "hasReferences": false ,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": 18.001,
-     "hasReferences": false ,
-     "references": null,
-     "hasUncertainty": true,
-     "uncertainty": {
+    "value": 18.001,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": true,
+    "uncertainty": {
       "symmetrical": true,
       "up": 0.006,
       "down": 0.006
@@ -2437,7 +2461,7 @@ const pulsarData = [{
       "up": 0.04,
       "down": 0.04
     }
-  }, 
+  },
   "mp": {
     "isLimit": true,
     "isAssumed": false,
@@ -2483,27 +2507,28 @@ const pulsarData = [{
 },
 {
   "name": "J1946+2052",
+  "Type": "rec",
   "DoubleSystem": false,
   "systemName": null,
   "hasReferences": true,
   "references": [
     {
       "ref-number": 41,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2018ApJ...854L..22S"
+      "link": "https://ui.adsabs.harvard.edu/abs/2018ApJ...854L..22S"
     }
   ],
-  "comments": null,
+  "comments": "Confirmed. Shortest orbital period for this type of system.",
   "p": {
     "value": 0.01696,
-     "hasReferences": false,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": 0.9,
-     "hasReferences": false ,
-     "references": null,
-     "hasUncertainty": true,
-     "uncertainty": {
+    "value": 0.9,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": true,
+    "uncertainty": {
       "symmetrical": true,
       "up": 0.2,
       "down": 0.2
@@ -2534,7 +2559,7 @@ const pulsarData = [{
       "up": 0.04,
       "down": 0.04
     }
-  }, 
+  },
   "mp": {
     "isLimit": true,
     "isAssumed": false,
@@ -2580,27 +2605,28 @@ const pulsarData = [{
 },
 {
   "name": "B2127+11C",
+  "Type": "GC",
   "DoubleSystem": false,
   "systemName": null,
   "hasReferences": true,
   "references": [
     {
       "ref-number": 42,
-      "link" : "https://ui.adsabs.harvard.edu/abs/2006ApJ...644L.113J"
+      "link": "https://ui.adsabs.harvard.edu/abs/2006ApJ...644L.113J"
     }
   ],
-  "comments": null,
+  "comments": "Candidate. PSR - massive compact companion. Formed through exchange encounter in NGC 7078, companion could be a massive WD, but generally assumed to be a NS given the large mass. Acceleration of system in the cluster precludes further improvements in precision of radiative test of GR.",
   "p": {
     "value": 0.03053,
-     "hasReferences": false ,
-     "references": null
+    "hasReferences": false,
+    "references": null
   },
   "pdot": {
-     "value": 4.98789,
-     "hasReferences": false,
-     "references": null,
-     "hasUncertainty": true,
-     "uncertainty": {
+    "value": 4.98789,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": true,
+    "uncertainty": {
       "symmetrical": true,
       "up": 0.00002,
       "down": 0.00002
@@ -2631,7 +2657,7 @@ const pulsarData = [{
       "up": 0.00013,
       "down": 0.00013
     }
-  }, 
+  },
   "mp": {
     "isLimit": false,
     "isAssumed": false,
