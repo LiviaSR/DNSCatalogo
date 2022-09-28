@@ -138,7 +138,7 @@ a:hover {
 
 /* Section divider */
 .page-section {
-    margin-top: 2%;
+    margin-top: 3%;
     width: fit-content;
     height: fit-content;
     padding: 15px;
@@ -148,7 +148,7 @@ a:hover {
 }
 
 .page-section-lg {
-    margin-top: 2%;
+    margin-top: 3%;
     width: 150px;
     height: fit-content;
     padding: 15px;
@@ -273,4 +273,10 @@ table.dataTable thead td {
 #to-top-button:hover {
     background-color: #99fff3;
     color: #002838;
+}
+
+.photo {
+    margin: 3.5%;
+    width: 20%;
+
 }
