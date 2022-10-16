@@ -45,6 +45,12 @@ h1, h2, h3, h4, h5 {
     --bs-gutter-x: 0rem !important; /* Fix right margin */
 } 
 
+.footer {
+    background-color: #002838;
+    height: 150px;
+    width: 100%;
+}
+
 .title {
     color: rgb(232, 230, 227) !important;
     font-family: var(--bs-body-font-family) !important;
@@ -276,7 +282,6 @@ table.dataTable thead td {
 }
 
 .photo {
-    margin: 3.5%;
-    width: 20%;
-
+    margin: 3.5% !important;
+    width: 20% !important;
 }

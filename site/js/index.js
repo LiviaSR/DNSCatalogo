@@ -174,6 +174,20 @@ function buildPulsarsTable() {
     // Chi References
     if ( data.chi.hasReferences ) { addReferences(data.chi.references, tdChi); }
 
+    // Effective chi
+    let tdChieff = document.createElement('td');
+    tdChieff.innerHTML = data.chieff.value ? data.chieff.value : '-';
+    // Effective chi Uncertainty
+    if ( data.chieff.hasUncertainty ) { addUncertainty(data.chieff.uncertainty, tdChieff) } 
+    // Effective chi References
+    if ( data.chieff.hasReferences ) { addReferences(data.chieff.references, tdChieff); }
+
+    // Characteristic age
+    let tdAge = document.createElement('td');
+    tdAge.innerHTML = data.age.value;
+     // Characteristic age References
+    if ( data.age.hasReferences ) { addReferences(data.age.references, tdAge); }
+
     // Tau
     let tdTau = document.createElement('td');
     if ( ! data.tau.isInfinity ) {
@@ -197,6 +211,8 @@ function buildPulsarsTable() {
     tr.appendChild(tdChirp);
     tr.appendChild(tdDelta);
     tr.appendChild(tdChi);
+    tr.appendChild(tdChieff);
+    tr.appendChild(tdAge);
     tr.appendChild(tdTau);
 
     // Append only values to row when "DoubleSystem" property is true

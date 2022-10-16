@@ -93,6 +93,18 @@ const pulsarData = [{
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": null,
+    "hasReferences": false,
+    "references": null,
+    "hasUncertainty": false,
+    "uncertainty": null,
+  }, 
+  "age":{
+    "value": 4.1,
+    "hasReferences": false,
+    "references": null,
+  }, 
   "tau": {
     "isInfinity": true,
     "value": null,
@@ -201,13 +213,26 @@ const pulsarData = [{
     "uncertainty": null
   },
   "chi": {
-    "value": 0.0032,
+    "value": 0.0030,
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": null, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false, 
+    "uncertainty": null
+
+  }, 
+  "age":{
+    "value": 0.153, 
+    "hasReferences": false, 
+    "references": null
+  }, 
   "tau": {
     "isInfinity": false,
-    "value": 576,
+    "value": 0.576,
     "hasReferences": false,
     "references": null
   }
@@ -307,11 +332,23 @@ const pulsarData = [{
     "uncertainty": null
   },
   "chi": {
-    "value": 0.0479,
+    "value": 0.0447,
     "hasReferences": false,
     "references": null
   },
-  "tau": {
+  "chieff":{
+    "value": null, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false, 
+    "uncertainty": null
+  }, 
+  "age":{
+    "value": 113, 
+    "hasReferences": false, 
+    "references": null
+  }, 
+    "tau": {
     "isInfinity": true,
     "value": null,
     "hasReferences": false,
@@ -421,13 +458,25 @@ const pulsarData = [{
     "uncertainty": null
   },
   "chi": {
-    "value": 0.0199,
+    "value": 0.0185,
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": 0.0096, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false, 
+    "uncertainty": null
+  }, 
+  "age":{
+    "value": 0.207, 
+    "hasReferences": false, 
+    "references": null
+  }, 
   "tau": {
     "isInfinity": false,
-    "value": 86,
+    "value": 0.086,
     "hasReferences": false,
     "references": null
   }
@@ -543,9 +592,21 @@ const pulsarData = [{
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": 0.0096, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false, 
+    "uncertainty": null
+  }, 
+  "age":{
+    "value": 0.050, 
+    "hasReferences": false, 
+    "references": null
+  }, 
   "tau": {
     "isInfinity": false,
-    "value": 86,
+    "value": 0.086,
     "hasReferences": false,
     "references": null
   }
@@ -637,10 +698,22 @@ const pulsarData = [{
     "uncertainty": null
   },
   "chi": {
-    "value": 0.0040,
+    "value": 0.0037,
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": null, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false, 
+    "uncertainty": null
+  }, 
+  "age":{
+    "value": 9.57, 
+    "hasReferences": false, 
+    "references": null
+  }, 
   "tau": {
     "isInfinity": true,
     "value": null,
@@ -735,10 +808,22 @@ const pulsarData = [{
     "uncertainty": null
   },
   "chi": {
-    "value": 0.0013,
+    "value": 0.0012,
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": null, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false, 
+    "uncertainty": null
+  }, 
+  "age":{
+    "value": 10.36, 
+    "hasReferences": false, 
+    "references": null
+  }, 
   "tau": {
     "isInfinity": true,
     "value": null,
@@ -841,10 +926,22 @@ const pulsarData = [{
     "uncertainty": null
   },
   "chi": {
-    "value": 0.0006,
+    "value": 0.0005,
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": null, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false, 
+    "uncertainty": null
+  }, 
+  "age":{
+    "value": 23.6, 
+    "hasReferences": false, 
+    "references": null
+  }, 
   "tau": {
     "isInfinity": true,
     "value": null,
@@ -956,13 +1053,25 @@ const pulsarData = [{
     }
   },
   "chi": {
-    "value": 0.0041,
+    "value": 0.0038,
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": 0.0017, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false, 
+    "uncertainty": null
+  },
+  "age":{
+    "value":0.248, 
+    "hasReferences": false, 
+    "references": null
+  }, 
   "tau": {
     "isInfinity": false,
-    "value": 2734,
+    "value": 2.734,
     "hasReferences": false,
     "references": null
   }
@@ -1058,6 +1167,18 @@ const pulsarData = [{
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": null, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false, 
+    "uncertainty": null
+  }, 
+  "age":{
+    "value": 0.807, 
+    "hasReferences": false, 
+    "references": null
+  }, 
   "tau": {
     "isInfinity": true,
     "value": null,
@@ -1152,6 +1273,18 @@ const pulsarData = [{
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": null, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false, 
+    "uncertainty": null
+  }, 
+  "age":{
+    "value": 1.56, 
+    "hasReferences": false, 
+    "references": null
+  }, 
   "tau": {
     "isInfinity": true,
     "value": null,
@@ -1246,6 +1379,18 @@ const pulsarData = [{
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": null, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false, 
+    "uncertainty": null
+  }, 
+  "age":{
+    "value": 0.002, 
+    "hasReferences": false, 
+    "references": null
+  }, 
   "tau": {
     "isInfinity": true,
     "value": null,
@@ -1349,13 +1494,25 @@ const pulsarData = [{
     "uncertainty": null
   },
   "chi": {
-    "value": 0.0086,
+    "value": 0.0081,
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": 0.0042, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false, 
+    "uncertainty": null
+  }, 
+  "age":{
+    "value": 0.443, 
+    "hasReferences": false, 
+    "references": null
+  }, 
   "tau": {
     "isInfinity": false,
-    "value": 1656,
+    "value": 1.656,
     "hasReferences": false,
     "references": null
   }
@@ -1460,13 +1617,25 @@ const pulsarData = [{
     "uncertainty": null
   },
   "chi": {
-    "value": 0.0198,
+    "value": 0.0185,
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": null, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false, 
+    "uncertainty": null
+  }, 
+  "age":{
+    "value": 0.130, 
+    "hasReferences": false, 
+    "references": null
+  }, 
   "tau": {
     "isInfinity": false,
-    "value": 76,
+    "value": 0.076,
     "hasReferences": false,
     "references": null
   }
@@ -1558,10 +1727,22 @@ const pulsarData = [{
     "uncertainty": null
   },
   "chi": {
-    "value": 0.0007,
+    "value": 0.0006,
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": null, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false, 
+    "uncertainty": null
+  }, 
+  "age":{
+    "value": 11.48, 
+    "hasReferences": false, 
+    "references": null
+  }, 
   "tau": {
     "isInfinity": true,
     "value": null,
@@ -1660,10 +1841,22 @@ const pulsarData = [{
     "uncertainty": null
   },
   "chi": {
-    "value": 0.0035,
+    "value": 0.0033,
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": null, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false, 
+    "uncertainty": null
+  }, 
+  "age":{
+    "value": 0.807, 
+    "hasReferences": false, 
+    "references": null
+  }, 
   "tau": {
     "isInfinity": true,
     "value": null,
@@ -1762,6 +1955,18 @@ const pulsarData = [{
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": null, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false,
+    "uncertainty": null
+  }, 
+  "age":{
+    "value": 1.83, 
+    "hasReferences": false, 
+    "references": true
+  }, 
   "tau": {
     "isInfinity": true,
     "value": null,
@@ -1856,10 +2061,22 @@ const pulsarData = [{
     "uncertainty": null
   },
   "chi": {
-    "value": 0.0211,
+    "value": 0.0197,
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": null, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false, 
+    "uncertainty": null
+  }, 
+  "age":{
+    "value": 5.36, 
+    "hasReferences": false, 
+    "references": null
+  }, 
   "tau": {
     "isInfinity": true,
     "value": null,
@@ -1962,10 +2179,22 @@ const pulsarData = [{
     "uncertainty": null
   },
   "chi": {
-    "value": 0.0058,
+    "value": 0.0054,
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": null, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false, 
+    "uncertainty": null
+  }, 
+  "age":{
+    "value": 13.15, 
+    "hasReferences": false, 
+    "references": null
+  }, 
   "tau": {
     "isInfinity": true,
     "value": null,
@@ -2060,9 +2289,21 @@ const pulsarData = [{
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": null, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false, 
+    "uncertainty": null
+  }, 
+  "age":{
+    "value": 0, 
+    "hasReferences": false, 
+    "references": null
+  }, 
   "tau": {
     "isInfinity": false,
-    "value": 1305,
+    "value": 1.322,
     "hasReferences": false,
     "references": null
   }
@@ -2171,13 +2412,25 @@ const pulsarData = [{
     "uncertainty": null
   },
   "chi": {
-    "value": 0,
+    "value": 0.0001,
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": null, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false, 
+    "uncertainty": null
+  }, 
+  "age":{
+    "value": 0.0001, 
+    "hasReferences": false, 
+    "references": null
+  }, 
   "tau": {
     "isInfinity": false,
-    "value": 308,
+    "value": 0.308,
     "hasReferences": false,
     "references": null
   }
@@ -2277,13 +2530,25 @@ const pulsarData = [{
     "uncertainty": null
   },
   "chi": {
-    "value": 0.0162,
+    "value": 0.0151,
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": null, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false, 
+    "uncertainty": null
+  }, 
+  "age":{
+    "value": 2.76,
+    "hasReferences": false, 
+    "references": null
+  }, 
   "tau": {
     "isInfinity": false,
-    "value": 470,
+    "value": 0.470,
     "hasReferences": false,
     "references": null
   }
@@ -2396,13 +2661,25 @@ const pulsarData = [{
     }
   },
   "chi": {
-    "value": 0.0044,
+    "value": 0.0041,
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": 0.0020, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false, 
+    "uncertainty": null
+  }, 
+  "age":{
+    "value": 0.106, 
+    "hasReferences": false, 
+    "references": null
+  }, 
   "tau": {
     "isInfinity": false,
-    "value": 301,
+    "value": 0.301,
     "hasReferences": false,
     "references": null
   }
@@ -2498,6 +2775,18 @@ const pulsarData = [{
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": null, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false, 
+    "uncertainty": null
+  }, 
+  "age":{
+    "value": 0.163, 
+    "hasReferences": false, 
+    "references": null
+  }, 
   "tau": {
     "isInfinity": true,
     "value": null,
@@ -2592,13 +2881,25 @@ const pulsarData = [{
     "uncertainty": null
   },
   "chi": {
-    "value": 0.0308,
+    "value": 0.0287,
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": null, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false, 
+    "uncertainty": null
+  }, 
+  "age":{
+    "value": 0.299, 
+    "hasReferences": false, 
+    "references": null
+  }, 
   "tau": {
     "isInfinity": false,
-    "value": 46,
+    "value": 0.046,
     "hasReferences": false,
     "references": null
   }
@@ -2703,13 +3004,25 @@ const pulsarData = [{
     "uncertainty": null
   },
   "chi": {
-    "value": 0.0097,
+    "value": 0.0091,
     "hasReferences": false,
     "references": null
   },
+  "chieff":{
+    "value": null, 
+    "hasReferences": false, 
+    "references": null, 
+    "hasUncertainty": false, 
+    "uncertainty": null
+  }, 
+  "age":{
+    "value": 0.097, 
+    "hasReferences": false, 
+    "references": null
+  }, 
   "tau": {
     "isInfinity": false,
-    "value": 217,
+    "value": 0.217,
     "hasReferences": false,
     "references": null
   }
