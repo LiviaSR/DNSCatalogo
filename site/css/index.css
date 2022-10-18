@@ -45,12 +45,6 @@ h1, h2, h3, h4, h5 {
     --bs-gutter-x: 0rem !important; /* Fix right margin */
 } 
 
-.footer {
-    background-color: #002838;
-    height: 150px;
-    width: 100%;
-}
-
 .title {
     color: rgb(232, 230, 227) !important;
     font-family: var(--bs-body-font-family) !important;
@@ -281,7 +275,87 @@ table.dataTable thead td {
     color: #002838;
 }
 
+.name {
+    color: #99fff391 !important;
+}
+
+.work {
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+}
+
+.about {
+    color: white;
+}
+
+.about span {
+    font-size: 13px;
+}
+
+.card {
+   background-color: #2b2d2d !important;
+   margin-right: 25px;
+   border-radius: 50px !important;
+
+}
+
 .photo {
     margin: 3.5% !important;
     width: 20% !important;
+}
+
+.v-profile {
+    color: #99fff391;
+    cursor: pointer;
+}
+
+.box {
+    -webkit-box-shadow: 13px 12px 5px -10px rgba(196, 194, 196, 0.72);
+    -moz-box-shadow: 13px 12px 5px -10px rgba(196, 194, 196, 0.72);
+    box-shadow: 13px 12px 5px -10px rgba(196, 194, 196, 0.72);
+}
+
+.col-md-3 {
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: #002838;
+    width: 100%;
+    --bs-gutter-x: 0rem !important;
+            /* Fix right margin */
+}
+
+.py-3 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.my-4 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.pb-3 {
+    padding-bottom: 1rem !important;
+    margin-bottom: 1rem ! important;
+}
+
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    justify-content: center !important;
+    border-bottom: 1px solid #99fff3 !important;;
+}
+
+.text-muted {
+    --bs-text-opacity: 1;
+    color: #ece8e1 !important;
+    text-align: center;
 }
