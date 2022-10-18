@@ -301,8 +301,10 @@ table.dataTable thead td {
 }
 
 .photo {
-    margin: 3.5% !important;
-    width: 20% !important;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: -20% 0;
 }
 
 .v-profile {
@@ -325,8 +327,10 @@ table.dataTable thead td {
 .footer {
     background-color: #002838;
     width: 100%;
-    --bs-gutter-x: 0rem !important;
-            /* Fix right margin */
+    --bs-gutter-x: 0rem !important; /* Fix right margin */
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
 }
 
 .py-3 {
@@ -345,17 +349,37 @@ table.dataTable thead td {
 }
 
 .nav{
+    width: 93%;
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
     margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
     list-style: none;
     justify-content: center !important;
-    border-bottom: 1px solid #99fff3 !important;;
+    border-bottom: 1px solid #99fff3 !important;
 }
 
 .text-muted {
     --bs-text-opacity: 1;
     color: #ece8e1 !important;
     text-align: center;
+}
+
+.scroll-bar::-webkit-scrollbar-track {
+    border: 1px solid #000;
+    padding: 2px 0;
+    background-color: #404040;
+}
+
+.scroll-bar::-webkit-scrollbar {
+width: 10px;
+}
+
+.scroll-bar::-webkit-scrollbar-thumb {
+border-radius: 10px;
+box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+background-color: #737272;
+border: 1px solid #000;
 }

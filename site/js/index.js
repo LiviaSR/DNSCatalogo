@@ -81,6 +81,7 @@ function buildPulsarsTable() {
     if ( data.comments ) { addComment(data.comments, tdName, span); }
     // References
     if ( data.hasReferences ) { addReferences(data.references, tdName); }
+    tdName.setAttribute('style', 'white-space: nowrap') // Prevent references from wrapping
 
     // P (period)
     let tdP = document.createElement('td');
@@ -95,24 +96,28 @@ function buildPulsarsTable() {
     if ( data.pdot.hasUncertainty ) { addUncertainty(data.pdot.uncertainty, tdPDot) }
     // P dot References
     if ( data.pdot.hasReferences ) { addReferences(data.pdot.references, tdPDot); }
+    tdPDot.setAttribute('style', 'white-space: nowrap') // Prevent references from wrapping
 
     // Pb (orbital period)
     let tdPb = document.createElement('td');
     tdPb.innerHTML = data.pb.value;
     // Pb References
     if ( data.pb.hasReferences ) { addReferences(data.pb.references, tdPb); }
+    tdPb.setAttribute('style', 'white-space: nowrap') // Prevent references from wrapping
 
     // e
     let tdE = document.createElement('td');
     tdE.innerHTML = data.e.value;
     // e References
     if ( data.e.hasReferences ) { addReferences(data.e.references, tdE); }
+    tdE.setAttribute('style', 'white-space: nowrap') // Prevent references from wrapping
 
     // f
     let tdF = document.createElement('td');
     tdF.innerHTML = data.f.value;
     // f References
     if ( data.f.hasReferences ) { addReferences(data.f.references, tdF); }
+    tdF.setAttribute('style', 'white-space: nowrap') // Prevent references from wrapping
 
     // Mt
     let tdMt = document.createElement('td');
@@ -122,6 +127,7 @@ function buildPulsarsTable() {
       if ( data.mt.hasUncertainty ) { addUncertainty(data.mt.uncertainty, tdMt) }
       // Mt References
       if ( data.mt.hasReferences ) { addReferences(data.mt.references, tdMt); }
+      tdMt.setAttribute('style', 'white-space: nowrap') // Prevent references from wrapping
     } else {
       tdMt.innerHTML = '-';
     }
@@ -136,6 +142,7 @@ function buildPulsarsTable() {
     if ( data.mp.hasUncertainty ) { addUncertainty(data.mp.uncertainty, tdMp) }
     // Mp References
     if ( data.mp.hasReferences ) { addReferences(data.mp.references, tdMp); }
+    tdMp.setAttribute('style', 'white-space: nowrap') // Prevent references from wrapping
 
     // Mc
     let tdMc = document.createElement('td');
@@ -147,6 +154,7 @@ function buildPulsarsTable() {
     if ( data.mc.hasUncertainty ) { addUncertainty(data.mc.uncertainty, tdMc) }
     // Mc References
     if ( data.mc.hasReferences ) { addReferences(data.mc.references, tdMc); }
+    tdMc.setAttribute('style', 'white-space: nowrap') // Prevent references from wrapping
 
     // Chirp Mass
     let tdChirp = document.createElement('td');
@@ -164,6 +172,7 @@ function buildPulsarsTable() {
       if ( data.delta.hasUncertainty ) { addUncertainty(data.delta.uncertainty, tdDelta) }
       // Delta References
       if ( data.delta.hasReferences ) { addReferences(data.delta.references, tdDelta); }
+      tdDelta.setAttribute('style', 'white-space: nowrap') // Prevent references from wrapping
     } else {
       tdDelta.innerHTML = '-';
     }
@@ -173,6 +182,7 @@ function buildPulsarsTable() {
     tdChi.innerHTML = data.chi.value;
     // Chi References
     if ( data.chi.hasReferences ) { addReferences(data.chi.references, tdChi); }
+    tdChi.setAttribute('style', 'white-space: nowrap') // Prevent references from wrapping
 
     // Effective chi
     let tdChieff = document.createElement('td');
@@ -181,12 +191,14 @@ function buildPulsarsTable() {
     if ( data.chieff.hasUncertainty ) { addUncertainty(data.chieff.uncertainty, tdChieff) } 
     // Effective chi References
     if ( data.chieff.hasReferences ) { addReferences(data.chieff.references, tdChieff); }
+    tdChieff.setAttribute('style', 'white-space: nowrap') // Prevent references from wrapping
 
     // Characteristic age
     let tdAge = document.createElement('td');
     tdAge.innerHTML = data.age.value;
      // Characteristic age References
     if ( data.age.hasReferences ) { addReferences(data.age.references, tdAge); }
+    tdAge.setAttribute('style', 'white-space: nowrap') // Prevent references from wrapping
 
     // Tau
     let tdTau = document.createElement('td');
@@ -194,6 +206,7 @@ function buildPulsarsTable() {
       tdTau.innerHTML = data.tau.value;
       // Tau References
       if ( data.tau.hasReferences ) { addReferences(data.tau.references, tdTau); }
+      tdTau.setAttribute('style', 'white-space: nowrap') // Prevent references from wrapping
     } else {
       tdTau.innerHTML = '&infin;';
     }

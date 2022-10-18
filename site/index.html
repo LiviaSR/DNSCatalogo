@@ -103,7 +103,7 @@
       <div id="table" class="page-section">
         <h5>Confirmed and possible pulsar - neutron star systems</h5>
       </div>
-      <div style="width: 93%; margin: auto">
+      <div class="scroll-bar" style="width: 93%; margin: auto; overflow-x: auto">
         <table id="DNS-catalogue" class="table table-striped table-bordered table-sm">
           <thead>
             <tr>
@@ -132,8 +132,8 @@
         <h5>Data visualization</h5>
       </div>
       <button onclick="topFunction()" id="to-top-button" title="To top">Top</button>
-      <div class="container footer">
-        <footer class="py-3 my-4">
+      <div class="footer">
+        <footer class="py-3 mt-4">
           <ul class="nav pb-3 mb-3">
             <li class="nav-item">
               <a href="../index.html" class="nav-link">Home</a>
@@ -166,7 +166,7 @@
         s = s.replace(/<\/span>.*$/, '');
 
         if (s[0] === 'J' || s[0] === 'B') {
-          console.log(s);
+          
           return s.replace(/^[JB]+/, ''); // Sorting pulsar names
         }
 
@@ -238,7 +238,7 @@
       <script>
         let counter = 0;
         function easterEgg() {
-          console.log(counter);
+          
           if ( counter == 5 ) {
             $('.toast').toast('show');
             setTimeout(() => {
