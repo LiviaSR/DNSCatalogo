@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background-color: #151616 !important;
+    background-color: black !important;
 }
 
 h1, h2, h3, h4, h5 {
@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5 {
 
 .dropdown-menu {
     border:rgba(0, 0, 0, 0.5);
-    background-color: #151616 !important;
+    background-color: black !important;
 }
 
 .dropdown-item {
@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .navbar {
-    background-color: #151616 !important;
+    background-color: black !important;
 }
 
 .nav-link {
@@ -205,7 +205,7 @@ table.dataTable thead td {
 }
 
 .dataTables_filter input {
-    background-color: #151616 !important;
+    background-color: black !important;
     color: rgb(232, 230, 227) !important;
 }
 
@@ -224,7 +224,7 @@ table.dataTable thead td {
 .table-striped > tbody > tr:nth-child(odd) > td, 
 .table-striped > tbody > tr:nth-child(odd) > th {
     color: rgb(232, 230, 227);
-    background-color: #151616;
+    background-color: black;
     transition: all 0.2s linear;
 }
 
@@ -244,7 +244,7 @@ table.dataTable thead td {
 .table-striped > tbody > tr:nth-child(even) > td:hover, 
 .table-striped > tbody > tr:nth-child(even) > th:hover {
     color: rgb(232, 230, 227);
-    background-color: rgb(0, 90, 123);
+    background-color: #21262d9d;
 }
 
 .table-striped > tbody > tr > td > div, 
