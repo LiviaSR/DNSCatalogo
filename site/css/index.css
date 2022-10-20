@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .main-header {
-    background-color: #002838;
+    background-color: #21262d;
     /* background-color: #00445F; */
     align-items: center;
     padding: 10px;
@@ -58,6 +58,7 @@ h1, h2, h3, h4, h5 {
     margin: auto;
     width: 150px;
     height: auto;
+    filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
 }
 
 .line-break-down {
@@ -65,7 +66,7 @@ h1, h2, h3, h4, h5 {
     padding: 1px;
     margin-top: -1px;
     margin-bottom: 20px;
-    background-color: #99fff391;
+    background-color: #58a6ff;
     /* background-color: #d831dbce; */
     margin-right: auto;
     margin-left: auto;
@@ -80,7 +81,7 @@ h1, h2, h3, h4, h5 {
     position: relative;
     padding: 1px;
     margin-bottom: -1px;
-    background-color: #99fff391;
+    background-color: #58a6ff;
     /* background-color: #d831dbce; */
     margin-right: auto;
     margin-left: auto;
@@ -92,7 +93,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .ftco-navbar-light .navbar-nav >.nav-item >.nav-link:before {
-    background: #99fff391;
+    background: #58a6ff;
 }
 
 .dropdown-menu {
@@ -105,11 +106,12 @@ h1, h2, h3, h4, h5 {
 }
 
 .dropdown-item:hover {
-    background: #99fff391 !important;
+    background: #58a6ff !important;
+    color:rgb(232, 230, 227) !important;
 }
 
 .dropdown-item:visited  {
-    background: #002838 !important;
+    background: #21262d !important;
 }
 
 .navbar {
@@ -122,11 +124,11 @@ h1, h2, h3, h4, h5 {
 }
   
 a:hover {
-    color: #99fff391 !important;
+    color: #58a6ff !important;
 }
 
 .carousel-container {
-    background-color: #002838;
+    background-color: #21262d;
     width: 100%;
 }
 
@@ -147,8 +149,8 @@ a:hover {
     height: fit-content;
     padding: 15px;
     margin-left: calc(3.5% + 5px);
-    background-color:rgb(0, 48, 66);
-    box-shadow: -5px 0 0 0px #99fff391;
+    background-color:#21262d;
+    box-shadow: -5px 0 0 0px #58a6ff;
 }
 
 .page-section-lg {
@@ -157,8 +159,8 @@ a:hover {
     height: fit-content;
     padding: 15px;
     margin-left: calc(3.5% + 5px);
-    background-color:rgb(0, 48, 66);
-    box-shadow: -5px 0 0 0px #99fff391;
+    background-color:#21262d;
+    box-shadow: -5px 0 0 0px #58a6ff;
 }
 
 .page-section h4 {
@@ -235,7 +237,7 @@ table.dataTable thead td {
 .table-striped > tbody > tr:nth-child(even) > td, 
 .table-striped > tbody > tr:nth-child(even) > th {
     color: rgb(232, 230, 227);
-    background-color: rgb(0, 48, 66);
+    background-color: #21262d;
     transition: all 0.2s linear;
 }
 
@@ -258,14 +260,14 @@ table.dataTable thead td {
 #to-top-button {
     display: none;
     position: fixed;
-    background-color: #99fff391;
+    background-color: #58a6ff;
     bottom: 20px;
     right: 30px;
     border-radius: 50%;
     z-index: 3;
     font-size: 18px;
     font-weight: bold;
-    border: 1px solid #002838;
+    border: 1px solid #21262d;
     outline: none;
     color: rgb(232, 230, 227);
     cursor: pointer;
@@ -275,12 +277,12 @@ table.dataTable thead td {
 }
 
 #to-top-button:hover {
-    background-color: #99fff3;
-    color: #002838;
+    background-color: #58a6ff;
+    color: #21262d;
 }
 
 .name {
-    color: #99fff391 !important;
+    color: #58a6ff !important;
 }
 
 .work {
@@ -312,7 +314,7 @@ table.dataTable thead td {
 }
 
 .v-profile {
-    color: #99fff391;
+    color: #58a6ff;
     cursor: pointer;
 }
 
@@ -329,7 +331,7 @@ table.dataTable thead td {
 }
 
 .footer {
-    background-color: #002838;
+    background-color: #21262d;
     width: 100%;
     --bs-gutter-x: 0rem !important; /* Fix right margin */
     margin-left: 0px !important;
@@ -362,7 +364,7 @@ table.dataTable thead td {
     margin-right: auto;
     list-style: none;
     justify-content: center !important;
-    border-bottom: 1px solid #99fff3 !important;
+    border-bottom: 1px solid #58a6ff !important;
 }
 
 .text-muted {
@@ -389,6 +391,6 @@ border: 1px solid #000;
 }
 
 .plot-control-panel {
-    background-color: #002838;
+    background-color: #21262d;
     border-radius: 10px;
 }
