@@ -21,9 +21,14 @@ function buildPlotControls(axis) {
     let rowDiv = document.createElement('div')
     rowDiv.className = 'row';
 
-    // Calc the number of elements to display in each row
-    let end_index = (row + 1) * 5 > properties.length ? properties.length: (row + 1) * 5;
-    for ( let i = row * 5; i < end_index; i++ ) {
+    for ( let i = row * 5; i < (row + 1) * 5; i++ ) {
+      if ( i >= properties.length ) { // Append empty columns to align elements
+        let colDiv = document.createElement('div');
+        colDiv.className = 'col';
+        rowDiv.appendChild(colDiv);
+        continue;
+      }
+
       let colDiv = document.createElement('div');
       colDiv.className = 'col text-left';
       let formDiv = document.createElement('div')
@@ -42,7 +47,7 @@ function buildPlotControls(axis) {
 
       formDiv.appendChild(input);
       formDiv.appendChild(label);
-      colDiv.appendChild(formDiv)
+      colDiv.appendChild(formDiv);
       rowDiv.appendChild(colDiv);
     }
     controlAnchor.appendChild(rowDiv);
