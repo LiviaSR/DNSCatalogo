@@ -1,3 +1,30 @@
+function filterNonNumericValues(horizontal, vertical) {
+  let filterIndexesHorizontal = [];
+  let filterIndexesVertical = [];
+  for ( let i = 0; i < horizontal.length; i++ ) {
+    if ( typeof horizontal[i] === 'number' ) {
+      filterIndexesHorizontal.push(i);
+    }
+  }
+  for ( let i = 0; i < vertical.length; i++ ) {
+    if ( typeof vertical[i] === 'number' ) {
+      filterIndexesVertical.push(i);
+    }
+  }
+
+  let filterIndexes = filterIndexesHorizontal.filter(value => filterIndexesVertical.includes(value));
+  filterIndexes.sort((a, b) => a - b);
+
+  let horizontalAux = [];
+  let verticalAux = [];
+  for ( let i of filterIndexes ) {
+    horizontalAux.push(horizontal[i]);
+    verticalAux.push(vertical[i]);
+  }
+
+  return [horizontalAux, verticalAux];
+}
+
 const plotControlSelection = {
   'confirmed': true,
   'horizontal': 'mp',
@@ -11,20 +38,21 @@ function removeAllChildNodes(parent) {
 }
 
 function buildPlot() {
-  console.log(plotControlSelection);
-
   // Filter data points from pulsar data
-  const horizontal = [];
-  const vertical = [];
+  let horizontal = [];
+  let vertical = [];
 
-  for ( let pulsar of pulsarData ) {
-    if ( plotControlSelection.confirmed ) {
-      if ( pulsar.comments.toLowerCase().includes('confirmed') ) {
-        horizontal.push(pulsar[plotControlSelection['horizontal']].value);
-        vertical.push(pulsar[plotControlSelection['vertical']].value);
-      }
-    }
+  if ( plotControlSelection.confirmed ) {
+    let confirmedPulsars = pulsarData.filter(pulsar => pulsar.Confirmed);
+    horizontal = confirmedPulsars.map(pulsar => pulsar[plotControlSelection['horizontal']].value);
+    vertical = confirmedPulsars.map(pulsar => pulsar[plotControlSelection['vertical']].value);
+  } else {
+    horizontal = pulsarData.map(pulsar => pulsar[plotControlSelection['horizontal']].value);
+    vertical = pulsarData.map(pulsar => pulsar[plotControlSelection['vertical']].value);
   }
+
+  // Filter non numerical values
+  [horizontal, vertical] = filterNonNumericValues(horizontal, vertical);
 
   // Build list of lists [[horizontal, vertical] ..]
   const plotData = [];
@@ -36,11 +64,14 @@ function buildPlot() {
   removeAllChildNodes(document.getElementById('plot'))
 
   // Build plot SVG
-  var margin = {top: 10, right: 30, bottom: 30, left: 60},
-  width = 460 - margin.left - margin.right,
-  height = 400 - margin.top - margin.bottom;
+  let plotContainer = document.getElementById('plot');
+  console.log(plotContainer.offsetHeight);
 
-  // append the svg object to the body of the page
+  var margin = {top: 10, right: 30, bottom: 30, left: 60},
+  width = plotContainer.offsetWidth - margin.left - margin.right,
+  height = plotContainer.offsetHeight - margin.top - margin.bottom;
+
+  // Append the svg object to the body of the page
   var svg = d3.select("#plot")
   .append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -51,7 +82,7 @@ function buildPlot() {
 
   // Add X axis
   var x = d3.scaleLinear()
-    .domain([0, 2])
+    .domain([d3.min(horizontal), d3.max(horizontal)])
     .range([ 0, width ]);
   svg.append("g")
     .attr("transform", "translate(0," + height + ")")
@@ -59,7 +90,7 @@ function buildPlot() {
 
   // Add Y axis
   var y = d3.scaleLinear()
-    .domain([0, 2])
+    .domain([d3.min(vertical), d3.max(vertical)])
     .range([ height, 0]);
   svg.append("g")
     .call(d3.axisLeft(y));
@@ -73,7 +104,7 @@ function buildPlot() {
       .attr("cx", function (d) { return x(d[0]); } )
       .attr("cy", function (d) { return y(d[1]); } )
       .attr("r", 5)
-      .style("fill", "#0d6efd")
+      .style("fill", "#58a6ff")
 
 }
 
