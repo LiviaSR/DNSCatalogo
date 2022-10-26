@@ -1,28 +1,15 @@
 function filterNonNumericValues(horizontal, vertical) {
-  let filterIndexesHorizontal = [];
-  let filterIndexesVertical = [];
+  const horizontalFilter = []
+  const verticalFilter = [];
+
   for ( let i = 0; i < horizontal.length; i++ ) {
-    if ( typeof horizontal[i] === 'number' ) {
-      filterIndexesHorizontal.push(i);
-    }
-  }
-  for ( let i = 0; i < vertical.length; i++ ) {
-    if ( typeof vertical[i] === 'number' ) {
-      filterIndexesVertical.push(i);
+    if ( typeof horizontal[i] === 'number' && typeof vertical[i] === 'number' ) {
+      horizontalFilter.push(horizontal[i]);
+      verticalFilter.push(vertical[i])
     }
   }
 
-  let filterIndexes = filterIndexesHorizontal.filter(value => filterIndexesVertical.includes(value));
-  filterIndexes.sort((a, b) => a - b);
-
-  let horizontalAux = [];
-  let verticalAux = [];
-  for ( let i of filterIndexes ) {
-    horizontalAux.push(horizontal[i]);
-    verticalAux.push(vertical[i]);
-  }
-
-  return [horizontalAux, verticalAux];
+  return [horizontalFilter, verticalFilter];
 }
 
 const plotControlSelection = {
