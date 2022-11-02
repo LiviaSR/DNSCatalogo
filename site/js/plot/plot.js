@@ -73,14 +73,12 @@ function plot() {
 }
 
 function getPlotData() {
+  let pulsars = pulsarData
   if ( pcs.confirmed ) {
-    let confirmedPulsars = pulsarData.filter(pulsar => pulsar.Confirmed);
-    x = confirmedPulsars.map(pulsar => pulsar[pcs['x']].value);
-    y = confirmedPulsars.map(pulsar => pulsar[pcs['y']].value);
-  } else {
-    x = pulsarData.map(pulsar => pulsar[pcs['x']].value);
-    y = pulsarData.map(pulsar => pulsar[pcs['y']].value);
+    pulsars = pulsarData.filter(pulsar => pulsar.Confirmed);
   }
+  x = pulsars.map(pulsar => pulsar[pcs['x']].value);
+  y = pulsars.map(pulsar => pulsar[pcs['y']].value);
   // Filter non numerical values
   return filterNonNumericValues(x, y);
 }
