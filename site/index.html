@@ -12,7 +12,14 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
         <script src="./js/pulsar_data.js"></script>
         <script src="./js/index.js"></script>
-        <script src="./js/plot.js"></script>
+        <!-- plots functions -->
+        <script src="./js/plot/plot_utils.js"></script>
+        <script src="./js/plot/transformations.js"></script>
+        <script src="./js/plot/axis_functions.js"></script>
+        <script src="./js/plot/colors.js"></script>
+        <script src="./js/plot/plot_config.js"></script>
+        <script src="./js/plot/build_plot_controls.js"></script>
+        <script src="./js/plot/plot.js"></script>
     </head>
     <body>
       <div class="toast">
@@ -167,14 +174,14 @@
                 <div class="col">
                   <h4>Horizontal Axis</h4>
                 </div>
-              <div id="horizontal-plot-control-anchor">
+              <div id="x-plot-control-anchor">
               </div>
               <div class="row">
                 <div class="col">
                   <h4>Vertical Axis</h4>
                 </div>
               </div>
-              <div id="vertical-plot-control-anchor">
+              <div id="y-plot-control-anchor">
               </div>
             </div>
           </div>
@@ -201,8 +208,8 @@
     <script>eval(mod_pagespeed_pjbkxWKFfo);</script>
     <script>eval(mod_pagespeed_6H5NR84qUD);</script>
     <script>
-      buildPlotControls('horizontal');
-      buildPlotControls('vertical');
+      buildPlotControls('x');
+      buildPlotControls('y');
       buildPlot();
 
       window.addEventListener('resize', function(event) {
