@@ -3,9 +3,9 @@ function filterNonNumericValues(x, y) {
   const verticalNumeric = [];
 
   for ( let i = 0; i < x.length; i++ ) {
-    if ( typeof x[i] === 'number' && typeof y[i] === 'number' ) {
+    if ( typeof x[i].value === 'number' && typeof y[i].value === 'number' ) {
       horizontalNumeric.push(x[i]);
-      verticalNumeric.push(y[i])
+      verticalNumeric.push(y[i]);
     }
   }
 

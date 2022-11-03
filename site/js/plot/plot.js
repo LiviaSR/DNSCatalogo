@@ -41,19 +41,11 @@ function plot() {
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
-  // Add X axis
   if ( config.axis ) {
-    [x_axis, y_axis] = config.axis(x, y, width, height);
+    [x_axis, y_axis] = config.axis(x, y, width, height, svg);
   } else {
-    [x_axis, y_axis] = plotConfig['default'].axis(x, y, width, height);  
+    [x_axis, y_axis] = plotConfig['default'].axis(x, y, width, height, svg);  
   }
-
-  // Add X axis
-  svg.append('g')
-    .attr("transform", "translate(0," + height + ")")
-    .call(d3.axisBottom(x_axis));
-  // Add Y axis
-  svg.append('g').call(d3.axisLeft(y_axis));
 
   // Add dots
   svg.append('g')
@@ -61,14 +53,14 @@ function plot() {
     .data(plotData)
     .enter()
     .append("circle")
-      .attr("cx", function (d) { return x_axis(d[0]); } )
-      .attr("cy", function (d) { return y_axis(d[1]); } )
+      .attr("cx", function (d) { return x_axis(d[0].value); } )
+      .attr("cy", function (d) { return y_axis(d[1].value); } )
       .attr("r", 5)
       .style("fill", (d) => {
         if ( config.color ) {
-          return config.color(d);
+          return config.color(d.type);
         }
-        return plotConfig['default'].color(d);
+        return plotConfig['default'].color(d.type);
       });
 }
 
@@ -77,8 +69,18 @@ function getPlotData() {
   if ( pcs.confirmed ) {
     pulsars = pulsarData.filter(pulsar => pulsar.Confirmed);
   }
-  x = pulsars.map(pulsar => pulsar[pcs['x']].value);
-  y = pulsars.map(pulsar => pulsar[pcs['y']].value);
+  x = pulsars.map(pulsar => { 
+    return({ 
+      'value': pulsar[pcs['x']].value,
+      'type': pulsar.Type,
+    })
+  });
+  y = pulsars.map(pulsar => { 
+    return({ 
+      'value': pulsar[pcs['y']].value,
+      'type': pulsar.Type,
+    })
+  });
   // Filter non numerical values
   return filterNonNumericValues(x, y);
 }

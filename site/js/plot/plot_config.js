@@ -2,18 +2,18 @@ const plotConfig = {
   'default': {
     'transformation': null,
     'axis': defaultAxis,
-    'tick': 'axisLabel',
+    'tick': null,
     'color': defaultColor,
   },
-  'p-pdot': {
-    'transformation': 'filterPdot',
-    'axis': 'buildAxis',
-    'tick': 'axisLabel',
-    'color': 'colors',
-  },
   'pb-p': {
-    'transformation': multi1000,
+    'transformation': multi1000RemoveOutliersWithValueGreaterThan500FilterByRecycled,
     'axis': null,
+    'tick': null,
+    'color': null,
+  },
+  'age-tau': {
+    'transformation': null,
+    'axis': logarithmicXYAxis,
     'tick': null,
     'color': null,
   }
