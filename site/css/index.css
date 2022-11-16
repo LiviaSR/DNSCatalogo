@@ -2,6 +2,7 @@ html {
     margin: 0 !important;
     padding: 0 !important;
     font-family: var(--bs-body-font-family) !important;
+    height: 100vh;
 }
 
 body {
@@ -58,7 +59,7 @@ h1, h2, h3, h4, h5 {
     margin: auto;
     width: 150px;
     height: auto;
-    filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+    filter: invert(62%) sepia(84%) saturate(23%) hue-rotate(188deg) brightness(90%) contrast(102%)
 }
 
 .line-break-down {

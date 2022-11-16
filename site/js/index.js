@@ -13,7 +13,7 @@ function mergeRows(systemName) {
       systemRow[0].childNodes[i].innerHTML += '<br>' + systemRow[0].childNodes[i + systemRow[0].childElementCount / 2].innerHTML;
     }
 
-    // Remove unecessary <tds>
+    // Remove unecessary <tds> when repeated
     for ( let i = systemRow[0].childElementCount / 2; i < systemRow[0].childElementCount; ) {
       systemRow[0].removeChild(systemRow[0].childNodes[i]);
     }

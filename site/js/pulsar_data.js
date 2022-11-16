@@ -107,8 +107,8 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": true,
-      "value": null,
+      "isInfinity": false,
+      "value": 1453 ,
       "hasReferences": false,
       "references": null
     },
@@ -351,8 +351,7 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": true,
-      "value": null,
+      "value": 508,
       "hasReferences": false,
       "references": null
     },
@@ -720,8 +719,7 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": true,
-      "value": null,
+      "value": 189.7,
       "hasReferences": false,
       "references": null
     },
@@ -831,8 +829,7 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": true,
-      "value": null,
+      "value": 466.3,
       "hasReferences": false,
       "references": null
     },
@@ -950,8 +947,7 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": true,
-      "value": null,
+      "value": 9973,
       "hasReferences": false,
       "references": null
     },
@@ -1189,8 +1185,7 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": true,
-      "value": null,
+      "value": 26907,
       "hasReferences": false,
       "references": null
     },
@@ -1296,8 +1291,7 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": true,
-      "value": null,
+      "value": 28847,
       "hasReferences": false,
       "references": null
     },
@@ -1403,8 +1397,7 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": true,
-      "value": null,
+      "value": 15917,
       "hasReferences": false,
       "references": null
     },
@@ -1758,8 +1751,7 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": true,
-      "value": null,
+      "value": 181,
       "hasReferences": false,
       "references": null
     },
@@ -1873,8 +1865,7 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": true,
-      "value": null,
+      "value": 1044,
       "hasReferences": false,
       "references": null
     },
@@ -1984,8 +1975,7 @@ const pulsarData = [
       "references": true
     },
     "tau": {
-      "isInfinity": true,
-      "value": null,
+      "value": 1863,
       "hasReferences": false,
       "references": null
     },
@@ -2095,8 +2085,7 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": true,
-      "value": null,
+      "value": 6987,
       "hasReferences": false,
       "references": null
     },
@@ -2214,8 +2203,7 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": true,
-      "value": null,
+      "value": 54.8,
       "hasReferences": false,
       "references": null
     },
@@ -2811,8 +2799,7 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": true,
-      "value": null,
+      "value": 534482,
       "hasReferences": false,
       "references": null
     },

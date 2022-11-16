@@ -6,19 +6,18 @@
     <link rel="stylesheet" href="../css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link href="../css/jquery.dataTables.min.css" rel="stylesheet">
-    </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="../js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/plug-ins/1.12.1/sorting/numString.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
     <script src="../js/pulsar_data.js"></script>
     <script src="../js/index.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <div class="toast">
         <div class="toast-body">CODED WITH ❤️ BY 🍋 @ 2022</div>
     </div>
@@ -31,7 +30,7 @@
             <h3 class="title" style="user-select: none;">A Double Neutron Star System Catalogue</h3>
         </div>
         <div class="col-3 max-planck-logo">
-            <img src="../images/mpg_logo.png" class="d-block" alt="...">
+            <img src="../images/mpifr.png" class="d-block" alt="...">
         </div>
     </div>
     <div class="container">
@@ -61,13 +60,90 @@
         <h5>Mass measurements</h5>
     </div>
     <div class="text-section">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit architecto repellendus maiores temporibus,
-            dolorum eaque distinctio debitis quos dolores corporis commodi recusandae perspiciatis vitae, voluptatem
-            expedita dicta amet nulla libero.</p>
+        <p>The vast majority of NSs are observed as pulsars, rapidly-rotating and high-magnetized neutron stars emitting beams of
+        radiation along its magnetic axis that are seen on Earth as a pulse due to the lighthouse effect
+        \citep{rezzolla2018physics}. Nowadays, more than 3300 pulsars were observed (see <a href="https://www.atnf.csiro.au/research/pulsar/psrcat/">ATNF</a> for a catalogue of radio
+        pulsars), but only a few aspects of them can be inferred from observations and only a tiny fraction of the total sample
+        allows mass measurements because observed pulsars are mainly isolated stars and the calculation methods are generally
+        based on orbital motions, although efforts are beginning to be made to measure features of isolated NSs \citep{1996yo}.
+        </p>
+        
+        <p>The extreme regularity of pulses, responsible for recognizing pulsars as the most stable clocks in the observable
+        universe, makes pulsar timing the most accurate method to determine masses of NSs, as well as test fundamental
+        physics. The procedure consists in monitoring the times-of-arrival (TOAs) of pulses over several years to determine the
+        pulsar's rotation period. Thanks to the regularity, small deviations of TOAs are detectable with precision. Additional
+        parameters of pulsar and its orbit (in binary systems) are also obtained from pulsar timing.
+        </p>
+        
+        <p> Orbital motion of binary systems is described by five Keplerian parameters: binary period (\(P_b\)), projection of pulsar's
+        semimajor axis (\(a_p\)) on the line of sight \(x_p = a_p \sin{i}\), eccentricity (\(e\)), time (\(T_0\)) and longitude \(\omega\) of
+        periastron. The masses of components can be determined from a mass function in light of Kepler's Third Law:
+        
+        $$
+        f_p (m_p, m_c, i) = \frac{\left( m_c \sin{i}\right)^3}{\left( m_p + m_c \right)^2} = \frac{4
+        \pi^2}{T_{\odot}}\frac{x_p^3}{P_b^2}, \tag{1}\label{eq1}
+        $$
+        where \(T_{\odot} \equiv G M_{\odot}/c^3 = 4.925490947~\mu s\) (G is the gravitational constant, c is the speed of
+        light and \(M_{\odot} \) is the solar mass)
+        </p>
+        
+        <p>Whenever mass functions are measurable, it is possible to obtain individual masses provided the inclination angle $i$ is
+        known, but this quantity is difficult to be inferred with accuracy and the mass function of the companion is only
+        obtained in some cases where it is a detectable pulsar or a star with an observable spectrum. However, binary systems
+        containing a pulsar are compact and thus some relativistic effects might be observed. The relativistic corrections for
+        orbital motion for GR are described in terms of post-Keplerian (PK) parameters, which are functions of Keplerian
+        parameters \citep{stairs2003testing}:
+        </p>
+            <ol style="color: rgb(232, 230, 227)">
+                <li>Orbital period decay, \( \dot{P_b} \):
+                $$ \dot{P_b} = -\frac{192\pi}{5} \left( \frac{P_b}{2\pi T_{\odot}}\right)^{-\frac{5}{3}} \left( 1 + \frac{73}{24}e^2 +
+                \frac{37}{96}e^4 \right) \left(1 - e^2 \right)^{-\frac{7}{2}} \frac{m_p m_c}{m^{1/3}}; \tag{2}\label{eq2}$$
+                </li>
+                <li>Range of Shapiro delay, \(r \):
+                $$ r = T_{\odot}m_c \tag{3}\label{eq3}$$
+                </li>
+                <li> Shape of Shapiro delay, \(s \):
+                $$s = \sin{i} = x_p \left(\frac{P_b}{2\pi} \right)^{-2/3} \frac{m^{2/3}}{T_{\odot}^{1/3}m_c} \tag{4}\label{eq4}$$
+                </li>
+                <li>Einstein delay, \( \gamma \):
+                $$ \gamma = e \left( \frac{P_b}{2\pi} \right)^{1/3} T_{\odot}^{2/3}~ \frac{m_c \left(m_p + 2m_c\right)}{m^{4/3}} \tag{5}\label{eq5} $$
+                </li>
+                <li>Advance of periastron, \( \dot{\omega} \):
+                $$\dot{\omega} = 3\left(\frac{P_b}{2\pi} \right)^{-5/3} \left( 1 - e^2 \right)^{-1} \left( m~ T_{\odot} \right)^{2/3}. \tag{6}\label{eq6}$$
+                </li>
+            </ol>
+
+        
+        <p>If only one PK parameter is observed, constrains can
+        be imposed on individual masses. The observation of any two PK parameters allows unique individual mass determinations,
+        and if extra parameters are specified it is possible to test GR
+        \citep{Lyne}.</p>
+        
+        <p>Millisecond pulsars (MSPs) are pulsars with very short spin periods, \( 1 < P < 30~ms \) and \( \dot{P} < 10^{-19}\), which
+            were spun-up by its companion during a transfer of angular momentum to the NS, being recycled. These short
+            periods make MSPs extremely precise for pulsar timing and they are now recognized as the most useful objects to test
+            fundamental physics \citep{ozel2016masses}. For a large number of binaries only one PK parameter is measured, but as
+            mentioned before in cases where the companion is optically observed (main sequence, post-main sequence and white
+            dwarfs stars) it is possible to provide additional information about the system.
+            Phase-resolved spectroscopy
+            provides orbital radial velocity amplitude (\(K_c\)), which together with Keplerian parameters yields the mass ratio
+            (\(q=m_p/m_c\)). For white dwarfs, particularly, their radii can be estimated if the distance to Earth is known and
+            the optical flux and effective temperature are measured. Thus, from a theoretical relation based on their spectrum
+            its mass can be obtained, leading to the pulsars mass estimation through the relation of mass ratio. For NSs with
+            high-mass companions, x-rays emitted by the pulsar are blocked by the companion during part of its orbit, allowing
+            mass measurements also. The Shapiro delay, in its turn, consists in an retardation of pulses TOA due to space-time
+            curvature near a massive companion. This effect can remain unobserved, even after years of timing, if it is too
+            small, but for almost edge-on MSP systems containing a high-mass WD, the effect is strong enough and allows
+            extremely precise measurements of both masses. PSR J1614-2230 with \( 1.97 \pm 0.04~ M_{\odot} \)
+            \citep{2010Natur.467.1081_Demorest} (latter corrected for \( 1.928 \pm 0.017~M_{\odot} \) by
+            \citep{fonseca2016nanograv}) and PSR J0740+6620 with \( 2.14_{-0.09}^{+0.10}~ M_{\odot}\)
+            \citep{cromartie2020relativistic} are two MSPs that became important references when talking about imposing a lower
+            limit for the maximum mass of NSs where measured through Shapiro delay.
+        </p>
     </div>
 
     <button onclick="topFunction()" id="to-top-button" title="To top">Top</button>
-    <div class="footer">
+    <div class="footer mt-auto">
         <footer class="py-3 mt-4">
             <ul class="nav pb-3 mb-3">
                 <li class="nav-item">
