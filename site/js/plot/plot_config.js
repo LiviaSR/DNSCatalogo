@@ -5,9 +5,9 @@ const pcs = { // Plot control selection
 }
 
 const colors = {
-  'rec': '#58a6ff',
-  'nrec': '#34ebae',
-  'GC': '#eb3465',
+  'rec': '#9370DB',
+  'nrec': '#3CB371',
+  'GC': '#CD0000',
 }
 
 const transitions = { // miliseconds
@@ -30,6 +30,16 @@ const plotConfig = {
     'axis': defaultAxis,
     'color': defaultColor,
   },
+  'p-p': {
+    'transformations': [[removeOutliersYGT, 2]],
+  },
+  'p-pdot': {
+    'transformations': [
+      absoluteValue,
+      [multiYBy, 0.0000000000000000001],
+    ],
+    'axis': logarithmicXYAxis,
+  },
   'pb-p': {
     'transformations': [
       [multiYBy, 1000],
@@ -38,10 +48,7 @@ const plotConfig = {
     ],
   },
   'age-tau': {
+    'transformations': [[removeXValueEq, 0]],
     'axis': logarithmicXYAxis,
   },
-  'p-pdot': {
-    'transformations': absoluteValue,
-    'axis': logarithmicXYAxis,
-  }
 }

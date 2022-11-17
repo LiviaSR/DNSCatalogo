@@ -315,8 +315,9 @@ table.dataTable thead td {
 
 .photo {
     width: 200px;
-    height: 220px;
+    height: 200px;
     object-fit: cover;
+    object-position: -20% 0;
 }
 
 .v-profile {
@@ -414,14 +415,17 @@ table.dataTable thead td {
 
 .axis-white line {
     stroke: var(--text-color);
+    stroke-width: 3px;
   }
   
 .axis-white path {
     stroke: var(--text-color);
+    stroke-width: 3px;
 }
   
 .axis-white text {
     fill: var(--text-color);
+    font-size: 15px;
 }
 
 .grid line {

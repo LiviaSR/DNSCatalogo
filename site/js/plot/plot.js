@@ -32,7 +32,7 @@ function plot() {
   // Build plot SVG
   const plotContainer = document.getElementById('plot');
 
-  const margin = {top: 15, right: 30, bottom: 60, left: 60},
+  const margin = { top: 15, right: 30, bottom: 60, left: 60 },
   width = plotContainer.offsetWidth - margin.left - margin.right,
   height = plotContainer.offsetHeight - margin.top - margin.bottom;
 
@@ -53,7 +53,7 @@ function plot() {
   }
 
   // Add tooltips to data points
-  let Tooltip = d3.select('#plot')
+  const Tooltip = d3.select('#plot')
     .append("div")
     .style("opacity", 0)
     .attr("class", "tooltip")
@@ -61,11 +61,10 @@ function plot() {
     .style("padding", "5px")
 
   const mouseover = function(d) {
-    
     if ( d[0].type === 'rec' ) { borderColor = `-5px 0 0 0px ${colors['rec']}`; }
     else if ( d[0].type === 'nrec' ) { borderColor = `-5px 0 0 0px ${colors['nrec']}`; }
     else if ( d[0].type === 'GC' ) { borderColor = `-5px 0 0 0px ${colors['GC']}`; }
-
+  
     Tooltip
       .style("opacity", 1)
       .style('box-shadow', borderColor)
@@ -89,6 +88,18 @@ function plot() {
     d3.select(this)
       .style("stroke", "none")
       .style("opacity", 0.8)
+  }
+
+  // Adjust x and y axis ticks if necessary for confirmed
+  if ( config.hasOwnProperty('ticks-confirmed') && pcs.confirmed ) {
+    config['ticks-confirmed'][0][0](svg, x_axis, config['ticks-confirmed'][0][1]);
+    config['ticks-confirmed'][1][0](svg, y_axis, config['ticks-confirmed'][1][1]);
+  }
+
+  // Adjust x and y axis ticks if necessary for confirmed
+  if ( config.hasOwnProperty('ticks-candidate') && ! pcs.confirmed ) {
+    config['ticks-candidate'][0][0](svg, x_axis, config['ticks-candidate'][0][1]);
+    config['ticks-candidate'][1][0](svg, y_axis, config['ticks-candidate'][1][1]);
   }
 
   // Add dots
