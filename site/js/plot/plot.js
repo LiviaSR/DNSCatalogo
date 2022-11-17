@@ -48,38 +48,40 @@ function plot() {
     [x_axis, y_axis] = plotConfig['default'].axis(x, y, width, height, margin, svg, pcs);
   }
 
-  // let Tooltip = d3.select('#plot')
-  //   .append("div")
-  //   .style("opacity", 0)
-  //   .attr("class", "tooltip")
-  //   .style("background-color", "white")
-  //   .style("border", "solid")
-  //   .style("border-width", "2px")
-  //   .style("border-radius", "5px")
-  //   .style("padding", "5px")
+  let Tooltip = d3.select('#plot')
+    .append("div")
+    .style("opacity", 0)
+    .attr("class", "tooltip")
+    .style("background-color", "white")
+    .style("border", "solid")
+    .style("border-width", "2px")
+    .style("border-radius", "5px")
+    .style("padding", "5px")
 
-  // const mouseover = d => {
-  //   Tooltip
-  //     .style("opacity", 1)
-  //   d3.select(this)
-  //     .style("stroke", "black")
-  //     .style("opacity", 1)
-  // }
-  // const mousemove = d => {
-  //   Tooltip
-  //     .html("The exact value of<br>this cell is: " + d[0].value)
-  //     .style("left", (70) + "px")
-  //     .style("top", (70) + "px")
-  //     // .style("left", (d3.mouse(this)[0]+70) + "px")
-  //     // .style("top", (d3.mouse(this)[1]) + "px")
-  // }
-  // const mouseleave = d => {
-  //   Tooltip
-  //     .style("opacity", 0)
-  //   d3.select(this)
-  //     .style("stroke", "none")
-  //     .style("opacity", 0.8)
-  // }
+  const mouseover = function(d) {
+    Tooltip
+      .style("opacity", 1)
+    d3.select(this)
+      .style("stroke", "black")
+      .style("opacity", 1)
+  }
+
+  const mousemove = function(d) {
+    Tooltip
+      .html(`${pcs['x']}: ${d[0].value}<br>${pcs['y']}: ${d[1].value}`)
+      .style("left", (70) + "px")
+      .style("top", (70) + "px")
+      .style("left", (d3.mouse(this)[0]+90) + "px")
+      .style("top", (d3.mouse(this)[1]) + "px")
+  }
+
+  const mouseleave = function(d) {
+    Tooltip
+      .style("opacity", 0)
+    d3.select(this)
+      .style("stroke", "none")
+      .style("opacity", 0.8)
+  }
 
   console.log(plotData);
 
@@ -98,9 +100,9 @@ function plot() {
         }
         return plotConfig['default'].color(d[0].type);
       })
-    // .on('mouseover', mouseover)
-    // .on('mousemove', mousemove)
-    // .on('mouseleave', mouseleave);
+    .on('mouseover', mouseover)
+    .on('mousemove', mousemove)
+    .on('mouseleave', mouseleave);
 }
 
 function getPlotData() {
