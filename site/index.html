@@ -57,7 +57,7 @@
                   <div class="dropdown-menu" aria-labelledby="dropdown04">
                     <a class="dropdown-item" href="html/mass_meas.html">Mass measurements</a>
                     <a class="dropdown-item" href="html/geod.html">Geodetic precession</a>
-                    <a class="dropdown-item" href="html/geod.html">Gravitational Waves</a>
+                    <a class="dropdown-item" href="html/gws.html">Gravitational Waves</a>
                   </div>  
                 </li>
                 <li class="nav-item"><a href="html/contact.html" class="nav-link">Contact</a></li>
@@ -66,6 +66,22 @@
           </div>
         </nav>
       </div>
+             <div class="container">
+                    <hr class="line-break-up" size="1" color="black">
+                  </div>
+                  <div class="carousel-container container-shadow">
+                    <div id="carouselExampleCaptions" class="carousel slide carousel-fade container-shadow" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/dns1.jpeg" class="d-block" alt="...">
+                            <div class="bottom-left text " >&copy; Michael Kramer/MPIfR</div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <hr class="line-break-down" size="1" color="black">
+                  </div> 
       <!-- <div class="container">
         <hr class="line-break-up" size="1" color="black">
       </div>
@@ -200,6 +216,9 @@
               <a href="index.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
+              <a href="./html/references.html" class="nav-link">References</a>
+            </li>
+            <li class="nav-item">
               <a href="./html/contact.html" class="nav-link">About Us</a>
             </li>
           </ul>
@@ -233,7 +252,7 @@
         s = s.replace(/<\/span>.*$/, '');
 
         if (s[0] === 'J' || s[0] === 'B') {
-          return s.replace(/^[JB]+/, ''); // Sorting pulsar names
+          return s.replace(/^[JB]+/, ''); // Sorting pulsar names only numerically
         }
 
         s = s.replace(/[ ]*/, ''); // Remove all spaces from string
