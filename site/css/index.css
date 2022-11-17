@@ -309,9 +309,8 @@ table.dataTable thead td {
 
 .photo {
     width: 200px;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
-    object-position: -20% 0;
 }
 
 .v-profile {

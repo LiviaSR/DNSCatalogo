@@ -158,9 +158,13 @@ function buildPulsarsTable() {
 
     // Chirp Mass
     let tdChirp = document.createElement('td');
-    tdChirp.innerHTML = data.chirp.value;
-    // Chirp Mass References
-    if ( data.chirp.hasReferences ) { addReferences(data.chirp.references, tdChirp); }
+    if (data.chirp.value) {
+      tdChirp.innerHTML = data.chirp.value;
+      // Chirp Mass References
+     if ( data.chirp.hasReferences ) { addReferences(data.chirp.references, tdChirp); }
+    } else {
+      tdChirp.innerHTML = '-';
+    }
 
     // Delta
     let tdDelta = document.createElement('td');

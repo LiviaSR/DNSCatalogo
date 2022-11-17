@@ -689,7 +689,7 @@ const pulsarData = [
       "uncertainty": null
     },
     "chirp": {
-      "value": 1.11572,
+      "value": null,
       "hasReferences": false,
       "references": null
     },
@@ -799,7 +799,7 @@ const pulsarData = [
       "uncertainty": null
     },
     "chirp": {
-      "value": 1.10433,
+      "value": null,
       "hasReferences": false,
       "references": null
     },
@@ -917,7 +917,7 @@ const pulsarData = [
       "uncertainty": null
     },
     "chirp": {
-      "value": 1.10984,
+      "value": null,
       "hasReferences": false,
       "references": null
     },
@@ -1155,7 +1155,7 @@ const pulsarData = [
       "uncertainty": null
     },
     "chirp": {
-      "value": 1.20988,
+      "value": null,
       "hasReferences": false,
       "references": null
     },
@@ -1261,7 +1261,7 @@ const pulsarData = [
       "uncertainty": null
     },
     "chirp": {
-      "value": 1.08819,
+      "value": null,
       "hasReferences": false,
       "references": null
     },
@@ -1367,7 +1367,7 @@ const pulsarData = [
       "uncertainty": null
     },
     "chirp": {
-      "value": 1.08714,
+      "value": null,
       "hasReferences": false,
       "references": null
     },
@@ -1721,7 +1721,7 @@ const pulsarData = [
       "uncertainty": null
     },
     "chirp": {
-      "value": 1.12597,
+      "value": null,
       "hasReferences": false,
       "references": null
     },
@@ -1945,7 +1945,7 @@ const pulsarData = [
       "uncertainty": null
     },
     "chirp": {
-      "value": 1.09444,
+      "value": null,
       "hasReferences": false,
       "references": null
     },
@@ -2055,7 +2055,7 @@ const pulsarData = [
       "uncertainty": null
     },
     "chirp": {
-      "value": 1.12341,
+      "value": null,
       "hasReferences": false,
       "references": null
     },
@@ -2279,7 +2279,7 @@ const pulsarData = [
       "uncertainty": null
     },
     "chirp": {
-      "value": 1.07876,
+      "value": null,
       "hasReferences": false,
       "references": null
     },
@@ -2769,7 +2769,7 @@ const pulsarData = [
       "uncertainty": null
     },
     "chirp": {
-      "value": 1.12372,
+      "value": null,
       "hasReferences": false,
       "references": null
     },
@@ -2879,7 +2879,7 @@ const pulsarData = [
       "uncertainty": null
     },
     "chirp": {
-      "value": 1.08819,
+      "value": null,
       "hasReferences": false,
       "references": null
     },
