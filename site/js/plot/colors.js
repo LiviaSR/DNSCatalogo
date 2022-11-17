@@ -1,3 +1,11 @@
 const defaultColor = (type) => {
-  return '#58a6ff';
+  console.log(type);
+  switch(type) {
+    case 'rec':
+      return '#58a6ff';
+    case 'nrec':
+      return '#34ebae';
+    case 'GC':
+      return '#eb3465'
+  }  
 }

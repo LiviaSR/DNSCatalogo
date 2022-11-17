@@ -19,8 +19,26 @@ const multi1000RemoveOutliersWithValueGreaterThan500FilterByRecycled = (x, y) =>
   xCopy = xCopy.filter(v => v.type === 'rec' );
   yCopy = yCopy.filter(v => v.type === 'rec' );
 
-  console.log(xCopy);
-  console.log(yCopy);
+  return [xCopy, yCopy];
+}
+
+const absoluteValue = (x, y) => {
+  let xCopy = _.cloneDeep(x);
+  let yCopy = _.cloneDeep(y);
+
+  xCopy = xCopy.map((v) => {
+    return({
+      'type': v.type,
+      'value': Math.abs(v.value),
+    })
+  });
+
+  yCopy = yCopy.map((v) => {
+    return({
+      'type': v.type,
+      'value': Math.abs(v.value),
+    })
+  });
 
   return [xCopy, yCopy];
 }

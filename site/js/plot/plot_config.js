@@ -16,5 +16,11 @@ const plotConfig = {
     'axis': logarithmicXYAxis,
     'tick': null,
     'color': null,
+  },
+  'p-pdot': {
+    'transformation': absoluteValue,
+    'axis': logarithmicXYAxis,
+    'tick': null,
+    'color': null,
   }
 }
