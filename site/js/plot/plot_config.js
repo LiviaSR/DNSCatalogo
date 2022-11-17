@@ -25,13 +25,23 @@ const plotConfig = {
   //   'transformations': someFunction,
   //   'axis': someFunction,
   //   'color': someFunction,
+  //   'ticks-confirmed': [
+  //     [adjustXtick, 5],
+  //     [adjustYtick, 5],
+  //   ],
+  //   'ticks-candidate': [
+  //     [adjustXtick, 5],
+  //     [adjustYtick, 5],
+  //   ]
   // }
   'default': {
     'axis': defaultAxis,
     'color': defaultColor,
   },
   'p-p': {
-    'transformations': [[removeOutliersYGT, 2]],
+    'transformations': [
+      [removeOutliersYGT, 2]
+    ],
   },
   'p-pdot': {
     'transformations': [
