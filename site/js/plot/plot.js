@@ -1,10 +1,3 @@
-const pcs = { // Plot control selection
-  'confirmed': true,
-  'x': 'mp',
-  'y': 'mc'
-}
-
-
 function plot() {
   // Get custom config
   const pair = `${pcs['x']}-${pcs['y']}`;
@@ -15,9 +8,19 @@ function plot() {
   // Get plot data from pulsar_data
   [x, y] = getPlotData();
 
-  // Custom data filter function
-  if ( config.transformation ) {
-    [x, y] = config.transformation(x, y);
+  // Custom data filter functions
+  if ( config.hasOwnProperty('transformations') ) {
+    if ( Array.isArray(config.transformations) ) {
+      for ( let transformation of config.transformations ) {
+        if ( Array.isArray(transformation) ) {
+          [x, y] = transformation[0](x, y, transformation[1]); // If array then apply args
+        } else {
+          [x, y] = transformation(x, y);
+        }
+      }
+    } else {
+      [x, y] = config.transformations(x, y);
+    }
   }
 
   // Build list of lists [[x, y] ..]
@@ -29,7 +32,7 @@ function plot() {
   // Build plot SVG
   const plotContainer = document.getElementById('plot');
 
-  const margin = {top: 10, right: 30, bottom: 60, left: 60},
+  const margin = {top: 15, right: 30, bottom: 60, left: 60},
   width = plotContainer.offsetWidth - margin.left - margin.right,
   height = plotContainer.offsetHeight - margin.top - margin.bottom;
 
@@ -42,27 +45,32 @@ function plot() {
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
-  if ( config.axis ) {
+  // Add axis
+  if ( config.hasOwnProperty('axis') ) {
     [x_axis, y_axis] = config.axis(x, y, width, height, margin, svg, pcs);
   } else {
     [x_axis, y_axis] = plotConfig['default'].axis(x, y, width, height, margin, svg, pcs);
   }
 
+  // Add tooltips to data points
   let Tooltip = d3.select('#plot')
     .append("div")
     .style("opacity", 0)
     .attr("class", "tooltip")
     .style("background-color", "white")
-    .style("border", "solid")
-    .style("border-width", "2px")
-    .style("border-radius", "5px")
     .style("padding", "5px")
 
   const mouseover = function(d) {
+    
+    if ( d[0].type === 'rec' ) { borderColor = `-5px 0 0 0px ${colors['rec']}`; }
+    else if ( d[0].type === 'nrec' ) { borderColor = `-5px 0 0 0px ${colors['nrec']}`; }
+    else if ( d[0].type === 'GC' ) { borderColor = `-5px 0 0 0px ${colors['GC']}`; }
+
     Tooltip
       .style("opacity", 1)
+      .style('box-shadow', borderColor)
     d3.select(this)
-      .style("stroke", "black")
+      .style("stroke", "white")
       .style("opacity", 1)
   }
 
@@ -83,8 +91,6 @@ function plot() {
       .style("opacity", 0.8)
   }
 
-  console.log(plotData);
-
   // Add dots
   svg.append('g')
     .selectAll("dot")
@@ -94,12 +100,20 @@ function plot() {
       .attr("cx", function (d) { return x_axis(d[0].value); } )
       .attr("cy", function (d) { return y_axis(d[1].value); } )
       .attr("r", 5)
+      .style('opacity', 0)
       .style("fill", (d) => {
-        if ( config.color ) {
+        if ( config.hasOwnProperty('color') ) {
           return config.color(d[0].type);
         }
         return plotConfig['default'].color(d[0].type);
       })
+      
+  svg.selectAll('circle')
+    .transition()
+    .duration(transitions['data-display-delay'])
+    .style('opacity', 1);
+
+  svg.selectAll('circle')
     .on('mouseover', mouseover)
     .on('mousemove', mousemove)
     .on('mouseleave', mouseleave);

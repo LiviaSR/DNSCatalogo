@@ -4,6 +4,7 @@ function buildPlotControls(axis) {
 
   // Tags in this array shall be ignored when building plot controls
   const ignoreField = ['name', 'Type', 'DoubleSystem', 'systemName', 'hasReferences', 'references', 'comments', 'Confirmed'];
+  const rowLength = 3;
 
   let properties = []
   for ( let property of Object.keys(pulsarData[0]) ) {
@@ -12,12 +13,12 @@ function buildPlotControls(axis) {
     }
   }
 
-  for ( let row = 0; row < Math.ceil(properties.length / 5); row++) {
+  for ( let row = 0; row < Math.ceil(properties.length / rowLength); row++) {
 
     let rowDiv = document.createElement('div')
-    rowDiv.className = 'row';
+    rowDiv.className = 'row flex-nowrap';
 
-    for ( let i = row * 5; i < (row + 1) * 5; i++ ) {
+    for ( let i = row * rowLength; i < (row + 1) * rowLength; i++ ) {
       if ( i >= properties.length ) { // Append empty columns to align elements
         let colDiv = document.createElement('div');
         colDiv.className = 'col';
