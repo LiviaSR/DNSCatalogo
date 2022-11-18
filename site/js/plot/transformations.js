@@ -6,6 +6,9 @@ const multiXBy = (x, y, multiplier) => {
     return({
       'type': v.type,
       'value': v.value * multiplier,
+      'name': v.name,
+      'isLimit': v.isLimit,
+      'isAssumed': v.isAssumed,
     });
   })
 
@@ -20,6 +23,9 @@ const multiYBy = (x, y, multiplier) => {
     return({
       'type': v.type,
       'value': v.value * multiplier,
+      'name': v.name,
+      'isLimit': v.isLimit,
+      'isAssumed': v.isAssumed,
     });
   })
 
@@ -78,6 +84,9 @@ const absoluteValue = (x, y) => {
     return({
       'type': v.type,
       'value': Math.abs(v.value),
+      'name': v.name,
+      'isLimit': v.isLimit,
+      'isAssumed': v.isAssumed,
     })
   });
 
@@ -85,6 +94,9 @@ const absoluteValue = (x, y) => {
     return({
       'type': v.type,
       'value': Math.abs(v.value),
+      'name': v.name,
+      'isLimit': v.isLimit,
+      'isAssumed': v.isAssumed,
     })
   });
 
@@ -121,6 +133,26 @@ const removeYValueEq = (x, y, value) => {
 
   xCopy = xCopy.filter(e => e !== undefined);
   yCopy = yCopy.filter(e => e !== undefined);
+
+  return [xCopy, yCopy];
+}
+
+const filterByLimit = (x, y) => {
+  let xCopy = _.cloneDeep(x);
+  let yCopy = _.cloneDeep(y);
+
+  xCopy = xCopy.filter(v => ! v.isLimit);
+  yCopy = yCopy.filter(v => ! v.isLimit);
+
+  return [xCopy, yCopy];
+}
+
+const filterByAssumed = (x, y) => {
+  let xCopy = _.cloneDeep(x);
+  let yCopy = _.cloneDeep(y);
+
+  xCopy = xCopy.filter(v => ! v.isAssumed);
+  yCopy = yCopy.filter(v => ! v.isAssumed);
 
   return [xCopy, yCopy];
 }
