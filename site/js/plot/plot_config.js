@@ -84,12 +84,15 @@ const plotConfig = {
     'transformations': [
       [multiXBy, 1000],
       [removeOutliersXGT, 2000],
+      filterByAssumed,
+      filterByLimit,
     ],
     'axis': logarithmicXAxis,
   },
   'p-mc': {
     'transformations': [
       [multiXBy, 1000],
+      filterByLimit,
     ],
     'axis': logarithmicXAxis,
 
@@ -201,6 +204,8 @@ const plotConfig = {
       absoluteValue,
       [multiXBy, 1e-18],
       [removeOutliersXGT, 1e-16],
+      filterByAssumed,
+      filterByLimit,
     ],
    'axis': logarithmicXAxis,
   },
@@ -208,6 +213,7 @@ const plotConfig = {
     'transformations':[
       absoluteValue,
       [multiXBy, 1e-18],
+      filterByLimit,
     ],
    'axis': logarithmicXAxis,
   },
@@ -278,12 +284,22 @@ const plotConfig = {
     'axis': logarithmicXAxis
   },
   'pb-mt':{
+    'transformations': [
+
+    ],
     'axis': logarithmicXAxis
   },
   'pb-mp':{
+    'transformations': [
+      filterByAssumed,
+      filterByLimit,
+    ],
     'axis': logarithmicXAxis
   },
   'pb-mc':{
+    'transformations': [
+      filterByLimit,
+    ],
     'axis': logarithmicXAxis
   },
   'pb-chirp':{
@@ -316,6 +332,105 @@ const plotConfig = {
   'e-pb': {
     'axis': logarithmicYAxis,
   },
+  'e-mp':{
+    'transformations': [
+      filterByAssumed,
+      filterByLimit,
+    ],
+  },
+  'e-mc':{
+    'transformations': [
+      filterByLimit,
+    ],
+  },
+  'e-age':{
+    'transformations': [
+      [removeYValueEq, 0],
+    ],
+    'axis': logarithmicYAxis,
+  },
+  'e-tau': {
+    'axis': logarithmicYAxis,
+  },
+  'f-p': {
+    'transformations': [
+      [multiYBy, 1e3],
+    ],
+    'axis': logarithmicYAxis,
+  },
+  'f-pdot': {
+    'transformations': [
+      absoluteValue,
+      [multiYBy, 1e-18]
+    ],
+    'axis': logarithmicYAxis,
+  },
+  'f-pb': {
+    'axis': logarithmicYAxis
+  },
+  'f-mp': {
+    'transformations': [
+      filterByAssumed,
+      filterByLimit
+    ]
+  },
+  'f-mc': {
+    'transformations': [
+      filterByLimit
+    ]
+  },
+  'f-age': {
+    'transformations': [
+      [removeYValueEq, 0]
+    ],
+    'axis': logarithmicYAxis
+  },
+  'f-tau': {
+    'axis': logarithmicYAxis
+  },
+  'mt-p': {
+    'transformations': [
+      [multiYBy, 1e3]
+    ],
+    'axis': logarithmicYAxis
+  },
+  'mt-pdot': {
+    'transformations': [
+      absoluteValue,
+      [multiYBy, 1e-18],
+    ],
+    'axis': logarithmicYAxis,
+  },
+  'mt-pb': {
+    'axis': logarithmicYAxis,
+  },
+  'mt-mp': {
+    'transformations': [
+      filterByAssumed,
+      filterByLimit
+    ]
+  },
+  'mt-mc': {
+    'transformations': [
+      filterByLimit
+    ]
+  },
+  'mt-age': {
+    'transformations': [[removeXValueEq, 0]],
+    'axis': logarithmicYAxis,
+  },
+  'mt-tau': {
+    'axis': logarithmicYAxis,
+  }, 
+  'mp-p': {
+    'transformations': [
+      filterByAssumed,
+      filterByLimit,
+      [multiYBy, 1e3]
+    ],
+    'axis': logarithmicYAxis,
+  },
+  
   'age-tau': {
     'transformations': [[removeXValueEq, 0]],
     'axis': logarithmicXYAxis,
