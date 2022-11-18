@@ -1,3 +1,17 @@
+const multiXBy = (x, y, multiplier) => {
+  let xCopy = _.cloneDeep(x);
+  let yCopy = _.cloneDeep(y);
+
+  xCopy = xCopy.map((v) => {
+    return({
+      'type': v.type,
+      'value': v.value * multiplier,
+    });
+  })
+
+  return [xCopy, yCopy];
+}
+
 const multiYBy = (x, y, multiplier) => {
   let xCopy = _.cloneDeep(x);
   let yCopy = _.cloneDeep(y);
@@ -8,6 +22,23 @@ const multiYBy = (x, y, multiplier) => {
       'value': v.value * multiplier,
     });
   })
+
+  return [xCopy, yCopy];
+}
+
+const removeOutliersXGT = (x, y, threshold) => {
+  let xCopy = _.cloneDeep(x);
+  let yCopy = _.cloneDeep(y);
+
+  for ( let i = 0; i < xCopy.length; i++ ) {
+    if ( xCopy[i].value > threshold ) {
+      delete xCopy[i];
+      delete yCopy[i];
+    }
+  }
+
+  xCopy = xCopy.filter(e => e !== undefined);
+  yCopy = yCopy.filter(e => e !== undefined);
 
   return [xCopy, yCopy];
 }
@@ -76,3 +107,4 @@ const removeXValueEq = (x, y, value) => {
 
   return [xCopy, yCopy];
 }
+

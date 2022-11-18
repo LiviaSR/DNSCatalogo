@@ -50,6 +50,40 @@ const plotConfig = {
     ],
     'axis': logarithmicXYAxis,
   },
+  'p-pb': {
+    'transformations': [
+      [multiXBy, 1000],
+      [removeOutliersXGT, 2000]
+    ],
+    'axis': logarithmicXYAxis,
+  },
+  'p-e': {
+    'transformations': [
+      [multiXBy, 1000],
+      [removeOutliersXGT, 2000]
+    ],
+    'axis': logarithmicXAxis,
+  },
+  'p-f': {
+    'transformations': [
+      [multiXBy, 1000]
+    ],
+    'axis': logarithmicXAxis,
+  },
+  'p-mt': {
+    'transformations': [
+      [multiXBy, 1000],
+      [removeOutliersXGT, 2000]
+    ],
+    'axis': logarithmicXAxis,
+
+  },
+  'p-chirp': {
+    'transformations': [
+      [multiXBy, 1000],
+      [removeOutliersXGT, 2000]
+    ]
+  },
   'pb-p': {
     'transformations': [
       [multiYBy, 1000],
