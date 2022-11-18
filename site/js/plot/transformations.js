@@ -141,8 +141,15 @@ const filterByLimit = (x, y) => {
   let xCopy = _.cloneDeep(x);
   let yCopy = _.cloneDeep(y);
 
-  xCopy = xCopy.filter(v => ! v.isLimit);
-  yCopy = yCopy.filter(v => ! v.isLimit);
+  for ( let i = 0; i < xCopy.length; i++ ) {
+    if ( xCopy[i].isLimit || yCopy[i].isLimit ) {
+      delete xCopy[i];
+      delete yCopy[i];
+    }
+  }
+
+  xCopy = xCopy.filter(e => e !== undefined);
+  yCopy = yCopy.filter(e => e !== undefined);
 
   return [xCopy, yCopy];
 }
@@ -151,8 +158,15 @@ const filterByAssumed = (x, y) => {
   let xCopy = _.cloneDeep(x);
   let yCopy = _.cloneDeep(y);
 
-  xCopy = xCopy.filter(v => ! v.isAssumed);
-  yCopy = yCopy.filter(v => ! v.isAssumed);
+  for ( let i = 0; i < xCopy.length; i++ ) {
+    if ( xCopy[i].isAssumed || yCopy[i].isAssumed ) {
+      delete xCopy[i];
+      delete yCopy[i];
+    }
+  }
+
+  xCopy = xCopy.filter(e => e !== undefined);
+  yCopy = yCopy.filter(e => e !== undefined);
 
   return [xCopy, yCopy];
 }
