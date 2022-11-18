@@ -170,3 +170,13 @@ const filterByAssumed = (x, y) => {
 
   return [xCopy, yCopy];
 }
+
+const excludeWithNames = (x, y, names) => {
+  let xCopy = _.cloneDeep(x);
+  let yCopy = _.cloneDeep(y);
+
+  xCopy = xCopy.filter(e => ! names.includes(e.name) );
+  yCopy = yCopy.filter(e => ! names.includes(e.name) );
+
+  return [xCopy, yCopy];
+}
