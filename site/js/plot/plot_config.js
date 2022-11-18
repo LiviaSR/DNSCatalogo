@@ -274,6 +274,35 @@ const plotConfig = {
   'pb-e':{
     'axis': logarithmicXAxis
   },
+  'pb-f':{
+    'axis': logarithmicXAxis
+  },
+  'pb-mt':{
+    'axis': logarithmicXAxis
+  },
+  'pb-mp':{
+    'axis': logarithmicXAxis
+  },
+  'pb-mc':{
+    'axis': logarithmicXAxis
+  },
+  'pb-chirp':{
+    'axis': logarithmicXAxis
+  },
+  'pb-chi':{
+    'axis': logarithmicXAxis
+  },
+  'pb-age':{
+    'transformations': [
+      [removeYValueEq, 0]],
+    'axis': logarithmicXYAxis
+  },
+  'pb-tau':{
+    'axis': logarithmicXYAxis
+  },
+  'e-tau':{
+    'axis': logarithmicXYAxis
+  },
   'age-tau': {
     'transformations': [[removeXValueEq, 0]],
     'axis': logarithmicXYAxis,

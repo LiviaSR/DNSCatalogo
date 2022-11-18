@@ -135,16 +135,44 @@ function getPlotData() {
   if ( pcs.confirmed ) {
     pulsars = pulsarData.filter(pulsar => pulsar.Confirmed);
   }
-  x = pulsars.map(pulsar => { 
-    return({ 
+  x = pulsars.map(pulsar => {
+    let isLimit = false ;
+    let isAssumed = false;
+    
+    if ( pulsar[pcs['x']].hasOwnProperty('isLimit') ) {
+      isLimit = pulsar[pcs['x']].isLimit;
+    }
+    
+    if ( pulsar[pcs['x']].hasOwnProperty('isAssumed') ) {
+      isAssumed = pulsar[pcs['x']].isAssumed;
+    }
+    
+    return({
       'value': pulsar[pcs['x']].value,
       'type': pulsar.Type,
+      'name': pulsar.name,
+      'isLimit': isLimit,
+      'isAssumed': isAssumed,
     })
   });
   y = pulsars.map(pulsar => { 
-    return({ 
+    let isLimit = false ;
+    let isAssumed = false;
+    
+    if ( pulsar[pcs['y']].hasOwnProperty('isLimit') ) {
+      isLimit = pulsar[pcs['y']].isLimit;
+    }
+    
+    if ( pulsar[pcs['y']].hasOwnProperty('isAssumed') ) {
+      isAssumed = pulsar[pcs['y']].isAssumed;
+    }
+    
+    return({
       'value': pulsar[pcs['y']].value,
       'type': pulsar.Type,
+      'name': pulsar.name,
+      'isLimit': isLimit,
+      'isAssumed': isAssumed,
     })
   });
   // Filter non numerical values
