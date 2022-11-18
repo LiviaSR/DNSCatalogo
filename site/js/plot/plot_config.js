@@ -159,8 +159,8 @@ const plotConfig = {
   'pdot-pdot': {
     'transformations': [
       absoluteValue,
-      [multiXBy, 0.000000000000000001],
-      [multiYBy, 0.000000000000000001]
+      [multiXBy, 1e-18],
+      [multiYBy, 1e-18]
 
     ],
    'axis': logarithmicXYAxis,
@@ -168,8 +168,7 @@ const plotConfig = {
   'pdot-pb':{
     'transformations':[
       absoluteValue,
-     [multiXBy, 0.000000000000000001],
-     [removeOutliersXGT, 1e-16],
+     [multiXBy, 1e-18],
     ],
    'axis': logarithmicXYAxis,
   },
@@ -227,12 +226,53 @@ const plotConfig = {
     ],
    'axis': logarithmicXAxis,
   },
+  'pdot-chi':{
+    'transformations':[
+      absoluteValue,
+      [multiXBy, 1e-18],
+    ],
+   'axis': logarithmicXAxis,
+  },
+  'pdot-chieff':{
+    'transformations':[
+      absoluteValue,
+      [multiXBy, 1e-18],
+      [removeOutliersXGT, 1e-16]
+    ],
+   'axis': logarithmicXAxis,
+  },
+  'pdot-age':{
+    'transformations':[
+      absoluteValue,
+      [multiXBy, 1e-18],
+      [removeYValueEq, 0]
+    ],
+   'axis': logarithmicXYAxis,
+  },
+  'pdot-tau':{
+    'transformations':[
+      absoluteValue,
+      [multiXBy, 1e-18],
+      [removeOutliersXGT, 1e-16]
+    ],
+   'axis': logarithmicXYAxis,
+  },
   'pb-p': {
     'transformations': [
       [multiYBy, 1000],
       [removeOutliersYGT, 500],
-      filterByRecycled,
     ],
+    'axis': logarithmicXYAxis,
+  },
+  'pb-pdot': {
+    'transformations': [
+      absoluteValue,
+      [multiYBy, 1e-18]
+    ],
+    'axis': logarithmicXYAxis,
+  },
+  'pb-e':{
+    'axis': logarithmicXAxis
   },
   'age-tau': {
     'transformations': [[removeXValueEq, 0]],
