@@ -18,12 +18,14 @@ const transitions = { // miliseconds
   'data-display-delay': 0,
 }
 
+// Define all particular properties of each pair when necessary
+
 const plotConfig = {
   // Config example:
   //
   // 'pair': {
-  //   'transformations': someFunction,
-  //   'axis': someFunction,
+  //   'transformations': someFunction,    ex.: multiply; remove values (filter data);
+  //   'axis': someFunction,               ex.; LinLin; LinLog;
   //   'color': someFunction,
   //   'ticks-confirmed': [
   //     [adjustXtick, 5],
@@ -46,7 +48,7 @@ const plotConfig = {
   'p-pdot': {
     'transformations': [
       absoluteValue,
-      [multiYBy, 0.0000000000000000001],
+      [multiYBy, 0.000000000000000001],
     ],
     'axis': logarithmicXYAxis,
   },
@@ -78,11 +80,152 @@ const plotConfig = {
     'axis': logarithmicXAxis,
 
   },
+  'p-mp': {
+    'transformations': [
+      [multiXBy, 1000],
+      [removeOutliersXGT, 2000]
+    ],
+    'axis': logarithmicXAxis,
+  },
+  'p-mc': {
+    'transformations': [
+      [multiXBy, 1000],
+    ],
+    'axis': logarithmicXAxis,
+
+  },
   'p-chirp': {
     'transformations': [
       [multiXBy, 1000],
       [removeOutliersXGT, 2000]
     ]
+  },
+  'p-delta': {
+    'transformations': [
+      [multiXBy, 1000]
+    ],
+   'axis': logarithmicXAxis,
+  },
+  'p-chi': {
+    'transformations': [
+      [multiXBy, 1000]
+    ],
+   'axis': logarithmicXAxis,
+  },
+  'p-chieff': {
+    'transformations': [
+      [multiXBy, 1000],
+      [removeOutliersXGT, 2000]
+    ],
+   'axis': logarithmicXAxis,
+  },
+  'p-age': {
+    'transformations': [
+      [multiXBy, 1000], 
+      [removeYValueEq, 0]
+    ],
+   'axis': logarithmicXYAxis,
+   'ticks-candidate': [
+    [adjustXtick, 10],
+    [adjustYtick, 5],
+   ],
+  },
+  'p-tau': {
+    'transformations': [
+      [multiXBy, 1000], 
+      [removeOutliersXGT, 2000]
+    ],
+   'axis': logarithmicXYAxis,
+   'ticks-candidate': [
+      [adjustXtick, 10],
+      [adjustYtick, 5],
+   ],
+  },
+  'pdot-p': {
+    'transformations': [
+      absoluteValue,
+      [multiXBy, 0.000000000000000001]
+    ],
+   'axis': logarithmicXYAxis,
+   'ticks-confirmed': [
+      [adjustXtick, 5],
+      [adjustYtick, 5], 
+   ],
+   'ticks-candidate': [
+      [adjustXtick, 5],
+      [adjustYtick, 5], 
+   ],
+  },
+  'pdot-pdot': {
+    'transformations': [
+      absoluteValue,
+      [multiXBy, 0.000000000000000001],
+      [multiYBy, 0.000000000000000001]
+
+    ],
+   'axis': logarithmicXYAxis,
+  },
+  'pdot-pb':{
+    'transformations':[
+      absoluteValue,
+     [multiXBy, 0.000000000000000001],
+     [removeOutliersXGT, 1e-16],
+    ],
+   'axis': logarithmicXYAxis,
+  },
+  'pdot-e':{
+    'transformations':[
+      absoluteValue,
+      [multiXBy, 1e-18],
+      [removeOutliersXGT, 1e-16],
+    ],
+   'axis': logarithmicXAxis,
+  },
+  'pdot-f':{
+    'transformations':[
+      absoluteValue,
+      [multiXBy, 1e-18],
+      [removeOutliersXGT, 1e-16],
+    ],
+   'axis': logarithmicXAxis,
+  },
+  'pdot-mt':{
+    'transformations':[
+      absoluteValue,
+      [multiXBy, 1e-18],
+      [removeOutliersXGT, 1e-16],
+    ],
+   'axis': logarithmicXAxis,
+  },
+  'pdot-mp':{
+    'transformations':[
+      absoluteValue,
+      [multiXBy, 1e-18],
+      [removeOutliersXGT, 1e-16],
+    ],
+   'axis': logarithmicXAxis,
+  },
+  'pdot-mc':{
+    'transformations':[
+      absoluteValue,
+      [multiXBy, 1e-18],
+    ],
+   'axis': logarithmicXAxis,
+  },
+  'pdot-chirp':{
+    'transformations':[
+      absoluteValue,
+      [multiXBy, 1e-18],
+      [removeOutliersXGT, 1e-16],
+    ],
+   'axis': logarithmicXAxis,
+  },
+  'pdot-delta':{
+    'transformations':[
+      absoluteValue,
+      [multiXBy, 1e-18],
+    ],
+   'axis': logarithmicXAxis,
   },
   'pb-p': {
     'transformations': [

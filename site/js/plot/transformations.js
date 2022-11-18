@@ -108,3 +108,19 @@ const removeXValueEq = (x, y, value) => {
   return [xCopy, yCopy];
 }
 
+const removeYValueEq = (x, y, value) => {
+  let xCopy = _.cloneDeep(x);
+  let yCopy = _.cloneDeep(y);
+
+  for ( let i = 0; i < yCopy.length; i++ ) {
+    if ( yCopy[i].value === value ) {
+      delete xCopy[i];
+      delete yCopy[i];
+    }
+  }
+
+  xCopy = xCopy.filter(e => e !== undefined);
+  yCopy = yCopy.filter(e => e !== undefined);
+
+  return [xCopy, yCopy];
+}
