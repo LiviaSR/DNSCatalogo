@@ -83,7 +83,7 @@ const plotConfig = {
   'p-mp': {
     'transformations': [
       [multiXBy, 1000],
-      [removeOutliersXGT, 2000]
+      [removeOutliersXGT, 2000],
     ],
     'axis': logarithmicXAxis,
   },
@@ -300,8 +300,21 @@ const plotConfig = {
   'pb-tau':{
     'axis': logarithmicXYAxis
   },
-  'e-tau':{
-    'axis': logarithmicXYAxis
+  'e-p': {
+    'transformations': [
+      [multiYBy, 1e3],
+    ],
+    'axis': logarithmicYAxis
+  },
+  'e-pdot': {
+    'transformations': [
+      absoluteValue,
+      [multiYBy, 1e-18],
+    ],
+    'axis': logarithmicYAxis,
+  },
+  'e-pb': {
+    'axis': logarithmicYAxis,
   },
   'age-tau': {
     'transformations': [[removeXValueEq, 0]],
