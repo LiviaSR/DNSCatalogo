@@ -2329,7 +2329,7 @@ const pulsarData = [
       },
       {
         "ref-number": 34,
-        "link": "https://iopscience.iopdotorg/article/10.1086/499918/pdf"
+        "link": "https://ui.adsabs.harvard.edu/abs/2019Sci...365.1013D/abstract"
       }
     ],
     "comments": "\tCandidate. yPSR - massive compact companion. The pulsar (only 110 kyr old) is the second-formed compact object in the system. Companion could be a recycled NS as in most other PSR - NS systems, but it could also be a massive WD, as in the cases of J1141−6545 and B2303+46.",

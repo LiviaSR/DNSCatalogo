@@ -416,7 +416,7 @@ const plotConfig = {
     ]
   },
   'mt-age': {
-    'transformations': [[removeXValueEq, 0]],
+    'transformations': [[removeYValueEq, 0]],
     'axis': logarithmicYAxis,
   },
   'mt-tau': {
@@ -426,13 +426,467 @@ const plotConfig = {
     'transformations': [
       filterByAssumed,
       filterByLimit,
-      [multiYBy, 1e3]
+      [multiYBy, 1e3],
+      [excludeWithNames, ['J0737-3039B']]
     ],
     'axis': logarithmicYAxis,
   },
-  
+  'mp-pdot': {
+    'transformations': [
+      filterByAssumed,
+      filterByLimit,
+      [excludeWithNames, ['J0737-3039B']],
+      absoluteValue,
+      [multiYBy, 1e-18]
+    ],
+    'axis': logarithmicYAxis,
+  },
+  'mp-pb': {
+    'transformations': [
+      filterByAssumed,
+      filterByLimit,
+      [excludeWithNames, ['J0737-3039B']]
+    ],
+    'axis': logarithmicYAxis,
+  },
+  'mp-e': {
+    'transformations': [
+      filterByAssumed,
+      filterByLimit,
+      [excludeWithNames, ['J0737-3039B']] 
+    ]
+  },
+  'mp-f': {
+    'transformations': [
+      filterByAssumed,
+      filterByLimit,
+      [excludeWithNames, ['J0737-3039B']]  
+    ],
+  },
+  'mp-mt': {
+    'transformations': [
+      filterByAssumed,
+      filterByLimit,
+      [excludeWithNames, ['J0737-3039B']]  
+    ],
+  },
+  'mp-mp': {
+    'transformations': [
+      filterByAssumed,
+      filterByLimit,
+      [excludeWithNames, ['J0737-3039B']]  
+    ],
+  },
+  'mp-mc': {
+    'transformations': [
+      filterByAssumed,
+      filterByLimit,
+      [excludeWithNames, ['J0737-3039B']]  
+    ],
+  },
+  'mp-chirp': {
+    'transformations': [
+      filterByAssumed,
+      filterByLimit,
+      [excludeWithNames, ['J0737-3039B']]  
+    ],
+  },
+  'mp-delta': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]  
+    ],
+  },
+  'mp-chi': {
+    'transformations': [
+      filterByAssumed,
+      filterByLimit,
+      [excludeWithNames, ['J0737-3039B']]  
+    ],
+  },
+  'mp-chieff': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]  
+    ],
+  },
+  'mp-age': {
+    'transformations': [
+      filterByAssumed,
+      filterByLimit,
+      [removeYValueEq, 0],
+      [excludeWithNames, ['J0737-3039B']]  
+    ],
+    'axis': logarithmicYAxis,
+  },
+  'mp-tau': {
+    'transformations': [
+      filterByAssumed,
+      filterByLimit,
+      [excludeWithNames, ['J0737-3039B']]
+    ],
+    'axis': logarithmicYAxis
+  },
+  'mc-p': {
+    'transformations': [
+      filterByLimit,
+      [excludeWithNames, ['J0737-3039A']],
+      [multiYBy, 1e3],
+    ],
+    'axis': logarithmicYAxis,
+  },
+  'mc-pdot': {
+    'transformations': [
+      filterByLimit,
+      absoluteValue,
+      [excludeWithNames, ['J0737-3039A']],
+      [multiYBy, 1e-18],
+    ],
+    'axis': logarithmicYAxis
+  },
+  'mc-pb': {
+    'transformations': [
+      filterByLimit,
+      [excludeWithNames, ['J0737-3039A']],
+    ],
+    'axis': logarithmicYAxis
+  },
+  'mc-e': {
+    'transformations': [
+      filterByLimit,
+      [excludeWithNames, ['J0737-3039A']]
+    ]
+  },
+  'mc-f': {
+    'transformations': [
+      filterByLimit,
+      [excludeWithNames, ['J0737-3039A']]
+    ]
+  },
+  'mc-mt': {
+    'transformations': [
+      filterByLimit,
+      [excludeWithNames, ['J0737-3039A']]
+    ]
+  },
+  'mc-mp': {
+    'transformations': [
+      filterByLimit,
+      [excludeWithNames, ['J0737-3039A']]
+    ]
+  },
+  'mc-mc':{
+    'transformations': [
+      filterByLimit,
+      [excludeWithNames, ['J0737-3039A']]
+    ]
+  },
+  'mc-chirp':{
+    'transformations': [
+      filterByLimit,
+      [excludeWithNames, ['J0737-3039A']]
+    ]
+  },
+  'mc-delta':{
+    'transformations': [
+      [excludeWithNames, ['J0737-3039A']]
+    ]
+  },
+  'mc-chi':{
+    'transformations': [
+      filterByLimit,
+      [excludeWithNames, ['J0737-3039A']]
+    ]
+  },
+  'mc-age':{
+    'transformations': [
+      filterByLimit,
+      [excludeWithNames, ['J0737-3039A']],
+      [removeYValueEq, 0]
+    ],
+    'axis': logarithmicYAxis
+  },
+  'mc-tau':{
+    'transformations': [
+      filterByAssumed,
+      [excludeWithNames, ['J0737-3039A']],
+    ],
+    'axis': logarithmicYAxis
+  },
+  'chirp-p': {
+    'transformations': [
+      [multiYBy, 1e3]
+    ],
+    'axis': logarithmicYAxis
+  },
+  'chirp-pdot': {
+    'transformations': [
+      absoluteValue,
+      [multiYBy, 1e-18]
+    ],
+    'axis': logarithmicYAxis
+  },
+  'chirp-pb': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']],
+      [multiYBy, 1e3]
+    ],
+    'axis': logarithmicYAxis
+  },
+  'chirp-e': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']],
+    ],
+  },
+  'chirp-mt': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']],
+    ],
+  },
+  'chirp-mp': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']],
+    ],
+  },
+  'chirp-mc': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039A']],
+    ],
+  },
+  'chirp-chieff': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']],
+    ],
+  },
+  'chirp-age': {
+    'transformations': [
+      [removeYValueEq,0]
+    ],
+    'axis': logarithmicYAxis
+  },
+  'chirp-tau': {
+    'transformations': [
+      [excludeWithNames,['J0737-3039B']]
+    ],
+    'axis': logarithmicYAxis
+  },
+  'delta-p': {
+    'transformations': [
+      [multiYBy, 1e3]
+    ],
+    'axis': logarithmicYAxis
+  },
+  'delta-pdot': {
+    'transformations': [
+      absoluteValue,
+      [multiYBy, 1e-18]
+    ],
+  'axis': logarithmicYAxis
+  },
+  'delta-mp': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]
+    ]
+  },
+  'delta-mc': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039A']]
+    ]
+  },
+  'chi-p':{
+    'transformations': [
+      [multiYBy, 1e3],
+    ],
+    'axis': logarithmicYAxis
+  },
+  'chi-pdot':{
+    'transformations': [
+      absoluteValue,
+      [multiYBy, 1e-18],
+    ],
+    'axis': logarithmicYAxis
+  },
+  'chi-pb':{
+    'axis': logarithmicYAxis
+  },
+  'chi-mp': {
+    'transformations': [
+      filterByAssumed,
+      filterByLimit,
+      [excludeWithNames, ['J0737-3039B']],
+    ],
+  },
+  'chi-mc': {
+    'transformations': [
+      filterByLimit,
+      [excludeWithNames, ['J0737-3039A']],
+    ],
+  },
+  'chi-age': {
+    'transformations': [[removeYValueEq,0]],
+    'axis': logarithmicYAxis
+  },
+  'chi-tau': {
+    'axis': logarithmicYAxis
+  },
+  'chieff-p': {
+    'transformations': [
+      [multiYBy, 1000],
+    ],
+   'axis': logarithmicYAxis,
+  },
+  'chieff-pdot':{
+    'transformations':[
+      absoluteValue,
+      [multiYBy, 1e-18],
+    ],
+   'axis': logarithmicYAxis,
+  },
+  'chieff-mp': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]  
+    ],
+  },
+  'chieff-chieff': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']],
+    ],
+  },
+  'chieff-tau': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']],
+    ],
+  },
+  'age-p': {
+    'transformations': [
+      [multiYBy, 1e3], 
+      [removeXValueEq, 0]
+    ],
+   'axis': logarithmicXYAxis,
+  },
+  'age-pdot':{
+    'transformations':[
+      absoluteValue,
+      [multiYBy, 1e-18],
+      [removeXValueEq, 0]
+    ],
+   'axis': logarithmicXYAxis,
+  },
+  'age-pb':{
+    'transformations': [
+      [removeXValueEq, 0]],
+    'axis': logarithmicXYAxis
+  },
+  'age-e':{
+    'transformations': [
+      [removeXValueEq, 0],
+    ],
+    'axis': logarithmicXAxis,
+  },
+  'age-f': {
+    'transformations': [
+      [removeXValueEq, 0]
+    ],
+    'axis': logarithmicXAxis
+  },
+  'age-mt': {
+    'transformations': [[removeXValueEq, 0]],
+    'axis': logarithmicXAxis,
+  },
+  'age-mp': {
+    'transformations': [
+      filterByAssumed,
+      filterByLimit,
+      [removeXValueEq, 0],
+      [excludeWithNames, ['J0737-3039B']]  
+    ],
+    'axis': logarithmicXAxis,
+  },
+  'age-mc':{
+    'transformations': [
+      filterByLimit,
+      [excludeWithNames, ['J0737-3039A']],
+      [removeXValueEq, 0]
+    ],
+    'axis': logarithmicXAxis
+  },
+  'age-chirp': {
+    'transformations': [
+      [removeXValueEq,0]
+    ],
+    'axis': logarithmicXAxis
+  },
+  'age-chi': {
+    'transformations': [[removeXValueEq,0]],
+    'axis': logarithmicXAxis
+  },
+  'age-age': {
+    'transformations': [[removeXValueEq,0]],
+    'axis': logarithmicXYAxis
+  },
   'age-tau': {
     'transformations': [[removeXValueEq, 0]],
     'axis': logarithmicXYAxis,
   },
+  'tau-p': {
+    'transformations': [
+      [multiYBy, 1e3]
+    ],
+   'axis': logarithmicXYAxis,
+
+  },
+  'tau-pdot':{
+    'transformations':[
+      absoluteValue,
+      [multiYBy, 1e-18],
+      [removeOutliersYGT, 1e-16]
+    ],
+   'axis': logarithmicXYAxis,
+  },
+  'tau-pb':{
+    'axis': logarithmicXYAxis
+  },
+  'tau-e': {
+    'axis': logarithmicXAxis,
+  },
+  'tau-f': {
+    'axis': logarithmicXAxis,
+  },
+  'tau-mt': {
+    'axis': logarithmicXAxis,
+  },
+  'tau-mp': {
+    'transformations': [
+      filterByAssumed,
+      filterByLimit,
+      [excludeWithNames, ['J0737-3039B']]
+    ],
+    'axis': logarithmicXAxis
+  },
+  'tau-mc':{
+    'transformations': [
+      filterByAssumed,
+      [excludeWithNames, ['J0737-3039A']],
+    ],
+    'axis': logarithmicXAxis
+  },
+  'tau-chirp': {
+    'transformations': [
+      [excludeWithNames,['J0737-3039B']]
+    ],
+    'axis': logarithmicXAxis
+  },
+  'tau-chi': {
+    'axis': logarithmicXAxis
+  },
+  'tau-chieff': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']],
+    ],
+  },
+  'tau-age': {
+    'transformations': [[removeYValueEq, 0]],
+    'axis': logarithmicXYAxis,
+  },
+  'tau-tau': {
+    'axis': logarithmicXYAxis
+  }, 
 }
