@@ -21,6 +21,5 @@ function removeAllChildNodes(parent) {
 function formatPower(n) {
   const e = Math.log10(n);
   if (e !== Math.floor(e)) return; //Ignore non-exact power of ten.
-  console.log('cnwudhne')
   return `10${(e + "").replace(/./g, c => "⁰¹²³⁴⁵⁶⁷⁸⁹"[c] || "⁻")}`;
 }

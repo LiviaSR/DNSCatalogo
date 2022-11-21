@@ -51,6 +51,14 @@ const plotConfig = {
       [multiYBy, 0.000000000000000001],
     ],
     'axis': logarithmicXYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, 5, formatPower],
+    ],
+    'ticks-candidate': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, 5, '.10f'],
+    ],
   },
   'p-pb': {
     'transformations': [

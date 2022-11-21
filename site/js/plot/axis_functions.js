@@ -80,12 +80,12 @@ const logarithmicXYAxis = (x, y, width, height, margin, svg, pcs) => {
   svg.append('g')
     .attr("transform", "translate(0," + height + ")")
     .attr('class', 'axis-white x-axis-transition x-axis')
-    .call(d3.axisBottom(x_axis).ticks(5, '0.7'))
+    .call(d3.axisBottom(x_axis).ticks(5, '.2f'))
     .attr('opacity', '0');
   // Add Y axis
   svg.append('g')
     .attr('class', 'axis-white y-axis-transition y-axis')
-    .call(d3.axisLeft(y_axis).ticks(5, formatPower))
+    .call(d3.axisLeft(y_axis).ticks(5, '.2f'))
     .attr('opacity', '0');
 
   // Add X axis label
@@ -117,7 +117,7 @@ const logarithmicXYAxis = (x, y, width, height, margin, svg, pcs) => {
     .transition()
     .duration(transitions['x-axis-display-delay'])
     .attr('opacity', '1')
-    .call(d3.axisBottom(x_axis).ticks(5, '0.7'));
+    .call(d3.axisBottom(x_axis).ticks(5, '.2f'));
 
   // Y axis animation
   y_axis.domain([
@@ -129,7 +129,7 @@ const logarithmicXYAxis = (x, y, width, height, margin, svg, pcs) => {
   .transition()
   .duration(transitions['y-axis-display-delay'])
   .attr('opacity', '1')
-  .call(d3.axisLeft(y_axis).ticks(5, formatPower));
+  .call(d3.axisLeft(y_axis).ticks(5, '.2f'));
 
   return [x_axis, y_axis];
 }
@@ -148,7 +148,7 @@ const logarithmicXAxis = (x, y, width, height, margin, svg, pcs) => {
   svg.append('g')
     .attr("transform", "translate(0," + height + ")")
     .attr('class', 'axis-white x-axis-transition x-axis')
-    .call(d3.axisBottom(x_axis).ticks(5, '.7'))
+    .call(d3.axisBottom(x_axis).ticks(5, '.2f'))
     .attr('opacity', '0');
   // Add Y axis
   svg.append('g')
@@ -185,7 +185,7 @@ const logarithmicXAxis = (x, y, width, height, margin, svg, pcs) => {
     .transition()
     .duration(transitions['x-axis-display-delay'])
     .attr('opacity', '1')
-    .call(d3.axisBottom(x_axis).ticks(5, '.7'));
+    .call(d3.axisBottom(x_axis).ticks(5, '.2f'));
 
   // Y axis animation
   y_axis.domain([
@@ -221,7 +221,7 @@ const logarithmicYAxis = (x, y, width, height, margin, svg, pcs) => {
   // Add Y axis
   svg.append('g')
     .attr('class', 'axis-white y-axis-transition y-axis')
-    .call(d3.axisLeft(y_axis).ticks(5, formatPower))
+    .call(d3.axisLeft(y_axis).ticks(5, '.2f'))
     .attr('opacity', '0');
 
   // Add X axis label

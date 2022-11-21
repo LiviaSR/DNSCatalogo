@@ -92,14 +92,29 @@ function plot() {
 
   // Adjust x and y axis ticks if necessary for confirmed
   if ( config.hasOwnProperty('ticks-confirmed') && pcs.confirmed ) {
-    config['ticks-confirmed'][0][0](svg, x_axis, config['ticks-confirmed'][0][1]);
-    config['ticks-confirmed'][1][0](svg, y_axis, config['ticks-confirmed'][1][1]);
+    if ( config['ticks-confirmed'][0].length < 3 ) {
+      config['ticks-confirmed'][0][0](svg, x_axis, config['ticks-confirmed'][0][1]);
+    } else {
+      config['ticks-confirmed'][0][0](svg, x_axis, config['ticks-confirmed'][0][1], config['ticks-confirmed'][0][2]);      
+    }
+    if ( config['ticks-confirmed'][1].length < 3 ) {
+      config['ticks-confirmed'][1][0](svg, x_axis, config['ticks-confirmed'][1][1]);
+    } else {
+      config['ticks-confirmed'][1][0](svg, x_axis, config['ticks-confirmed'][1][1], config['ticks-confirmed'][1][2]);      
+    }
   }
-
   // Adjust x and y axis ticks if necessary for confirmed
   if ( config.hasOwnProperty('ticks-candidate') && ! pcs.confirmed ) {
-    config['ticks-candidate'][0][0](svg, x_axis, config['ticks-candidate'][0][1]);
-    config['ticks-candidate'][1][0](svg, y_axis, config['ticks-candidate'][1][1]);
+    if ( config['ticks-candidate'][0].length < 3 ) {
+      config['ticks-candidate'][0][0](svg, x_axis, config['ticks-candidate'][0][1]);
+    } else {
+      config['ticks-candidate'][0][0](svg, x_axis, config['ticks-candidate'][0][1], config['ticks-candidate'][0][2]);      
+    }
+    if ( config['ticks-candidate'][1].length < 3 ) {
+      config['ticks-candidate'][1][0](svg, x_axis, config['ticks-candidate'][1][1]);
+    } else {
+      config['ticks-candidate'][1][0](svg, x_axis, config['ticks-candidate'][1][1], config['ticks-candidate'][1][2]);      
+    }
   }
 
   // Add dots
