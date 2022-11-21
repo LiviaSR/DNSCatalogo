@@ -57,7 +57,7 @@ const plotConfig = {
     ],
     'ticks-candidate': [
       [adjustXtick, null, formatPower],
-      [adjustYtick, 5, '.10f'],
+      [adjustYtick, 5, '.10f'], 
     ],
   },
   'p-pb': {
