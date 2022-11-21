@@ -75,7 +75,7 @@ function plot() {
 
   const mousemove = function(d) {
     Tooltip
-      .html(`${d[0].name}<br>${pcs['x']}: ${d[0].value}<br>${pcs['y']}: ${d[1].value}`)
+      .html(`${d[0].name} <br>${pcs['x']}: ${d[0].value}<br>${pcs['y']}: ${d[1].value}`)
       .style("left", (70) + "px")
       .style("top", (70) + "px")
       .style("left", (d3.mouse(this)[0]+90) + "px")
