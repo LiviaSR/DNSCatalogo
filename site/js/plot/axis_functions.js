@@ -9,12 +9,13 @@ const defaultAxis = (x, y, width, height, margin, svg, pcs) => {
 
   // Add X axis
   svg.append('g')
-    .attr("transform", "translate(0," + height + ")")
+    .attr("transform", "translate(0," + height  + ")")
     .attr('class', 'axis-white x-axis-transition x-axis')
     .call(d3.axisBottom(x_axis))
     .attr('opacity', '0');
   // Add Y axis
   svg.append('g')
+    .attr("transform", "translate(0, 0)")
     .attr('class', 'axis-white y-axis-transition y-axis')
     .call(d3.axisLeft(y_axis))
     .attr('opacity', '0');
@@ -80,12 +81,13 @@ const logarithmicXYAxis = (x, y, width, height, margin, svg, pcs) => {
   svg.append('g')
     .attr("transform", "translate(0," + height + ")")
     .attr('class', 'axis-white x-axis-transition x-axis')
-    .call(d3.axisBottom(x_axis).ticks(5, '.2f'))
+    .call(d3.axisBottom(x_axis).ticks(5, '.2'))
     .attr('opacity', '0');
   // Add Y axis
   svg.append('g')
+    .attr("transform", "translate(0, 0)")
     .attr('class', 'axis-white y-axis-transition y-axis')
-    .call(d3.axisLeft(y_axis).ticks(5, '.2f'))
+    .call(d3.axisLeft(y_axis).ticks(5, '.2'))
     .attr('opacity', '0');
 
   // Add X axis label
@@ -117,7 +119,7 @@ const logarithmicXYAxis = (x, y, width, height, margin, svg, pcs) => {
     .transition()
     .duration(transitions['x-axis-display-delay'])
     .attr('opacity', '1')
-    .call(d3.axisBottom(x_axis).ticks(5, '.2f'));
+    .call(d3.axisBottom(x_axis).ticks(5, '.2'));
 
   // Y axis animation
   y_axis.domain([
@@ -129,7 +131,7 @@ const logarithmicXYAxis = (x, y, width, height, margin, svg, pcs) => {
   .transition()
   .duration(transitions['y-axis-display-delay'])
   .attr('opacity', '1')
-  .call(d3.axisLeft(y_axis).ticks(5, '.2f'));
+  .call(d3.axisLeft(y_axis).ticks(5, '.2'));
 
   return [x_axis, y_axis];
 }
@@ -148,12 +150,13 @@ const logarithmicXAxis = (x, y, width, height, margin, svg, pcs) => {
   svg.append('g')
     .attr("transform", "translate(0," + height + ")")
     .attr('class', 'axis-white x-axis-transition x-axis')
-    .call(d3.axisBottom(x_axis).ticks(5, '.2f'))
+    .call(d3.axisBottom(x_axis).ticks(5, '.2'))
     .attr('opacity', '0');
   // Add Y axis
   svg.append('g')
+    .attr("transform", "translate(0, 0)")
     .attr('class', 'axis-white y-axis-transition y-axis')
-    .call(d3.axisLeft(y_axis))
+    .call(d3.axisLeft(y_axis).ticks(5, '.2'))
     .attr('opacity', '0');
 
   // Add X axis label
@@ -185,7 +188,7 @@ const logarithmicXAxis = (x, y, width, height, margin, svg, pcs) => {
     .transition()
     .duration(transitions['x-axis-display-delay'])
     .attr('opacity', '1')
-    .call(d3.axisBottom(x_axis).ticks(5, '.2f'));
+    .call(d3.axisBottom(x_axis).ticks(5, '.2'));
 
   // Y axis animation
   y_axis.domain([
@@ -197,7 +200,7 @@ const logarithmicXAxis = (x, y, width, height, margin, svg, pcs) => {
   .transition()
   .duration(transitions['y-axis-display-delay'])
   .attr('opacity', '1')
-  .call(d3.axisLeft(y_axis));
+    .call(d3.axisLeft(y_axis).ticks(5, '.2'));
 
   return [x_axis, y_axis];
 }
@@ -216,12 +219,13 @@ const logarithmicYAxis = (x, y, width, height, margin, svg, pcs) => {
   svg.append('g')
     .attr("transform", "translate(0," + height + ")")
     .attr('class', 'axis-white x-axis-transition x-axis')
-    .call(d3.axisBottom(x_axis))
+    .call(d3.axisBottom(x_axis).ticks(5, '.2'))
     .attr('opacity', '0');
   // Add Y axis
   svg.append('g')
+    .attr("transform", "translate(0, 0)")
     .attr('class', 'axis-white y-axis-transition y-axis')
-    .call(d3.axisLeft(y_axis).ticks(5, '.2f'))
+    .call(d3.axisLeft(y_axis).ticks(5, '.2'))
     .attr('opacity', '0');
 
   // Add X axis label
@@ -253,7 +257,7 @@ const logarithmicYAxis = (x, y, width, height, margin, svg, pcs) => {
     .transition()
     .duration(transitions['x-axis-display-delay'])
     .attr('opacity', '1')
-    .call(d3.axisBottom(x_axis));
+    .call(d3.axisBottom(x_axis).ticks(5, '.2'));
 
   // Y axis animation
   y_axis.domain([
@@ -265,7 +269,6 @@ const logarithmicYAxis = (x, y, width, height, margin, svg, pcs) => {
   .transition()
   .duration(transitions['y-axis-display-delay'])
   .attr('opacity', '1')
-  .call(d3.axisLeft(y_axis));
-
+  .call(d3.axisLeft(y_axis).ticks(5, '.2'));
   return [x_axis, y_axis];
 }

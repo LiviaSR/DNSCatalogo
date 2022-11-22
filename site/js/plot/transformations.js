@@ -9,6 +9,7 @@ const multiXBy = (x, y, multiplier) => {
       'name': v.name,
       'isLimit': v.isLimit,
       'isAssumed': v.isAssumed,
+      'Confirmed': v.Confirmed
     });
   })
 
@@ -26,6 +27,7 @@ const multiYBy = (x, y, multiplier) => {
       'name': v.name,
       'isLimit': v.isLimit,
       'isAssumed': v.isAssumed,
+      'Confirmed': v.Confirmed
     });
   })
 
@@ -87,6 +89,7 @@ const absoluteValue = (x, y) => {
       'name': v.name,
       'isLimit': v.isLimit,
       'isAssumed': v.isAssumed,
+      'Confirmed': v.Confirmed,
     })
   });
 
@@ -97,6 +100,7 @@ const absoluteValue = (x, y) => {
       'name': v.name,
       'isLimit': v.isLimit,
       'isAssumed': v.isAssumed,
+      'Confirmed': v.Confirmed
     })
   });
 
