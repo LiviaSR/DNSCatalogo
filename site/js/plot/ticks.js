@@ -1,15 +1,15 @@
 const adjustXtick = (svg, x_axis, tick, format) => {
   if ( tick ) {
     svg.select(".x-axis")
-      .call(d3.axisLeft(x_axis).ticks(tick));
+      .call(d3.axisBottom(x_axis).ticks(tick));
   }
   if ( format ) {
     if ( typeof format === 'function' ) {
       svg.select(".x-axis")
-        .call(d3.axisLeft(x_axis).tickFormat(format));
+        .call(d3.axisBottom(x_axis).tickFormat(format));
     } else {
       svg.select(".x-axis")
-      .call(d3.axisLeft(x_axis).tickFormat(d3.format(format)));
+      .call(d3.axisBottom(x_axis).tickFormat(d3.format(format)));
     }
   }
 }
@@ -29,5 +29,3 @@ const adjustYtick = (svg, y_axis, tick, format) => {
     }
   }
 }
-
-// formatPower

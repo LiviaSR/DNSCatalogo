@@ -191,8 +191,24 @@ const plotConfig = {
   'p-age': {
     'transformations': [
       [multiXBy, 1e3], 
-      [removeYValueEq, 0]
+      [removeYValueEq, 0],
     ],
+   'axis': logarithmicXYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, formatPower],
+    ]
+  },
+  'p-tau': {
+    'transformations': [
+      [multiXBy, 1e3], 
+      [removeOutliersXGT, 2e3]
+    ],
+   'axis': logarithmicXYAxis,
     'ticks-confirmed': [
       [adjustXtick, null, formatPower],
       [adjustYtick, null, formatPower],
@@ -201,18 +217,6 @@ const plotConfig = {
       [adjustXtick, null, formatPower],
       [adjustYtick, null, formatPower],
     ],
-   'axis': logarithmicXYAxis,
-  },
-  'p-tau': {
-    'transformations': [
-      [multiXBy, 1e3], 
-      [removeOutliersXGT, 2e3]
-    ],
-   'axis': logarithmicXYAxis,
-   'ticks-candidate': [
-      [adjustXtick, 10],
-      [adjustYtick, 5],
-   ],
   },
   'pdot-p': {
     'transformations': [
@@ -220,23 +224,30 @@ const plotConfig = {
       [multiXBy, 1e-18]
     ],
    'axis': logarithmicXYAxis,
-   'ticks-confirmed': [
-      [adjustXtick, 5],
-      [adjustYtick, 5], 
-   ],
-   'ticks-candidate': [
-      [adjustXtick, 5],
-      [adjustYtick, 5], 
-   ],
+    'ticks-confirmed': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'pdot-pdot': {
     'transformations': [
       absoluteValue,
       [multiXBy, 1e-18],
-      [multiYBy, 1e-18]
-
+      [multiYBy, 1e-18],
     ],
    'axis': logarithmicXYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'pdot-pb':{
     'transformations':[
@@ -244,6 +255,14 @@ const plotConfig = {
      [multiXBy, 1e-18],
     ],
    'axis': logarithmicXYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, null],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, null],
+    ],
   },
   'pdot-e':{
     'transformations':[
@@ -252,6 +271,14 @@ const plotConfig = {
       [removeOutliersXGT, 1e-16],
     ],
    'axis': logarithmicXAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, null],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, null],
+    ],
   },
   'pdot-f':{
     'transformations':[
@@ -260,6 +287,14 @@ const plotConfig = {
       [removeOutliersXGT, 1e-16],
     ],
    'axis': logarithmicXAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, null],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, null],
+    ],
   },
   'pdot-mt':{
     'transformations':[
@@ -268,6 +303,14 @@ const plotConfig = {
       [removeOutliersXGT, 1e-16],
     ],
    'axis': logarithmicXAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, null],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, null],
+    ],
   },
   'pdot-mp':{
     'transformations':[
@@ -278,6 +321,14 @@ const plotConfig = {
       filterByLimit,
     ],
    'axis': logarithmicXAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, null],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, null],
+    ],
   },
   'pdot-mc':{
     'transformations':[
@@ -286,6 +337,14 @@ const plotConfig = {
       filterByLimit,
     ],
    'axis': logarithmicXAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, null],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, null],
+    ],
   },
   'pdot-chirp':{
     'transformations':[
@@ -294,6 +353,14 @@ const plotConfig = {
       [removeOutliersXGT, 1e-16],
     ],
    'axis': logarithmicXAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, null],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, null],
+    ],
   },
   'pdot-delta':{
     'transformations':[
@@ -301,6 +368,14 @@ const plotConfig = {
       [multiXBy, 1e-18],
     ],
    'axis': logarithmicXAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, null],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, null],
+    ],
   },
   'pdot-chi':{
     'transformations':[
@@ -308,6 +383,14 @@ const plotConfig = {
       [multiXBy, 1e-18],
     ],
    'axis': logarithmicXAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, null],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, null],
+    ],
   },
   'pdot-chieff':{
     'transformations':[
@@ -316,6 +399,14 @@ const plotConfig = {
       [removeOutliersXGT, 1e-16]
     ],
    'axis': logarithmicXAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, null],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, null],
+    ],
   },
   'pdot-age':{
     'transformations':[
@@ -324,6 +415,14 @@ const plotConfig = {
       [removeYValueEq, 0]
     ],
    'axis': logarithmicXYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'pdot-tau':{
     'transformations':[
@@ -332,6 +431,14 @@ const plotConfig = {
       [removeOutliersXGT, 1e-16]
     ],
    'axis': logarithmicXYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, formatPower],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'pb-p': {
     'transformations': [
@@ -339,6 +446,14 @@ const plotConfig = {
       [removeOutliersYGT, 500],
     ],
     'axis': logarithmicXYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'pb-pdot': {
     'transformations': [
@@ -346,6 +461,14 @@ const plotConfig = {
       [multiYBy, 1e-18]
     ],
     'axis': logarithmicXYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'pb-e':{
     'axis': logarithmicXAxis
@@ -384,13 +507,29 @@ const plotConfig = {
     'axis': logarithmicXYAxis
   },
   'pb-tau':{
-    'axis': logarithmicXYAxis
+    'axis': logarithmicXYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'e-p': {
     'transformations': [
       [multiYBy, 1e3],
     ],
-    'axis': logarithmicYAxis
+    'axis': logarithmicYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'e-pdot': {
     'transformations': [
@@ -398,6 +537,14 @@ const plotConfig = {
       [multiYBy, 1e-18],
     ],
     'axis': logarithmicYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'e-pb': {
     'axis': logarithmicYAxis,
@@ -421,12 +568,28 @@ const plotConfig = {
   },
   'e-tau': {
     'axis': logarithmicYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, .6],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, .6],
+    ],
   },
   'f-p': {
     'transformations': [
       [multiYBy, 1e3],
     ],
     'axis': logarithmicYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, .6],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, .6],
+    ],
   },
   'f-pdot': {
     'transformations': [
@@ -434,6 +597,14 @@ const plotConfig = {
       [multiYBy, 1e-18]
     ],
     'axis': logarithmicYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'f-pb': {
     'axis': logarithmicYAxis
@@ -453,16 +624,40 @@ const plotConfig = {
     'transformations': [
       [removeYValueEq, 0]
     ],
-    'axis': logarithmicYAxis
+    'axis': logarithmicYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'f-tau': {
-    'axis': logarithmicYAxis
+    'axis': logarithmicYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'mt-p': {
     'transformations': [
       [multiYBy, 1e3]
     ],
-    'axis': logarithmicYAxis
+    'axis': logarithmicYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'mt-pdot': {
     'transformations': [
@@ -470,6 +665,14 @@ const plotConfig = {
       [multiYBy, 1e-18],
     ],
     'axis': logarithmicYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'mt-pb': {
     'axis': logarithmicYAxis,
@@ -488,9 +691,17 @@ const plotConfig = {
   'mt-age': {
     'transformations': [[removeYValueEq, 0]],
     'axis': logarithmicYAxis,
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, .6],
+    ],
   },
   'mt-tau': {
     'axis': logarithmicYAxis,
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, .6],
+    ],
   }, 
   'mp-p': {
     'transformations': [
@@ -510,6 +721,14 @@ const plotConfig = {
       [multiYBy, 1e-18]
     ],
     'axis': logarithmicYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'mp-pb': {
     'transformations': [
@@ -593,7 +812,7 @@ const plotConfig = {
       filterByLimit,
       [excludeWithNames, ['J0737-3039B']]
     ],
-    'axis': logarithmicYAxis
+    'axis': logarithmicYAxis,
   },
   'mc-p': {
     'transformations': [
@@ -602,6 +821,14 @@ const plotConfig = {
       [multiYBy, 1e3],
     ],
     'axis': logarithmicYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'mc-pdot': {
     'transformations': [
@@ -610,61 +837,69 @@ const plotConfig = {
       [excludeWithNames, ['J0737-3039A']],
       [multiYBy, 1e-18],
     ],
-    'axis': logarithmicYAxis
+    'axis': logarithmicYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'mc-pb': {
     'transformations': [
       filterByLimit,
       [excludeWithNames, ['J0737-3039A']],
     ],
-    'axis': logarithmicYAxis
+    'axis': logarithmicYAxis,
   },
   'mc-e': {
     'transformations': [
       filterByLimit,
       [excludeWithNames, ['J0737-3039A']]
-    ]
+    ],
   },
   'mc-f': {
     'transformations': [
       filterByLimit,
       [excludeWithNames, ['J0737-3039A']]
-    ]
+    ],
   },
   'mc-mt': {
     'transformations': [
       filterByLimit,
       [excludeWithNames, ['J0737-3039A']]
-    ]
+    ],
   },
   'mc-mp': {
     'transformations': [
       filterByLimit,
       [excludeWithNames, ['J0737-3039A']]
-    ]
+    ],
   },
   'mc-mc':{
     'transformations': [
       filterByLimit,
       [excludeWithNames, ['J0737-3039A']]
-    ]
+    ],
   },
   'mc-chirp':{
     'transformations': [
       filterByLimit,
       [excludeWithNames, ['J0737-3039A']]
-    ]
+    ],
   },
   'mc-delta':{
     'transformations': [
       [excludeWithNames, ['J0737-3039A']]
-    ]
+    ],
   },
   'mc-chi':{
     'transformations': [
       filterByLimit,
       [excludeWithNames, ['J0737-3039A']]
-    ]
+    ],
   },
   'mc-age':{
     'transformations': [
@@ -672,34 +907,66 @@ const plotConfig = {
       [excludeWithNames, ['J0737-3039A']],
       [removeYValueEq, 0]
     ],
-    'axis': logarithmicYAxis
+    'axis': logarithmicYAxis,
   },
   'mc-tau':{
     'transformations': [
       filterByAssumed,
       [excludeWithNames, ['J0737-3039A']],
     ],
-    'axis': logarithmicYAxis
+    'axis': logarithmicYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, .6],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, .6],
+    ],
   },
   'chirp-p': {
     'transformations': [
       [multiYBy, 1e3]
     ],
-    'axis': logarithmicYAxis
+    'axis': logarithmicYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'chirp-pdot': {
     'transformations': [
       absoluteValue,
       [multiYBy, 1e-18]
     ],
-    'axis': logarithmicYAxis
+    'axis': logarithmicYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'chirp-pb': {
     'transformations': [
       [excludeWithNames, ['J0737-3039B']],
       [multiYBy, 1e3]
     ],
-    'axis': logarithmicYAxis
+    'axis': logarithmicYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'chirp-e': {
     'transformations': [
@@ -749,7 +1016,15 @@ const plotConfig = {
       absoluteValue,
       [multiYBy, 1e-18]
     ],
-  'axis': logarithmicYAxis
+  'axis': logarithmicYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'delta-mp': {
     'transformations': [
@@ -772,7 +1047,15 @@ const plotConfig = {
       absoluteValue,
       [multiYBy, 1e-18],
     ],
-    'axis': logarithmicYAxis
+    'axis': logarithmicYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'chi-pb':{
     'axis': logarithmicYAxis
@@ -795,13 +1078,29 @@ const plotConfig = {
     'axis': logarithmicYAxis
   },
   'chi-tau': {
-    'axis': logarithmicYAxis
+    'axis': logarithmicYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'chieff-p': {
     'transformations': [
       [multiYBy, 1e3],
     ],
    'axis': logarithmicYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'chieff-pdot':{
     'transformations':[
@@ -809,6 +1108,14 @@ const plotConfig = {
       [multiYBy, 1e-18],
     ],
    'axis': logarithmicYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'chieff-mp': {
     'transformations': [
@@ -831,6 +1138,14 @@ const plotConfig = {
       [removeXValueEq, 0]
     ],
    'axis': logarithmicXYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'age-pdot':{
     'transformations':[
@@ -839,6 +1154,14 @@ const plotConfig = {
       [removeXValueEq, 0]
     ],
    'axis': logarithmicXYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'age-pb':{
     'transformations': [
@@ -895,12 +1218,28 @@ const plotConfig = {
   'age-tau': {
     'transformations': [[removeXValueEq, 0]],
     'axis': logarithmicXYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, ".6"],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, ".6"],
+    ],
   },
   'tau-p': {
     'transformations': [
       [multiYBy, 1e3]
     ],
    'axis': logarithmicXYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, null],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, null],
+    ],
 
   },
   'tau-pdot':{
@@ -910,18 +1249,58 @@ const plotConfig = {
       [removeOutliersYGT, 1e-16]
     ],
    'axis': logarithmicXYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, formatPower],
+    ],
   },
   'tau-pb':{
-    'axis': logarithmicXYAxis
+    'axis': logarithmicXYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, null],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, null],
+    ],
   },
   'tau-e': {
     'axis': logarithmicXAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, null],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, null],
+    ],
   },
   'tau-f': {
     'axis': logarithmicXAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, null],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, null],
+    ],
   },
   'tau-mt': {
     'axis': logarithmicXAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, null],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, null],
+    ],
   },
   'tau-mp': {
     'transformations': [
@@ -936,7 +1315,15 @@ const plotConfig = {
       filterByAssumed,
       [excludeWithNames, ['J0737-3039A']],
     ],
-    'axis': logarithmicXAxis
+    'axis': logarithmicXAxis,
+      'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, null],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, null],
+    ],
   },
   'tau-chirp': {
     'transformations': [
@@ -945,7 +1332,15 @@ const plotConfig = {
     'axis': logarithmicXAxis
   },
   'tau-chi': {
-    'axis': logarithmicXAxis
+    'axis': logarithmicXAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, null],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, null],
+    ],
   },
   'tau-chieff': {
     'transformations': [
@@ -955,8 +1350,24 @@ const plotConfig = {
   'tau-age': {
     'transformations': [[removeYValueEq, 0]],
     'axis': logarithmicXYAxis,
+    'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, null],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, null],
+    ],
   },
   'tau-tau': {
-    'axis': logarithmicXYAxis
+    'axis': logarithmicXYAxis,
+      'ticks-confirmed': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, null],
+    ],
+      'ticks-candidate': [
+      [adjustXtick, null, null],
+      [adjustYtick, null, null],
+    ],
   }, 
 }
