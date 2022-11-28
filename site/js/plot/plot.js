@@ -32,7 +32,7 @@ function plot() {
   // Build plot SVG
   const plotContainer = document.getElementById('plot');
 
-  const margin = { top: 30, right: 30, bottom: 60, left: 60 },
+  const margin = { top: 15, right: 30, bottom: 60, left: 60 },
   width = plotContainer.offsetWidth - margin.left - margin.right,
   height = plotContainer.offsetHeight - margin.top - margin.bottom;
 
@@ -145,6 +145,8 @@ function plot() {
     .on('mouseleave', mouseleave);
 }
 
+
+// Function to filter data by confirmed / isLimit / isAssumed
 function getPlotData() {
   let pulsars = pulsarData
   if ( pcs.confirmed ) {

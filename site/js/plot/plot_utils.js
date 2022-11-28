@@ -1,3 +1,4 @@
+// Remove null values
 function filterNonNumericValues(x, y) {
   const horizontalNumeric = []
   const verticalNumeric = [];
@@ -12,12 +13,14 @@ function filterNonNumericValues(x, y) {
   return [horizontalNumeric, verticalNumeric];
 }
 
+// 
 function removeAllChildNodes(parent) {
   while (parent.firstChild) {
       parent.removeChild(parent.firstChild);
   }
 }
 
+// Change scientific notations for tick formats 
 function formatPower(n) {
   const e = Math.log10(n);
   if (e !== Math.floor(e)) return; //Ignore non-exact power of ten.
