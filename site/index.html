@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="./css/index.css" >
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <link href="./css/jquery.dataTables.min.css" rel="stylesheet" ></style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
         <script src="https://d3js.org/d3.v4.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -307,8 +308,13 @@
       <div id="citation" class="page-section">
         <h5>Export citation</h5>
       </div>
-      <div class="text-section">
-        <p>Rocha et al. (2022) in prep.</p>
+      <div class="text-section d-flex flex-row my-4 mt-4">
+        <span class="d-block mt-2">
+          <p id="ExportCite">Rocha et al. (2022) in prep.</p>
+          <button class="btn" onclick="copyContent()">
+            <i class="fa fa-copy"></i>
+          </button>
+        </span>
       </div>
 
       <button onclick="topFunction()" id="to-top-button" title="To top">Top</button>
@@ -332,6 +338,18 @@
         </footer>
       </div>
     </body>
+
+    <script>
+      let text = document.getElementById('ExportCite').innerHTML;
+      const copyContent = async () => {
+        try {
+          await navigator.clipboard.writeText(text);
+          console.log('Copied to clipboard');
+        } catch (err) {
+          console.error('Failed to copy: ', err);
+        }
+      }
+    </script>
 
     <script src="./js/navbar.js"></script>
     <script>eval(mod_pagespeed_pjbkxWKFfo);</script>
@@ -445,18 +463,60 @@
 
 
   <!--
-    'p': P                              (s) or (ms)
-    'pdot': \(\dot{P} \)                (\(s~s^{-1}\))
-    'pb': \( P_b \)                     (days)  
-    'e': e                              null
-    'f': f                              null  
-    'mt': \( M_t \)                     (\(M_\odot \))
-    'mp': \( M_p \)                     (\(M_\odot \))
-    'mc': \( M_c \)                     (\(M_\odot \))
-    'chirp': \( \mathcal{M} \)          (\(M_\odot \))
-    'delta': \( \delta \)               (deg)
-    'chi': \( \chi_f \)                 null
-    'chieff': \( \chi_{eff} \)          null
-    'age': \( \tau_c \)                 (Gyr)
-    'tau': \( \tau_{GW} \)              (Gyr)
+    'p': {
+      "symbol": P,
+      "unit": (s)
+    },
+    'pdot': {
+      "symbol": \(\dot{P} \),
+      "unit": (\(s~s^{-1}\))
+    },
+    'pb': {
+      "symbol": \( P_b \),
+      "unit": (days)
+    },
+    'e': {
+      "symbol": e,
+      "unit": null
+    },
+    'f': {
+      "symbol": f,
+      "unit": null
+    },
+    'mt': {
+      "symbol": \( M_t \),
+      "unit": (\(M_\odot \))
+    },
+    'mp': {
+      "symbol": \( M_p \),
+      "unit": (\(M_\odot \))
+    },
+    'mc': {
+      "symbol": \( M_c \),
+      "unit": (\(M_\odot \))
+    },
+    'chirp': {
+      "symbol": \( \mathcal{M} \),
+      "unit": (\(M_\odot \))
+    },
+    'delta': {
+      "symbol": \( \delta \),
+      "unit": (deg)
+    },
+    'chi': {
+      "symbol": \( \chi_f \),
+      "unit": null
+    },
+    'chieff': {
+      "symbol": \( \chi_{eff} \),
+      "unit": null
+    },
+    'age': {
+      "symbol": \( \tau_c \),
+      "unit": (Gyr)
+    },
+    'tau': {
+      "symbol": \( \tau_{GW} \),
+      "unit": (Gyr)
+    }
   -->

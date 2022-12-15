@@ -183,10 +183,14 @@ function buildPulsarsTable() {
 
     // Chi
     let tdChi = document.createElement('td');
-    tdChi.innerHTML = data.chi.value;
-    // Chi References
-    if ( data.chi.hasReferences ) { addReferences(data.chi.references, tdChi); }
+    if (data.chi.value) {
+      tdChi.innerHTML = data.chi.value;
+     if ( data.chi.hasReferences ) { addReferences(data.chi.references, tdChi); }
     tdChi.setAttribute('style', 'white-space: nowrap') // Prevent references from wrapping
+    } else {
+      tdChi.innerHTML = '-';
+    }
+    // Chi References
 
     // Effective chi
     let tdChieff = document.createElement('td');
@@ -206,14 +210,10 @@ function buildPulsarsTable() {
 
     // Tau
     let tdTau = document.createElement('td');
-    if ( ! data.tau.isInfinity ) {
-      tdTau.innerHTML = data.tau.value;
-      // Tau References
-      if ( data.tau.hasReferences ) { addReferences(data.tau.references, tdTau); }
-      tdTau.setAttribute('style', 'white-space: nowrap') // Prevent references from wrapping
-    } else {
-      tdTau.innerHTML = '&infin;';
-    }
+    tdTau.innerHTML = data.tau.value;
+    // Tau References
+    if ( data.tau.hasReferences ) { addReferences(data.tau.references, tdTau); }
+    tdTau.setAttribute('style', 'white-space: nowrap') // Prevent references from wrapping
     
     // Append columns to row
     tr.appendChild(tdName);

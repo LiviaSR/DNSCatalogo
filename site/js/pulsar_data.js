@@ -107,8 +107,7 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": false,
-      "value": 1453 ,
+      "value": 1453,
       "hasReferences": false,
       "references": null
     },
@@ -232,7 +231,6 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": false,
       "value": 0.576,
       "hasReferences": false,
       "references": null
@@ -477,7 +475,6 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": false,
       "value": 0.086,
       "hasReferences": false,
       "references": null
@@ -608,12 +605,121 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": false,
       "value": 0.086,
       "hasReferences": false,
       "references": null
     },
     "Confirmed": true
+  },
+  {
+    "name": "J1018-1523",
+    "Type": "rec",
+    "DoubleSystem": false,
+    "systemName": null,
+    "hasReferences": true,
+    "references": [
+      {
+        "ref-number": 10,
+        "link": "https://arxiv.org/abs/2212.03926"
+      }
+    ],
+    "comments": "Candidate DNS. Less massive binary system among the DNSs.",
+    "p": {
+      "value": 0.08315,
+      "hasReferences": false,
+      "references": null
+    },
+    "pdot": {
+      "value": 0.109,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 3,
+        "down": 3,
+      }
+    },
+    "pb": {
+      "value": 8.98397,
+      "hasReferences": false,
+      "references": null
+    },
+    "e": {
+      "value": 0.22775 ,
+      "hasReferences": false,
+      "references": null
+    },
+    "f": {
+      "value": 0.23806,
+      "hasReferences": false,
+      "references": null
+    },
+    "mt": {
+      "value": 2.3,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.3,
+        "down": 0.3
+      }
+    },
+    "mp": {
+      "isLimit": false,
+      "isAssumed": true,
+      "value": 1.4,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mc": {
+      "isLimit": true,
+      "isAssumed": false,
+      "value": 1.16,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "chirp": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "delta": {
+      "isLimit": false,
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "chi": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "chieff": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "age": {
+      "value": 12.1,
+      "hasReferences": false,
+      "references": null
+    },
+    "tau": {
+      "value": 13620,
+      "hasReferences": false,
+      "references": null
+    },
+    "Confirmed": false
   },
   {
     "name": "J1325-6253",
@@ -702,7 +808,7 @@ const pulsarData = [
       "uncertainty": null
     },
     "chi": {
-      "value": 0.0037,
+      "value": null,
       "hasReferences": false,
       "references": null
     },
@@ -812,7 +918,7 @@ const pulsarData = [
       "uncertainty": null
     },
     "chi": {
-      "value": 0.0012,
+      "value": null,
       "hasReferences": false,
       "references": null
     },
@@ -930,7 +1036,7 @@ const pulsarData = [
       "uncertainty": null
     },
     "chi": {
-      "value": 0.0005,
+      "value": null,
       "hasReferences": false,
       "references": null
     },
@@ -1074,7 +1180,6 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": false,
       "value": 2.734,
       "hasReferences": false,
       "references": null
@@ -1168,7 +1273,7 @@ const pulsarData = [
       "uncertainty": null
     },
     "chi": {
-      "value": 0.0001,
+      "value": null,
       "hasReferences": false,
       "references": null
     },
@@ -1274,7 +1379,7 @@ const pulsarData = [
       "uncertainty": null
     },
     "chi": {
-      "value": 0,
+      "value": null,
       "hasReferences": false,
       "references": null
     },
@@ -1380,7 +1485,7 @@ const pulsarData = [
       "uncertainty": null
     },
     "chi": {
-      "value": 0,
+      "value": null,
       "hasReferences": false,
       "references": null
     },
@@ -1516,7 +1621,6 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": false,
       "value": 1.656,
       "hasReferences": false,
       "references": null
@@ -1640,7 +1744,6 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": false,
       "value": 0.076,
       "hasReferences": false,
       "references": null
@@ -1734,7 +1837,7 @@ const pulsarData = [
       "uncertainty": null
     },
     "chi": {
-      "value": 0.0006,
+      "value": null,
       "hasReferences": false,
       "references": null
     },
@@ -1958,7 +2061,7 @@ const pulsarData = [
       "uncertainty": null
     },
     "chi": {
-      "value": 0.0001,
+      "value": null,
       "hasReferences": false,
       "references": null
     },
@@ -2068,7 +2171,7 @@ const pulsarData = [
       "uncertainty": null
     },
     "chi": {
-      "value": 0.0197,
+      "value": null,
       "hasReferences": false,
       "references": null
     },
@@ -2292,7 +2395,7 @@ const pulsarData = [
       "uncertainty": null
     },
     "chi": {
-      "value": 0,
+      "value": null,
       "hasReferences": false,
       "references": null
     },
@@ -2309,7 +2412,6 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": false,
       "value": 1.322,
       "hasReferences": false,
       "references": null
@@ -2437,7 +2539,6 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": false,
       "value": 0.308,
       "hasReferences": false,
       "references": null
@@ -2556,7 +2657,6 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": false,
       "value": 0.47,
       "hasReferences": false,
       "references": null
@@ -2688,7 +2788,6 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": false,
       "value": 0.301,
       "hasReferences": false,
       "references": null
@@ -2782,7 +2881,7 @@ const pulsarData = [
       "uncertainty": null
     },
     "chi": {
-      "value": 0,
+      "value": null,
       "hasReferences": false,
       "references": null
     },
@@ -2892,7 +2991,7 @@ const pulsarData = [
       "uncertainty": null
     },
     "chi": {
-      "value": 0.0287,
+      "value": null,
       "hasReferences": false,
       "references": null
     },
@@ -2909,7 +3008,6 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": false,
       "value": 0.046,
       "hasReferences": false,
       "references": null
@@ -3033,7 +3131,6 @@ const pulsarData = [
       "references": null
     },
     "tau": {
-      "isInfinity": false,
       "value": 0.217,
       "hasReferences": false,
       "references": null
@@ -3043,5 +3140,127 @@ const pulsarData = [
 ]
 
 /* 
-
+  {
+    "name": ,
+    "Type": ,
+    "DoubleSystem": ,
+    "systemName": ,
+    "hasReferences": ,
+    "references": [
+      {
+        "ref-number": ,
+        "link": ""
+      }
+    ],
+    "comments": "",
+    "p": {
+      "value": ,
+      "hasReferences": ,
+      "references": 
+    },
+    "pdot": {
+      "value": ,
+      "hasReferences": ,
+      "references": ,
+      "hasUncertainty": ,
+      "uncertainty": {
+        "symmetrical": ,
+        "up": ,
+        "down": 
+      }
+    },
+    "pb": {
+      "value": ,
+      "hasReferences": ,
+      "references": 
+    },
+    "e": {
+      "value": ,
+      "hasReferences":,
+      "references":
+    },
+    "f": {
+      "value": ,
+      "hasReferences": ,
+      "references": null
+    },
+    "mt": {
+      "value": ,
+      "hasReferences": ,
+      "references": ,
+      "hasUncertainty": ,
+      "uncertainty": {
+        "symmetrical": ,
+        "up": ,
+        "down":
+      }
+    },
+    "mp": {
+      "isLimit": ,
+      "isAssumed": ,
+      "value": ,
+      "hasReferences": ,
+      "references": ,
+      "hasUncertainty": ,
+      "uncertainty": {
+        "symmetrical": ,
+        "up": ,
+        "down": 
+      }
+    },
+    "mc": {
+      "isLimit": ,
+      "isAssumed": ,
+      "value": ,
+      "hasReferences": ,
+      "references": ,
+      "hasUncertainty": ,
+      "uncertainty": {
+        "symmetrical": ,
+        "up": ,
+        "down": 
+      }
+    },
+    "chirp": {
+      "value": ,
+      "hasReferences": ,
+      "references": 
+    },
+    "delta": {
+      "isLimit": ,
+      "value": ,
+      "hasReferences": ,
+      "references": [
+        {
+          "ref-number": ,
+          "link": ""
+        }
+      ],
+      "hasUncertainty": ,
+      "uncertainty": 
+    },
+    "chi": {
+      "value": ,
+      "hasReferences": ,
+      "references": 
+    },
+    "chieff": {
+      "value": ,
+      "hasReferences": ,
+      "references": ,
+      "hasUncertainty": ,
+      "uncertainty": 
+    },
+    "age": {
+      "value": ,
+      "hasReferences": ,
+      "references": 
+    },
+    "tau": {
+      "value": ,
+      "hasReferences": ,
+      "references": 
+    },
+    "Confirmed": false
+  }
 */
