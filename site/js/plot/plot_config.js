@@ -60,10 +60,65 @@ const plotConfig = {
   'default': {
     'axis': defaultAxis,
     'color': defaultColor,
-  //  'units': {
-  //     'p': 
-  //   },
-  },
+    'units': {
+      'p': {
+        "symbol": 'P',
+        "unit": '(s)',
+      },
+      'pdot': {
+        "symbol": '\(\dot{P} \)',
+        "unit": '(\(s~s^{-1}\))',
+      },
+      'pb': {
+        "symbol": '\( P_b \)',
+        "unit": '(days)',
+      },
+      'e': {
+        "symbol": 'e',
+        "unit": 'null',
+      },
+      'f': {
+        "symbol": 'f',
+        "unit": null,
+      },
+      'mt': {
+        "symbol": '\( M_t \)',
+        "unit": '(\(M_\odot \))',
+      },
+      'mp': {
+        "symbol": '\( M_p \)',
+        "unit": '(\(M_\odot \))',
+      },
+      'mc': {
+        "symbol": '\( M_c \)',
+        "unit": '(\(M_\odot \))',
+      },
+      'chirp': {
+        "symbol": '\( \mathcal{M} \)',
+        "unit": '(\(M_\odot \))',
+      },
+      'delta': {
+        "symbol": '\( \delta \)',
+        "unit": '(deg)',
+      },
+      'chi': {
+        "symbol": '\( \chi_f \)',
+        "unit": null,
+      },
+      'chieff': {
+        "symbol": '\( \chi_{eff} \)',
+        "unit": null,
+      },
+      'age': {
+        "symbol": '\( \tau_c \)',
+        "unit": '(Gyr)',
+      },
+      'tau': {
+        "symbol": '\( \tau_{GW} \)',
+        "unit": '(Gyr)',
+      },
+    }
+  },  
   'p-p': {
     'axis': logarithmicXYAxis
   },

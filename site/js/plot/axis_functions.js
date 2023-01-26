@@ -3,7 +3,7 @@
 */
 
 
-const defaultAxis = (x, y, width, height, margin, svg, pcs) => {
+const defaultAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLabel) => {
   const x_axis = d3.scaleLinear()
     //.domain([0, 0])
     .range([40, width]);
@@ -34,7 +34,7 @@ const defaultAxis = (x, y, width, height, margin, svg, pcs) => {
     .attr("text-anchor", "middle")
     .attr("x", width / 2)
     .attr("y", height + margin.top + 37)
-    .text(pcs['x']);
+    .text(XAxisLabel);
 
   // Y axis label
   svg.append("text")
@@ -44,7 +44,7 @@ const defaultAxis = (x, y, width, height, margin, svg, pcs) => {
     .attr("transform", "rotate(-90)")
     .attr("y", -margin.left + 25)
     .attr("x", -margin.top -(height / 2))
-    .text(pcs['y'])
+    .text(YAxisLabel)
 
   // X axis animation
   x_axis.domain([
@@ -79,7 +79,7 @@ const defaultAxis = (x, y, width, height, margin, svg, pcs) => {
        Log-Log scale
 */
 
-const logarithmicXYAxis = (x, y, width, height, margin, svg, pcs) => {
+const logarithmicXYAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLabel) => {
   const x_axis = d3.scaleLog()
   //.domain([0,  0])
   .range([40, width])
@@ -112,7 +112,7 @@ const logarithmicXYAxis = (x, y, width, height, margin, svg, pcs) => {
     .attr("text-anchor", "middle")
     .attr("x", width / 2)
     .attr("y", height + margin.top + 37)
-    .text(pcs['x']);
+    .text(XAxisLabel);
 
   // Y axis label
   svg.append("text")
@@ -122,7 +122,7 @@ const logarithmicXYAxis = (x, y, width, height, margin, svg, pcs) => {
     .attr("transform", "rotate(-90)")
     .attr("y", -margin.left + 25)
     .attr("x", -margin.top -(height / 2))
-    .text(pcs['y'])
+    .text(YAxisLabel)
 
   // X axis animation
   x_axis.domain([
@@ -157,7 +157,7 @@ const logarithmicXYAxis = (x, y, width, height, margin, svg, pcs) => {
        Log-Lin scale
 */
 
-const logarithmicXAxis = (x, y, width, height, margin, svg, pcs) => {
+const logarithmicXAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLabel) => {
   const x_axis = d3.scaleLog()
   //.domain([0, 0])
   .range([40, width])
@@ -189,7 +189,7 @@ const logarithmicXAxis = (x, y, width, height, margin, svg, pcs) => {
     .attr("text-anchor", "middle")
     .attr("x", width / 2)
     .attr("y", height + margin.top + 37)
-    .text(pcs['x']);
+    .text(XAxisLabel);
 
   // Y axis label
   svg.append("text")
@@ -199,7 +199,7 @@ const logarithmicXAxis = (x, y, width, height, margin, svg, pcs) => {
     .attr("transform", "rotate(-90)")
     .attr("y", -margin.left + 25)
     .attr("x", -margin.top -(height / 2))
-    .text(pcs['y'])
+    .text(YAxisLabel)
 
   // X axis animation
   x_axis.domain([
@@ -234,7 +234,7 @@ const logarithmicXAxis = (x, y, width, height, margin, svg, pcs) => {
        Lin-Log scale
 */
 
-const logarithmicYAxis = (x, y, width, height, margin, svg, pcs) => {
+const logarithmicYAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLabel) => {
   const x_axis = d3.scaleLinear()
   //.domain([0, 0])
   .range([40, width]);
@@ -267,7 +267,7 @@ const logarithmicYAxis = (x, y, width, height, margin, svg, pcs) => {
     .attr("text-anchor", "middle")
     .attr("x", width / 2)
     .attr("y", height + margin.top + 37)
-    .text(pcs['x']);
+    .text(XAxisLabel);
 
   // Y axis label
   svg.append("text")
@@ -277,7 +277,7 @@ const logarithmicYAxis = (x, y, width, height, margin, svg, pcs) => {
     .attr("transform", "rotate(-90)")
     .attr("y", -margin.left + 25)
     .attr("x", -margin.top -(height / 2))
-    .text(pcs['y'])
+    .text(YAxisLabel)
 
   // X axis animation
   x_axis.domain([

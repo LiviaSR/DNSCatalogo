@@ -45,11 +45,22 @@ function plot() {
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
+  // Get axis labels
+
+  if ( config.hasOwnProperty('units') ) {
+    XAxisLabel = config['units'][pcs['x']]['symbol'] + ' ' + config['units'][pcs['x']]['unit'];
+    YAxisLabel = config['units'][pcs['y']]['symbol'] + ' ' + config['units'][pcs['y']]['unit'];
+  } else {
+    XAxisLabel = plotConfig['default']['units'][pcs['x']]['symbol'] + ' ' + plotConfig['default']['units'][pcs['x']]['unit'];
+    YAxisLabel = plotConfig['default']['units'][pcs['y']]['symbol'] + ' ' + plotConfig['default']['units'][pcs['y']]['unit'];  
+  }
+
+
   // Add axis
   if ( config.hasOwnProperty('axis') ) {
-    [x_axis, y_axis] = config.axis(x, y, width, height, margin, svg, pcs);
+    [x_axis, y_axis] = config.axis(x, y, width, height, margin, svg, XAxisLabel, YAxisLabel);
   } else {
-    [x_axis, y_axis] = plotConfig['default'].axis(x, y, width, height, margin, svg, pcs);
+    [x_axis, y_axis] = plotConfig['default'].axis(x, y, width, height, margin, svg, XAxisLabel, YAxisLabel);
   }
 
   // Add tooltips to data points
