@@ -4,24 +4,25 @@ const pcs = { // Plot control selection
   'y': 'mc'
 }
 
-  /*
-   const symbols = {
-      'p': '\(P\)',
-      'pdot': '\(\dot{P}\)',
-      'pb': '\( P_b \)',
-      'e': '\(e\)',
-      'f': '\(f\)',
-      'mt': '\( M_t \)',
-      'mp': '\( M_p \)',
-      'mc': '\( M_c \)',
-      'chirp': '\( \mathcal{M} \)', 
-      'delta': '\( \delta \)',
-      'chi': '\( \chi_f \)',
-      'chieff': '\( \chi_{eff} \)',
-      'age': '\( \tau_c \)',
-      'tau': '\( \tau_{GW} \)',
-  };
-  */
+
+const symbols = {
+    'p': '$$ P $$',
+    'pdot': '$$ \\dot{P} $$',
+    'pb': '$$  P_b  $$',
+    'e': '$$ e $$',
+    'f': '$$ f $$',
+    'mt': '$$  M_t  $$',
+    'mp': '$$  M_p  $$',
+    'mc': '$$  M_c  $$',
+    'chirp': '$$  \\mathcal{M} \ $$', 
+    'delta': '$$ \\delta $$',
+    'chi': '$$  \\chi_f  $$',
+    'chieff': '$$  \\chi_{eff}  $$',
+    'age': '$$  \\tau_c  $$',
+    'tau': '$$  \\tau_{GW}  $$',
+};
+
+
 
 const colors = {
   'rec': '#9370DB',
@@ -37,7 +38,8 @@ const transitions = { // miliseconds
   'data-display-delay': 0,
 }
 
-// Define all particular properties of each pair when necessary
+// Define all particular properties to include
+// in plots of each pair (x,y) when necessary
 
 const plotConfig = {
   // Config example:
@@ -58,6 +60,9 @@ const plotConfig = {
   'default': {
     'axis': defaultAxis,
     'color': defaultColor,
+  //  'units': {
+  //     'p': 
+  //   },
   },
   'p-p': {
     'axis': logarithmicXYAxis

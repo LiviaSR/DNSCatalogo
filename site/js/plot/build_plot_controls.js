@@ -12,7 +12,6 @@ function buildPlotControls(axis) {
       properties.push(property);
     }
   }
-
   for ( let row = 0; row < Math.ceil(properties.length / rowLength); row++) {
 
     let rowDiv = document.createElement('div')
@@ -50,7 +49,7 @@ function buildPlotControls(axis) {
       let label = document.createElement('label');
       label.className = 'form-check-label';
       label.setAttribute('for', `plot-control-${axis}-${properties[i]}`);
-      label.innerHTML = properties[i];
+      label.innerHTML = `<MathML>${symbols[properties[i]]}</MathML>`;
 
       formDiv.appendChild(input);
       formDiv.appendChild(label);

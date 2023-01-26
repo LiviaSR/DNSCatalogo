@@ -7,7 +7,7 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 1,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2015ApJ...812..143M"
       }
     ],
@@ -111,7 +111,53 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": true
+    "Confirmed": true,
+    "dist" : {
+      "value": 0.795,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "l": {
+      "value": 184.12,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": -17.14,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": -0.234,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": 1.14,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 2.93,
+        "down": 2.93
+      }
+    },
+    "mu_b": {
+      "value": -7.48,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 2.13,
+        "down": 2.13
+      }
+    }
   },
   {
     "name": "J0509+3801",
@@ -121,7 +167,7 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 2,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2018ApJ...859...93L"
       }
     ],
@@ -235,7 +281,45 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": true
+    "Confirmed": true,
+    "dist" : {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    }
   },
   {
     "name": "J0514-4002A",
@@ -245,7 +329,7 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 3,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.490.3860R/"
       }
     ],
@@ -353,7 +437,45 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": false
+    "Confirmed": false,
+    "dist" : {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    }
   },
   {
     "name": "J0737-3039A",
@@ -363,15 +485,15 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 4,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2006Sci...314...97K"
       },
       {
-        "ref-number": 5,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2021PhRvX..11d1050K"
       },
       {
-        "ref-number": 6,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2008Sci...321..104B"
       }
     ],
@@ -479,7 +601,57 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": true
+    "Confirmed": true,
+    "dist" : {
+      "value": 0.735,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.006,
+        "down": 0.006
+      }
+    },
+    "l": {
+      "value": 245.24,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": -4.5,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": -0.06,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": -3.006,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.036,
+        "down": 0.036
+      }
+    },
+    "mu_b": {
+      "value": -1.235,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.032,
+        "down": 0.032
+      }
+    }
   },
   {
     "name": "J0737-3039B",
@@ -489,15 +661,15 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 7,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2004Sci...303.1153L/abstract"
       },
       {
-        "ref-number": 8,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2013ApJ...767...85F"
       },
       {
-        "ref-number": 9,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2010ApJ...721.1193P"
       }
     ],
@@ -609,7 +781,57 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": true
+    "Confirmed": true,
+    "dist" : {
+      "value": 0.735,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.006,
+        "down": 0.006
+      }
+    },
+    "l": {
+      "value": 245.24,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": -4.5,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": -0.06,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": -3.006,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.036,
+        "down": 0.036
+      }
+    },
+    "mu_b": {
+      "value": -1.235,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.032,
+        "down": 0.032
+      }
+    }
   },
   {
     "name": "J1018-1523",
@@ -619,8 +841,8 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 10,
-        "link": "https://arxiv.org/abs/2212.03926"
+        "ref-number": null,
+        "link": "https://ui.adsabs.harvard.edu/abs/2022arXiv221203926S/abstract"
       }
     ],
     "comments": "Candidate DNS. Less massive binary system among the DNSs.",
@@ -719,7 +941,45 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": false
+    "Confirmed": false,
+    "dist" : {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    }
   },
   {
     "name": "J1325-6253",
@@ -729,7 +989,7 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 10,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2022MNRAS.512.5782S"
       }
     ],
@@ -829,7 +1089,45 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": true
+    "Confirmed": true,
+    "dist" : {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    }
   },
   {
     "name": "J1411+2551",
@@ -839,7 +1137,7 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 11,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2017ApJ...851L..29M"
       }
     ],
@@ -939,7 +1237,53 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": true
+    "Confirmed": true,
+    "dist" : {
+      "value": 1.054,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "l": {
+      "value": 33.379,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": 72.101,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": 1.003,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": -4,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 9,
+        "down": 9 
+      }
+    },
+    "mu_b": {
+      "value": 2,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 12,
+        "down": 12
+      }
+    }
   },
   {
     "name": "J1518+4904",
@@ -949,15 +1293,15 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 12,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2008A&A...490..753J"
       },
       {
-        "ref-number": 13,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/1996ApJ...466L..87N/abstract"
       },
       {
-        "ref-number": 14,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/1999ptgr.conf...79N/abstract"
       }
     ],
@@ -1057,7 +1401,57 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": true
+    "Confirmed": true,
+    "dist" : {
+      "value": 0.81,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.02,
+        "down": 0.02
+      }
+    },
+    "l": {
+      "value": 80.81,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": 54.28,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": 0.658,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": -7.50,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.04,
+        "down": 0.04
+      }
+    },
+    "mu_b": {
+      "value": 4.12,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.04,
+        "down": 0.04
+      }
+    }
   },
   {
     "name": "B1534+12",
@@ -1067,15 +1461,15 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 15,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2014ApJ...787...82F "
       },
       {
-        "ref-number": 16,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/1991Natur.350..688W/abstract"
       },
       {
-        "ref-number": 17,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2002ApJ...581..501S/abstract "
       }
     ],
@@ -1151,7 +1545,7 @@ const pulsarData = [
       "hasReferences": true,
       "references": [
         {
-          "ref-number": 18,
+          "ref-number": null,
           "link": "https://ui.adsabs.harvard.edu/abs/2014ApJ...787...82F"
         }
       ],
@@ -1184,7 +1578,57 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": true
+    "Confirmed": true,
+    "dist" : {
+      "value": 1.051,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.005,
+        "down": 0.005
+      }
+    },
+    "l": {
+      "value": 19.847,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": 48.341,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": 0.785,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": -21.716,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.011,
+        "down": 0.011
+      }
+    },
+    "mu_b": {
+      "value": -13.036,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.008,
+        "down": 0.008
+      }
+    }
   },
   {
     "name": "J1748-2021B",
@@ -1194,7 +1638,7 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 19,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2008ApJ...675..670F"
       }
     ],
@@ -1294,7 +1738,45 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": false
+    "Confirmed": false,
+    "dist" : {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    }
   },
   {
     "name": "J1753-2240",
@@ -1304,7 +1786,7 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 20,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2009MNRAS.393..623K"
       }
     ],
@@ -1400,7 +1882,45 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": true
+    "Confirmed": true,
+    "dist" : {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    }
   },
   {
     "name": "J1755-2550",
@@ -1410,7 +1930,7 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 21,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2018MNRAS.476.4315N"
       }
     ],
@@ -1506,7 +2026,45 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": false
+    "Confirmed": false,
+    "dist" : {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    }
   },
   {
     "name": "J1756-2251",
@@ -1516,7 +2074,7 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 22,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2014MNRAS.443.2183F"
       }
     ],
@@ -1596,7 +2154,7 @@ const pulsarData = [
       "hasReferences": true,
       "references": [
         {
-          "ref-number": 23,
+          "ref-number": null,
           "link": "https://ui.adsabs.harvard.edu/abs/2014MNRAS.443.2183F"
         }
       ],
@@ -1625,7 +2183,57 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": true
+    "Confirmed": true,
+    "dist" : {
+      "value": 0.73,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": false,
+        "up": 0.24,
+        "down": 0.60
+      }
+    },
+    "l": {
+      "value": 6.499,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": 0.948,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": 0.012,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": -3,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 6,
+        "down": 6 
+      }
+    },
+    "mu_b": {
+      "value": 5,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 3,
+        "down": 3 
+      }
+    }
   },
   {
     "name": "J1757-1854",
@@ -1635,11 +2243,11 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 24,
-        "link": "https://arxiv.org/abs/2203.15995"
+        "ref-number": null,
+        "link": "https://ui.adsabs.harvard.edu/abs/2022arXiv220315995C/abstract"
       },
       {
-        "ref-number": 25,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2018MNRAS.475L..57C/abstract"
       }
     ],
@@ -1719,7 +2327,7 @@ const pulsarData = [
       "hasReferences": true,
       "references": [
         {
-          "ref-number": 26,
+          "ref-number": null,
           "link": "https://arxiv.org/abs/2203.15995"
         }
       ],
@@ -1748,7 +2356,57 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": true
+    "Confirmed": true,
+    "dist" : {
+      "value": 12,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 2,
+        "down": 2 
+      }
+    },
+    "l": {
+      "value": 9.97,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": 2.88,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": 0.603,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": -2.67,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 104,
+        "down": 104
+      }
+    },
+    "mu_b": {
+      "value": 3.6,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.6,
+        "down": 0.6 
+      }
+    }
   },
   {
     "name": "J1759+5036",
@@ -1758,7 +2416,7 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 27,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2021ApJ...922...35A"
       }
     ],
@@ -1858,7 +2516,45 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": true
+    "Confirmed": true,
+    "dist" : {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    }
   },
   {
     "name": "J1807-2500B",
@@ -1868,7 +2564,7 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 28,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2012ApJ...745..109L"
       }
     ],
@@ -1972,7 +2668,45 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": false
+    "Confirmed": false,
+    "dist" : {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    }
   },
   {
     "name": "J1811-1736",
@@ -1982,7 +2716,7 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 29,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2007A&A...462..703C"
       }
     ],
@@ -2082,7 +2816,45 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": true
+    "Confirmed": true,
+    "dist" : {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    }
   },
   {
     "name": "J1823-3021G",
@@ -2092,7 +2864,7 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 30,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.504.1407R"
       }
     ],
@@ -2192,7 +2964,45 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": false
+    "Confirmed": false,
+    "dist" : {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    }
   },
   {
     "name": "J1829+2456",
@@ -2202,7 +3012,7 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 31,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.500.4620H "
       }
     ],
@@ -2310,7 +3120,53 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": true
+    "Confirmed": true,
+    "dist" : {
+      "value": 1.055,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "l": {
+      "value": 53.34,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": 15.62,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": -9.354,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.077,
+        "down": 0.077
+      }
+    },
+    "mu_b": {
+      "value": 2.002,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.063,
+        "down": 0.063
+      }
+    }
   },
   {
     "name": "J1835-3259A",
@@ -2320,7 +3176,7 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 32,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2015ApJ...807L..23D"
       }
     ],
@@ -2416,7 +3272,45 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": false
+    "Confirmed": false,
+    "dist" : {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    }
   },
   {
     "name": "J1906+0746",
@@ -2426,11 +3320,11 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 33,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2015ApJ...798..118V"
       },
       {
-        "ref-number": 34,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2019Sci...365.1013D/abstract"
       }
     ],
@@ -2514,7 +3408,7 @@ const pulsarData = [
       "hasReferences": true,
       "references": [
         {
-          "ref-number": 35,
+          "ref-number": null,
           "link": "https://ui.adsabs.harvard.edu/abs/2019Sci...365.1013D/abstract"
         }
       ],
@@ -2543,7 +3437,45 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": false
+    "Confirmed": false,
+    "dist" : {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    }
   },
   {
     "name": "J1913+1102",
@@ -2553,7 +3485,7 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 36,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2020Natur.583..211F"
       }
     ],
@@ -2661,7 +3593,53 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": true
+    "Confirmed": true,
+    "dist" : {
+      "value": 7.35,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "l": {
+      "value": 45.25,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": 0.194,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": -9.1,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.9,
+        "down": 0.9
+      }
+    },
+    "mu_b": {
+      "value": -1.38,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.64,
+        "down": 0.64
+      }
+    }
   },
   {
     "name": "B1913+16",
@@ -2671,11 +3649,11 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 37,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/1976ApJ...206L..53T/abstract"
       },
       {
-        "ref-number": 38,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2016ApJ...829...55W"
       }
     ],
@@ -2759,7 +3737,7 @@ const pulsarData = [
       "hasReferences": true,
       "references": [
         {
-          "ref-number": 39,
+          "ref-number": null,
           "link": "https://ui.adsabs.harvard.edu/abs/1998ApJ...509..856K"
         }
       ],
@@ -2792,7 +3770,57 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": true
+    "Confirmed": true,
+    "dist" : {
+      "value": 7.66,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": false,
+        "up": 0.43,
+        "down": 0.37
+      }
+    },
+    "l": {
+      "value": 49.968,
+      "hasReferences": false,
+      "references": true
+    },
+    "b": {
+      "value": 2.122,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value":-1.306,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.004,
+        "down": 0.004
+      }
+    },
+    "mu_b": {
+      "value": 0.704,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.004,
+        "down": 0.004
+      }
+    }
   },
   {
     "name": "J1930-1852",
@@ -2802,7 +3830,7 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 40,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2015ApJ...805..156S"
       }
     ],
@@ -2902,7 +3930,45 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": true
+    "Confirmed": true,
+    "dist" : {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    }
   },
   {
     "name": "J1946+2052",
@@ -2912,7 +3978,7 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 41,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2018ApJ...854L..22S"
       }
     ],
@@ -3012,7 +4078,53 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": true
+    "Confirmed": true,
+    "dist" : {
+      "value": 3.85,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "l": {
+      "value": 57.66,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": -1.98,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": -9,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 2,
+        "down":  2
+      }
+    },
+    "mu_b": {
+      "value": 0.32,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 1.32,
+        "down": 1.32
+      }
+    }
   },
   {
     "name": "B2127+11C",
@@ -3022,7 +4134,7 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": 42,
+        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2006ApJ...644L.113J"
       }
     ],
@@ -3106,7 +4218,7 @@ const pulsarData = [
       "hasReferences": true,
       "references": [
         {
-          "ref-number": 43,
+          "ref-number": null,
           "link": "https://ui.adsabs.harvard.edu/abs/2014A%26A...565A..43K"
         }
       ],
@@ -3135,7 +4247,193 @@ const pulsarData = [
       "hasReferences": false,
       "references": null
     },
-    "Confirmed": false
+    "Confirmed": false,
+    "dist" : {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    }
+  },
+  {
+    "name": "J2140-2311B",
+    "Type": "GC",
+    "DoubleSystem": false,
+    "systemName": null,
+    "hasReferences": true,
+    "references": [
+      {
+        "ref-number": null,
+        "link": "https://ui.adsabs.harvard.edu/abs/2023arXiv230104983B/abstract"
+      }
+    ],
+    "comments": "",
+    "p": {
+      "value": 0.01299,
+      "hasReferences": false,
+      "references": null
+    },
+    "pdot": {
+      "value": -0.6,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 25,
+        "down": 25
+      }
+    },
+    "pb": {
+      "value": 6.21565,
+      "hasReferences": false,
+      "references": null
+    },
+    "e": {
+      "value": 0.87938,
+      "hasReferences": false,
+      "references": null
+    },
+    "f": {
+      "value": 0.2067,
+      "hasReferences": false,
+      "references": null
+    },
+    "mt": {
+      "value": 2.53,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.08,
+        "down": 0.08
+      }
+    },
+    "mp": {
+      "isLimit": true,
+      "isAssumed": false,
+      "value": 1.43,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mc": {
+      "isLimit": true,
+      "isAssumed": false,
+      "value": 1.10,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "chirp": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "delta": {
+      "isLimit": false,
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "chi": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "chieff": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "age": {
+      "value": 0.343,
+      "hasReferences": false,
+      "references": null
+    },
+    "tau": {
+      "value": 32,
+      "hasReferences": false,
+      "references": null
+    },
+    "Confirmed": false,
+    "dist" : {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mu_b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    }
   }
 ]
 
@@ -3261,6 +4559,65 @@ const pulsarData = [
       "hasReferences": ,
       "references": 
     },
-    "Confirmed": false
+    "Confirmed": ,
+    "dist" : {
+      "value": ,
+      "hasReferences": ,
+      "references": [
+        {
+          "ref-number": ,
+          "link": ""        
+        }
+      ],
+      "hasUncertainty": ,
+      "uncertainty": {
+        "symmetrical": ,
+        "up": ,
+        "down": 
+      }
+    },
+    "l": {
+      "value": ,
+      "hasReferences": ,
+      "references": 
+    },
+    "b": {
+      "value": ,
+      "hasReferences": ,
+      "references": 
+    },
+    "z": {
+      "value":
+      "hasReferences": ,
+      "references": ,
+      "hasUncertainty": ,
+      "uncertainty": {
+        "symmetrical": ,
+        "up": ,
+        "down": 
+      }
+    },
+    "mu_l": {
+      "value":
+      "hasReferences": ,
+      "references": ,
+      "hasUncertainty": ,
+      "uncertainty": {
+        "symmetrical": ,
+        "up": ,
+        "down": 
+      }
+    },
+    "mu_b": {
+      "value":
+      "hasReferences": ,
+      "references": ,
+      "hasUncertainty": ,
+      "uncertainty": {
+        "symmetrical": ,
+        "up": ,
+        "down": 
+      }
+    }
   }
 */

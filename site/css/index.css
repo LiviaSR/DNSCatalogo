@@ -1,6 +1,7 @@
 :root {
     --primary-color: #000000;
     --secondary-color: #21262d;
+    --link-color:  rgb(139, 133, 133);
     --highlight-color: #58a6ff;
     --text-color: #ffffff;
     --table-hover-1: #393d3d;
@@ -128,6 +129,10 @@ h1, h2, h3, h4, h5 {
 .nav-link {
     color: var(--text-color) !important;
     font-size: 15px !important;
+}
+
+a:link {
+    color: var(--link-color);
 }
   
 a:hover {
