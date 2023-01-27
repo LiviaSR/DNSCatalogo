@@ -15,6 +15,7 @@
         <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script src="./js/pulsar_data.js"></script>
         <script src="./js/index.js"></script>
+        <script src="./js/navbar.js"></script>
         <!-- plots functions -->
         <script src="./js/plot/plot_utils.js"></script>
         <script src="./js/plot/transformations.js"></script>
@@ -248,10 +249,53 @@
           </tbody>
         </table>
       </div>
+
+      <div class="scroll-bar" style="width: 93%; margin: auto; overflow-x: auto; margin-top: 30px;">
+        <table id="DNS-kinematics" class="table table-striped table-bordered table-sm">
+          <thead>
+            <tr>
+              <th>PULSAR<span aria-hidden="true"></span></th>
+              <th class="num">
+                <div data-toggle="tooltip" data-placement="right" title="Distance">
+                \(d \)<br>(\(kpc\))<span aria-hidden="true"></span>
+                </div>
+              </th>
+              <th class="num">
+                <div data-toggle="tooltip" data-placement="right" title="Galactic longitude">
+                <span>\( l \)</span> <br>(\(deg\))<span aria-hidden="true"></span>
+                </div>
+              </th>
+              <th class="num">
+                <div data-toggle="tooltip" data-placement="right" title="Orbital period">
+                \( b \)<br>(\(deg\))<span aria-hidden="true"></span>
+                </div>
+              </th>
+              <th class="num">
+                <div data-toggle="tooltip" data-placement="right" title="Eccentricity">
+                \(z \)<br>(\(kpc\))<span aria-hidden="true"></span>
+                </div>
+              </th>
+              <th class="num">
+                <div data-toggle="tooltip" data-placement="right" title="Proper motion in l">
+                \( \mu_l \)<br> (\( mas~yr^{-1} \))<span aria-hidden="true"></span>
+                </div>
+              </th>
+              <th class="num">
+                <div data-toggle="tooltip" data-placement="right" title="Proper motion in b">
+                \( \mu_b \)<br> (\( mas~yr^{-1} \))<span aria-hidden="true"></span>
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody id="DNS-kinematics-tbody">
+          </tbody>
+        </table>
+      </div>
+
+
       <div id="plots" class="page-section">
         <h5>Data visualization</h5>
       </div>
-
       <div style="width: 93%; margin: auto; margin-top: 3%;">
         <div class="plot-container">
           <div class="row justify-content-around">
@@ -340,6 +384,7 @@
     </body>
 
     <script>
+      // Include button with copy to clipboard function
       let text = document.getElementById('ExportCite').innerHTML;
       const copyContent = async () => {
         try {
@@ -351,10 +396,11 @@
       }
     </script>
 
-    <script src="./js/navbar.js"></script>
     <script>eval(mod_pagespeed_pjbkxWKFfo);</script>
     <script>eval(mod_pagespeed_6H5NR84qUD);</script>
+
     <script>
+      // Inlcude plot and controls
       buildPlotControls('x');
       buildPlotControls('y');
       buildPlot();
@@ -362,15 +408,26 @@
       window.addEventListener('resize', function(event) {
         buildPlot();
       });
-      
     </script>
+
     <script>
+      // Build first table
       $(function () {
         $('[data-toggle="tooltip"]').tooltip();
       });
       buildPulsarsTable();
     </script>
+
     <script>
+      // Build second table
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+      buildSecondTable();
+    </script>
+
+    <script>
+      // Sorting table columns
       function parse(s) {
         s = s.replace(/<div><\/div><span data-toggle="tooltip" data-placement="right">/, '');
         s = s.replace(/<\/span>.*$/, '');
@@ -422,8 +479,18 @@
           ]
         });
       });
+      $(function() {
+        $('#DNS-kinematics').dataTable({
+          paging: false,
+          columnDefs: [
+            { type: 'number-with-uncertainty', targets: [0, 1, 5, 6] },
+          ]
+        });
+      });
     </script>
+
     <script>
+      // Build "Top" button
       // Get the button
       let mybutton = document.getElementById('to-top-button');
       
@@ -444,6 +511,7 @@
         document.documentElement.scrollTop = 0;
       }
       </script>
+      
       <script>
         let counter = 0;
         function easterEgg() {
