@@ -14,12 +14,19 @@ const symbols = {
     'mt': '$$  M_t  $$',
     'mp': '$$  M_p  $$',
     'mc': '$$  M_c  $$',
-    'chirp': '$$  \\mathcal{M} \ $$', 
+    'chirp': '$$  \\mathcal{M} $$', 
     'delta': '$$ \\delta $$',
     'chi': '$$  \\chi_f  $$',
     'chieff': '$$  \\chi_{eff}  $$',
     'age': '$$  \\tau_c  $$',
     'tau': '$$  \\tau_{GW}  $$',
+    'dist': '$$ d $$',
+    'l': '$$ l $$',
+    'b': '$$ b $$',
+    'z': '$$ z $$',
+    'mu_l': '$$ \\mu_l $$',
+    'mu_b': '$$ \\mu_b $$'
+
 };
 
 
@@ -83,7 +90,7 @@ const plotConfig = {
       },
       'mt': {
         "symbol": '\( M_t \)',
-        "unit": '(\(M_\odot \))',
+        "unit": '(\\(M_\\odot \\))',
       },
       'mp': {
         "symbol": '\( M_p \)',

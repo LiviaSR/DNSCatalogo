@@ -353,8 +353,8 @@
         <h5>Export citation</h5>
       </div>
       <div class="text-section d-flex flex-row my-4 mt-4">
-        <span class="d-block mt-2">
-          <p id="ExportCite">Rocha et al. (2022) in prep.</p>
+        <span class="d-flex">
+          <p id="ExportCite" style="margin-right: 1cm; margin-top: 10px;">Rocha et al. (2022) in prep.</p>
           <button class="btn" onclick="copyContent()">
             <i class="fa fa-copy"></i>
           </button>
@@ -383,6 +383,8 @@
       </div>
     </body>
 
+
+
     <script>
       // Include button with copy to clipboard function
       let text = document.getElementById('ExportCite').innerHTML;
@@ -394,6 +396,33 @@
           console.error('Failed to copy: ', err);
         }
       }
+    </script>
+
+    <script>
+      $('.btn').tooltip({
+          trigger: 'click',
+          placement: 'bottom'
+        });
+
+        function setTooltip(btn, message) {
+          btnn.tooltip('hide')
+            .attr('data-original-title', message)
+            .tooltip('show');
+        }
+
+        function hideTooltip(btn) {
+          setTimeout(function () {
+            btn.tooltip('hide');
+          }, 1000);
+        }
+
+        var clipboard = new Clipboard('.btn');
+
+        clipboard.on('success', function (e) {
+          var btn = $(e.trigger);
+          setTooltip(btn, 'Copied');
+          hideTooltip(btn);
+        });
     </script>
 
     <script>eval(mod_pagespeed_pjbkxWKFfo);</script>
@@ -528,63 +557,3 @@
         }
       </script>
 </html>
-
-
-  <!--
-    'p': {
-      "symbol": P,
-      "unit": (s)
-    },
-    'pdot': {
-      "symbol": \(\dot{P} \),
-      "unit": (\(s~s^{-1}\))
-    },
-    'pb': {
-      "symbol": \( P_b \),
-      "unit": (days)
-    },
-    'e': {
-      "symbol": e,
-      "unit": null
-    },
-    'f': {
-      "symbol": f,
-      "unit": null
-    },
-    'mt': {
-      "symbol": \( M_t \),
-      "unit": (\(M_\odot \))
-    },
-    'mp': {
-      "symbol": \( M_p \),
-      "unit": (\(M_\odot \))
-    },
-    'mc': {
-      "symbol": \( M_c \),
-      "unit": (\(M_\odot \))
-    },
-    'chirp': {
-      "symbol": \( \mathcal{M} \),
-      "unit": (\(M_\odot \))
-    },
-    'delta': {
-      "symbol": \( \delta \),
-      "unit": (deg)
-    },
-    'chi': {
-      "symbol": \( \chi_f \),
-      "unit": null
-    },
-    'chieff': {
-      "symbol": \( \chi_{eff} \),
-      "unit": null
-    },
-    'age': {
-      "symbol": \( \tau_c \),
-      "unit": (Gyr)
-    },
-    'tau': {
-      "symbol": \( \tau_{GW} \),
-      "unit": (Gyr)
-    }
-  -->
