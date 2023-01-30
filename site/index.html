@@ -13,7 +13,7 @@
         <script src="https://cdn.datatables.net/plug-ins/1.12.1/sorting/numString.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
         <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-        <script src="./js/pulsar_data.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>        <script src="./js/pulsar_data.js"></script>
         <script src="./js/index.js"></script>
         <script src="./js/navbar.js"></script>
         <!-- plots functions -->
@@ -172,35 +172,40 @@
         <table id="DNS-catalogue" class="table table-striped table-bordered table-sm">
           <thead>
             <tr>
-              <th>PULSAR<span aria-hidden="true"></span></th>
+              <th colspan="15" class="text-center">
+                <b>Properties of all DNS Systems with published data (Including unconfirmed candidates)</b> 
+              </th>
+            </tr>
+            <tr>
+              <th>PULSAR</th>
               <th class="num">
                 <div data-toggle="tooltip" data-placement="right" title="Spin period">
-                  \(P \)<br>(\(s\))<span aria-hidden="true"></span>
+                  \(P \)<br>(\(s\))
                 </div>
               </th>
               <th class="num">
                 <div data-toggle="tooltip" data-placement="right" title="Time decay of spin period. Not corrected for Shklovskii effect">
-                  <span>\( \dot{P} \)</span> <br>\(\times 10^{-18}~s~s^{-1}\)<span aria-hidden="true"></span>
+                  <span>\( \dot{P} \)</span> <br>\(\times 10^{-18}~s~s^{-1}\)
                 </div>
               </th>
               <th class="num">
                 <div data-toggle="tooltip" data-placement="right" title="Orbital period">
-                  \( P_b \)<br>(days)<span aria-hidden="true"></span>
+                  \( P_b \)<br>(days)
                 </div>
                 </th>
               <th class="num">
                 <div data-toggle="tooltip" data-placement="right" title="Eccentricity">
-                  \(e \) <span aria-hidden="true"></span>
+                  \(e \) 
                 </div>
               </th>
               <th class="num">
                 <div data-toggle="tooltip" data-placement="right" title="Mass function ">
-                  \(f\)<br> \( (M_\odot) \)<span aria-hidden="true"></span>
+                  \(f\)<br> \( (M_\odot) \)
                 </div>
               </th>
               <th class="num">
                 <div data-toggle="tooltip" data-placement="right" title="Binary total mass">
-                  \(M_T \)<br> \( (M_\odot) \)<span aria-hidden="true"></span>
+                  \(M_T \)<br> \( (M_\odot) \)
                 </div>
               </th>
               <th class="no-sort">
@@ -215,7 +220,7 @@
               </th>
               <th class="num">
                 <div data-toggle="tooltip" data-placement="right" title="Chirp mass. See the Gravitational Wave section for more info">
-                  \( \mathcal{M} \) <br> \( (M_\odot) \)<span aria-hidden="true"></span>
+                  \( \mathcal{M} \) <br> \( (M_\odot) \)
                 </div>
               </th>
               <th class="no-sort">
@@ -225,22 +230,22 @@
               </th>
               <th class="num">
                 <div data-toggle="tooltip" data-placement="right" title="Dimensionless spin period at merger time">
-                  \( \chi_f \)<span aria-hidden="true"></span>
+                  \( \chi_f \)
                 </div>
               </th>
               <th class="no-sort">
                 <div data-toggle="tooltip" data-placement="right" title="Effective spin parameter assuming the companion dimensionless spin is null">
-                  \( \chi_{eff} \)<span aria-hidden="true"></span>
+                  \( \chi_{eff} \)
                 </div>
               </th>
               <th class="num">
                 <div data-toggle="tooltip" data-placement="right" title="Characteristic age">
-                  \(\tau_c\)<br>(Gyr)<span aria-hidden="true"></span> 
+                  \(\tau_c\)<br>(Gyr) 
                 </div>
               </th>
               <th class="num">
                 <div data-toggle="tooltip" data-placement="right" title="Time to merge">
-                  \(\tau_{gw}\)<br>(Gyr)<span aria-hidden="true"></span> 
+                  \(\tau_{gw}\)<br>(Gyr) 
                 </div>
               </th>
             </tr>
@@ -254,35 +259,40 @@
         <table id="DNS-kinematics" class="table table-striped table-bordered table-sm">
           <thead>
             <tr>
-              <th>PULSAR<span aria-hidden="true"></span></th>
+              <th colspan="7" class="text-center">
+                <b>Kinematic properties of DNS Systems with measured proper motion</b> 
+              </th>
+            </tr>
+            <tr>
+              <th>PULSAR</th>
               <th class="num">
                 <div data-toggle="tooltip" data-placement="right" title="Distance">
-                \(d \)<br>(\(kpc\))<span aria-hidden="true"></span>
+                \(d \)<br>(\(kpc\))
                 </div>
               </th>
               <th class="num">
                 <div data-toggle="tooltip" data-placement="right" title="Galactic longitude">
-                <span>\( l \)</span> <br>(\(deg\))<span aria-hidden="true"></span>
+                <span>\( l \)</span> <br>(\(deg\))
                 </div>
               </th>
               <th class="num">
                 <div data-toggle="tooltip" data-placement="right" title="Orbital period">
-                \( b \)<br>(\(deg\))<span aria-hidden="true"></span>
+                \( b \)<br>(\(deg\))
                 </div>
               </th>
               <th class="num">
                 <div data-toggle="tooltip" data-placement="right" title="Eccentricity">
-                \(z \)<br>(\(kpc\))<span aria-hidden="true"></span>
+                \(z \)<br>(\(kpc\))
                 </div>
               </th>
               <th class="num">
                 <div data-toggle="tooltip" data-placement="right" title="Proper motion in l">
-                \( \mu_l \)<br> (\( mas~yr^{-1} \))<span aria-hidden="true"></span>
+                \( \mu_l \)<br> (\( mas~yr^{-1} \))
                 </div>
               </th>
               <th class="num">
                 <div data-toggle="tooltip" data-placement="right" title="Proper motion in b">
-                \( \mu_b \)<br> (\( mas~yr^{-1} \))<span aria-hidden="true"></span>
+                \( \mu_b \)<br> (\( mas~yr^{-1} \))
                 </div>
               </th>
             </tr>
@@ -312,7 +322,7 @@
                 <div class="col">
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="plot-control-sources" id="plot-control-sources-confirmed" value="confirmed" onclick="setConfirmed()" checked>
-                    <label class="form-check-label" for="plot-control-sources-confirmed">
+                    <label class="form-check-label" style="margin-top: 0em !important" for="plot-control-sources-confirmed">
                     <div data-toggle="tooltip" data-placement="right" title="Plot only systems with a confirmed NS companion">                     
                       Confirmed
                     </div>
@@ -322,7 +332,7 @@
                 <div class="col">
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="plot-control-sources" id="plot-control-sources-candidate" value="candidate"  onclick="setConfirmed()">
-                    <label class="form-check-label" for="plot-control-sources-candidate">
+                    <label class="form-check-label" style="margin-top: 0em !important" for="plot-control-sources-candidate">
                     <div data-toggle="tooltip" data-placement="right" title="Plot all systems, including those where the companion is not confirmed as a NS">                  
                       Candidate
                     </div>
@@ -352,13 +362,19 @@
       <div id="citation" class="page-section">
         <h5>Export citation</h5>
       </div>
-      <div class="text-section d-flex flex-row my-4 mt-4">
-        <span class="d-flex">
-          <p id="ExportCite" style="margin-right: 1cm; margin-top: 10px;">Rocha et al. (2022) in prep.</p>
-          <button class="btn" onclick="copyContent()">
-            <i class="fa fa-copy"></i>
-          </button>
-        </span>
+      <div class="container mt-5"> 
+        <div class="row d-flex justify-content-center"> 
+          <div class="col-md-6"> 
+            <div class="p-3 px-4"> 
+            <div class="d-flex justify-content-between align-items-center mb-3"> 
+              <span id="ExportCite" class="text-line me-2" style="margin-right: 1cm; margin-top: 10px;">Rocha et al. (2022) in prep.</span> 
+              <button onclick="copy('Rocha et al. (2022) in prep.','#copy_button_1')" id="copy_button_1" class="btn btn-sm btn-success copy-button">
+                <i class="fa fa-copy"></i>
+              </button> 
+            </div> 
+            </div> 
+          </div> 
+        </div> 
       </div>
 
       <button onclick="topFunction()" id="to-top-button" title="To top">Top</button>
@@ -386,43 +402,19 @@
 
 
     <script>
-      // Include button with copy to clipboard function
-      let text = document.getElementById('ExportCite').innerHTML;
-      const copyContent = async () => {
-        try {
-          await navigator.clipboard.writeText(text);
-          console.log('Copied to clipboard');
-        } catch (err) {
-          console.error('Failed to copy: ', err);
-        }
+      function copy(text, target) {
+        setTimeout(function() {
+          $('#copied_tip').remove();
+        }, 800);
+        $(target).append("<div class='tip' id='copied_tip'>Copied!</div>");
+        var input = document.createElement('input');
+          input.setAttribute('value', text);
+          document.body.appendChild(input);
+          input.select();
+        var result = document.execCommand('copy');
+          document.body.removeChild(input)
+          return result;
       }
-    </script>
-
-    <script>
-      $('.btn').tooltip({
-          trigger: 'click',
-          placement: 'bottom'
-        });
-
-        function setTooltip(btn, message) {
-          btnn.tooltip('hide')
-            .attr('data-original-title', message)
-            .tooltip('show');
-        }
-
-        function hideTooltip(btn) {
-          setTimeout(function () {
-            btn.tooltip('hide');
-          }, 1000);
-        }
-
-        var clipboard = new Clipboard('.btn');
-
-        clipboard.on('success', function (e) {
-          var btn = $(e.trigger);
-          setTooltip(btn, 'Copied');
-          hideTooltip(btn);
-        });
     </script>
 
     <script>eval(mod_pagespeed_pjbkxWKFfo);</script>
@@ -556,4 +548,9 @@
           counter++;
         }
       </script>
+
+      <script>
+
+      </script>
+
 </html>

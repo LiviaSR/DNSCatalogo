@@ -131,8 +131,8 @@ h1, h2, h3, h4, h5 {
     font-size: 15px !important;
 }
 
-a:link {
-    color: var(--link-color);
+a {
+    color: var(--link-color) !important;
 }
   
 a:hover {
@@ -503,16 +503,20 @@ table.dataTable thead td {
     border-color: var(--highlight-color) !important;
 }
 
+.form-check-label {
+    margin-top: -0.7em !important;
+}
+
 .btn {
     background: var(--secondary-color) !important;
-    bottom: 20px;
-    right: 30px;
+    bottom: 10px !important;
+    right: 10px !important;
     border-radius: 50%;
     font-size: 18px;
     font-weight: bold;
     color: var(--text-color) !important;
     cursor: pointer;
-    padding: 10px;
+    padding: 10px !important;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
     transition: all 0.2s linear;
 }

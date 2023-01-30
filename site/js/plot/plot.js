@@ -51,10 +51,9 @@ function plot() {
     XAxisLabel = config['units'][pcs['x']]['symbol'] + ' ' + config['units'][pcs['x']]['unit'];
     YAxisLabel = config['units'][pcs['y']]['symbol'] + ' ' + config['units'][pcs['y']]['unit'];
   } else {
-    XAxisLabel = plotConfig['default']['units'][pcs['x']]['symbol'] + ' ' + plotConfig['default']['units'][pcs['x']]['unit'];
+    XAxisLabel = plotConfig['default']['units'][pcs['x']]['symbol'] + '  ' + plotConfig['default']['units'][pcs['x']]['unit'];
     YAxisLabel = plotConfig['default']['units'][pcs['y']]['symbol'] + ' ' + plotConfig['default']['units'][pcs['y']]['unit'];  
   }
-
 
   // Add axis
   if ( config.hasOwnProperty('axis') ) {
