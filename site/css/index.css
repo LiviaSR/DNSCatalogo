@@ -509,31 +509,30 @@ table.dataTable thead td {
 
 .btn {
     background: var(--secondary-color) !important;
-    bottom: 10px !important;
+    bottom: -5px !important;
     right: 10px !important;
-    border-radius: 50%;
-    font-size: 18px;
+    border-radius: 70%;
+    font-size: 24px;
     font-weight: bold;
     color: var(--text-color) !important;
     cursor: pointer;
-    padding: 10px !important;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
     transition: all 0.2s linear;
 }
-
 
 .card{
     border: none;
     height: 100%
 }
 .copy-button{
-    height: 25px;display: 
-    lex;justify-content: center;
+    height: 25px;
+    display: flex;
+    justify-content: center;
     align-items: center;
     position: relative
 }
 .tip{
-    background-color: #263646;
+    background-color: var(--secondary-color);
     padding: 0 14px;
     line-height: 27px;
     position: absolute;
@@ -546,7 +545,7 @@ table.dataTable thead td {
     animation-fill-mode: both
 }
 .tip:before{content: "";
-    background-color: #263646;
+    background-color: var(--secondary-color);
     height: 10px;
     width: 10px;
     display: block;
