@@ -143,8 +143,8 @@ const pulsarData = [
       "hasUncertainty": true,
       "uncertainty": {
         "symmetrical": true,
-        "up": 2.93,
-        "down": 2.93
+        "up": 293,
+        "down": 293
       }
     },
     "mu_b": {
@@ -154,8 +154,8 @@ const pulsarData = [
       "hasUncertainty": true,
       "uncertainty": {
         "symmetrical": true,
-        "up": 2.13,
-        "down": 2.13
+        "up": 213,
+        "down": 213
       }
     }
   },
@@ -4121,8 +4121,8 @@ const pulsarData = [
       "hasUncertainty": true,
       "uncertainty": {
         "symmetrical": true,
-        "up": 1.32,
-        "down": 1.32
+        "up": 132,
+        "down": 132
       }
     }
   },

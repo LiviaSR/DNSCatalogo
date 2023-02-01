@@ -51,80 +51,77 @@
             </div>
         </nav>
     </div>
-    <div id="updates" class="page-section">
-        <h5>Latest updates to the catalog</h5>
+
+    <div id="references" class="page-section">
+        <h5>List of References</h5>
     </div>
     <div class="text-section">
-    <p>
-        2023 January: Added  a potential MSP - NS system, <a href="http://">PSR J2140&minus;2311B</a>, an eccentric MSP binary in M30.
-        <br>
-        2022 December: Added PSR - NS system <a href="https://ui.adsabs.harvard.edu/abs/2022arXiv221203926S/abstract">PSR J1018&minus;1523</a>.
-        <br>
-        2022 March: Updated masses for <a target="papers" href="https://arxiv.org/abs/2203.15995">PSR
-            J1757&minus;1854</a>.
-        <br />
-    </p>
+        <a href="http://"></a>
     </div>
 
-        <button onclick="topFunction()" id="to-top-button" title="To top">Top</button>
-        <div class="footer mt-auto">
-            <footer class="py-3 mt-4">
-                <ul class="nav pb-3 mb-3">
-                    <li class="nav-item">
-                        <a href="../index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./html/references.html" class="nav-link">References</a>
-                    </li>
+
+    <button onclick="topFunction()" id="to-top-button" title="To top">Top</button>
+    <div class="footer mt-auto">
+        <footer class="py-3 mt-4">
+            <ul class="nav pb-3 mb-3">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./html/references.html" class="nav-link">References</a>
+                </li>
                 <li class="nav-item">
                     <a href="./html/updates.html" class="nav-link">Updates</a>
                 </li>
-                    <li class="nav-item">
-                        <a href="../html/contact.html" class="nav-link">About Us</a>
-                    </li>
-                </ul>
-                <p class="text-muted"> &copy; 2022, DoNutSS</p>
-            </footer>
-        </div>
-    </body>
-        <script src="../js/navbar.js"></script>
-        <script>eval(mod_pagespeed_pjbkxWKFfo);</script>
-        <script>eval(mod_pagespeed_6H5NR84qUD);</script>
+                <li class="nav-item">
+                    <a href="../html/contact.html" class="nav-link">About Us</a>
+                </li>
+            </ul>
+            <p class="text-muted"> &copy; 2022, DoNutSS</p>
+        </footer>
+    </div>
+</body>
 
-        <script>
-            // Get the button
-            let mybutton = document.getElementById('to-top-button');
 
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function () { scrollFunction() };
+    <script src="../js/navbar.js"></script>
+    <script>eval(mod_pagespeed_pjbkxWKFfo);</script>
+    <script>eval(mod_pagespeed_6H5NR84qUD);</script>
 
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    mybutton.style.display = "block";
-                } else {
-                    mybutton.style.display = "none";
-                }
+    <script>
+        // Get the button
+        let mybutton = document.getElementById('to-top-button');
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
             }
+        }
 
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script>
+        let counter = 0;
+        function easterEgg() {
+            console.log(counter);
+            if (counter == 5) {
+                $('.toast').toast('show');
+                setTimeout(() => {
+                    $('.toast').toast('hide');
+                }, 10000);
+                counter = 0;
+                return;
             }
-        </script>
-        <script>
-            let counter = 0;
-            function easterEgg() {
-                console.log(counter);
-                if (counter == 5) {
-                    $('.toast').toast('show');
-                    setTimeout(() => {
-                        $('.toast').toast('hide');
-                    }, 10000);
-                    counter = 0;
-                    return;
-                }
-                counter++;
-            }
-        </script>
+            counter++;
+        }
+    </script>
+
 </html>

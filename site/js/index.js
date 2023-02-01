@@ -273,7 +273,6 @@ function buildSecondTable() {
       let tr = document.createElement('tr');
 
 
-
       // Name
       let tdName = document.createElement('td');
       let divName = document.createElement('div');
