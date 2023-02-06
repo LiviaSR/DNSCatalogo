@@ -328,6 +328,24 @@ const plotConfig = {
       [adjustYtick, null],
     ],
   },
+  'p-dist': {
+    'transformations': [
+      [multiXBy, 1e3],
+    ],
+    'axis': logarithmicXAxis,
+  },
+  'p-l': {
+    'transformations': [
+      [multiXBy, 1e3],
+    ],
+    'axis': logarithmicXAxis,
+  },
+  'p-b': {
+    'transformations': [
+      [multiXBy, 1e3],
+    ],
+    'axis': logarithmicXAxis,
+  },
   'pdot-p': {
     'transformations': [
       absoluteValue,

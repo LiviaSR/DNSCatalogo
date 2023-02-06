@@ -28,13 +28,14 @@ const defaultAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLabel) =
     .attr('opacity', '0');
 
   // Add X axis label
-  svg.append("text")
+
+ /* svg.append("text")
     .style('fill', 'white')
     .style('font-size', '25px')
     .attr("text-anchor", "middle")
     .attr("x", width / 2)
     .attr("y", height + margin.top + 37)
-    .text(XAxisLabel);
+    .text(XAxisLabel);*/
 
   // Y axis label
   svg.append("text")

@@ -13,7 +13,8 @@
         <script src="https://cdn.datatables.net/plug-ins/1.12.1/sorting/numString.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
         <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>        <script src="./js/pulsar_data.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+        <script src="./js/pulsar_data.js"></script>
         <script src="./js/index.js"></script>
         <script src="./js/navbar.js"></script>
         <!-- plots functions -->
@@ -177,72 +178,72 @@
             </tr>
             <tr>
               <th>PULSAR</th>
-              <th class="num">
+              <th class="num" style="white-space: nowrap" >
                 <div data-toggle="tooltip" data-placement="right" title="Spin period">
                   \(P \)<br>(\(s\))
                 </div>
               </th>
-              <th class="num">
+              <th class="num" style="white-space: nowrap">
                 <div data-toggle="tooltip" data-placement="right" title="Time decay of spin period. Not corrected for Shklovskii effect">
                   <span>\( \dot{P} \)</span> <br>\(\times 10^{-18}~s~s^{-1}\)
                 </div>
               </th>
-              <th class="num">
+              <th class="num" style="white-space: nowrap">
                 <div data-toggle="tooltip" data-placement="right" title="Orbital period">
                   \( P_b \)<br>(days)
                 </div>
                 </th>
-              <th class="num">
+              <th class="num" style="white-space: nowrap">
                 <div data-toggle="tooltip" data-placement="right" title="Eccentricity">
                   \(e \) 
                 </div>
               </th>
-              <th class="num">
+              <th class="num" style="white-space: nowrap">
                 <div data-toggle="tooltip" data-placement="right" title="Mass function ">
                   \(f\)<br> \( (M_\odot) \)
                 </div>
               </th>
-              <th class="num">
+              <th class="num" style="white-space: nowrap">
                 <div data-toggle="tooltip" data-placement="right" title="Binary total mass">
                   \(M_T \)<br> \( (M_\odot) \)
                 </div>
               </th>
-              <th class="no-sort">
+              <th class="no-sort" style="white-space: nowrap" >
                 <div data-toggle="tooltip" data-placement="right" title="Pulsar mass">
                   \( M_p \) <br> \( (M_\odot) \) 
                 </div>
               </th>
-              <th class="string-desc">
+              <th class="string-desc" style="white-space: nowrap">
                 <div data-toggle="tooltip" data-placement="right" title="Companion mass">
                   \(M_c \) <br> \( (M_\odot) \)
                 </div>
               </th>
-              <th class="num">
+              <th class="num" style="white-space: nowrap">
                 <div data-toggle="tooltip" data-placement="right" title="Chirp mass. See the Gravitational Wave section for more info">
                   \( \mathcal{M} \) <br> \( (M_\odot) \)
                 </div>
               </th>
-              <th class="no-sort">
+              <th class="no-sort" style="white-space: nowrap">
                 <div data-toggle="tooltip" data-placement="right" title="Misalignment angle. See the Geodetic precession section for more info">
                   \( \delta \) <br> (\(deg\))
                 </div>
               </th>
-              <th class="num">
+              <th class="num" style="white-space: nowrap">
                 <div data-toggle="tooltip" data-placement="right" title="Dimensionless spin period at merger time">
                   \( \chi_f \)
                 </div>
               </th>
-              <th class="no-sort">
+              <th class="no-sort" style="white-space: nowrap">
                 <div data-toggle="tooltip" data-placement="right" title="Effective spin parameter assuming the companion dimensionless spin is null">
                   \( \chi_{eff} \)
                 </div>
               </th>
-              <th class="num">
+              <th class="num" style="white-space: nowrap">
                 <div data-toggle="tooltip" data-placement="right" title="Characteristic age">
                   \(\tau_c\)<br>(Gyr) 
                 </div>
               </th>
-              <th class="num">
+              <th class="num" style="white-space: nowrap">
                 <div data-toggle="tooltip" data-placement="right" title="Time to merge">
                   \(\tau_{gw}\)<br>(Gyr) 
                 </div>
@@ -256,7 +257,7 @@
 
       <div class="scroll-bar" style="width: 93%; margin: auto; overflow-x: auto; margin-top: 30px;">
         <table id="DNS-kinematics" class="table table-striped table-bordered table-sm">
-          <thead>
+          <thead >
             <tr>
               <th colspan="7" class="text-center">
                 <b>Kinematic properties of DNS Systems with measured proper motion</b> 
@@ -264,32 +265,32 @@
             </tr>
             <tr>
               <th>PULSAR</th>
-              <th class="num">
+              <th class="num" style="white-space: nowrap">
                 <div data-toggle="tooltip" data-placement="right" title="Distance">
                 \(d \)<br>(\(kpc\))
                 </div>
               </th>
-              <th class="num">
+              <th class="num" style="white-space: nowrap">
                 <div data-toggle="tooltip" data-placement="right" title="Galactic longitude">
                 <span>\( l \)</span> <br>(\(deg\))
                 </div>
               </th>
-              <th class="num">
+              <th class="num" style="white-space: nowrap">
                 <div data-toggle="tooltip" data-placement="right" title="Orbital period">
                 \( b \)<br>(\(deg\))
                 </div>
               </th>
-              <th class="num">
+              <th class="num" style="white-space: nowrap">
                 <div data-toggle="tooltip" data-placement="right" title="Eccentricity">
                 \(z \)<br>(\(kpc\))
                 </div>
               </th>
-              <th class="num">
+              <th class="num" style="white-space: nowrap">
                 <div data-toggle="tooltip" data-placement="right" title="Proper motion in l">
                 \( \mu_l \)<br> (\( mas~yr^{-1} \))
                 </div>
               </th>
-              <th class="num">
+              <th class="num" style="white-space: nowrap">
                 <div data-toggle="tooltip" data-placement="right" title="Proper motion in b">
                 \( \mu_b \)<br> (\( mas~yr^{-1} \))
                 </div>
@@ -403,7 +404,9 @@
       </div>
     </body>
 
-
+    <script>
+      enumarateReferences(pulsarData)
+    </script>
 
     <script>
       function copy(text, target) {
@@ -421,6 +424,9 @@
       }
     </script>
 
+     <!--
+      Nav bar
+     -->
     <script>eval(mod_pagespeed_pjbkxWKFfo);</script>
     <script>eval(mod_pagespeed_6H5NR84qUD);</script>
 
@@ -535,26 +541,21 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }
-      </script>
+    </script>
       
-      <script>
-        let counter = 0;
-        function easterEgg() {
-          
-          if ( counter == 5 ) {
-            $('.toast').toast('show');
-            setTimeout(() => {
-              $('.toast').toast('hide'); 
-            }, 10000);
-            counter = 0;
-            return;
-          }
-          counter++;
+    <script>
+      let counter = 0;
+      function easterEgg() {
+        
+        if ( counter == 5 ) {
+          $('.toast').toast('show');
+          setTimeout(() => {
+            $('.toast').toast('hide'); 
+          }, 10000);
+          counter = 0;
+          return;
         }
-      </script>
-
-      <script>
-
-      </script>
-
+        counter++;
+      }
+    </script>
 </html>

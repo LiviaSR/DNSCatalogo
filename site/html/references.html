@@ -55,8 +55,7 @@
     <div id="references" class="page-section">
         <h5>List of References</h5>
     </div>
-    <div class="text-section">
-        <a href="http://"></a>
+    <div id="references-list" class="text-section">
     </div>
 
 
@@ -68,10 +67,10 @@
                     <a href="../index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./html/references.html" class="nav-link">References</a>
+                    <a href="../html/references.html" class="nav-link">References</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./html/updates.html" class="nav-link">Updates</a>
+                    <a href="../html/updates.html" class="nav-link">Updates</a>
                 </li>
                 <li class="nav-item">
                     <a href="../html/contact.html" class="nav-link">About Us</a>
@@ -83,45 +82,50 @@
 </body>
 
 
-    <script src="../js/navbar.js"></script>
-    <script>eval(mod_pagespeed_pjbkxWKFfo);</script>
-    <script>eval(mod_pagespeed_6H5NR84qUD);</script>
+<script src="../js/navbar.js"></script>
+<script>eval(mod_pagespeed_pjbkxWKFfo);</script>
+<script>eval(mod_pagespeed_6H5NR84qUD);</script>
 
-    <script>
-        // Get the button
-        let mybutton = document.getElementById('to-top-button');
+<script>
+    enumarateReferences(pulsarData);
+    referencesList();
+</script>
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
+<script>
+    // Get the button
+    let mybutton = document.getElementById('to-top-button');
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
         }
+    }
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+<script>
+    let counter = 0;
+    function easterEgg() {
+        console.log(counter);
+        if (counter == 5) {
+            $('.toast').toast('show');
+            setTimeout(() => {
+                $('.toast').toast('hide');
+            }, 10000);
+            counter = 0;
+            return;
         }
-    </script>
-    <script>
-        let counter = 0;
-        function easterEgg() {
-            console.log(counter);
-            if (counter == 5) {
-                $('.toast').toast('show');
-                setTimeout(() => {
-                    $('.toast').toast('hide');
-                }, 10000);
-                counter = 0;
-                return;
-            }
-            counter++;
-        }
-    </script>
+        counter++;
+    }
+</script>
 
 </html>
