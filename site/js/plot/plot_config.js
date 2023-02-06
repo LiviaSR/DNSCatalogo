@@ -82,11 +82,11 @@ const plotConfig = {
       },
       'e': {
         'symbol': 'e',
-        'unit': 'null',
+        'unit': ' ',
       },
       'f': {
         'symbol': 'f',
-        'unit': null,
+        'unit': ' ',
       },
       'mt': {
         'symbol': '\( M_t \)',
@@ -110,11 +110,11 @@ const plotConfig = {
       },
       'chi': {
         'symbol': '\( \chi_f \)',
-        'unit': null,
+        'unit': ' ',
       },
       'chieff': {
         'symbol': '\( \chi_{eff} \)',
-        'unit': null,
+        'unit': ' ',
       },
       'age': {
         'symbol': '\( \tau_c \)',
