@@ -137,7 +137,7 @@ const pulsarData = [
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": 1.14,
       "hasReferences": false,
       "references": null,
@@ -148,7 +148,7 @@ const pulsarData = [
         "down": 293
       }
     },
-    "mu_b": {
+    "mub": {
       "value": -7.48,
       "hasReferences": false,
       "references": null,
@@ -308,14 +308,14 @@ const pulsarData = [
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": null,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_b": {
+    "mub": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -465,14 +465,14 @@ const pulsarData = [
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": null,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_b": {
+    "mub": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -630,13 +630,13 @@ const pulsarData = [
       "references": null
     },
     "z": {
-      "value": -0.06,
+      "value": -0.058,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": -3.006,
       "hasReferences": false,
       "references": null,
@@ -647,7 +647,7 @@ const pulsarData = [
         "down": 0.036
       }
     },
-    "mu_b": {
+    "mub": {
       "value": -1.235,
       "hasReferences": false,
       "references": null,
@@ -813,13 +813,13 @@ const pulsarData = [
       "references": null
     },
     "z": {
-      "value": -0.06,
+      "value": -0.058,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": -3.006,
       "hasReferences": false,
       "references": null,
@@ -830,7 +830,7 @@ const pulsarData = [
         "down": 0.036
       }
     },
-    "mu_b": {
+    "mub": {
       "value": -1.235,
       "hasReferences": false,
       "references": null,
@@ -976,14 +976,14 @@ const pulsarData = [
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": null,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_b": {
+    "mub": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -1125,14 +1125,14 @@ const pulsarData = [
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": null,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_b": {
+    "mub": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -1274,7 +1274,7 @@ const pulsarData = [
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": -4,
       "hasReferences": false,
       "references": null,
@@ -1285,7 +1285,7 @@ const pulsarData = [
         "down": 9 
       }
     },
-    "mu_b": {
+    "mub": {
       "value": 2,
       "hasReferences": false,
       "references": null,
@@ -1445,7 +1445,7 @@ const pulsarData = [
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": -7.50,
       "hasReferences": false,
       "references": null,
@@ -1456,7 +1456,7 @@ const pulsarData = [
         "down": 0.04
       }
     },
-    "mu_b": {
+    "mub": {
       "value": 4.12,
       "hasReferences": false,
       "references": null,
@@ -1626,7 +1626,7 @@ const pulsarData = [
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": -21.716,
       "hasReferences": false,
       "references": null,
@@ -1637,7 +1637,7 @@ const pulsarData = [
         "down": 0.011
       }
     },
-    "mu_b": {
+    "mub": {
       "value": -13.036,
       "hasReferences": false,
       "references": null,
@@ -1783,14 +1783,14 @@ const pulsarData = [
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": null,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_b": {
+    "mub": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -1928,14 +1928,14 @@ const pulsarData = [
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": null,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_b": {
+    "mub": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -2073,14 +2073,14 @@ const pulsarData = [
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": null,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_b": {
+    "mub": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -2236,7 +2236,7 @@ const pulsarData = [
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": -3,
       "hasReferences": false,
       "references": null,
@@ -2247,7 +2247,7 @@ const pulsarData = [
         "down": 6 
       }
     },
-    "mu_b": {
+    "mub": {
       "value": 5,
       "hasReferences": false,
       "references": null,
@@ -2412,7 +2412,7 @@ const pulsarData = [
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": -2.67,
       "hasReferences": false,
       "references": null,
@@ -2423,7 +2423,7 @@ const pulsarData = [
         "down": 104
       }
     },
-    "mu_b": {
+    "mub": {
       "value": 3.6,
       "hasReferences": false,
       "references": null,
@@ -2569,14 +2569,14 @@ const pulsarData = [
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": null,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_b": {
+    "mub": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -2722,14 +2722,14 @@ const pulsarData = [
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": null,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_b": {
+    "mub": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -2871,14 +2871,14 @@ const pulsarData = [
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": null,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_b": {
+    "mub": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -3020,14 +3020,14 @@ const pulsarData = [
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": null,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_b": {
+    "mub": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -3171,13 +3171,13 @@ const pulsarData = [
       "references": null
     },
     "z": {
-      "value": null,
+      "value": 0.284,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": -9.354,
       "hasReferences": false,
       "references": null,
@@ -3188,7 +3188,7 @@ const pulsarData = [
         "down": 0.077
       }
     },
-    "mu_b": {
+    "mub": {
       "value": 2.002,
       "hasReferences": false,
       "references": null,
@@ -3330,14 +3330,14 @@ const pulsarData = [
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": null,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_b": {
+    "mub": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -3498,14 +3498,14 @@ const pulsarData = [
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": null,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_b": {
+    "mub": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -3649,13 +3649,13 @@ const pulsarData = [
       "references": null
     },
     "z": {
-      "value": null,
+      "value": 0.024,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": -9.1,
       "hasReferences": false,
       "references": null,
@@ -3666,7 +3666,7 @@ const pulsarData = [
         "down": 0.9
       }
     },
-    "mu_b": {
+    "mub": {
       "value": -1.38,
       "hasReferences": false,
       "references": null,
@@ -3833,13 +3833,13 @@ const pulsarData = [
       "references": null
     },
     "z": {
-      "value": null,
+      "value": 0.283,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value":-1.306,
       "hasReferences": false,
       "references": null,
@@ -3850,7 +3850,7 @@ const pulsarData = [
         "down": 0.004
       }
     },
-    "mu_b": {
+    "mub": {
       "value": 0.704,
       "hasReferences": false,
       "references": null,
@@ -3996,14 +3996,14 @@ const pulsarData = [
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": null,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_b": {
+    "mub": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -4139,13 +4139,13 @@ const pulsarData = [
       "references": null
     },
     "z": {
-      "value": null,
+      "value": -0.133,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": -9,
       "hasReferences": false,
       "references": null,
@@ -4156,7 +4156,7 @@ const pulsarData = [
         "down":  2
       }
     },
-    "mu_b": {
+    "mub": {
       "value": 0.32,
       "hasReferences": false,
       "references": null,
@@ -4316,14 +4316,14 @@ const pulsarData = [
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": null,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_b": {
+    "mub": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -4465,14 +4465,14 @@ const pulsarData = [
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_l": {
+    "mul": {
       "value": null,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
     },
-    "mu_b": {
+    "mub": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -4643,7 +4643,7 @@ const pulsarData = [
         "down": 
       }
     },
-    "mu_l": {
+    "mul": {
       "value":
       "hasReferences": ,
       "references": ,
@@ -4654,7 +4654,7 @@ const pulsarData = [
         "down": 
       }
     },
-    "mu_b": {
+    "mub": {
       "value":
       "hasReferences": ,
       "references": ,

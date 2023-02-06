@@ -24,8 +24,8 @@ const symbols = {
     'l': '$$ l $$',
     'b': '$$ b $$',
     'z': '$$ z $$',
-    'mu_l': '$$ \\mu_l $$',
-    'mu_b': '$$ \\mu_b $$'
+    'mul': '$$ \\mu_l $$',
+    'mub': '$$ \\mu_b $$'
 
 };
 
@@ -90,7 +90,7 @@ const plotConfig = {
       },
       'mt': {
         'symbol': '\( M_t \)',
-        'unit': '(\\( M_\odot \\))',
+        'unit': '(\( M_\odot \))',
       },
       'mp': {
         'symbol': '\( M_p \)',
@@ -126,27 +126,27 @@ const plotConfig = {
       },
       'dist': {
         'symbol': '\( d \)',
-        'unit': '\( (kpc) \)'
+        'unit': '(kpc)'
       },
       'l': {
         'symbol': '\( l \)',
-        'unit': '\( (deg) \)'
+        'unit': '(deg)'
       },
       'b': {
         'symbol': '\( b \)',
-        'unit': '\( (deg) \)'
+        'unit': '(deg)'
       },
       'z': {
         'symbol': '\( z \)',
-        'unit': '\( (kpc)\)'
+        'unit': '(kpc)'
       },
-      'mu_l': {
+      'mul': {
         'symbol': '\( \mu_l \)',
-        'unit': '\( (mas \sim yr^{-1}) \)'
+        'unit': '(\(mas \sim yr^{-1}\))'
       },
-      'mu_b': {
+      'mub': {
         'symbol': '\( \mu_b \)',
-        'unit': '\( (mas \sim yr^{-1}) \)'
+        'unit': '(\(mas \sim yr^{-1}\))'
       },
     }
   },  
@@ -337,12 +337,35 @@ const plotConfig = {
   'p-l': {
     'transformations': [
       [multiXBy, 1e3],
+      [removeOutliersXGT, 2e3]
     ],
     'axis': logarithmicXAxis,
   },
   'p-b': {
     'transformations': [
       [multiXBy, 1e3],
+      [removeOutliersXGT, 2e3]
+    ],
+    'axis': logarithmicXAxis,
+  },
+  'p-z': {
+    'transformations': [
+      [multiXBy, 1e3],
+      [removeOutliersXGT, 2e3]
+    ],
+    'axis': logarithmicXAxis,
+  },
+  'p-mul': {
+    'transformations': [
+      [multiXBy, 1e3],
+      [removeOutliersXGT, 2e3]
+    ],
+    'axis': logarithmicXAxis,
+  },
+  'p-mub': {
+    'transformations': [
+      [multiXBy, 1e3],
+      [removeOutliersXGT, 2e3]
     ],
     'axis': logarithmicXAxis,
   },
@@ -568,6 +591,54 @@ const plotConfig = {
       [adjustYtick, null],
     ],
   },
+  'pdot-dist':{
+    'transformations':[
+      absoluteValue,
+      [multiXBy, 1e-18],
+      [removeOutliersXGT, 1e-16]
+    ],
+   'axis': logarithmicXAxis,
+  },
+  'pdot-l':{
+    'transformations':[
+      absoluteValue,
+      [multiXBy, 1e-18],
+      [removeOutliersXGT, 1e-16]
+    ],
+   'axis': logarithmicXAxis,
+  },
+  'pdot-b':{
+    'transformations':[
+      absoluteValue,
+      [multiXBy, 1e-18],
+      [removeOutliersXGT, 1e-16]
+    ],
+   'axis': logarithmicXAxis,
+  },
+  'pdot-z':{
+    'transformations':[
+      absoluteValue,
+      [multiXBy, 1e-18],
+      [removeOutliersXGT, 1e-16]
+    ],
+   'axis': logarithmicXAxis,
+  },
+  'pdot-mul':{
+    'transformations':[
+      absoluteValue,
+      [multiXBy, 1e-18],
+      [removeOutliersXGT, 1e-16]
+    ],
+   'axis': logarithmicXAxis,
+  },
+  'pdot-mub':{
+    'transformations':[
+      absoluteValue,
+      [multiXBy, 1e-18],
+      [removeOutliersXGT, 1e-16]
+    ],
+   'axis': logarithmicXAxis,
+  },
   'pb-p': {
     'transformations': [
       [multiYBy, 1e3],
@@ -645,6 +716,42 @@ const plotConfig = {
       [adjustYtick, null],
     ],
   },
+  'pb-dist':{
+    'transformations': [
+      [excludeWithNames,['J0737-3039B']]
+  ],
+    'axis': logarithmicXAxis,
+  },
+  'pb-l':{
+    'transformations': [
+      [excludeWithNames,['J0737-3039B']]
+  ],
+    'axis': logarithmicXAxis,
+  },
+  'pb-b':{
+    'transformations': [
+      [excludeWithNames,['J0737-3039B']]
+  ],
+    'axis': logarithmicXAxis,
+  },
+  'pb-z':{
+    'transformations': [
+      [excludeWithNames,['J0737-3039B']]
+  ],
+    'axis': logarithmicXAxis,
+  },
+  'pb-mul':{
+    'transformations': [
+      [excludeWithNames,['J0737-3039B']]
+  ],
+    'axis': logarithmicXAxis,
+  },
+  'pb-mub':{
+    'transformations': [
+      [excludeWithNames,['J0737-3039B']]
+  ],
+    'axis': logarithmicXAxis,
+  },
   'e-p': {
     'transformations': [
       [multiYBy, 1e3],
@@ -704,6 +811,36 @@ const plotConfig = {
       [adjustXtick, null],
       [adjustYtick, null],
     ],
+  },
+  'e-dist': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]
+    ]
+  },
+  'e-l': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]
+    ]
+  },
+  'e-b': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]
+    ]
+  },
+  'e-z': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]
+    ]
+  },
+  'e-mul': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]
+    ]
+  },
+  'e-mub': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]
+    ]
   },
   'f-p': {
     'transformations': [
@@ -773,6 +910,36 @@ const plotConfig = {
       [adjustYtick, null],
     ],
   },
+  'f-dist': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]
+    ]
+  },
+  'f-l': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]
+    ]
+  },
+  'f-b': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]
+    ]
+  },
+  'f-z': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]
+    ]
+  },
+  'f-mul': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]
+    ]
+  },
+  'f-mub': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]
+    ]
+  },
   'mt-p': {
     'transformations': [
       [multiYBy, 1e3]
@@ -831,6 +998,36 @@ const plotConfig = {
       [adjustYtick, null],
     ],
   }, 
+  'mt-dist': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]
+    ]
+  },
+  'mt-l': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]
+    ]
+  },
+  'mt-b': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]
+    ]
+  },
+  'mt-z': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]
+    ]
+  },
+  'mt-mul': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]
+    ]
+  },
+  'mt-mub': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]
+    ]
+  },
   'mp-p': {
     'transformations': [
       filterByAssumed,
@@ -942,6 +1139,36 @@ const plotConfig = {
     ],
     'axis': logarithmicYAxis,
   },
+  'mp-dist': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]  
+    ]
+  },
+  'mp-l': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]  
+    ]
+  },
+  'mp-b': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]  
+    ]
+  },
+  'mp-z': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]  
+    ]
+  },
+  'mp-mul': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]  
+    ]
+  },
+  'mp-mub': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']]  
+    ]
+  },
   'mc-p': {
     'transformations': [
       filterByLimit,
@@ -1052,6 +1279,36 @@ const plotConfig = {
       [adjustYtick, null],
     ],
   },
+  'mc-dist': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039A']]  
+    ]
+  },
+  'mc-l': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039A']]  
+    ]
+  },
+  'mc-b': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039A']]  
+    ]
+  },
+  'mc-z': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039A']]  
+    ]
+  },
+  'mc-mul': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039A']]  
+    ]
+  },
+  'mc-mub': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039A']]  
+    ]
+  },
   'chirp-p': {
     'transformations': [
       [multiYBy, 1e3]
@@ -1132,6 +1389,36 @@ const plotConfig = {
       [excludeWithNames,['J0737-3039B']]
     ],
     'axis': logarithmicYAxis
+  },
+  'chirp-dist': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']],
+    ],
+  },
+  'chirp-l': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']],
+    ],
+  },
+  'chirp-b': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']],
+    ],
+  },
+  'chirp-z': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']],
+    ],
+  },
+  'chirp-mul': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']],
+    ],
+  },
+  'chirp-mub': {
+    'transformations': [
+      [excludeWithNames, ['J0737-3039B']],
+    ],
   },
   'delta-p': {
     'transformations': [
@@ -1355,6 +1642,42 @@ const plotConfig = {
       [adjustYtick, null],
     ],
   },
+  'age-dist':{
+    'transformations': [
+      [removeXValueEq, 0],
+    ],
+    'axis': logarithmicXAxis,
+  },
+  'age-l':{
+    'transformations': [
+      [removeXValueEq, 0],
+    ],
+    'axis': logarithmicXAxis,
+  },
+  'age-b':{
+    'transformations': [
+      [removeXValueEq, 0],
+    ],
+    'axis': logarithmicXAxis,
+  },
+  'age-z':{
+    'transformations': [
+      [removeXValueEq, 0],
+    ],
+    'axis': logarithmicXAxis,
+  },
+  'age-mul':{
+    'transformations': [
+      [removeXValueEq, 0],
+    ],
+    'axis': logarithmicXAxis,
+  },
+  'age-mub':{
+    'transformations': [
+      [removeXValueEq, 0],
+    ],
+    'axis': logarithmicXAxis,
+  },
   'tau-p': {
     'transformations': [
       [multiYBy, 1e3]
@@ -1497,5 +1820,41 @@ const plotConfig = {
       [adjustXtick, null],
       [adjustYtick, null],
     ],
+  },
+  'tau-dist': {
+    'transformations': [
+      [excludeWithNames,['J0737-3039B']]
+    ],
+    'axis': logarithmicXAxis
+  },
+  'tau-l': {
+    'transformations': [
+      [excludeWithNames,['J0737-3039B']]
+    ],
+    'axis': logarithmicXAxis
+  },
+  'tau-b': {
+    'transformations': [
+      [excludeWithNames,['J0737-3039B']]
+    ],
+    'axis': logarithmicXAxis
+  },
+  'tau-z': {
+    'transformations': [
+      [excludeWithNames,['J0737-3039B']]
+    ],
+    'axis': logarithmicXAxis
+  },
+  'tau-mul': {
+    'transformations': [
+      [excludeWithNames,['J0737-3039B']]
+    ],
+    'axis': logarithmicXAxis
+  },
+  'tau-mub': {
+    'transformations': [
+      [excludeWithNames,['J0737-3039B']]
+    ],
+    'axis': logarithmicXAxis
   }, 
 }

@@ -275,7 +275,7 @@ function buildSecondTable() {
   let skipNextCompanion = false;
 
   for ( let data of pulsarData ) {
-      if ( ! data.mu_l.value ) { continue; } // Plot only systems with proprer motion measurement
+      if ( ! data.mul.value ) { continue; } // Plot only systems with proprer motion measurement
       if ( skipNextCompanion ) { skipNextCompanion = false; continue; }  // Remove companion of Double Neutron Star Systems
       else if ( data.DoubleSystem ) { skipNextCompanion = true; } 
 
@@ -328,20 +328,20 @@ function buildSecondTable() {
 
       // Proper motion in l
       let tdMuL = document.createElement('td');
-      tdMuL.innerHTML = data.mu_l.value;
+      tdMuL.innerHTML = data.mul.value;
       // Proper motion in l uncertainties
-      if (data.mu_l.hasUncertainty) { addUncertainty(data.mu_l.uncertainty, tdMuL)}
+      if (data.mul.hasUncertainty) { addUncertainty(data.mul.uncertainty, tdMuL)}
       // Proper motion in l References
-      if ( data.mu_l.hasReferences ) { addReferences(data.mu_l.references, tdMuL); }
+      if ( data.mul.hasReferences ) { addReferences(data.mul.references, tdMuL); }
       tdMuL.setAttribute('style', 'white-space: nowrap') // Prevent references from wrapping
 
       // Proper motion in l
       let tdMuB = document.createElement('td');
-      tdMuB.innerHTML = data.mu_b.value;
+      tdMuB.innerHTML = data.mub.value;
       // Proper motion in l uncertainties
-      if (data.mu_b.hasUncertainty) { addUncertainty(data.mu_b.uncertainty, tdMuB)}
+      if (data.mub.hasUncertainty) { addUncertainty(data.mub.uncertainty, tdMuB)}
       // Proper motion in l References
-      if ( data.mu_b.hasReferences ) { addReferences(data.mu_b.references, tdMuB); }
+      if ( data.mub.hasReferences ) { addReferences(data.mub.references, tdMuB); }
       tdMuB.setAttribute('style', 'white-space: nowrap') // Prevent references from wrapping
               
       tr.appendChild(tdName);
