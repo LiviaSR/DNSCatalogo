@@ -193,6 +193,10 @@ a:hover {
     color: var(--text-color);
 }
 
+.text-section ol {
+    color: var(--text-color);
+}
+
 /* Table */
 table {
     font-size: 15px;
