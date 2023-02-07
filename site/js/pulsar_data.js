@@ -1,3 +1,14 @@
+/*
+   © DoNutSS 
+
+
+
+   This jason contains the whole dataset, including references in the table and
+   comments of each system to be displayed as tooltips
+*/
+
+
+
 const pulsarData = [
   {
     "name": "J0453+1559",
