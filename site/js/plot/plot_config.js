@@ -69,15 +69,15 @@ const plotConfig = {
     'color': defaultColor,
     'units': {
       'p': {
-        'symbol': 'P',
+        'symbol': '\\text{P}',
         'unit': '(s)',
       },
       'pdot': {
-        'symbol': '\(\dot{P} \)',
-        'unit': '(\(s~s^{-1}\))',
+        'symbol': '\\dot{P}',
+        'unit': '(s~s^{-1})',
       },
       'pb': {
-        'symbol': '\( P_b \)',
+        'symbol': '\P_b',
         'unit': '(days)',
       },
       'e': {
@@ -89,64 +89,64 @@ const plotConfig = {
         'unit': ' ',
       },
       'mt': {
-        'symbol': '\( M_t \)',
-        'unit': '(\( M_\odot \))',
+        'symbol': 'M_t',
+        'unit': '( M_\\odot )',
       },
       'mp': {
-        'symbol': '\( M_p \)',
-        'unit': '( \( M_\odot \))',
+        'symbol': ' M_p',
+        'unit': '(  M_\\odot )',
       },
       'mc': {
-        'symbol': '\( M_c \)',
-        'unit': '(\(M_\odot \))',
+        'symbol': ' M_c ',
+        'unit': '(M_\\odot )',
       },
       'chirp': {
-        'symbol': '\( \mathcal{M} \)',
-        'unit': '(\(M_\odot \))',
+        'symbol': ' \\mathcal{M} ',
+        'unit': '(M_\\odot )',
       },
       'delta': {
-        'symbol': '\( \delta \)',
+        'symbol': ' \\delta ',
         'unit': '(deg)',
       },
       'chi': {
-        'symbol': '\( \chi_f \)',
+        'symbol': ' \\chi_f ',
         'unit': ' ',
       },
       'chieff': {
-        'symbol': '\( \chi_{eff} \)',
+        'symbol': ' \\chi_{eff} ',
         'unit': ' ',
       },
       'age': {
-        'symbol': '\( \tau_c \)',
+        'symbol': ' \\tau_ c ',
         'unit': '(Gyr)',
       },
       'tau': {
-        'symbol': '\( \tau_{GW} \)',
+        'symbol': ' \\tau_{GW} ',
         'unit': '(Gyr)',
       },
       'dist': {
-        'symbol': '\( d \)',
+        'symbol': ' d ',
         'unit': '(kpc)'
       },
       'l': {
-        'symbol': '\( l \)',
+        'symbol': ' l ',
         'unit': '(deg)'
       },
       'b': {
-        'symbol': '\( b \)',
+        'symbol': ' b ',
         'unit': '(deg)'
       },
       'z': {
-        'symbol': '\( z \)',
+        'symbol': ' z ',
         'unit': '(kpc)'
       },
       'mul': {
-        'symbol': '\( \mu_l \)',
-        'unit': '(\(mas \sim yr^{-1}\))'
+        'symbol': ' \\mu_l ',
+        'unit': '(mas~yr^{-1})'
       },
       'mub': {
-        'symbol': '\( \mu_b \)',
-        'unit': '(\(mas \sim yr^{-1}\))'
+        'symbol': ' \\mu_b ',
+        'unit': '(mas~yr^{-1})'
       },
     }
   },  

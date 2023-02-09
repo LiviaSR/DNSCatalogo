@@ -29,85 +29,43 @@ const defaultAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLabel) =
   
 
   // Add X axis label
-  /*
-    svg.append("g")
-  .append("foreignObject")
-  .attr("width", width)
-  .attr("height",  height)
-  .attr("x", (width + margin.left + margin.top) / 2)
-  .attr("y", height + 30)
-  .append("xhtml:body")
-  .style("font", "16px")
-  .style("color", 'var(--text-color)')
-  .html("<p>An HTML test</p>");
-
-  svg.append("text")
-    .style('fill', 'white')
-    .style('font-size', '25px')
-    .attr("text-anchor", "middle")
-    .attr("x", width / 2)
-    .attr("y", height + margin.top + 37)
-    .text(XAxisLabel);
- 
-  */
-
-  var latex_raw = "\\text{SFR}{[\\textup{O\\ II}]}=10.10\\text{M}{\\odot}\\ {\\text{ yr}}^{-1}";
-  var latex_render_url = "http://latex.codecogs.com/gif.latex?";
+  var latex_raw = XAxisLabel;
+  var latex_render_url = "http://latex.codecogs.com/png.image?";
   var latex_query = encodeURI(latex_raw);
   var latex = svg.append("foreignObject")
-      .attr("x", width / 2 - 80)
-      .attr("y", height + margin.top + 20)
-      .attr("width", 400)
-      .attr("height", 200)
+      .attr("width", 200)
+      .attr("height", 100)
+      .attr("x", width / 2)
+      .attr("y", height + margin.top + 25)
       .attr("requiredFeatures", "http://www.w3.org/TR/SVG11/feature#Extensibility")
       .append("xhtml:body")
+      .attr("x1", width / 2)
+      .attr("x2", width / 2 + 100)
+      .attr("y1", height + margin.top + 37)
       .attr("text-anchor", "middle")
-      .attr("x", width / 2)
-      .attr("y", height + margin.top + 37)
       .append("img")
-      .style("color", 'var(--text-color)')
-      .attr("src", latex_render_url + latex_query);
+      .attr("src", latex_render_url + latex_query)
+      .style("background-color", 'var(--text-color)');
+
 
   // Y axis label
-
-  /*svg.append("g")
-  .append("foreignObject")
-  .attr("width", width)
-  .attr("height",  height)
-  .attr("transform", "rotate(-90)")
-  .attr("y", -margin.left + 25)
-  .attr("x", -margin.top -(height / 2))
-  .append("xhtml:body")
-  .style("font", "16px")
-  .style("color", 'var(--text-color)')
-  .html("<p>An HTML test</p>");
-
-  svg.append("text")
-    .style('fill', 'white')
-    .style('font-size', '25px')
-    .attr("text-anchor", "middle")
-    .attr("transform", "rotate(-90)")
-    .attr("y", -margin.left + 25)
-    .attr("x", -margin.top -(height / 2))
-    .text(YAxisLabel)*/
-
-  var latex_raw = "\\text{SFR}{[\\textup{O\\ II}]}=10.10\\text{M}{\\odot}\\ {\\text{ yr}}^{-1}";
-  var latex_render_url = "http://latex.codecogs.com/gif.latex?";
+  var latex_raw = YAxisLabel;
+  var latex_render_url = "http://latex.codecogs.com/png.image?";
   var latex_query = encodeURI(latex_raw);
   var latex = svg.append("foreignObject")
     .attr("transform", "rotate(-90)")
-      .attr("y", -margin.left + 25)
-      .attr("x", -margin.top -(height / 2))
-      .attr("width", 400)
-      .attr("height", 200)
+      .attr("width", 100)
+      .attr("height", 90)
+      .attr("y", -margin.left)
+      .attr("x", -(height / 2))
       .attr("requiredFeatures", "http://www.w3.org/TR/SVG11/feature#Extensibility")
       .append("xhtml:body")
       .attr("text-anchor", "middle")
       .attr("y", -margin.left + 25)
       .attr("x", -margin.top -(height / 2))
-      .style("color", 'var(--text-color)')
       .append("img")
-      .attr("src", latex_render_url + latex_query);
+      .attr("src", latex_render_url + latex_query)
+      .style("background-color", 'var(--text-color)');
 
   // X axis animation
   x_axis.domain([
@@ -170,23 +128,40 @@ const logarithmicXYAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLa
     .attr('opacity', '0');
 
   // Add X axis label
-  svg.append("text")
-    .style('fill', 'white')
-    .style('font-size', '25px')
-    .attr("text-anchor", "middle")
-    .attr("x", width / 2)
-    .attr("y", height + margin.top + 37)
-    .text(XAxisLabel);
+  var latex_raw = XAxisLabel;
+  var latex_render_url = "http://latex.codecogs.com/gif.latex?";
+  var latex_query = encodeURI(latex_raw);
+  var latex = svg.append("foreignObject")
+      .attr("x", width / 2 - 80)
+      .attr("y", height + margin.top + 20)
+      .attr("width", 400)
+      .attr("height", 200)
+      .attr("requiredFeatures", "http://www.w3.org/TR/SVG11/feature#Extensibility")
+      .append("xhtml:body")
+      .attr("text-anchor", "middle")
+      .attr("x", width / 2)
+      .attr("y", height + margin.top + 37)
+      .append("img")
+      .style("color", 'var(--text-color)')
+      .attr("src", latex_render_url + latex_query);
 
   // Y axis label
-  svg.append("text")
-    .style('fill', 'white')
-    .style('font-size', '25px')
-    .attr("text-anchor", "middle")
+  var latex_raw = YAxisLabel;
+  var latex_render_url = "http://latex.codecogs.com/gif.latex?";
+  var latex_query = encodeURI(latex_raw);
+  var latex = svg.append("foreignObject")
     .attr("transform", "rotate(-90)")
-    .attr("y", -margin.left + 25)
-    .attr("x", -margin.top -(height / 2))
-    .text(YAxisLabel)
+      .attr("y", -margin.left + 25)
+      .attr("x", -margin.top -(height / 2))
+      .attr("width", 400)
+      .attr("height", 200)
+      .attr("requiredFeatures", "http://www.w3.org/TR/SVG11/feature#Extensibility")
+      .append("xhtml:body")
+      .attr("text-anchor", "middle")
+      .attr("y", -margin.left + 25)
+      .attr("x", -margin.top -(height / 2))
+      .append("img")
+      .attr("src", latex_render_url + latex_query);
 
   // X axis animation
   x_axis.domain([
@@ -247,23 +222,40 @@ const logarithmicXAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLab
     .attr('opacity', '0');
 
   // Add X axis label
-  svg.append("text")
-    .style('fill', 'white')
-    .style('font-size', '25px')
-    .attr("text-anchor", "middle")
-    .attr("x", width / 2)
-    .attr("y", height + margin.top + 37)
-    .text(XAxisLabel);
+  var latex_raw = XAxisLabel;
+  var latex_render_url = "http://latex.codecogs.com/gif.latex?";
+  var latex_query = encodeURI(latex_raw);
+  var latex = svg.append("foreignObject")
+      .attr("x", width / 2 - 80)
+      .attr("y", height + margin.top + 20)
+      .attr("width", 400)
+      .attr("height", 200)
+      .attr("requiredFeatures", "http://www.w3.org/TR/SVG11/feature#Extensibility")
+      .append("xhtml:body")
+      .attr("text-anchor", "middle")
+      .attr("x", width / 2)
+      .attr("y", height + margin.top + 37)
+      .append("img")
+      .style("color", 'var(--text-color)')
+      .attr("src", latex_render_url + latex_query);
 
   // Y axis label
-  svg.append("text")
-    .style('fill', 'white')
-    .style('font-size', '25px')
-    .attr("text-anchor", "middle")
+  var latex_raw = YAxisLabel;
+  var latex_render_url = "http://latex.codecogs.com/gif.latex?";
+  var latex_query = encodeURI(latex_raw);
+  var latex = svg.append("foreignObject")
     .attr("transform", "rotate(-90)")
-    .attr("y", -margin.left + 25)
-    .attr("x", -margin.top -(height / 2))
-    .text(YAxisLabel)
+      .attr("y", -margin.left + 25)
+      .attr("x", -margin.top -(height / 2))
+      .attr("width", 400)
+      .attr("height", 200)
+      .attr("requiredFeatures", "http://www.w3.org/TR/SVG11/feature#Extensibility")
+      .append("xhtml:body")
+      .attr("text-anchor", "middle")
+      .attr("y", -margin.left + 25)
+      .attr("x", -margin.top -(height / 2))
+      .append("img")
+      .attr("src", latex_render_url + latex_query);
 
   // X axis animation
   x_axis.domain([
@@ -325,23 +317,40 @@ const logarithmicYAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLab
     .attr('opacity', '0');
 
   // Add X axis label
-  svg.append("text")
-    .style('fill', 'white')
-    .style('font-size', '25px')
-    .attr("text-anchor", "middle")
-    .attr("x", width / 2)
-    .attr("y", height + margin.top + 37)
-    .text(XAxisLabel);
+  var latex_raw = XAxisLabel;
+  var latex_render_url = "http://latex.codecogs.com/gif.latex?";
+  var latex_query = encodeURI(latex_raw);
+  var latex = svg.append("foreignObject")
+      .attr("x", width / 2 - 80)
+      .attr("y", height + margin.top + 20)
+      .attr("width", 400)
+      .attr("height", 200)
+      .attr("requiredFeatures", "http://www.w3.org/TR/SVG11/feature#Extensibility")
+      .append("xhtml:body")
+      .attr("text-anchor", "middle")
+      .attr("x", width / 2)
+      .attr("y", height + margin.top + 37)
+      .append("img")
+      .style("color", 'var(--text-color)')
+      .attr("src", latex_render_url + latex_query);
 
   // Y axis label
-  svg.append("text")
-    .style('fill', 'white')
-    .style('font-size', '25px')
-    .attr("text-anchor", "middle")
+  var latex_raw = YAxisLabel;
+  var latex_render_url = "http://latex.codecogs.com/gif.latex?";
+  var latex_query = encodeURI(latex_raw);
+  var latex = svg.append("foreignObject")
     .attr("transform", "rotate(-90)")
-    .attr("y", -margin.left + 25)
-    .attr("x", -margin.top -(height / 2))
-    .text(YAxisLabel)
+      .attr("y", -margin.left + 25)
+      .attr("x", -margin.top -(height / 2))
+      .attr("width", 400)
+      .attr("height", 200)
+      .attr("requiredFeatures", "http://www.w3.org/TR/SVG11/feature#Extensibility")
+      .append("xhtml:body")
+      .attr("text-anchor", "middle")
+      .attr("y", -margin.left + 25)
+      .attr("x", -margin.top -(height / 2))
+      .append("img")
+      .attr("src", latex_render_url + latex_query);
 
   // X axis animation
   x_axis.domain([

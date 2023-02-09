@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="../css/navbar.css">
     <title>DoNutSS</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="./js/theme.js">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="../css/jquery.dataTables.min.css" rel="stylesheet">
@@ -14,6 +15,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../js/pulsar_data.js"></script>
     <script src="../js/index.js"></script>
 </head>
@@ -57,8 +60,48 @@
     <div id="gws" class="page-section">
         <h5>Gravitational waves</h5>
     </div>
-    <div class="text-section">
-        <p>Insert a text here.</p>
+    <div class="text-section" style="text-align: justify;">
+        <p>
+          Gravitational wave (GW) emissions are ripples in the spacetime manifold caused by the movement of massive objects
+          and were predicted by Einstein's theory of General Relativity (GR). The most intense sources of GW emissions
+          are the merger of compact objects like neutron stars and black holes, realeasing a great amount of energy.
+          These components lose energy while orbiting each other, and as a consequence they spiral-in reducing the orbital
+          period further and further. The discovery of PSR B1913+16 provided the first evidence for the existence of this effect,
+          by the observation of orbital decay during time, trough the timing of \( \dot{P}_b \) parameter. This triggered a great
+          interest in the scientific community and placed DNSs as the main target for groundbased interferometric detectors.
+        </p>
+        <p>
+          Since the produced signals are very weak, detection of GW emssions was a challenging task for decades. The <em>Laser Interferometer
+            Gravitationl-Wave Observatory</em> was founded in 1992 by Kip Thorne and Ronald Drever of Caltech (continue describing detectors.)
+        </p>
+            <img src="../images/" alt="Interferometers" style="padding: 10px; margin: auto; display: block;">
+
+        <p>
+            The first detection of a gravitational wave occurred in 2015 from a binary black hole merger GW150914
+            (<a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.116.061102" target="_blank">Abbott, B. P. et al, 2016</a> ) by Advanced LIGO detectors. However, the true era of multimessenger and multiwavelength
+            astronomy started two years latter with the first detection of a compact binary merger, GW170817
+            \citep{2017PhRvL.119p1101A}, quickly associated with a short GRB emitted from the same sky location $1.7$ s after the
+            merger \citep{Goldstein_2017}. The precise location of the event allowed a follow-up leading to detections in X-ray,
+            ultraviolet, optical, infrared and radio bands. The optical counterpart, AT2017gfo \citep{doi:10.1126/science.aap9811},
+            placed NGC 4993 as the host galaxy with a Tully-Fisher distance of $\sim40~Mpc$ \citep{2001ApJ...553...47F}, consistent
+            with the inferred GW luminosity distance. The association of the gravitational wave with the sGRB, as well as the
+            observations across the electromagnetic spectrum \citep{2017GCN.21588....1D, 2017GCN.21815....1C, 2017GCN.21850....1D},
+            the total and component masses of the system and the offset related to the galaxy center provided strong evidences for
+            the DNS nature of GW170817.
+        </p>
+        <p>
+            On April 2019 the second gravitational wave signal consistent with the coalescence of a DNS was detected, GW190425
+            \citep{2020ApJ...892L...3A}. This event is identified as a single-detector since at the time it was detected the
+            LIGO-LHO was offline and the signal-to-noise ratio of Virgo was 2.5, below the threshold of 4.0 for significance
+            estimation. The localization of a GW signal relies on measuring the time delay between observatories, but since GW190425
+            is a single-detector event was not possible to set straight constraints on the sky map region. As a consequence, a
+            follow-up becomes challenging and until now there is now firm detection of an electromagnetic counterpart. Nonetheless,
+            it is important to note that the event itself is highly significant. While it is not possible to rule out the
+            possibility of one or both components being BH's, due to the absence of sensitivity to probe matter effects, this
+            hypothesis is unlikely. However, the total and chirp masses of this system differs significantly from the known Galactic
+            DNS systems as we discuss in Section \ref{subsec:chirp}. This fact may indeed signal the existence of a different
+            formation mechanism for GW190425-like binaries.
+        </p>
     </div>
 
     <button onclick="topFunction()" id="to-top-button" title="To top">Top</button>
