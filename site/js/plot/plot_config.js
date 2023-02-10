@@ -38,11 +38,11 @@ const colors = {
 }
 
 const transitions = { // miliseconds
-  'x-axis-display-delay': 0,
-  'y-axis-display-delay': 0,
-  'x-grid-display-delay': 0,
-  'y-grid-display-delay': 0,
-  'data-display-delay': 0,
+  'x-axis-display-delay': 500,
+  'y-axis-display-delay': 500,
+  'x-grid-display-delay': 500,
+  'y-grid-display-delay': 500,
+  'data-display-delay': 500,
 }
 
 // Define all particular properties to include
@@ -69,7 +69,7 @@ const plotConfig = {
     'color': defaultColor,
     'units': {
       'p': {
-        'symbol': '\\text{P}',
+        'symbol': 'P',
         'unit': '(s)',
       },
       'pdot': {

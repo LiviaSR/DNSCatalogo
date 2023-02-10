@@ -29,6 +29,19 @@ function enumarateReferences(pulsarData) {
         reference['ref-number'] = index++;
       }
     }
+    let keys = Object.keys(data)
+    keys.sort()
+    for ( let key of keys ) {
+      if ( key === "hasReferences" ) {continue}
+      if ( typeof data[key] === 'object' && data[key] !== null )
+      if ( data[key].hasOwnProperty("hasReferences") ) {
+        if ( data[key].hasReferences ) {
+          for ( let reference of data[key].references ) {
+            reference['ref-number'] = index++;
+          }
+        }
+      }
+    }
   }
 }
 

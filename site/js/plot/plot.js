@@ -70,7 +70,7 @@ function plot() {
     .style("background-color", "white")
     .style("padding", "5px")
 
-  const mouseover = function(d) {
+  const mouseover = function(event, d) {
     if ( d[0].type === 'rec' ) { borderColor = `-5px 0 0 0px ${colors['rec']}`; }
     else if ( d[0].type === 'nrec' ) { borderColor = `-5px 0 0 0px ${colors['nrec']}`; }
     else if ( d[0].type === 'GC' ) { borderColor = `-5px 0 0 0px ${colors['GC']}`; }
@@ -82,17 +82,21 @@ function plot() {
       .style("stroke", "white")
       .style("opacity", 1)
   }
-
-  const mousemove = function(d) {
+ 
+  const mousemove = function(event, d) {
     Tooltip
-      .html(`PSR ${d[0].name}<br>Confirmed: ${d[0].Confirmed}<br>${pcs['x']}: ${d[0].value}<br>${pcs['y']}: ${d[1].value}`)
+      .html(`PSR ${d[0].name}<br>
+      Confirmed: ${d[0].Confirmed}<br>
+      <div style="display: flex !important;"><MathML style="margin-top: -0.7em !important;">${symbols[pcs['x']]}</MathML> : ${d[0].value}</div><br>
+      <div style="display: flex !important;"><MathML style="margin-top: -0.7em !important;">${symbols[pcs['y']]}</MathML> : ${d[1].value}`)
       .style("left", (70) + "px")
       .style("top", (70) + "px")
-      .style("left", (d3.mouse(this)[0]+90) + "px")
-      .style("top", (d3.mouse(this)[1]) + "px")
+      .style("left", (d3.pointer(event, this)[0]+90) + "px")
+      .style("top", (d3.pointer(event, this)[1]) + "px")
+      MathJax.typeset()
   }
 
-  const mouseleave = function(d) {
+  const mouseleave = function(event, d) {
     Tooltip
       .style("opacity", 0)
     d3.select(this)
