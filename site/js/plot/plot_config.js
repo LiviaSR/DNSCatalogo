@@ -38,11 +38,11 @@ const colors = {
 }
 
 const transitions = { // miliseconds
-  'x-axis-display-delay': 500,
-  'y-axis-display-delay': 500,
-  'x-grid-display-delay': 500,
-  'y-grid-display-delay': 500,
-  'data-display-delay': 500,
+  'x-axis-display-delay': 300,
+  'y-axis-display-delay': 300,
+  'x-grid-display-delay': 300,
+  'y-grid-display-delay': 300,
+  'data-display-delay': 300,
 }
 
 // Define all particular properties to include
@@ -69,83 +69,83 @@ const plotConfig = {
     'color': defaultColor,
     'units': {
       'p': {
-        'symbol': 'P',
-        'unit': '(s)',
+        'symbol': 'P\\; \\;',
+        'unit': '(s)\\; \\;',
       },
       'pdot': {
-        'symbol': '\\dot{P}',
-        'unit': '(s~s^{-1})',
+        'symbol': '\\dot{P}\\; \\;',
+        'unit': '(s~s^{-1})\\; \\;',
       },
       'pb': {
-        'symbol': '\P_b',
-        'unit': '(days)',
+        'symbol': '\P_b\\; \\;',
+        'unit': '(days)\\; \\;',
       },
       'e': {
-        'symbol': 'e',
-        'unit': ' ',
+        'symbol': 'e\\; \\;',
+        'unit': ' \\; \\;',
       },
       'f': {
-        'symbol': 'f',
-        'unit': ' ',
+        'symbol': 'f\\; \\;',
+        'unit': ' \\; \\;',
       },
       'mt': {
-        'symbol': 'M_t',
-        'unit': '( M_\\odot )',
+        'symbol': 'M_t\\; \\;',
+        'unit': '( M_\\odot )\\; \\;',
       },
       'mp': {
-        'symbol': ' M_p',
-        'unit': '(  M_\\odot )',
+        'symbol': ' M_p \\; \\;',
+        'unit': ' (  M_\\odot )\\; \\;',
       },
       'mc': {
-        'symbol': ' M_c ',
-        'unit': '(M_\\odot )',
+        'symbol': ' M_c \\; \\;',
+        'unit': '(M_\\odot )\\; \\;',
       },
       'chirp': {
-        'symbol': ' \\mathcal{M} ',
-        'unit': '(M_\\odot )',
+        'symbol': ' \\mathcal{M} \\; \\;',
+        'unit': '(M_\\odot )\\; \\;',
       },
       'delta': {
-        'symbol': ' \\delta ',
-        'unit': '(deg)',
+        'symbol': ' \\delta \\; \\;',
+        'unit': '(deg)\\; \\;',
       },
       'chi': {
-        'symbol': ' \\chi_f ',
-        'unit': ' ',
+        'symbol': ' \\chi_f \\; \\;',
+        'unit': ' \\; \\;',
       },
       'chieff': {
-        'symbol': ' \\chi_{eff} ',
-        'unit': ' ',
+        'symbol': ' \\chi_{eff} \\; \\;',
+        'unit': ' \\; \\;',
       },
       'age': {
-        'symbol': ' \\tau_ c ',
-        'unit': '(Gyr)',
+        'symbol': ' \\tau_ c \\; \\;',
+        'unit': '(Gyr)\\; \\;',
       },
       'tau': {
-        'symbol': ' \\tau_{GW} ',
-        'unit': '(Gyr)',
+        'symbol': ' \\tau_{GW} \\; \\;',
+        'unit': '(Gyr)\\; \\;',
       },
       'dist': {
-        'symbol': ' d ',
+        'symbol': ' d \\; \\;',
         'unit': '(kpc)'
       },
       'l': {
-        'symbol': ' l ',
+        'symbol': ' l \\; \\;',
         'unit': '(deg)'
       },
       'b': {
-        'symbol': ' b ',
+        'symbol': ' b \\; \\;',
         'unit': '(deg)'
       },
       'z': {
-        'symbol': ' z ',
+        'symbol': ' z \\; \\;',
         'unit': '(kpc)'
       },
       'mul': {
-        'symbol': ' \\mu_l ',
+        'symbol': ' \\mu_l \\; \\;',
         'unit': '(mas~yr^{-1})'
       },
       'mub': {
-        'symbol': ' \\mu_b ',
+        'symbol': ' \\mu_b \\; \\;',
         'unit': '(mas~yr^{-1})'
       },
     }

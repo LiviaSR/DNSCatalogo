@@ -29,7 +29,7 @@ const defaultAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLabel) =
   
 
   // Add X axis label
-  var latex_raw = `\\dpi{120} \{ \\color{White} \\boldsymbol{${XAxisLabel}} \}`;
+  var latex_raw = `\\dpi{120}  \{ \\large{ \\color{White} \\mathbf{\\boldsymbol{${XAxisLabel}}} }`;
   var latex_render_url = "http://latex.codecogs.com/png.image?";
   var latex_query = encodeURI(latex_raw);
   var latex = svg.append("foreignObject")
@@ -48,7 +48,7 @@ const defaultAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLabel) =
 
 
   // Y axis label
-  var latex_raw = `\\dpi{120} \{ \\color{White} \\boldsymbol{${YAxisLabel}} \}`;
+  var latex_raw = `\\dpi{120}  \{ \\large{ \\color{White} \\mathbf{\\boldsymbol{${YAxisLabel}}} }`;
   var latex_render_url = "http://latex.codecogs.com/png.image?";
   var latex_query = encodeURI(latex_raw);
   var latex = svg.append("foreignObject")
@@ -126,7 +126,7 @@ const logarithmicXYAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLa
     .attr('opacity', '0');
 
   // Add X axis label
-  var latex_raw = `\\dpi{120} \{ \\color{White} \\boldsymbol{${XAxisLabel}} \}`;
+  var latex_raw = `\\dpi{120}  \{ \\large{ \\color{White} \\mathbf{\\boldsymbol{${XAxisLabel}}} }`;
   var latex_render_url = "http://latex.codecogs.com/png.image?";
   var latex_query = encodeURI(latex_raw);
   var latex = svg.append("foreignObject")
@@ -145,7 +145,7 @@ const logarithmicXYAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLa
 
 
   // Y axis label
-  var latex_raw = `\\dpi{120} \{ \\color{White} \\boldsymbol{${YAxisLabel}} \}`;
+  var latex_raw = `\\dpi{120}  \{ \\large{ \\color{White} \\mathbf{\\boldsymbol{${YAxisLabel}}} }`;
   var latex_render_url = "http://latex.codecogs.com/png.image?";
   var latex_query = encodeURI(latex_raw);
   var latex = svg.append("foreignObject")
@@ -221,7 +221,7 @@ const logarithmicXAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLab
     .attr('opacity', '0');
 
   // Add X axis label
-  var latex_raw = `\\dpi{120} \{ \\color{White} \\boldsymbol{${XAxisLabel}} \}`;
+  var latex_raw = `\\dpi{120}  \{ \\large{ \\color{White} \\mathbf{\\boldsymbol{${XAxisLabel}}} }`;
   var latex_render_url = "http://latex.codecogs.com/png.image?";
   var latex_query = encodeURI(latex_raw);
   var latex = svg.append("foreignObject")
@@ -240,7 +240,7 @@ const logarithmicXAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLab
 
 
   // Y axis label
-  var latex_raw = `\\dpi{120} \{ \\color{White} \\boldsymbol{${YAxisLabel}} \}`;
+  var latex_raw = `\\dpi{120}  \{ \\large{ \\color{White} \\mathbf{\\boldsymbol{${YAxisLabel}}} }`;
   var latex_render_url = "http://latex.codecogs.com/png.image?";
   var latex_query = encodeURI(latex_raw);
   var latex = svg.append("foreignObject")
@@ -317,7 +317,7 @@ const logarithmicYAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLab
     .attr('opacity', '0');
 
   // Add X axis label
-  var latex_raw = `\\dpi{120} \{ \\color{White} \\boldsymbol{${XAxisLabel}} \}`;
+  var latex_raw = `\\dpi{120}  \{ \\large{ \\color{White} \\mathbf{\\boldsymbol{${XAxisLabel}}} }`;
   var latex_render_url = "http://latex.codecogs.com/png.image?";
   var latex_query = encodeURI(latex_raw);
   var latex = svg.append("foreignObject")
@@ -336,7 +336,7 @@ const logarithmicYAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLab
 
 
   // Y axis label
-  var latex_raw = `\\dpi{120} \{ \\color{White} \\boldsymbol{${YAxisLabel}} \}`;
+  var latex_raw = `\\dpi{120}  \{ \\large{ \\color{White} \\mathbf{\\boldsymbol{${YAxisLabel}}} }`;
   var latex_render_url = "http://latex.codecogs.com/png.image?";
   var latex_query = encodeURI(latex_raw);
   var latex = svg.append("foreignObject")

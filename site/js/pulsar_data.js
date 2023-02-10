@@ -20,7 +20,7 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2015ApJ...812..143M",
-        "descrip": "Martinez, J. G., Stovall, K., Freire, P. C. C., Deneva, J. S., Jenet, F. A., McLaughlin, M. A., ... & Ridolfi, A. (2015). The Astrophysical Journal, 812(2), 143."
+        "descrip": "Martinez, J. G., Stovall, K., Freire, P. C. C., et al. (2015). The Astrophysical Journal, 812(2), 143."
       }
     ],
     "comments": "Confirmed. Asymmetric DNS. Companion is the lightest NS known.",
@@ -181,7 +181,7 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2018ApJ...859...93L",
-        "descrip": "Lynch, R. S., Swiggum, J. K., Kondratiev, V. I., Kaplan, D. L., Stovall, K., Fonseca, E., ... & Wells, B. L. (2018). The Astrophysical Journal, 859(2), 93."
+        "descrip": "Lynch, R. S., Swiggum, J. K., Kondratiev, V. I., et al. (2018). The Astrophysical Journal, 859(2), 93."
       }
     ],
     "comments": "Confirmed. Highly eccentric, similar to the Hulse-Taylor pulsar",
@@ -501,17 +501,17 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2006Sci...314...97K",
-        "descrip": "Kramer, M., Stairs, I. H., Manchester, R. N., McLaughlin, M. A., Lyne, A. G., Ferdman, R. D., ... & Camilo, F. (2006).  Science, 314(5796), 97-102."
+        "descrip": "Kramer, M., Stairs, I. H., Manchester, R. N., et al. (2006).  Science, 314(5796), 97-102."
       },
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2021PhRvX..11d1050K",
-        "descrip": "Kramer, M., Stairs, I. H., Manchester, R. N., Wex, N., Deller, A. T., Coles, W. A., ... & Theureau, G. (2021). Physical Review X, 11(4), 041050."
+        "descrip": "Kramer, M., Stairs, I. H., Manchester, et al. (2021). Physical Review X, 11(4), 041050."
       },
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2008Sci...321..104B",
-        "descrip": "Breton, R. P., Kaspi, V. M., Kramer, M., McLaughlin, M. A., Lyutikov, M., Ransom, S. M., ... & Possenti, A. (2008). Science, 321(5885), 104-107."
+        "descrip": "Breton, R. P., Kaspi, V. M., Kramer, et al. (2008). Science, 321(5885), 104-107."
       }
     ],
     "comments": "Confirmed. The only double pulsar known. Companion is a young, non-recycled pulsar.",
@@ -680,17 +680,17 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2004Sci...303.1153L/abstract",
-        "descrip": "Lyne, A. G., Burgay, M., Kramer, M., Possenti, A., Manchester, R. N., Camilo, F., ... & Freire, P. C. C. (2004). Science, 303(5661), 1153-1157."
+        "descrip": "Lyne, A. G., Burgay, M., Kramer, et al. (2004). Science, 303(5661), 1153-1157."
       },
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2013ApJ...767...85F",
-        "descrip": "Ferdman, R. D., Stairs, I. H., Kramer, M., Breton, R. P., McLaughlin, M. A., Freire, P. C. C., ... & Lyne, A. G. (2013). The Astrophysical Journal, 767(1), 85."
+        "descrip": "Ferdman, R. D., Stairs, I. H., Kramer, M., et al. (2013). The Astrophysical Journal, 767(1), 85."
       },
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2010ApJ...721.1193P",
-        "descrip": "Perera, B. B. P., McLaughlin, M. A., Kramer, M., Stairs, I. H., Ferdman, R. D., Freire, P. C. C., ... & Camilo, F. (2010). The Astrophysical Journal, 721(2), 1193."
+        "descrip": "Perera, B. B. P., McLaughlin, M. A., Kramer, et al. (2010). The Astrophysical Journal, 721(2), 1193."
       }
     ],
     "comments": "Confirmed. The only double pulsar known. Companion is a young, non-recycled pulsar.",
@@ -863,7 +863,7 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2022arXiv221203926S/abstract",
-        "descrip": "Swiggum, J. K., Pleunis, Z., Parent, E., Kaplan, D. L., McLaughlin, M. A., Stairs, I. H., ... & Surnis, M. (2022). arXiv preprint arXiv:2212.03926."
+        "descrip": "Swiggum, J. K., Pleunis, Z., Parent, et al. (2022). arXiv preprint arXiv:2212.03926."
       }
     ],
     "comments": "Candidate DNS. Less massive binary system among the DNSs.",
@@ -1012,7 +1012,7 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2022MNRAS.512.5782S",
-        "descrip": "Sengar, R., Balakrishnan, V., Stevenson, S., Bailes, M., Barr, E. D., Bhat, N. D. R., ... & Wongphechauxsorn, J. (2022). Monthly Notices of the Royal Astronomical Society, 512(4), 5782-5792."
+        "descrip": "Sengar, R., Balakrishnan, V., Stevenson, S., et al. (2022). Monthly Notices of the Royal Astronomical Society, 512(4), 5782-5792."
       }
     ],
     "comments": "Confirmed.",
@@ -1161,7 +1161,7 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2017ApJ...851L..29M",
-        "descrip": "Martinez, J. G., Stovall, K., Freire, P. C. C., Deneva, J. S., Tauris, T. M., Ridolfi, A., ... & Bagchi, M. (2017).  The Astrophysical Journal Letters, 851(2), L29."
+        "descrip": "Martinez, J. G., Stovall, K., Freire, P. C. C., et al. (2017).  The Astrophysical Journal Letters, 851(2), L29."
       }
     ],
     "comments": "Confirmed.",
@@ -1318,7 +1318,7 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2008A&A...490..753J",
-        "descrip": "Janssen, G. H., Stappers, B. W., Kramer, M., Nice, D. J., Jessner, A., Cognard, I., & Purver, M. B. (2008). Astronomy & Astrophysics, 490(2), 753-761."
+        "descrip": "Janssen, G. H., Stappers, B. W., Kramer, M., et al. (2008). Astronomy & Astrophysics, 490(2), 753-761."
       },
       {
         "ref-number": null,
@@ -1670,7 +1670,7 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2008ApJ...675..670F",
-        "descrip": "Freire, P. C., Ransom, S. M., Bégin, S., Stairs, I. H., Hessels, J. W., Frey, L. H., & Camilo, F. (2008). The Astrophysical Journal, 675(1), 670."
+        "descrip": "Freire, P. C., Ransom, S. M., Bégin, S., et al. (2008). The Astrophysical Journal, 675(1), 670."
       }
     ],
     "comments": "Candidate. Total mass consistent with PSR-NS system. If companion is a NS, then the system formed through exchange encounter. This would imply a very low orbital inclination. Located in NGC 6440.",
@@ -1819,7 +1819,7 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2009MNRAS.393..623K",
-        "descrip": "Keith, M. J., Kramer, M., Lyne, A. G., Eatough, R. P., Stairs, I. H., Possenti, A., ... & Manchester, R. N. (2009). Monthly Notices of the Royal Astronomical Society, 393(2), 623-627."
+        "descrip": "Keith, M. J., Kramer, M., Lyne, A. G., et al. (2009). Monthly Notices of the Royal Astronomical Society, 393(2), 623-627."
       }
     ],
     "comments": "Confirmed. Pulsar is recycled.",
@@ -1964,7 +1964,7 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2018MNRAS.476.4315N",
-        "descrip": "Ng, C., Kruckow, M. U., Tauris, T. M., Lyne, A. G., Freire, P. C. C., Ridolfi, A. L. E. S. S. A. N. D. R. O., ... & Stappers, B. (2018). Monthly Notices of the Royal Astronomical Society, 476(4), 4315-4326."
+        "descrip": "Ng, C., Kruckow, M. U., Tauris, T. M., et al. (2018). Monthly Notices of the Royal Astronomical Society, 476(4), 4315-4326."
       }
     ],
     "comments": "Candidate. yPSR - massive compact companion. The pulsar (only 2.1 Myr old) is the second-formed compact object in the system. Companion could be a recycled NS as in most other PSR - NS systems, but it could also be a massive WD, as in the cases of J1141−6545 and B2303+46.",
@@ -2109,7 +2109,7 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2014MNRAS.443.2183F",
-        "descrip": "Ferdman, R. D., Stairs, I. H., Kramer, M., Janssen, G. H., Bassa, C. G., Stappers, B. W., ... & Possenti, A. (2014). Monthly Notices of the Royal Astronomical Society, 443(3), 2183-2196."
+        "descrip": "Ferdman, R. D., Stairs, I. H., Kramer, M., et al. (2014). Monthly Notices of the Royal Astronomical Society, 443(3), 2183-2196."
       }
     ],
     "comments": "Confirmed. Low-mass NS companion. No geodetic precession for pulsar, indicating alignment of its spin axis with orbital angular momentum.",
@@ -2190,7 +2190,7 @@ const pulsarData = [
         {
           "ref-number": null,
           "link": "https://ui.adsabs.harvard.edu/abs/2014MNRAS.443.2183F",
-          "descrip": "Ferdman, R. D., Stairs, I. H., Kramer, M., Janssen, G. H., Bassa, C. G., Stappers, B. W., ... & Possenti, A. (2014). PSR J1756− 2251: a pulsar with a low-mass neutron star companion. Monthly Notices of the Royal Astronomical Society, 443(3), 2183-2196."
+          "descrip": "Ferdman, R. D., Stairs, I. H., Kramer, M., et al. (2014). Monthly Notices of the Royal Astronomical Society, 443(3), 2183-2196."
         }
       ],
       "hasUncertainty": false,
@@ -2280,12 +2280,12 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2022arXiv220315995C/abstract",
-        "descrip": "Cameron, A. D., Bailes, M., Balakrishnan, V., Champion, D. J., Freire, P. C. C., Kramer, M., ... & Ridolfi, A. (2023). Proceedings of the MG16 Meeting on General Relativity Online; 5–10 July 2021 (pp. 3774-3784)."
+        "descrip": "Cameron, A. D., Bailes, M., Balakrishnan, V., et al. (2023). Proceedings of the MG16 Meeting on General Relativity Online; 5–10 July 2021 (pp. 3774-3784)."
       },
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2018MNRAS.475L..57C/abstract",
-        "descrip": "Cameron, A. D., Champion, D. J., Kramer, M., Bailes, M., Barr, E. D., Bassa, C. G., ... & Wex, N. (2018). Monthly Notices of the Royal Astronomical Society: Letters, 475(1), L57-L61."
+        "descrip": "Cameron, A. D., Champion, D. J., Kramer, M., et al. (2018). Monthly Notices of the Royal Astronomical Society: Letters, 475(1), L57-L61."
       }
     ],
     "comments": "Confirmed. Most accelerated binary, largest relative velocity, five measured PK parameters. Second-formed NS significantly more massive than first-formed NS.",
@@ -2366,7 +2366,7 @@ const pulsarData = [
         {
           "ref-number": null,
           "link": "https://arxiv.org/abs/2203.15995",
-          "descrip": "Cameron, A. D., Bailes, M., Balakrishnan, V., Champion, D. J., Freire, P. C. C., Kramer, M., ... & Ridolfi, A. (2023). Proceedings of the MG16 Meeting on General Relativity Online; 5–10 July 2021 (pp. 3774-3784)."
+          "descrip": "Cameron, A. D., Bailes, M., Balakrishnan, V., et al. (2023). Proceedings of the MG16 Meeting on General Relativity Online; 5–10 July 2021 (pp. 3774-3784)."
         }
       ],
       "hasUncertainty": false,
@@ -2456,7 +2456,7 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2021ApJ...922...35A",
-        "descrip": "Agazie, G. Y., Mingyar, M. G., McLaughlin, M. A., Swiggum, J. K., Kaplan, D. L., Blumer, H., ... & Surnis, M. (2021). The Astrophysical Journal, 922(1), 35."
+        "descrip": "Agazie, G. Y., Mingyar, M. G., McLaughlin, M. A., et al. (2021). The Astrophysical Journal, 922(1), 35."
       }
     ],
     "comments": "Confirmed.",
@@ -2758,7 +2758,7 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2007A&A...462..703C",
-        "descrip": "Corongiu, A., Kramer, M., Stappers, B. W., Lyne, A. G., Jessner, A., Possenti, A., ... & Löhmer, O. (2007). Astronomy & Astrophysics, 462(2), 703-709."
+        "descrip": "Corongiu, A., Kramer, M., Stappers, B. W., et al. (2007). Astronomy & Astrophysics, 462(2), 703-709."
       }
     ],
     "comments": "Confirmed.",
@@ -2907,7 +2907,7 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.504.1407R",
-        "descrip": "Ridolfi, A., Gautam, T., Freire, P. C. C., Ransom, S. M., Buchner, S. J., Possenti, A., ... & Spiewak, R. (2021). Monthly Notices of the Royal Astronomical Society, 504(1), 1407-1426."
+        "descrip": "Ridolfi, A., Gautam, T., Freire, P. C. C., et al. (2021). Monthly Notices of the Royal Astronomical Society, 504(1), 1407-1426."
       }
     ],
     "comments": "Candidate. MSP - massive compact companion. System formed through exchange encounter in NGC 6624. Companion is either a massive WD or NS, so this could be a MSP - NS system.",
@@ -3056,7 +3056,7 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.500.4620H ",
-        "descrip": "Haniewicz, H. T., Ferdman, R. D., Freire, P. C., Champion, D. J., Bunting, K. A., Lorimer, D. R., & McLaughlin, M. A. (2021). Monthly Notices of the Royal Astronomical Society, 500(4), 4620-4627."
+        "descrip": "Haniewicz, H. T., Ferdman, R. D., Freire, P. C., et al. (2021). Monthly Notices of the Royal Astronomical Society, 500(4), 4620-4627."
       }
     ],
     "comments": "Confirmed.",
@@ -3221,7 +3221,7 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2015ApJ...807L..23D",
-        "descrip": "DeCesar, M. E., Ransom, S. M., Kaplan, D. L., Ray, P. S., & Geller, A. M. (2015). The Astrophysical Journal Letters, 807(2), L23."
+        "descrip": "DeCesar, M. E., Ransom, S. M., Kaplan, D. L., et al. (2015). The Astrophysical Journal Letters, 807(2), L23."
       }
     ],
     "comments": "\tCandidate. MSP - massive compact companion. System formed through exchange encounter in NGC 6652. Companion is either a massive WD or NS, so this could be a MSP - NS system.",
@@ -3366,12 +3366,12 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2015ApJ...798..118V",
-        "descrip": "Van Leeuwen, J., Kasian, L., Stairs, I. H., Lorimer, D. R., Camilo, F., Chatterjee, S., ... & Weisberg, J. M. (2015). The Astrophysical Journal, 798(2), 118."
+        "descrip": "Van Leeuwen, J., Kasian, L., Stairs, I. H., et al. (2015). The Astrophysical Journal, 798(2), 118."
       },
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2019Sci...365.1013D/abstract",
-        "descrip": "Desvignes, G., Kramer, M., Lee, K., Van Leeuwen, J., Stairs, I., Jessner, A., ... & Stappers, B. W. (2019). Science, 365(6457), 1013-1017."
+        "descrip": "Desvignes, G., Kramer, M., Lee, K., et al. (2019). Science, 365(6457), 1013-1017."
       }
     ],
     "comments": "\tCandidate. yPSR - massive compact companion. The pulsar (only 110 kyr old) is the second-formed compact object in the system. Companion could be a recycled NS as in most other PSR - NS systems, but it could also be a massive WD, as in the cases of J1141−6545 and B2303+46.",
@@ -3456,7 +3456,7 @@ const pulsarData = [
         {
           "ref-number": null,
           "link": "https://ui.adsabs.harvard.edu/abs/2019Sci...365.1013D/abstract",
-          "descrip": "Desvignes, G., Kramer, M., Lee, K., Van Leeuwen, J., Stairs, I., Jessner, A., ... & Stappers, B. W. (2019). Science, 365(6457), 1013-1017."
+          "descrip": "Desvignes, G., Kramer, M., Lee, K., et al. (2019). Science, 365(6457), 1013-1017."
         }
       ],
       "hasUncertainty": false,
@@ -3534,7 +3534,7 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2020Natur.583..211F",
-        "descrip": "Ferdman, R. D., Freire, P. C. C., Perera, B. B. P., Pol, N., Camilo, F., Chatterjee, S., ... & van Leeuwen, J. (2020). Nature, 583(7815), 211-214."
+        "descrip": "Ferdman, R. D., Freire, P. C. C., Perera, B. B. P., et al. (2020). Nature, 583(7815), 211-214."
       }
     ],
     "comments": "Confirmed. Most massive among these systems, pulsar is most massive NS in a PSR - NS system. First known member of new population of merging, asymmetric DNSs.",
@@ -3699,7 +3699,7 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/1976ApJ...206L..53T/abstract",
-        "descrip": "Taylor, J. H., Hulse, R. A., Fowler, L. A., Gullahorn, G. E., & Rankin, J. M. (1976). Astrophysical Journal, 206, L53-L58."
+        "descrip": "Taylor, J. H., Hulse, R. A., Fowler, L. A., et al. (1976). Astrophysical Journal, 206, L53-L58."
       },
       {
         "ref-number": null,
@@ -3883,7 +3883,7 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2015ApJ...805..156S",
-        "descrip": "Swiggum, J. K., Rosen, R., McLaughlin, M. A., Lorimer, D. R., Heatherly, S., Lynch, R., ... & Vanderhout, A. (2015). The Astrophysical Journal, 805(2), 156."
+        "descrip": "Swiggum, J. K., Rosen, R., McLaughlin, M. A., et al. (2015). The Astrophysical Journal, 805(2), 156."
       }
     ],
     "comments": "Confirmed. Largest orbital period for this type of system.",
@@ -4032,7 +4032,7 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2018ApJ...854L..22S",
-        "descrip": "Stovall, K., Freire, P. C. C., Chatterjee, S., Demorest, P. B., Lorimer, D. R., McLaughlin, M. A., ... & Zhu, W. W. (2018). The Astrophysical Journal Letters, 854(2), L22."
+        "descrip": "Stovall, K., Freire, P. C. C., Chatterjee, S., et al. (2018). The Astrophysical Journal Letters, 854(2), L22."
       }
     ],
     "comments": "Confirmed. Shortest orbital period for this type of system.",
@@ -4189,7 +4189,7 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2006ApJ...644L.113J",
-        "descrip": "Jacoby, B. A., Cameron, P. B., Jenet, F. A., Anderson, S. B., Murty, R. N., & Kulkarni, S. R. (2006). The Astrophysical Journal, 644(2), L113."
+        "descrip": "Jacoby, B. A., Cameron, P. B., Jenet, F. A., et al. (2006). The Astrophysical Journal, 644(2), L113."
       }
     ],
     "comments": "Candidate. PSR - massive compact companion. Formed through exchange encounter in NGC 7078, companion could be a massive WD, but generally assumed to be a NS given the large mass. Acceleration of system in the cluster precludes further improvements in precision of radiative test of GR.",
@@ -4274,7 +4274,7 @@ const pulsarData = [
         {
           "ref-number": null,
           "link": "https://ui.adsabs.harvard.edu/abs/2014A%26A...565A..43K",
-          "descrip": "Kirsten, F., Vlemmings, W., Freire, P., Kramer, M., Rottmann, H., & Campbell, R. M. (2014). Astronomy & Astrophysics, 565, A43."
+          "descrip": "Kirsten, F., Vlemmings, W., Freire, P., et al. (2014). Astronomy & Astrophysics, 565, A43."
         }
       ],
       "hasUncertainty": false,
@@ -4352,7 +4352,7 @@ const pulsarData = [
       {
         "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2023arXiv230104983B/abstract",
-        "descrip": "Kirsten, F., Vlemmings, W., Freire, P., Kramer, M., Rottmann, H., & Campbell, R. M. (2014). Astronomy & Astrophysics, 565, A43."
+        "descrip": "Kirsten, F., Vlemmings, W., Freire, P., et al. (2014). Astronomy & Astrophysics, 565, A43."
       }
     ],
     "comments": "",
