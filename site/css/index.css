@@ -1,18 +1,9 @@
-:root {
-    --primary-color: #000000;
-    --secondary-color: #21262d;
-    --link-color:  rgb(139, 133, 133) !important;
-    --highlight-color: #58a6ff;
-    --text-color: #ffffff;
-    --table-hover-1: #393d3d;
-    --table-hover-2: #21262d9d;
-}
-
 html {
     margin: 0 !important;
     padding: 0 !important;
     font-family: var(--bs-body-font-family) !important;
     height: 100vh;
+
 }
 
 body {
@@ -43,12 +34,6 @@ h1, h2, h3, h4, h5 {
     color: var(--text-color) !important;
 }
 
-.container-shadow {
-    -moz-box-shadow:    0px 0px 10px 5px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
-    box-shadow:         0px 0px 10px 5px rgba(0, 0, 0, 0.5);
-}
-
 .main-header {
     background-color: var(--secondary-color);
     align-items: center;
@@ -68,7 +53,7 @@ h1, h2, h3, h4, h5 {
     margin: auto;
     width: 150px;
     height: auto;
-    filter: invert(62%) sepia(84%) saturate(23%) hue-rotate(188deg) brightness(90%) contrast(102%)
+    filter: var(--logo-filter)
 }
 
 .line-break-down {
@@ -204,12 +189,12 @@ table {
 }
 
 .table {
-    border-color: #383d3f !important;
+    border-color: var(--table-border) !important;
 }
 
 table.dataTable thead th,
 table.dataTable thead td {
-    border-color: rgb(134, 125, 110) !important;
+    border-color: var(--table-cell-border) !important;
 }
 
 .dataTables_info {
@@ -226,15 +211,19 @@ table.dataTable thead td {
 }
 
 .table-bordered th, .table-bordered td {
-    border-color: rgb(56, 61, 63);
-    border-top-color: rgb(56, 61, 63);
-    border-right-color: rgb(56, 61, 63);
-    border-bottom-color: rgb(56, 61, 63);
-    border-left-color: rgb(56, 61, 63);
+    border-color: var(--table-column-border);
+    border-top-color: var(--table-column-border);
+    border-right-color: var(--table-column-border);
+    border-bottom-color: var(--table-column-border);
+    border-left-color: var(--table-column-border);
 }
 
 .table > thead > tr > th {
     color: var(--text-color);
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-accent-bg: none !important;
 }
 
 .table-striped > tbody > tr:nth-child(odd) > td, 
@@ -285,14 +274,36 @@ table.dataTable thead td {
     font-weight: bold;
     border: 1px solid var(--secondary-color);
     outline: none;
-    color: var(--text-color);
+    color: var(--top-button-text-color);
     cursor: pointer;
     padding: 15px;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
     transition: all 0.2s linear;
 }
 
 #to-top-button:hover {
+    background-color: var(--highlight-color);
+    color: var(--secondary-color);
+}
+
+#toggle-theme-button {
+    display: block;
+    position: fixed;
+    background-color: var(--highlight-color);
+    top: 20px;
+    right: 30px;
+    border-radius: 5%;
+    z-index: 3;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid var(--secondary-color);
+    outline: none;
+    color: var(--top-button-text-color);
+    cursor: pointer;
+    padding: 15px;
+    transition: all 0.2s linear;
+}
+
+#toggle-theme-button:hover {
     background-color: var(--highlight-color);
     color: var(--secondary-color);
 }
@@ -315,13 +326,6 @@ table.dataTable thead td {
     font-size: 13px;
 }
 
-.card {
-   background-color: #2b2d2d !important;
-   margin-right: 25px;
-   border-radius: 50px !important;
-
-}
-
 .photo {
     width: 200px;
     height: 200px;
@@ -331,12 +335,6 @@ table.dataTable thead td {
 .v-profile {
     color: var(--highlight-color);
     cursor: pointer;
-}
-
-.box {
-    -webkit-box-shadow: 13px 12px 5px -10px rgba(196, 194, 196, 0.72);
-    -moz-box-shadow: 13px 12px 5px -10px rgba(196, 194, 196, 0.72);
-    box-shadow: 13px 12px 5px -10px rgba(196, 194, 196, 0.72);
 }
 
 .col-md-3 {
@@ -382,16 +380,20 @@ table.dataTable thead td {
     border-bottom: 1px solid var(--highlight-color) !important;
 }
 
+.ftco-navbar-light .navbar-toggler {
+    color: var(--burger-icon-color) !important;
+}
+
 .text-muted {
     --bs-text-opacity: 1;
-    color: #ece8e1 !important;
+    color: var(--text-muted) !important;
     text-align: center;
 }
 
 .scroll-bar::-webkit-scrollbar-track {
     border: 1px solid #000;
     padding: 2px 0;
-    background-color: #404040;
+    background-color: var(--scroll-bar-track-background);
 }
 
 .scroll-bar::-webkit-scrollbar {
@@ -400,15 +402,14 @@ table.dataTable thead td {
 
 .scroll-bar::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-    background-color: #737272;
+    background-color: var(--scroll-bar-background);
     border: 1px solid #000;
 }
 
 .plot-container {
     padding: 10px;
     background-color: var(--primnary-color);
-    border: solid 1px rgba(211, 211, 211, 0.318);
+    border: solid 1px var(--plot-container);
 }
 
 .plot-control-panel {
@@ -437,7 +438,7 @@ table.dataTable thead td {
 }
 
 .grid line {
-    stroke: rgba(211, 211, 211, 0.318);
+    stroke: var(--grid-line);
     stroke-opacity: 0.7;
     shape-rendering: crispEdges; 
   }
@@ -458,7 +459,7 @@ table.dataTable thead td {
     display: flex;
     flex-wrap: wrap;
     padding: 5px;
-    border: solid 1px rgba(211, 211, 211, 0.318);
+    border: solid 1px var(--plot-container);
     margin: auto;
 }
 
@@ -482,7 +483,7 @@ table.dataTable thead td {
 
 #x-plot-control-anchor {
     padding: 10px;
-    border: solid 1px rgba(211, 211, 211, 0.318);
+    border: solid 1px var(--plot-container);
 }
 
 #x-plot-control-anchor:hover {
@@ -493,7 +494,7 @@ table.dataTable thead td {
 
 #y-plot-control-anchor {
     padding: 10px;
-    border: solid 1px rgba(211, 211, 211, 0.318);
+    border: solid 1px var(--plot-container);
 }
 
 #y-plot-control-anchor:hover {
@@ -520,7 +521,6 @@ table.dataTable thead td {
     font-weight: bold;
     color: var(--text-color) !important;
     cursor: pointer;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
     transition: all 0.2s linear;
 }
 
@@ -529,7 +529,9 @@ table.dataTable thead td {
     height: 100%
 }
 .copy-button{
-    height: 25px;
+    height: 30px;
+    width: 30px;
+    border-color: var(--table-hover-1) !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -542,7 +544,7 @@ table.dataTable thead td {
     position: absolute;
     border-radius: 4px;
     z-index: 100;
-    color: #fff;
+    color: var(--text-color);
     font-size: 12px;
     animation-name: tip;
     animation-duration: .6s;

@@ -152,6 +152,7 @@ const plotConfig = {
   },  
   'p-p': {
     'axis': logarithmicXYAxis
+
   },
   'p-pdot': {
     'transformations': [
@@ -167,6 +168,16 @@ const plotConfig = {
       [adjustXtick, null],
       [adjustYtick, null], 
     ],
+    // 'units': {
+    //   'p': {
+    //     'symbol': 'P\\; \\;',
+    //     'unit': '(ms)\\; \\;',
+    //     },
+    //    'pdot': {
+    //      'symbol': '\\dot{P}\\; \\;',
+    //      'unit': '(s~s^{-1})\\; \\;',
+    //     }
+    // }
   },
   'p-pb': {
     'transformations': [
@@ -1856,5 +1867,10 @@ const plotConfig = {
       [excludeWithNames,['J0737-3039B']]
     ],
     'axis': logarithmicXAxis
-  }, 
+  },
+  // 'dist-p': {
+  //   'transformations': [
+  //     [multiYBy, 1e3]
+  //   ]
+  // }
 }

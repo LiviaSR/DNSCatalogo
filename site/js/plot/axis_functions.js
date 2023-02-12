@@ -30,6 +30,9 @@ const defaultAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLabel) =
 
   // Add X axis label
   var latex_raw = `\\dpi{120}  \{ \\large{ \\color{White} \\mathbf{\\boldsymbol{${XAxisLabel}}} }`;
+  if (localStorage.getItem('theme') === 'theme-light') {
+    latex_raw = `\\dpi{120}  \{ \\large{\\mathbf{\\boldsymbol{${XAxisLabel}}} }`;
+  }
   var latex_render_url = "http://latex.codecogs.com/png.image?";
   var latex_query = encodeURI(latex_raw);
   var latex = svg.append("foreignObject")
@@ -49,6 +52,9 @@ const defaultAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLabel) =
 
   // Y axis label
   var latex_raw = `\\dpi{120}  \{ \\large{ \\color{White} \\mathbf{\\boldsymbol{${YAxisLabel}}} }`;
+  if (localStorage.getItem('theme') === 'theme-light') {
+    latex_raw = `\\dpi{120}  \{ \\large{\\mathbf{\\boldsymbol{${YAxisLabel}}} }`;
+  }
   var latex_render_url = "http://latex.codecogs.com/png.image?";
   var latex_query = encodeURI(latex_raw);
   var latex = svg.append("foreignObject")
@@ -110,23 +116,54 @@ const logarithmicXYAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLa
   .range([height, 0])
   .base(10);
 
+
+  // Change tick format based on data range
+  let xf = x.map(e => e.value);
+  let yf = y.map(e => e.value);
+
+  let x_max = Math.max(...xf);
+  let x_min = Math.min(...xf);
+  let y_max = Math.max(...yf);
+  let y_min = Math.min(...yf);
+
   // Add X axis
-  svg.append('g')
-    .attr("transform", "translate(0," + height + ")")
-    .attr('class', 'axis-white x-axis-transition x-axis')
-    .call(d3.axisBottom(x_axis)
-    .ticks((width - 40) / 60, formatPower))
-    .attr('opacity', '0');
+  if ( 1e-4 < x_min && x_max > 5e2) {
+    svg.append('g')
+      .attr("transform", "translate(0," + height + ")")
+      .attr('class', 'axis-white x-axis-transition x-axis')
+      .call(d3.axisBottom(x_axis)
+      .ticks((width - 40) / 120, formatPower))
+      .attr('opacity', '0');
+  } else {
+    svg.append('g')
+      .attr("transform", "translate(0," + height + ")")
+      .attr('class', 'axis-white x-axis-transition x-axis')
+      .call(d3.axisBottom(x_axis)
+      .ticks((width - 40) / 120, ".2f"))
+      .attr('opacity', '0');
+  }
   // Add Y axis
-  svg.append('g')
-    .attr("transform", "translate(40, 0)")
-    .attr('class', 'axis-white y-axis-transition y-axis')
-    .call(d3.axisLeft(y_axis)
-    .ticks( innerHeight / 60, formatPower))
-    .attr('opacity', '0');
+  if ( 1e-4 < y_min && y_max > 5e2) {
+    svg.append('g')
+      .attr("transform", "translate(40, 0)")
+      .attr('class', 'axis-white y-axis-transition y-axis')
+      .call(d3.axisLeft(y_axis)
+      .ticks( innerHeight / 120, formatPower))
+      .attr('opacity', '0');
+  } else {
+    svg.append('g')
+      .attr("transform", "translate(40, 0)")
+      .attr('class', 'axis-white y-axis-transition y-axis')
+      .call(d3.axisLeft(y_axis)
+      .ticks( innerHeight / 120, ".2f"))
+      .attr('opacity', '0');
+  }
 
   // Add X axis label
   var latex_raw = `\\dpi{120}  \{ \\large{ \\color{White} \\mathbf{\\boldsymbol{${XAxisLabel}}} }`;
+  if (localStorage.getItem('theme') === 'theme-light') {
+    latex_raw = `\\dpi{120}  \{ \\large{\\mathbf{\\boldsymbol{${XAxisLabel}}} }`;
+  }
   var latex_render_url = "http://latex.codecogs.com/png.image?";
   var latex_query = encodeURI(latex_raw);
   var latex = svg.append("foreignObject")
@@ -146,6 +183,9 @@ const logarithmicXYAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLa
 
   // Y axis label
   var latex_raw = `\\dpi{120}  \{ \\large{ \\color{White} \\mathbf{\\boldsymbol{${YAxisLabel}}} }`;
+  if (localStorage.getItem('theme') === 'theme-light') {
+    latex_raw = `\\dpi{120}  \{ \\large{\\mathbf{\\boldsymbol{${YAxisLabel}}} }`;
+  }
   var latex_render_url = "http://latex.codecogs.com/png.image?";
   var latex_query = encodeURI(latex_raw);
   var latex = svg.append("foreignObject")
@@ -168,12 +208,21 @@ const logarithmicXYAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLa
     d3.max(x.map(o => o.value)),
   ]).base(10);
 
-  svg.select(".x-axis-transition")
-    .transition()
-    .duration(transitions['x-axis-display-delay'])
-    .attr('opacity', '1')
-    .call(d3.axisBottom(x_axis)  
-    .ticks( (width - 40) / 60, formatPower));
+  if ( 1e-4 < x_min && x_max > 5e2) {
+    svg.select(".x-axis-transition")
+      .transition()
+      .duration(transitions['x-axis-display-delay'])
+      .attr('opacity', '1')
+      .call(d3.axisBottom(x_axis)  
+      .ticks( (width - 40) / 120, formatPower));
+  } else {
+    svg.select(".x-axis-transition")
+      .transition()
+      .duration(transitions['x-axis-display-delay'])
+      .attr('opacity', '1')
+      .call(d3.axisBottom(x_axis)  
+      .ticks( (width - 40) / 120, ".2f")); 
+  }
 
   // Y axis animation
   y_axis.domain([
@@ -186,7 +235,7 @@ const logarithmicXYAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLa
   .duration(transitions['y-axis-display-delay'])
   .attr('opacity', '1')
   .call(d3.axisLeft(y_axis)
-  .ticks( innerHeight / 60, formatPower));
+  .ticks( innerHeight / 120, formatPower));
 
   return [x_axis, y_axis];
 }
@@ -210,18 +259,21 @@ const logarithmicXAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLab
     .attr("transform", "translate(0," + height + ")")
     .attr('class', 'axis-white x-axis-transition x-axis')
     .call(d3.axisBottom(x_axis)
-    .ticks( (width - 40) / 60, formatPower))
+    .ticks( (width - 40) / 120, formatPower))
     .attr('opacity', '0');
   // Add Y axis
   svg.append('g')
     .attr("transform", "translate(40, 0)")
     .attr('class', 'axis-white y-axis-transition y-axis')
     .call(d3.axisLeft(y_axis)
-    .ticks(innerHeight / 60))
+    .ticks(innerHeight / 120))
     .attr('opacity', '0');
 
   // Add X axis label
   var latex_raw = `\\dpi{120}  \{ \\large{ \\color{White} \\mathbf{\\boldsymbol{${XAxisLabel}}} }`;
+  if (localStorage.getItem('theme') === 'theme-light') {
+    latex_raw = `\\dpi{120}  \{ \\large{\\mathbf{\\boldsymbol{${XAxisLabel}}} }`;
+  }
   var latex_render_url = "http://latex.codecogs.com/png.image?";
   var latex_query = encodeURI(latex_raw);
   var latex = svg.append("foreignObject")
@@ -241,6 +293,9 @@ const logarithmicXAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLab
 
   // Y axis label
   var latex_raw = `\\dpi{120}  \{ \\large{ \\color{White} \\mathbf{\\boldsymbol{${YAxisLabel}}} }`;
+  if (localStorage.getItem('theme') === 'theme-light') {
+    latex_raw = `\\dpi{120}  \{ \\large{\\mathbf{\\boldsymbol{${YAxisLabel}}} }`;
+  }
   var latex_render_url = "http://latex.codecogs.com/png.image?";
   var latex_query = encodeURI(latex_raw);
   var latex = svg.append("foreignObject")
@@ -268,7 +323,7 @@ const logarithmicXAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLab
     .duration(transitions['x-axis-display-delay'])
     .attr('opacity', '1')
     .call(d3.axisBottom(x_axis)
-    .ticks( (width - 40) / 60, formatPower));
+    .ticks( (width - 40) / 120, formatPower));
 
   // Y axis animation
   y_axis.domain([
@@ -281,7 +336,7 @@ const logarithmicXAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLab
   .duration(transitions['y-axis-display-delay'])
   .attr('opacity', '1')
   .call(d3.axisLeft(y_axis)
-  .ticks(innerHeight / 60));
+  .ticks(innerHeight / 120));
 
   return [x_axis, y_axis];
 }
@@ -305,19 +360,22 @@ const logarithmicYAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLab
     .attr("transform", "translate(0," + height + ")")
     .attr('class', 'axis-white x-axis-transition x-axis')
     .call(d3.axisBottom(x_axis)
-    .ticks( (width - 40 ) / 60))
+    .ticks( (width - 40 ) / 120))
     .attr('opacity', '0');
   // Add Y axis
   svg.append('g')
     .attr("transform", "translate(40, 0)")
     .attr('class', 'axis-white y-axis-transition y-axis')
     .call(d3.axisLeft(y_axis)
-    .ticks( innerHeight / 60)
+    .ticks( innerHeight / 120)
     .tickFormat(formatPower))
     .attr('opacity', '0');
 
   // Add X axis label
   var latex_raw = `\\dpi{120}  \{ \\large{ \\color{White} \\mathbf{\\boldsymbol{${XAxisLabel}}} }`;
+  if (localStorage.getItem('theme') === 'theme-light') {
+    latex_raw = `\\dpi{120}  \{ \\large{\\mathbf{\\boldsymbol{${XAxisLabel}}} }`;
+  }
   var latex_render_url = "http://latex.codecogs.com/png.image?";
   var latex_query = encodeURI(latex_raw);
   var latex = svg.append("foreignObject")
@@ -337,6 +395,9 @@ const logarithmicYAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLab
 
   // Y axis label
   var latex_raw = `\\dpi{120}  \{ \\large{ \\color{White} \\mathbf{\\boldsymbol{${YAxisLabel}}} }`;
+  if (localStorage.getItem('theme') === 'theme-light') {
+    latex_raw = `\\dpi{120}  \{ \\large{\\mathbf{\\boldsymbol{${YAxisLabel}}} }`;
+  }
   var latex_render_url = "http://latex.codecogs.com/png.image?";
   var latex_query = encodeURI(latex_raw);
   var latex = svg.append("foreignObject")
@@ -377,7 +438,7 @@ const logarithmicYAxis = (x, y, width, height, margin, svg, XAxisLabel, YAxisLab
   .duration(transitions['y-axis-display-delay'])
   .attr('opacity', '1')
   .call(d3.axisLeft(y_axis)
-  .ticks( innerHeight / 60)
+  .ticks( innerHeight / 120)
   .tickFormat(formatPower));
   return [x_axis, y_axis];
 }

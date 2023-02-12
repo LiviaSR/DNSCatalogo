@@ -23,6 +23,7 @@ function plot() {
     }
   }
 
+
   // Build list of lists [[x, y] ..]
   const plotData = [];
   for ( let i = 0; i < x.length; i++ ) {
@@ -46,7 +47,6 @@ function plot() {
           "translate(" + margin.left + "," + margin.top + ")");
 
   // Get axis labels
-
   if ( config.hasOwnProperty('units') ) {
     XAxisLabel = config['units'][pcs['x']]['symbol'] + ' ' + config['units'][pcs['x']]['unit'];
     YAxisLabel = config['units'][pcs['y']]['symbol'] + ' ' + config['units'][pcs['y']]['unit'];
@@ -112,9 +112,9 @@ function plot() {
       config['ticks-confirmed'][0][0](svg, x_axis, config['ticks-confirmed'][0][1], config['ticks-confirmed'][0][2]);      
     }
     if ( config['ticks-confirmed'][1].length < 3 ) {
-      config['ticks-confirmed'][1][0](svg, x_axis, config['ticks-confirmed'][1][1]);
+      config['ticks-confirmed'][1][0](svg, y_axis, config['ticks-confirmed'][1][1]);
     } else {
-      config['ticks-confirmed'][1][0](svg, x_axis, config['ticks-confirmed'][1][1], config['ticks-confirmed'][1][2]);      
+      config['ticks-confirmed'][1][0](svg, y_axis, config['ticks-confirmed'][1][1], config['ticks-confirmed'][1][2]);      
     }
   }
   // Adjust x and y axis ticks if necessary for confirmed
@@ -125,9 +125,9 @@ function plot() {
       config['ticks-candidate'][0][0](svg, x_axis, config['ticks-candidate'][0][1], config['ticks-candidate'][0][2]);      
     }
     if ( config['ticks-candidate'][1].length < 3 ) {
-      config['ticks-candidate'][1][0](svg, x_axis, config['ticks-candidate'][1][1]);
+      config['ticks-candidate'][1][0](svg, y_axis, config['ticks-candidate'][1][1]);
     } else {
-      config['ticks-candidate'][1][0](svg, x_axis, config['ticks-candidate'][1][1], config['ticks-candidate'][1][2]);      
+      config['ticks-candidate'][1][0](svg, y_axis, config['ticks-candidate'][1][1], config['ticks-candidate'][1][2]);      
     }
   }
 
