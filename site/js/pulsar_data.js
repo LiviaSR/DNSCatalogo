@@ -4355,7 +4355,7 @@ const pulsarData = [
         "descrip": "Kirsten, F., Vlemmings, W., Freire, P., et al. (2014). Astronomy & Astrophysics, 565, A43."
       }
     ],
-    "comments": "",
+    "comments": "Candidate. Formed through secondaryexchange encounter in M30. Companion can be a massive WD or a NS, so the system could be a MSP - NS system.",
     "p": {
       "value": 0.01299,
       "hasReferences": false,
