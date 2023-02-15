@@ -33,8 +33,12 @@ const pulsarData = [
       "value": 0.18616,
       "hasReferences": false,
       "references": null,
-      "hasUncertainty": false,
-      "uncertainty": null
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.00007,
+        "down": 0.00007
+      }
     },
     "pb": {
       "value": 4.07247,
@@ -1509,11 +1513,15 @@ const pulsarData = [
       "references": null
     },
     "pdot": {
-      "value": 2.42262,
+      "value": 2.422620,
       "hasReferences": false,
       "references": null,
-      "hasUncertainty": false,
-      "uncertainty": null
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.000003,
+        "down": 0.000003
+      }
     },
     "pb": {
       "value": 0.42074,
@@ -1974,14 +1982,14 @@ const pulsarData = [
       "references": null
     },
     "pdot": {
-      "value": 2433.7,
+      "value": 2434,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": true,
       "uncertainty": {
         "symmetrical": true,
-        "up": 1.4,
-        "down": 1.4
+        "up": 1,
+        "down": 1
       }
     },
     "pb": {
@@ -2119,11 +2127,16 @@ const pulsarData = [
       "references": null
     },
     "pdot": {
-      "value": 1.0175,
+      "value": 1.017502,
       "hasReferences": false,
       "references": null,
-      "hasUncertainty": false,
-      "uncertainty": null
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.000003,
+        "down": 0.000003,
+      }
+    
     },
     "pb": {
       "value": 0.31963,
@@ -2295,11 +2308,15 @@ const pulsarData = [
       "references": null
     },
     "pdot": {
-      "value": 2.62733,
+      "value": 2.627335,
       "hasReferences": false,
       "references": null,
-      "hasUncertainty": false,
-      "uncertainty": null
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.000009,
+        "down": 0.000009,
+      }
     },
     "pb": {
       "value": 0.18354,
@@ -2615,11 +2632,15 @@ const pulsarData = [
       "references": null
     },
     "pdot": {
-      "value": 0.08232,
+      "value": 0.082325,
       "hasReferences": false,
       "references": null,
-      "hasUncertainty": false,
-      "uncertainty": null
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.000002,
+        "down": 0.000002
+      }
     },
     "pb": {
       "value": 9.95667,
