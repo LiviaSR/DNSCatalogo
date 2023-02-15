@@ -70,7 +70,7 @@ const plotConfig = {
     'units': {
       'p': {
         'symbol': 'P\\; \\;',
-        'unit': '(s)\\; \\;',
+        'unit': '(ms)\\; \\;',
       },
       'pdot': {
         'symbol': '\\dot{P}\\; \\;',
@@ -1868,9 +1868,586 @@ const plotConfig = {
     ],
     'axis': logarithmicXAxis
   },
-  // 'dist-p': {
-  //   'transformations': [
-  //     [multiYBy, 1e3]
-  //   ]
-  // }
+  'dist-p': {
+     'transformations': [
+       [multiYBy, 1e3]
+     ],
+      'axis': logarithmicYAxis
+   },
+   'dist-pdot': {
+      'transformations': [
+        absoluteValue,
+        [multiYBy, 1e-18],
+      ],
+      'axis': logarithmicYAxis,
+   },
+   'dist-pb': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+    ],
+    'axis': logarithmicYAxis
+   },
+   'dist-e': {
+      'transformations': [
+        [excludeWithNames,['J0737-3039B']]
+    ]
+   },
+   'dist-mt': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+    ]
+   },
+   'dist-mp': {
+      'transformations': [
+        filterByAssumed,
+        filterByLimit,
+        [excludeWithNames, ['J0737-3039B']]
+      ]
+    },
+   'dist-mc': {
+      'transformations': [
+        filterByAssumed,
+        filterByLimit,
+        [excludeWithNames, ['J0737-3039A']]
+      ]
+    },
+    'dist-chirp': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+    ]      
+    },
+   'dist-chieff': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'dist-age': {
+      'axis': logarithmicYAxis
+   },
+   'dist-tau': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ],    
+      'axis': logarithmicYAxis
+   },
+   'dist-l': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'dist-b': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'dist-z': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'dist-mub': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'l-p': {
+      'transformations': [
+        [multiYBy, 1e3],
+        [excludeWithNames, ['J0737-3039B']]
+      ],
+   },
+   'l-pdot': {
+      'transformations': [
+        absoluteValue,
+        [multiYBy, 1e-18],
+        [excludeWithNames, ['J0737-3039B']]
+      ],
+      'axis': logarithmicYAxis,
+   },
+   'l-pb': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ],      
+      'axis': logarithmicYAxis
+   },
+   'l-e': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'l-f': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'l-mt': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'l-mp': {
+      'transformations': [
+        filterByAssumed,
+        filterByLimit,
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'l-mc': {
+      'transformations': [
+        filterByLimit,
+        [excludeWithNames, ['J0737-3039A']]
+      ]      
+   },
+   'l-chirp': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'l-chieff': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+    'l-age': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ],
+      'axis': logarithmicYAxis 
+   }, 
+    'l-tau': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ],
+      'axis': logarithmicYAxis 
+   },
+   'l-dist': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'l-l': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'l-b': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'l-z': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'l-mul': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'l-mub': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'b-p': {
+      'transformations': [
+        [multiYBy, 1e3],
+        [excludeWithNames, ['J0737-3039B']]
+      ],
+   },
+   'b-pdot': {
+      'transformations': [
+        absoluteValue,
+        [multiYBy, 1e-18],
+        [excludeWithNames, ['J0737-3039B']]
+      ],
+      'axis': logarithmicYAxis,
+   },
+   'b-pb': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ],      
+      'axis': logarithmicYAxis
+   },
+   'b-e': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'b-f': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'b-mt': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'b-mp': {
+      'transformations': [
+        filterByAssumed,
+        filterByLimit,
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'b-mc': {
+      'transformations': [
+        filterByLimit,
+        [excludeWithNames, ['J0737-3039A']]
+      ]      
+   },
+   'b-chirp': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'b-chieff': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+    'b-age': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ],
+      'axis': logarithmicYAxis 
+   }, 
+    'b-tau': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ],
+      'axis': logarithmicYAxis 
+   },
+   'b-dist': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'b-l': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'b-b': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'b-z': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'b-mul': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'b-mub': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'z-p': {
+      'transformations': [
+        [multiYBy, 1e3],
+        [excludeWithNames, ['J0737-3039B']]
+      ],
+   },
+   'z-pdot': {
+      'transformations': [
+        absoluteValue,
+        [multiYBy, 1e-18],
+        [excludeWithNames, ['J0737-3039B']]
+      ],
+      'axis': logarithmicYAxis,
+   },
+   'z-pb': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ],      
+      'axis': logarithmicYAxis
+   },
+   'z-e': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'z-f': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'z-mt': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'z-mp': {
+      'transformations': [
+        filterByAssumed,
+        filterByLimit,
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'z-mc': {
+      'transformations': [
+        filterByLimit,
+        [excludeWithNames, ['J0737-3039A']]
+      ]      
+   },
+   'z-chirp': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'z-chieff': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+    'z-age': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ],
+      'axis': logarithmicYAxis 
+   }, 
+    'z-tau': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ],
+      'axis': logarithmicYAxis 
+   },
+   'z-dist': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'z-l': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'z-b': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'z-z': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'z-mul': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'z-mub': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'mul-p': {
+      'transformations': [
+        [multiYBy, 1e3],
+        [excludeWithNames, ['J0737-3039B']]
+      ],
+   },
+   'mul-pdot': {
+      'transformations': [
+        absoluteValue,
+        [multiYBy, 1e-18],
+        [excludeWithNames, ['J0737-3039B']]
+      ],
+      'axis': logarithmicYAxis,
+   },
+   'mul-pb': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ],      
+      'axis': logarithmicYAxis
+   },
+   'mul-e': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'mul-f': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'mul-mt': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'mul-mp': {
+      'transformations': [
+        filterByAssumed,
+        filterByLimit,
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'mul-mc': {
+      'transformations': [
+        filterByLimit,
+        [excludeWithNames, ['J0737-3039A']]
+      ]      
+   },
+   'mul-chirp': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'mul-chieff': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+    'mul-age': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ],
+      'axis': logarithmicYAxis 
+   }, 
+    'mul-tau': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ],
+      'axis': logarithmicYAxis 
+   },
+   'mul-dist': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'mul-l': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'mul-b': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'mul-z': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'mul-mul': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'mul-mub': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'mub-p': {
+      'transformations': [
+        [multiYBy, 1e3],
+        [excludeWithNames, ['J0737-3039B']]
+      ],
+   },
+   'mub-pdot': {
+      'transformations': [
+        absoluteValue,
+        [multiYBy, 1e-18],
+        [excludeWithNames, ['J0737-3039B']]
+      ],
+      'axis': logarithmicYAxis,
+   },
+   'mub-pb': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ],      
+      'axis': logarithmicYAxis
+   },
+   'mub-e': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'mub-f': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'mub-mt': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'mub-mp': {
+      'transformations': [
+        filterByAssumed,
+        filterByLimit,
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'mub-mc': {
+      'transformations': [
+        filterByLimit,
+        [excludeWithNames, ['J0737-3039A']]
+      ]      
+   },
+   'mub-chirp': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'mub-chieff': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+    'mub-age': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ],
+      'axis': logarithmicYAxis 
+   }, 
+    'mub-tau': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ],
+      'axis': logarithmicYAxis 
+   },
+   'mub-dist': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'mub-l': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'mub-b': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'mub-z': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'mub-mul': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
+   'mub-mub': {
+      'transformations': [
+        [excludeWithNames, ['J0737-3039B']]
+      ]      
+   },
 }
