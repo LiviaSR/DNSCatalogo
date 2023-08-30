@@ -62,24 +62,110 @@
     </div>
     <div class="text-section" style="text-align: justify;">
         <p>
-          Gravitational wave (GW) emissions are ripples in the spacetime manifold caused by the movement of massive objects
+          Gravitational wave (GW) emissions are ripples in the spacetime manifold caused by the movement of massive objects,
           and were predicted by Einstein's theory of General Relativity (GR). The most intense sources of GW emissions
           are the merger of compact objects like neutron stars and black holes, realeasing a great amount of energy.
           These components lose energy while orbiting each other, and as a consequence they spiral-in reducing the orbital
-          period further and further. The discovery of PSR B1913+16 (<a href="http://https://ui.adsabs.harvard.edu/abs/1975ApJ...195L..51H/abstract">Hulse & Taylor, 1975</a>)
+          period with time. The discovXery of PSR B1913+16 (<a href="http://https://ui.adsabs.harvard.edu/abs/1975ApJ...195L..51H/abstract">Hulse & Taylor, 1975</a>)
           provided the first evidence for the existence of this effect,
-          by the observation of orbital decay during time, trough the timing of \( \dot{P}_b \) parameter (<a href="http://ui.adsabs.harvard.edu/abs/1982ApJ...253..908T/abstract">Taylor & Weisberg, 1982</a> ). This triggered a great
-          interest in the scientific community and placed DNSs as the main target for groundbased interferometric detectors.
+          by the observation of orbital decay during time, trough the timing of \( \dot{P}_b \) parameter (<a href="http://ui.adsabs.harvard.edu/abs/1982ApJ...253..908T/abstract">Taylor & Weisberg, 1982</a> ). 
+          This discovery triggered a great interest in the scientific community and placed DNSs as the main target for groundbased interferometric detectors.
         </p>
         <p>
           Since the produced signals are very weak, detection of GW emssions was a challenging task for decades. The <em>Laser Interferometer
-            Gravitationl-Wave Observatory</em> was founded in 1992 by Kip Thorne and Ronald Drever of Caltech (continue describing detectors.)
+            Gravitationl-Wave Observatory</em> (LIGO) was founded in 1992 by Kip Thorne and Ronald Drever from Caltech and Rainer Weiss from the MIT
+            (<a href="https://iopscience.iop.org/article/10.1088/0034-4885/72/7/076901/meta?casa_token=MeJrioBu878AAAAA:iyUIAmVzYMKYfPxSj0fQQ7AHpm69fhuzWlI3BWewXAK0rHeo9-glKvjBUbMtm7PDQfKfR87RpZ8">Abbott et al., 2009</a>).
+            LIGO consists of two identical interferometers separeted by 3002 kilometers, located in fairly isolated areas of Washington (LIGO Hanford)
+            and lousiana (LIGO Livingston). The reason behind this large distance is found in their sensitivities. Since these instruments are very sensitive,
+            they can detect the tiniest vibrations on Earth, from sources that are nearby until those which are thousands of kilometers away, and this can mask the GW
+            signal in each detector. Locating the interferometers far away, it is possible to distinguish between GW signals and local noise. The original instruments were
+            operational from 2002 to 2010, but no detection was made at that time. During these years the team made huge progress in detector engineering and both interferometers were
+            redesigned from 2010 to 2014. 
         </p>
-            <img src="../images/" alt="Interferometers" style="padding: 10px; margin: auto; display: block;">
+        <p>
+            LIGO's interferometers are, in a sense, similar to Michelson interferometers, invented in the 1880's to (un)probe the existence
+            of ether through the detection of interference patterns, with an ideal configuration to precisely measure phase changes of a wave traveling along
+            two perpendicular arms with an "L-shape", since GW's cause the manifold to stretch in one direction and compress in a perpendicular direction. The layout is shown in the figure below.
+            In summary, a powerful laser beam is equally splitted and directed towards both arms, bouncing off mirrors at the end of each arm. An additional mirror is placed in each arm, near the beam
+            splitter and 4 km away from the end mirror, to create a <i>Fabry Perot cavity</i>. This causes the laser to bounce between the two mirrors about 300 times before being recombined.
+            When gravitational waves pass through, an interference pattern is observed in the recombined signal. The recombined laser beams are directed towards photodetectors that measure this interference
+            pattern created by the supperpositon of the two beams. By analyzing the interference it is possible to determine the characteristics of the GW and gain insights into the astrophysical events that produce them.
+        </p>
+            <img src="../images/LIGO_layout.png" alt="Simplified design of LIGO" style="padding: 10px; margin: auto; display: block;">
+        <p>
+            The Virgo interferometer, with a 3 km arms and built outside of Pisa in Italy, joined the observations of LIGO in 2017, after a period improving
+            its sensitivity (<a href=""></a>). Its operation, combined with both LIGO detectors is crucial to localize the GW sources in the sky, since the localization
+            is determined from the time delay between different observatories. More recently, the KAGRA observatory also started operating. It is constructed in Japan, inside
+            the Kamioka mine, where is also located the neutrino detector Super Kamiokande (<a href=""></a>). The underground location and use of cryogenic systems took this detector to another level,
+            minimizing seismic and molecular vibrations that can mask the GW signal. 
+        </p>
+        <div class="container">
+            <hr class="line-break-up" size="1" color="black">
+        </div>
+        <div class="carousel-container container-shadow">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade container-shadow" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/ligo-hanford.jpeg" class="d-block" alt="LIGO Hanford Observatory">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>LIGO Hanford Observatory</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/ligo-livingston.jpeg" class="d-block" alt="LIGO Livingston Observatory">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>LIGO Livingston Observatory</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                                        <div class="carousel-item">
+                        <img src="../images/ligo-livingston.jpeg" class="d-block" alt="LIGO Livingston Observatory">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>LIGO Livingston Observatory</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/virgo.jpeg" class="d-block" alt="LIGO Livingston Observatory">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Virgo Observatory</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/kagra-ogp.jpg" class="d-block" alt="LIGO Livingston Observatory">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Arm of KAGRA Observatory</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="container">
+            <hr class="line-break-down" size="1" color="black">
+        </div>
         <p>
             The first detection of a gravitational wave occurred in 2015 from a binary black hole merger GW150914
-            (<a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.116.061102" target="_blank">Abbott, B. P. et al, 2016</a> ) by Advanced LIGO detectors. However, the true era of multimessenger and multiwavelength
-            astronomy started two years latter with the first detection of a compact binary merger, GW170817
+            (<a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.116.061102" target="_blank">Abbott, B. P. et al, 2016</a> ) by the Advanced LIGO detectors. 
+            However, the true era of multimessenger and multiwavelength astronomy started two years latter with the first detection of the compact binary merger GW170817
             (<a href="https://ui.adsabs.harvard.edu/abs/2017PhRvL.119p1101A/abstract">Abbott, B. P. et al, 2017</a> ), quickly associated with a short 
             <i>gamma-ray burst</i> (GRB) emitted from the same sky location, \(1.7~s\) after the
             merger (<a href="https://ui.adsabs.harvard.edu/abs/2017ApJ...848L..14G/abstract">Goldstein et al., 2017</a> ).
@@ -89,7 +175,7 @@
             with the inferred GW luminosity distance. The association of the gravitational wave with the sGRB, as well as the
             observations across the electromagnetic spectrum by different groups,
             the total and component masses of the system and the offset related to the host galaxy center provided strong evidences for
-            the DNS nature of GW170817.
+            the DNS nature of the GW170817 progenitor.
         </p>
             <img src="../images/GW170817.png" alt="GW170817 signal" style="padding: 10px; margin: auto; display: block; height: 400px;">
         <p>
@@ -114,14 +200,14 @@
             (\(\mathcal{M} \)).
         </P>
         <P>
-            To lowest order it is possible to describe the gravitational radiation from the quadrupole Newtonian formalism of two
+            To lowest order, it is possible to describe the gravitational radiation from the quadrupole Newtonian formalism of two
             dimensionless particles in an almost circular orbit (assuming that gravitational damping circularizes the orbit). The
             angular orbital frequency is then given by:
             \begin{equation}
             \Omega_b^2 = \frac{GM_{tot}}{a^3},
             \end{equation}
             where \(G\) is the gravitational constant, \(M_{tot}\) is the system total mass and \(a\) is the orbital separation. The loss of
-            energy leads to a decrease in \(a\) and consequently a decrease in orbital period, since \(P_{b} \equiv 2\pi /\Omega_b\).
+            energy leads to a decrease in \(a\) and, consequently, a decrease in orbital period, since \(P_{b} \equiv 2\pi /\Omega_b\).
             Combining the inspiral rate of system and the equation above, the signal frequency (\(\nu=1/P\)) is then obtained:
             \begin{equation}
             \nu^{-11/3} \frac{d\nu}{dt} = \frac{96}{5}\pi^{8/3}\mathcal{M}^{5/3}.
@@ -129,9 +215,13 @@
         </p>
         <p>
             Therefore, from the observed signal frequency and its derivative is possible to accurately measure the chirp mass, which
-            is a combination of total and reduced (\(\mu\)) masses of the system, \(\mathcal{M} = \mu^{3/5} M_{tot}^{2/5}\). These
+            is a combination of total and reduced (\(\mu\)) masses of the system, \(\mathcal{M} = \mu^{3/5} M_{tot}^{2/5}\), and to determine the rate
+            at which the GW frequency changes over time. These
             calculations are valid for the source-frame. When detected on Earth the signal is Doppler shifted due to relative
-            motion, so the detected value will be \(\mathcal{M}_{det} = (1 + z)\mathcal{M}\), where \(z\) is the redshift.
+            motion, so the detected value will be \(\mathcal{M}_{det} = (1 + z)\mathcal{M}\), where \(z\) is the redshift of the source.
+            All binaries with the same \(\mathcal{M}\) will have the same chirping sweep. Still, post-newtonian corrections to Eq. () do introduce a dependence
+            on the individual masses of the system. This quantity is inferred by a matched filtering technique, where the wave's phase evolution is matched with
+            model templates predicted under GR.
         </P>
     </div>
 
