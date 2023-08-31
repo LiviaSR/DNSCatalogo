@@ -134,9 +134,13 @@ a:hover {
     width: 93%;
 }
 
+.carourel-inner {
+    max-height: 30%;
+}
+
 .carousel-item > img {
     width: 100%;
-    height: 70% !important;
+    max-height: 30% !important;
 }
 
 /* Section divider */

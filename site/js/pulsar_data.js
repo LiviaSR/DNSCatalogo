@@ -41,12 +41,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 4.07247,
+      "value": 4.072,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.11252,
+      "value": 0.112,
       "hasReferences": false,
       "references": null
     },
@@ -206,12 +206,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 0.37958,
+      "value": 0.379,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.5864,
+      "value": 0.586,
       "hasReferences": false,
       "references": null
     },
@@ -369,12 +369,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 18.78518,
+      "value": 18.785,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.88798,
+      "value": 0.888,
       "hasReferences": false,
       "references": null
     },
@@ -536,12 +536,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 0.10225,
+      "value": 0.102,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.08778,
+      "value": 0.088,
       "hasReferences": false,
       "references": null
     },
@@ -715,12 +715,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 0.10225,
+      "value": 0.102,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.08778,
+      "value": 0.088,
       "hasReferences": false,
       "references": null
     },
@@ -888,12 +888,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 8.98397,
+      "value": 8.984,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.22775 ,
+      "value": 0.227 ,
       "hasReferences": false,
       "references": null
     },
@@ -1037,12 +1037,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 1.81559,
+      "value": 1.815,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.06401,
+      "value": 0.064,
       "hasReferences": false,
       "references": null
     },
@@ -1186,12 +1186,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 2.61586,
+      "value": 2.616,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.16993,
+      "value": 0.170,
       "hasReferences": false,
       "references": null
     },
@@ -1353,12 +1353,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 8.63401,
+      "value": 8.634,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.24948,
+      "value": 0.249,
       "hasReferences": false,
       "references": null
     },
@@ -1524,12 +1524,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 0.42074,
+      "value": 0.421,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.27368,
+      "value": 0.274,
       "hasReferences": false,
       "references": null
     },
@@ -1699,12 +1699,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 20.55001,
+      "value": 20.550,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.57016,
+      "value": 0.570,
       "hasReferences": false,
       "references": null
     },
@@ -1848,12 +1848,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 13.63757,
+      "value": 13.637,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.30358,
+      "value": 0.303,
       "hasReferences": false,
       "references": null
     },
@@ -1993,12 +1993,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 9.69633,
+      "value": 9.696,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.08935,
+      "value": 0.089,
       "hasReferences": false,
       "references": null
     },
@@ -2139,12 +2139,12 @@ const pulsarData = [
     
     },
     "pb": {
-      "value": 0.31963,
+      "value": 0.320,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.18057,
+      "value": 0.180,
       "hasReferences": false,
       "references": null
     },
@@ -2319,12 +2319,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 0.18354,
+      "value": 0.183,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.60582,
+      "value": 0.605,
       "hasReferences": false,
       "references": null
     },
@@ -2494,12 +2494,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 2.04298,
+      "value": 2.043,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.30827,
+      "value": 0.308,
       "hasReferences": false,
       "references": null
     },
@@ -2643,12 +2643,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 9.95667,
+      "value": 9.957,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.74703,
+      "value": 0.747,
       "hasReferences": false,
       "references": null
     },
@@ -2800,12 +2800,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 18.77917,
+      "value": 18.779,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.82801,
+      "value": 0.828,
       "hasReferences": false,
       "references": null
     },
@@ -2949,12 +2949,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 1.54014,
+      "value": 1.540,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.38047,
+      "value": 0.380,
       "hasReferences": false,
       "references": null
     },
@@ -3098,12 +3098,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 1.17603,
+      "value": 1.176,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.13914,
+      "value": 0.139,
       "hasReferences": false,
       "references": null
     },
@@ -3413,12 +3413,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 0.16599,
+      "value": 0.166,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.08529,
+      "value": 0.085,
       "hasReferences": false,
       "references": null
     },
@@ -3576,12 +3576,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 0.20625,
+      "value": 0.206,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.08953,
+      "value": 0.089,
       "hasReferences": false,
       "references": null
     },
@@ -3746,12 +3746,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 0.32299,
+      "value": 0.323,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.61713,
+      "value": 0.617,
       "hasReferences": false,
       "references": null
     },
@@ -3930,7 +3930,7 @@ const pulsarData = [
       "references": null
     },
     "e": {
-      "value": 0.39886,
+      "value": 0.399,
       "hasReferences": false,
       "references": null
     },
@@ -4074,12 +4074,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 0.07849,
+      "value": 0.078,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.06385,
+      "value": 0.064,
       "hasReferences": false,
       "references": null
     },
@@ -4231,12 +4231,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 0.33528,
+      "value": 0.335,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.68139,
+      "value": 0.681,
       "hasReferences": false,
       "references": null
     },
@@ -4394,12 +4394,12 @@ const pulsarData = [
       }
     },
     "pb": {
-      "value": 6.21565,
+      "value": 6.216,
       "hasReferences": false,
       "references": null
     },
     "e": {
-      "value": 0.87938,
+      "value": 0.879,
       "hasReferences": false,
       "references": null
     },
