@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="./css/navbar.css">
-        <title>DoNutSS</title>
+        <title>DoNutS</title>
         <link rel="stylesheet" href="./css/index.css" >
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <link href="./css/jquery.dataTables.min.css" rel="stylesheet" ></style>
@@ -37,8 +37,8 @@
           <img src="images/mpg_logo.png" class="d-block" alt="...">
         </div>
         <div class="col-6 text-center">
-          <h2 onclick="easterEgg()" class="title" style="user-select: none;">DoNutSS:</h2>
-          <h3 class="title" style="user-select: none;">A Double Neutron Star System Catalogue</h3>
+          <h2 onclick="easterEgg()" class="title" style="user-select: none;">DoNutS:</h2>
+          <h3 class="title" style="user-select: none;">A Double Neutron Star Catalogue</h3>
         </div>
         <div class="col-3 max-planck-logo">
           <img src="images/mpifr.png" class="d-block" alt="...">
@@ -134,14 +134,16 @@
       <div class="text-section">
         <p>
           Neutron Stars (NS) are some of the most fascinating objects in the Universe.
-          First observed as a pulsar in the radio band (<a href="https://ui.adsabs.harvard.edu/abs/1968Natur.217..709H/abstract" target="papers">Hewish et al., 1968</a> ),
+          First observed as a pulsar in the radio band (<a href="https://ui.adsabs.harvard.edu/abs/1968Natur.217..709H/abstract" target="_blank">Hewish et al., 1968</a> ),
           their existence was previously predicted as the final outcome of
-          massive stars undergoing supernova collapse (<a href="https://ui.adsabs.harvard.edu/abs/1934CoMtW...3...73B/abstract" target="papers">Baade & Zwicky, 1934a;</a><a href="https://ui.adsabs.harvard.edu/abs/1934CoMtW...3...79B/abstract" target="papers">1934b</a> ). Recognized as rapidly rotating and
+          massive stars undergoing supernova collapse (<a href="https://ui.adsabs.harvard.edu/abs/1934CoMtW...3...73B/abstract" target="_blank">Baade & Zwicky, 1934a;</a><a href="https://ui.adsabs.harvard.edu/abs/1934CoMtW...3...79B/abstract" target="_blank">1934b</a> ),
+          later confirmed by the association of pulse emitters with supernova remnants. 
+          Recognized as rapidly rotating and
           highly magnetized compact objects, and described under the theory of 
           General Relativity (GR), the increasing effort to understand their nature 
           and formation process is providing new insights into many areas of modern astrophysics. 
-          From the ground state of ultra-dense matter to the interstellar medium
-          enrichment with r-process elements such as gold and platinum, 
+          From the ground state of ultra-dense matter - found inside these stellar corpses - to the interstellar medium
+          enrichment with r-process elements such as gold and platinum - formed after a DNS merger, 
           their study helps to uncover the mysteries of our Cosmos.
         </p>
         <p>
@@ -151,24 +153,24 @@
           like a White Dwarf (WD) or a NS, i.e. a Double Neutron Star (DNS) system in the last case, the detection of pulses under the influence
           of GR enable us to set highly precise constraints on their properties. 
           Furthermore, the recent detection made by <a href="https://www.ligo.org/" target="_blank">LIGO/Virgo Collaboration</a> of 
-          Gravitational Waves emitted from the merger of a DNS placed these systems
-          in a privileged position to study NS physics, and marked the start of the multiwavelength astronomy era.  
+          <a href="html/gws.html">Gravitational Waves</a> emitted from the merger of a DNS placed these systems
+          in a privileged position to study NS physics, and marked the start of the multimessenger and multiwavelength astronomy era.  
           This allows us to combine electromagnetic and gravitational information to set even 
           better constraints on their properties, as well as compare the sample of Galactic NS's with 
           those found at higher redshifts.    
         </p>
         <p>
-          The aim of <sup>&copy;</sup>DoNutSS project is to facilitate access 
+          The aim of <sup>&copy;</sup>DoNutS project is to facilitate access 
           to reliable information and provide the scientific community with a 
           living catalog with the latest discoveries of DNS systems. 
           We hope that this initiative will help to advance and accelerate the 
           develpment of Neutron Star physics.
         </p>
-        <p>If you found it useful do not forget to <a href="#citation">cite</a>. If you find any errors or have suggestions for the project, do not hesitate in contacting us.</p>
+        <p>If you found it useful do not forget to <a href="#citation">cite</a>. If you have suggestions for the project or found any error, do not hesitate in <a href="html/contact.html">contacting</a> us.</p>
         <p style="text-align: center;">Enjoy!</p>
       </div>
       <div id="table" class="page-section">
-        <h5>Confirmed and possible pulsar - neutron star systems</h5>
+        <h5>Confirmed and candidate pulsar-neutron star systems</h5>
       </div>
       <div class="scroll-bar" style="width: 93%; margin: auto; overflow-x: auto">
         <table id="DNS-catalogue" class="table table-striped table-bordered table-sm">
@@ -374,8 +376,8 @@
           <div class="col-md-6"> 
             <div class="p-3 px-4"> 
             <div class="d-flex justify-content-between align-items-center mb-3"> 
-              <span id="ExportCite" class="about me-2" style="margin-right: 1cm; margin-top: 10px;">Rocha et al. (2022) in prep.</span> 
-              <button onclick="copy('Rocha et al. (2022) in prep.','#copy_button_1')" id="copy_button_1" class="btn btn-sm btn-success copy-button">
+              <span id="ExportCite" class="about me-2" style="margin-right: 1cm; margin-top: 10px;">Rocha et al. (2023) in prep.</span> 
+              <button onclick="copy('Rocha et al. (2023) in prep.','#copy_button_1')" id="copy_button_1" class="btn btn-sm btn-success copy-button">
                 <i class="fa fa-copy"></i>
               </button> 
             </div> 
@@ -406,7 +408,7 @@
               <a href="./html/contact.html" class="nav-link">About Us</a>
             </li>
           </ul>
-          <p class="text-muted"> &copy; 2023, DoNutSS</p>
+          <p class="text-muted"> &copy; 2023, DoNutS</p>
         </footer>
       </div>
     </body>

@@ -18,7 +18,6 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2015ApJ...812..143M",
         "descrip": "Martinez, J. G., Stovall, K., Freire, P. C. C., et al. (2015). The Astrophysical Journal, 812(2), 143."
       }
@@ -183,9 +182,12 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2018ApJ...859...93L",
         "descrip": "Lynch, R. S., Swiggum, J. K., Kondratiev, V. I., et al. (2018). The Astrophysical Journal, 859(2), 93."
+      },
+      {
+        "link": "https://arxiv.org/abs/2312.07471",
+        "descrip": "McEwen, A. E., Swiggum, J. K., Kaplan, D. L., et al (2023). arXiv:2312.07471"
       }
     ],
     "comments": "Confirmed. Highly eccentric, similar to the Hulse-Taylor pulsar",
@@ -227,40 +229,40 @@ const pulsarData = [
       }
     },
     "mt": {
-      "value": 2.805,
+      "value": 2.81071,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": true,
       "uncertainty": {
         "symmetrical": true,
-        "up": 0.003,
-        "down": 0.003
+        "up": 0.00014,
+        "down": 0.00014
       }
     },
     "mp": {
       "isLimit": false,
       "isAssumed": false,
-      "value": 1.34,
+      "value": 1.399,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": true,
       "uncertainty": {
         "symmetrical": true,
-        "up": 0.08,
-        "down": 0.08
+        "up": 0.006,
+        "down": 0.006
       }
     },
     "mc": {
       "isLimit": false,
       "isAssumed": false,
-      "value": 1.46,
+      "value": 1.412,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": true,
       "uncertainty": {
         "symmetrical": true,
-        "up": 0.08,
-        "down": 0.08
+        "up": 0.006,
+        "down": 0.006
       }
     },
     "chirp": {
@@ -346,7 +348,6 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.490.3860R/",
         "descrip": "Ridolfi, A., Freire, P. C., Gupta, Y., & Ransom, S. M. (2019). Monthly Notices of the Royal Astronomical Society, 490(3), 3860-3874."
       }
@@ -503,17 +504,14 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2006Sci...314...97K",
         "descrip": "Kramer, M., Stairs, I. H., Manchester, R. N., et al. (2006).  Science, 314(5796), 97-102."
       },
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2021PhRvX..11d1050K",
         "descrip": "Kramer, M., Stairs, I. H., Manchester, et al. (2021). Physical Review X, 11(4), 041050."
       },
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2008Sci...321..104B",
         "descrip": "Breton, R. P., Kaspi, V. M., Kramer, et al. (2008). Science, 321(5885), 104-107."
       }
@@ -682,17 +680,14 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2004Sci...303.1153L/abstract",
         "descrip": "Lyne, A. G., Burgay, M., Kramer, et al. (2004). Science, 303(5661), 1153-1157."
       },
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2013ApJ...767...85F",
         "descrip": "Ferdman, R. D., Stairs, I. H., Kramer, M., et al. (2013). The Astrophysical Journal, 767(1), 85."
       },
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2010ApJ...721.1193P",
         "descrip": "Perera, B. B. P., McLaughlin, M. A., Kramer, et al. (2010). The Astrophysical Journal, 721(2), 1193."
       }
@@ -865,7 +860,6 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2022arXiv221203926S/abstract",
         "descrip": "Swiggum, J. K., Pleunis, Z., Parent, et al. (2022). arXiv preprint arXiv:2212.03926."
       }
@@ -1007,6 +1001,306 @@ const pulsarData = [
     }
   },
   {
+    "name": "J1155-6529",
+    "Type": "rec",
+    "DoubleSystem": false,
+    "systemName": null,
+    "hasReferences": true,
+    "references": [
+      {
+        "link": "https://academic.oup.com/mnras/article/524/1/1291/7205539",
+        "descrip": "Padmanabh, P. V., Barr, E. D., Sridhar, S. S., Rugel, M. R., et al. (2023). Monthly Notices of the Royal, 524, 1291-1315."
+      }
+    ],
+    "comments": "Confirmed.",
+    "p": {
+      "value": 0.07887,
+      "hasReferences": false,
+      "references": null
+    },
+    "pdot": {
+      "value": 0.35,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "pb": {
+      "value": 3.67,
+      "hasReferences": false,
+      "references": null
+    },
+    "e": {
+      "value": 0.26,
+      "hasReferences": false,
+      "references": null
+    },
+    "f": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "mt": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mp": {
+      "isLimit": false,
+      "isAssumed": true,
+      "value": 1.4,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mc": {
+      "isLimit": true,
+      "isAssumed": false,
+      "value": 1.27,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "chirp": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "delta": {
+      "isLimit": false,
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "chi": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "chieff": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "age": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "tau": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "Confirmed": true,
+    "dist" : {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mul": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mub": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    }
+  },
+  {
+    "name": "J1208-5936",
+    "Type": "rec",
+    "DoubleSystem": false,
+    "systemName": null,
+    "hasReferences": true,
+    "references": [
+      {
+        "link": "https://www.aanda.org/articles/aa/pdf/2023/10/aa46953-23.pdf",
+        "descrip": "i Berndich, M. C., Balakrishnan, V., Barr, E., Berezina, M., et al. (2023). Astronomy & Astrophysics, 678, A187."
+      }
+    ],
+    "comments": "Confirmed. Eccentric binary system.",
+    "p": {
+      "value": 0.02871,
+      "hasReferences": false,
+      "references": null
+    },
+    "pdot": {
+      "value": 0.0257,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.0104,
+        "down": 0.0104
+      }
+    },
+    "pb": {
+      "value": 0.632,
+      "hasReferences": false,
+      "references": null
+    },
+    "e": {
+      "value": 0.347988,
+      "hasReferences": false,
+      "references": null
+    },
+    "f": {
+      "value": 0.20760,
+      "hasReferences": false,
+      "references": null
+    },
+    "mt": {
+      "value": 2.586,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.006,
+        "down": 0.006
+      }
+    },
+    "mp": {
+      "isLimit": false,
+      "isAssumed": false,
+      "value": 1.26,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": false,
+        "up": 0.13,
+        "down": 0.25
+      }
+    },
+    "mc": {
+      "isLimit": false,
+      "isAssumed": false,
+      "value": 1.32,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": false,
+        "up": 0.25,
+        "down": 0.13
+      }
+    },
+    "chirp": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "delta": {
+      "isLimit": false,
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "chi": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "chieff": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "age": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "tau": {
+      "value": 7.2,
+      "hasReferences": false,
+      "references": true 
+    },
+    "Confirmed": true,
+    "dist" : {
+      "value": 8.2,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 1.6,
+        "down": 1.6
+      }
+    },
+    "l": {
+      "value": 297.512,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": 2.813,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mul": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mub": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    }
+  },
+  {
     "name": "J1325-6253",
     "Type": "rec",
     "DoubleSystem": false,
@@ -1014,7 +1308,6 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2022MNRAS.512.5782S",
         "descrip": "Sengar, R., Balakrishnan, V., Stevenson, S., et al. (2022). Monthly Notices of the Royal Astronomical Society, 512(4), 5782-5792."
       }
@@ -1163,7 +1456,6 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2017ApJ...851L..29M",
         "descrip": "Martinez, J. G., Stovall, K., Freire, P. C. C., et al. (2017).  The Astrophysical Journal Letters, 851(2), L29."
       }
@@ -1320,17 +1612,14 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2008A&A...490..753J",
         "descrip": "Janssen, G. H., Stappers, B. W., Kramer, M., et al. (2008). Astronomy & Astrophysics, 490(2), 753-761."
       },
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/1996ApJ...466L..87N/abstract",
         "descrip": "Nice, D. J., Sayer, R. W., & Taylor, J. H. (1996). The Astrophysical Journal, 466(2), L87."
       },
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/1999ptgr.conf...79N/abstract",
         "descrip": "Nice, D. J., Taylor, J. H., & Sayer, R. W. (1999). In Pulsar Timing, General Relativity and the Internal Structure of Neutron Stars (p. 79)."
       }
@@ -1491,17 +1780,14 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2014ApJ...787...82F ",
         "descrip": "Fonseca, E., Stairs, I. H., & Thorsett, S. E. (2014). The Astrophysical Journal, 787(1), 82."
       },
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/1991Natur.350..688W/abstract",
         "descrip": "Wolszczan, A. (1991). Nature, 350(6320), 688-690."
       },
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2002ApJ...581..501S/abstract ",
         "descrip": "Stairs, I. H., Thorsett, S. E., Taylor, J. H., & Wolszczan, A. (2002). The Astrophysical Journal, 581(1), 501."
       }
@@ -1582,7 +1868,6 @@ const pulsarData = [
       "hasReferences": true,
       "references": [
         {
-          "ref-number": null,
           "link": "https://ui.adsabs.harvard.edu/abs/2014ApJ...787...82F",
           "descrip": "Fonseca, E., Stairs, I. H., & Thorsett, S. E. (2014). The Astrophysical Journal, 787(1), 82."
         }
@@ -1676,7 +1961,6 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2008ApJ...675..670F",
         "descrip": "Freire, P. C., Ransom, S. M., Bégin, S., et al. (2008). The Astrophysical Journal, 675(1), 670."
       }
@@ -1825,7 +2109,6 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2009MNRAS.393..623K",
         "descrip": "Keith, M. J., Kramer, M., Lyne, A. G., et al. (2009). Monthly Notices of the Royal Astronomical Society, 393(2), 623-627."
       }
@@ -1970,7 +2253,6 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2018MNRAS.476.4315N",
         "descrip": "Ng, C., Kruckow, M. U., Tauris, T. M., et al. (2018). Monthly Notices of the Royal Astronomical Society, 476(4), 4315-4326."
       }
@@ -2115,7 +2397,6 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2014MNRAS.443.2183F",
         "descrip": "Ferdman, R. D., Stairs, I. H., Kramer, M., et al. (2014). Monthly Notices of the Royal Astronomical Society, 443(3), 2183-2196."
       }
@@ -2201,7 +2482,6 @@ const pulsarData = [
       "hasReferences": true,
       "references": [
         {
-          "ref-number": null,
           "link": "https://ui.adsabs.harvard.edu/abs/2014MNRAS.443.2183F",
           "descrip": "Ferdman, R. D., Stairs, I. H., Kramer, M., et al. (2014). Monthly Notices of the Royal Astronomical Society, 443(3), 2183-2196."
         }
@@ -2291,12 +2571,10 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2022arXiv220315995C/abstract",
         "descrip": "Cameron, A. D., Bailes, M., Balakrishnan, V., et al. (2023). Proceedings of the MG16 Meeting on General Relativity Online; 5–10 July 2021 (pp. 3774-3784)."
       },
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2018MNRAS.475L..57C/abstract",
         "descrip": "Cameron, A. D., Champion, D. J., Kramer, M., et al. (2018). Monthly Notices of the Royal Astronomical Society: Letters, 475(1), L57-L61."
       }
@@ -2381,7 +2659,6 @@ const pulsarData = [
       "hasReferences": true,
       "references": [
         {
-          "ref-number": null,
           "link": "https://arxiv.org/abs/2203.15995",
           "descrip": "Cameron, A. D., Bailes, M., Balakrishnan, V., et al. (2023). Proceedings of the MG16 Meeting on General Relativity Online; 5–10 July 2021 (pp. 3774-3784)."
         }
@@ -2471,9 +2748,12 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2021ApJ...922...35A",
         "descrip": "Agazie, G. Y., Mingyar, M. G., McLaughlin, M. A., et al. (2021). The Astrophysical Journal, 922(1), 35."
+      },
+      {
+        "link": "https://arxiv.org/abs/2312.07471",
+        "descrip": "McEwen, A. E., Swiggum, J. K., Kaplan, D. L., et al (2023). arXiv:2312.07471"
       }
     ],
     "comments": "Confirmed.",
@@ -2509,14 +2789,14 @@ const pulsarData = [
       "references": null
     },
     "mt": {
-      "value": 2.62,
+      "value": 2.679,
       "hasReferences": false,
       "references": null,
       "hasUncertainty": true,
       "uncertainty": {
         "symmetrical": true,
-        "up": 0.03,
-        "down": 0.03
+        "up": 0.012,
+        "down": 0.012
       }
     },
     "mp": {
@@ -2620,7 +2900,6 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2012ApJ...745..109L",
         "descrip": "Lynch, R. S., Freire, P. C., Ransom, S. M., & Jacoby, B. A. (2012). The Astrophysical Journal, 745(2), 109."
       }
@@ -2777,7 +3056,6 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2007A&A...462..703C",
         "descrip": "Corongiu, A., Kramer, M., Stappers, B. W., et al. (2007). Astronomy & Astrophysics, 462(2), 703-709."
       }
@@ -2926,7 +3204,6 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.504.1407R",
         "descrip": "Ridolfi, A., Gautam, T., Freire, P. C. C., et al. (2021). Monthly Notices of the Royal Astronomical Society, 504(1), 1407-1426."
       }
@@ -3075,7 +3352,6 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.500.4620H ",
         "descrip": "Haniewicz, H. T., Ferdman, R. D., Freire, P. C., et al. (2021). Monthly Notices of the Royal Astronomical Society, 500(4), 4620-4627."
       }
@@ -3240,7 +3516,6 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2015ApJ...807L..23D",
         "descrip": "DeCesar, M. E., Ransom, S. M., Kaplan, D. L., et al. (2015). The Astrophysical Journal Letters, 807(2), L23."
       }
@@ -3273,7 +3548,7 @@ const pulsarData = [
       "references": null
     },
     "f": {
-      "value": 0.023276,
+      "value": 0.02328,
       "hasReferences": false,
       "references": null
     },
@@ -3385,12 +3660,10 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2015ApJ...798..118V",
         "descrip": "Van Leeuwen, J., Kasian, L., Stairs, I. H., et al. (2015). The Astrophysical Journal, 798(2), 118."
       },
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2019Sci...365.1013D/abstract",
         "descrip": "Desvignes, G., Kramer, M., Lee, K., et al. (2019). Science, 365(6457), 1013-1017."
       }
@@ -3475,7 +3748,6 @@ const pulsarData = [
       "hasReferences": true,
       "references": [
         {
-          "ref-number": null,
           "link": "https://ui.adsabs.harvard.edu/abs/2019Sci...365.1013D/abstract",
           "descrip": "Desvignes, G., Kramer, M., Lee, K., et al. (2019). Science, 365(6457), 1013-1017."
         }
@@ -3553,7 +3825,6 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2020Natur.583..211F",
         "descrip": "Ferdman, R. D., Freire, P. C. C., Perera, B. B. P., et al. (2020). Nature, 583(7815), 211-214."
       }
@@ -3718,12 +3989,10 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/1976ApJ...206L..53T/abstract",
         "descrip": "Taylor, J. H., Hulse, R. A., Fowler, L. A., et al. (1976). Astrophysical Journal, 206, L53-L58."
       },
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2016ApJ...829...55W",
         "descrip": "Weisberg, J. M., & Huang, Y. (2016). The Astrophysical Journal, 829(1), 55."
       }
@@ -3808,7 +4077,6 @@ const pulsarData = [
       "hasReferences": true,
       "references": [
         {
-          "ref-number": null,
           "link": "https://ui.adsabs.harvard.edu/abs/1998ApJ...509..856K",
           "descrip": "Kramer, M. (1998). The Astrophysical Journal, 509(2), 856."
         }
@@ -3902,7 +4170,6 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2015ApJ...805..156S",
         "descrip": "Swiggum, J. K., Rosen, R., McLaughlin, M. A., et al. (2015). The Astrophysical Journal, 805(2), 156."
       }
@@ -4051,7 +4318,6 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2018ApJ...854L..22S",
         "descrip": "Stovall, K., Freire, P. C. C., Chatterjee, S., et al. (2018). The Astrophysical Journal Letters, 854(2), L22."
       }
@@ -4208,7 +4474,6 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2006ApJ...644L.113J",
         "descrip": "Jacoby, B. A., Cameron, P. B., Jenet, F. A., et al. (2006). The Astrophysical Journal, 644(2), L113."
       }
@@ -4293,7 +4558,6 @@ const pulsarData = [
       "hasReferences": true,
       "references": [
         {
-          "ref-number": null,
           "link": "https://ui.adsabs.harvard.edu/abs/2014A%26A...565A..43K",
           "descrip": "Kirsten, F., Vlemmings, W., Freire, P., et al. (2014). Astronomy & Astrophysics, 565, A43."
         }
@@ -4371,7 +4635,6 @@ const pulsarData = [
     "hasReferences": true,
     "references": [
       {
-        "ref-number": null,
         "link": "https://ui.adsabs.harvard.edu/abs/2023arXiv230104983B/abstract",
         "descrip": "Kirsten, F., Vlemmings, W., Freire, P., et al. (2014). Astronomy & Astrophysics, 565, A43."
       }
@@ -4511,6 +4774,154 @@ const pulsarData = [
       "hasUncertainty": false,
       "uncertainty": null
     }
+  },
+  {
+    "name": " J2150+3427",
+    "Type": "nrec",
+    "DoubleSystem": false,
+    "systemName": null,
+    "hasReferences": true,
+    "references": [
+      {
+        "link": "https://iopscience.iop.org/article/10.3847/2041-8213/ad0887",
+        "descrip": "Wu, Q. D., Wang, N., Yuan, J. P., Li, D., et al (2023). The Astrophysical Journal Letters, 958, L17."
+      }
+    ],
+    "comments": "Candidate. Slow pulsar, likely (mildly) recycled. Is the second-born object in the system. The companion can be a WD.",
+    "p": {
+      "value": 0.65428,
+      "hasReferences": false,
+      "references": null
+    },
+    "pdot": {
+      "value": 3.60,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.04,
+        "down": 0.04
+      }
+    },
+    "pb": {
+      "value": 10.592,
+      "hasReferences": false,
+      "references": null
+    },
+    "e": {
+      "value": 0.601,
+      "hasReferences": false,
+      "references": null
+    },
+    "f": {
+      "value": 0.158,
+      "hasReferences": false,
+      "references": null
+    },
+    "mt": {
+      "value": 2.59,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": true,
+      "uncertainty": {
+        "symmetrical": true,
+        "up": 0.13,
+        "down": 0.13
+      }
+    },
+    "mp": {
+      "isLimit": true,
+      "isAssumed": false,
+      "value": 1.67,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mc": {
+      "isLimit": true,
+      "isAssumed": false,
+      "value": 0.94,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "chirp": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "delta": {
+      "isLimit": false,
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "chi": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "chieff": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "age": {
+      "value": 2.88,
+      "hasReferences": false,
+      "references": null
+    },
+    "tau": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "Confirmed": false,
+    "dist" : {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "l": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "b": {
+      "value": null,
+      "hasReferences": false,
+      "references": null
+    },
+    "z": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mul": {
+      "value": null, 
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "mub": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    }
   }
 ]
 
@@ -4523,12 +4934,11 @@ const pulsarData = [
     "hasReferences": ,
     "references": [
       {
-        "ref-number": ,
-        "link": ""
+        "link": "",
+        "descrip": ""
       }
     ],
-    "comments": "",,
-    "descrip":
+    "comments": "",
     "p": {
       "value": ,
       "hasReferences": ,
@@ -4558,7 +4968,7 @@ const pulsarData = [
     "f": {
       "value": ,
       "hasReferences": ,
-      "references": null
+      "references": 
     },
     "mt": {
       "value": ,
@@ -4608,8 +5018,8 @@ const pulsarData = [
       "hasReferences": ,
       "references": [
         {
-          "ref-number": ,
-          "link": ""
+          "link": "",
+          "descrip": ""
         }
       ],
       "hasUncertainty": ,
@@ -4643,8 +5053,8 @@ const pulsarData = [
       "hasReferences": ,
       "references": [
         {
-          "ref-number": ,
-          "link": ""        
+          "link": "",
+          "descrip": ""
         }
       ],
       "hasUncertainty": ,
@@ -4665,7 +5075,7 @@ const pulsarData = [
       "references": 
     },
     "z": {
-      "value":
+      "value": ,
       "hasReferences": ,
       "references": ,
       "hasUncertainty": ,
@@ -4676,7 +5086,7 @@ const pulsarData = [
       }
     },
     "mul": {
-      "value":
+      "value": ,
       "hasReferences": ,
       "references": ,
       "hasUncertainty": ,
@@ -4687,7 +5097,7 @@ const pulsarData = [
       }
     },
     "mub": {
-      "value":
+      "value": ,
       "hasReferences": ,
       "references": ,
       "hasUncertainty": ,

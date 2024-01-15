@@ -574,3 +574,14 @@ table.dataTable thead td {
 .text-line{
     font-size: 14px
 }
+
+figcaption{
+    color:var(--text-color);
+    font-size:small;
+    text-align: center;
+    display:block;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 60%;
+    margin: auto;
+}
