@@ -172,6 +172,40 @@ const pulsarData = [
         "up": 213,
         "down": 213
       }
+    },
+    "v_t": {
+      "value": [21,40],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": [27,60],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": 74,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_median": {
+      "value": 40,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+    },
+    "kick_interv": {
+      "value": [11,126],
+      "hasReferences":  false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
     }
   },
   {
@@ -338,6 +372,41 @@ const pulsarData = [
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
+    },
+    "v_t": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_median": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_interv": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
     }
   },
   {
@@ -489,6 +558,41 @@ const pulsarData = [
       "uncertainty": null
     },
     "mub": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_t": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_median": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_interv": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -670,6 +774,41 @@ const pulsarData = [
         "up": 0.032,
         "down": 0.032
       }
+    },
+    "v_t": {
+      "value": [11,12],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": [17,37],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": 42,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_median": {
+      "value": 9.3,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_interv": {
+      "value": [2.1,33],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
     }
   },
   {
@@ -850,6 +989,41 @@ const pulsarData = [
         "up": 0.032,
         "down": 0.032
       }
+    },
+    "v_t": {
+      "value": [11,12],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": [17,37],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": 42,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_median": {
+      "value": 9.3,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_interv": {
+      "value": [2.1,33],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
     }
   },
   {
@@ -998,6 +1172,41 @@ const pulsarData = [
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
+    },
+    "v_t": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null     
+    },
+    "kick_median": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null    
+    },
+    "kick_interv": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
     }
   },
   {
@@ -1133,6 +1342,41 @@ const pulsarData = [
       "uncertainty": null
     },
     "mub": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_t": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_median": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null    
+    },
+    "kick_interv": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -1298,6 +1542,41 @@ const pulsarData = [
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
+    },
+    "v_t": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null    
+    },
+    "kick_median": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null    
+    },
+    "kick_interv": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
     }
   },
   {
@@ -1441,6 +1720,41 @@ const pulsarData = [
       "uncertainty": null
     },
     "mub": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_t": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null    
+    },
+    "kick_median": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null 
+    },
+    "kick_interv": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -1602,6 +1916,41 @@ const pulsarData = [
         "up": 12,
         "down": 12
       }
+    },
+    "v_t": {
+      "value": [32,108],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": [39, 153],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": 187,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_median": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null     
+    },
+    "kick_interv": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
     }
   },
   {
@@ -1770,6 +2119,41 @@ const pulsarData = [
         "up": 0.04,
         "down": 0.04
       }
+    },
+    "v_t": {
+      "value": [32,34],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": [25,60],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": 75,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_median": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null  
+    },
+    "kick_interv": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
     }
   },
   {
@@ -1951,6 +2335,41 @@ const pulsarData = [
         "up": 0.008,
         "down": 0.008
       }
+    },
+    "v_t": {
+      "value": [126,127],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": [117,224],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": 276,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_median": {
+      "value": 239,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null   
+    },
+    "kick_interv": {
+      "value": [172,296],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
     }
   },
   {
@@ -2094,6 +2513,41 @@ const pulsarData = [
       "uncertainty": null
     },
     "mub": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_t": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null    
+    },
+    "kick_median": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null    
+    },
+    "kick_interv": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -2243,6 +2697,41 @@ const pulsarData = [
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
+    },
+    "v_t": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null    
+    },
+    "kick_median": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null  
+    },
+    "kick_interv": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
     }
   },
   {
@@ -2382,6 +2871,41 @@ const pulsarData = [
       "uncertainty": null
     },
     "mub": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_t": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null   
+    },
+    "kick_median": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null 
+    },
+    "kick_interv": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -2561,6 +3085,41 @@ const pulsarData = [
         "up": 3,
         "down": 3 
       }
+    },
+    "v_t": {
+      "value": [8,46],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": [19,76],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": 92,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_median": {
+      "value": 42,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_interv": {
+      "value": [0.1,144],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
     }
   },
   {
@@ -2738,6 +3297,41 @@ const pulsarData = [
         "up": 0.6,
         "down": 0.6 
       }
+    },
+    "v_t": {
+      "value": [218,289],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": [320,529],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": 589,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_median": {
+      "value": 587,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_interv": {
+      "value": [411,941],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
     }
   },
   {
@@ -2885,6 +3479,41 @@ const pulsarData = [
       "uncertainty": null
     },
     "mub": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_t": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null     
+    },
+    "kick_median": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null 
+    },
+    "kick_interv": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -3046,6 +3675,76 @@ const pulsarData = [
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
+    },
+    "v_t": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null    
+    },
+    "kick_median": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null    
+    },
+    "kick_interv": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_t": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null   
+    },
+    "kick_median": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null    
+    },
+    "kick_interv": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
     }
   },
   {
@@ -3194,6 +3893,41 @@ const pulsarData = [
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
+    },
+    "v_t": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null   
+    },
+    "kick_median": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null  
+    },
+    "kick_interv": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
     }
   },
   {
@@ -3337,6 +4071,41 @@ const pulsarData = [
       "uncertainty": null
     },
     "mub": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_t": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null 
+    },
+    "kick_median": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_interv": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -3506,6 +4275,41 @@ const pulsarData = [
         "up": 0.063,
         "down": 0.063
       }
+    },
+    "v_t": {
+      "value": [40,56],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": [30,81],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": 103,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_median": {
+      "value": 55,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_interv": {
+      "value": [7.7,154],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
     }
   },
   {
@@ -3645,6 +4449,41 @@ const pulsarData = [
       "uncertainty": null
     },
     "mub": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_t": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null 
+    },
+    "kick_median": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null  
+    },
+    "kick_interv": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -3815,6 +4654,41 @@ const pulsarData = [
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
+    },
+    "v_t": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null 
+    },
+    "kick_median": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null 
+    },
+    "kick_interv": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
     }
   },
   {
@@ -3979,6 +4853,41 @@ const pulsarData = [
         "up": 0.64,
         "down": 0.64
       }
+    },
+    "v_t": {
+      "value": [260,381],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": [112,445],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": 547,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_median": {
+      "value": 235,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_interv": {
+      "value": [70,777],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
     }
   },
   {
@@ -4160,6 +5069,41 @@ const pulsarData = [
         "up": 0.004,
         "down": 0.004
       }
+    },
+    "v_t": {
+      "value": [51,57],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": [185,214],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": 225,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_median": {
+      "value": 305,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_interv": {
+      "value": [189,423],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
     }
   },
   {
@@ -4303,6 +5247,41 @@ const pulsarData = [
       "uncertainty": null
     },
     "mub": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_t": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null  
+    },
+    "kick_median": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null     
+    },
+    "kick_interv": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -4464,6 +5443,41 @@ const pulsarData = [
         "up": 132,
         "down": 132
       }
+    },
+    "v_t": {
+      "value": [133,215],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": [71,273],
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": 348,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_median": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null   
+    },
+    "kick_interv": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
     }
   },
   {
@@ -4625,6 +5639,41 @@ const pulsarData = [
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
+    },
+    "v_t": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null  
+    },
+    "kick_median": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "kick_interv": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
     }
   },
   {
@@ -4773,6 +5822,41 @@ const pulsarData = [
       "references": null,
       "hasUncertainty": false,
       "uncertainty": null
+    },
+    "v_t": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null   
+    },
+    "kick_median": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null  
+    },
+    "kick_interv": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
     }
   },
   {
@@ -4916,6 +6000,41 @@ const pulsarData = [
       "uncertainty": null
     },
     "mub": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_t": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_1sig": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null
+    },
+    "v_90perct": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null 
+    },
+    "kick_median": {
+      "value": null,
+      "hasReferences": false,
+      "references": null,
+      "hasUncertainty": false,
+      "uncertainty": null    
+    },
+    "kick_interv": {
       "value": null,
       "hasReferences": false,
       "references": null,
@@ -5106,6 +6225,45 @@ const pulsarData = [
         "up": ,
         "down": 
       }
+    },
+    "v_t": {
+      "value": ,
+      "hasReferences": ,
+      "references": ,
+      "hasUncertainty": ,
+      "uncertainty": {
+        "symmetrical": ,
+        "up": ,
+        "down": 
+      }
+    },
+    "v_1sig": {
+      "value": ,
+      "hasReferences": ,
+      "references": ,
+      "hasUncertainty": ,
+      "uncertainty":
+    },
+    "v_90perct": {
+      "value": ,
+      "hasReferences": ,
+      "references": ,
+      "hasUncertainty": ,
+      "uncertainty":      
+    },
+    "kick_median": {
+      "value": ,
+      "hasReferences": ,
+      "references": ,
+      "hasUncertainty": ,
+      "uncertainty":      
+    },
+    "kick_interv": {
+      "value": ,
+      "hasReferences": ,
+      "references": ,
+      "hasUncertainty": ,
+      "uncertainty": 
     }
   }
 */

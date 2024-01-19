@@ -21,6 +21,7 @@ function mergeRows(systemName) {
 }
 
 function enumarateReferences(pulsarData) {
+  // Enumaretes all references following the order they appear (rows, than columns)//
   let index = 1;
 
   for ( let data of pulsarData ) {
@@ -356,6 +357,57 @@ function buildSecondTable() {
       // Proper motion in l References
       if ( data.mub.hasReferences ) { addReferences(data.mub.references, tdMuB); }
       tdMuB.setAttribute('style', 'white-space: nowrap') // Prevent references from wrapping
+
+      // Transversal velocity interval
+      let tdV_t = document.createElement('td');
+      tdV_t.innerHTML =  data.v_t.value[0] + '-' + data.v_t.value[1];
+      // Transversal velocity uncertainties
+      if (data.v_t.hasUncertainty) { addUncertainty(data.v_t.uncertainty, tdV_t)}
+      // Transversal velocity References
+      if ( data.v_t.hasReferences ) { addReferences(data.v_t.references, tdV_t); }
+      tdV_t.setAttribute('style', 'white-space: nowrap') // Prevent references from wrapping
+
+      // Transversal velocity interval
+      let tdV_1sig = document.createElement('td');
+      tdV_1sig.innerHTML =  data.v_1sig.value[0] + '-' + data.v_1sig.value[1];
+      // Transversal velocity uncertainties
+      if (data.v_1sig.hasUncertainty) { addUncertainty(data.v_1sig.uncertainty, tdV_1sig)}
+      // Transversal velocity References
+      if ( data.v_1sig.hasReferences ) { addReferences(data.v_1sig.references, tdV_1sig); }
+      tdV_t.setAttribute('style', 'white-space: nowrap') // Prevent references from wrapping
+
+      // 90% upper limit of systemic velocity
+      let tdV_90perct = document.createElement('td');
+      tdV_90perct.innerHTML =  data.v_90perct.value;
+      // 90% upper limit of systemic uncertainties
+      if (data.v_90perct.hasUncertainty) { addUncertainty(data.v_90perct.uncertainty, tdV_90perct)}
+      // 90% upper limit of systemic References
+      if ( data.v_90perct.hasReferences ) { addReferences(data.v_90perct.references, tdV_90perct); }
+      tdV_t.setAttribute('style', 'white-space: nowrap') // Prevent references from wrapping
+
+      // Median kick velocity
+      let tdKick_med = document.createElement('td');
+      if (data.kick_median.value) {
+        tdKick_med.innerHTML =  data.kick_median.value;
+      }
+      else tdKick_med.innerHTML = '-'
+      // 90% upper limit of systemic uncertainties
+      if (data.kick_median.hasUncertainty) { addUncertainty(data.kick_median.uncertainty, tdKick_med)}
+      // 90% upper limit of systemic References
+      if ( data.kick_median.hasReferences ) { addReferences(data.kick_median.references, tdKick_med); }
+      tdV_t.setAttribute('style', 'white-space: nowrap') // Prevent references from wrapping
+
+      // Median kick velocity
+      let tdKick_interv = document.createElement('td');
+      if (data.kick_interv.value) {
+        tdKick_interv.innerHTML =  data.kick_interv.value[0] + '-' + data.kick_interv.value[1];
+      }
+      else tdKick_interv.innerHTML =  '-';
+      // 90% upper limit of systemic uncertainties
+      if (data.kick_interv.hasUncertainty) { addUncertainty(data.kick_interv.uncertainty, tdKick_interv)}
+      // 90% upper limit of systemic References
+      if ( data.kick_interv.hasReferences ) { addReferences(data.kick_interv.references, tdKick_interv); }
+      tdV_t.setAttribute('style', 'white-space: nowrap') // Prevent references from wrapping
               
       tr.appendChild(tdName);
       tr.appendChild(tdD);
@@ -364,6 +416,11 @@ function buildSecondTable() {
       tr.appendChild(tdZ);
       tr.appendChild(tdMuL);
       tr.appendChild(tdMuB);
+      tr.appendChild(tdV_t);
+      tr.appendChild(tdV_1sig);
+      tr.appendChild(tdV_90perct);
+      tr.appendChild(tdKick_med);
+      tr.appendChild(tdKick_interv);
 
       tableAnchor.appendChild(tr);
         

@@ -25,7 +25,9 @@ const symbols = {
     'b': '$$ b $$',
     'z': '$$ z $$',
     'mul': '$$ \\mu_l $$',
-    'mub': '$$ \\mu_b $$'
+    'mub': '$$ \\mu_b $$',
+    'v_t': '$$ v_T^{SSB} $$',
+    'kick_median': '$$ \\omega_{median} $$'
 
 };
 
